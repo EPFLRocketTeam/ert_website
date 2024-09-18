@@ -3,14 +3,14 @@
 Current state of website will be visible on this link [ERT dev](https://test.ert.jordanwarne.ch)
 
 ## TODO List
-1. [] export figma to html, css and js
+1. [ ] export figma to html, css and js
     - [x] html
     - [x] fonts
-    - [] images
-    - [] interactive parts, scrolling, etc.
+    - [ ] images
+    - [ ] interactive parts, scrolling, etc.
 
-2. [] create a [Hugo](https://gohugo.io/) theme to modularise the code (templates, better high level abstractions), and enable easy further development in the future
-3. [] deploy a frontend GUI interface for editing [Link to options](https://gohugo.io/tools/front-ends/)
+2. [ ] create a [Hugo](https://gohugo.io/) theme to modularise the code (templates, better high level abstractions), and enable easy further development in the future
+3. [ ] deploy a frontend GUI interface for editing [Link to options](https://gohugo.io/tools/front-ends/)
 
 ### Why would I recommend Hugo?
 Here are five key reasons why **Hugo** is often recommended for static site generation:
