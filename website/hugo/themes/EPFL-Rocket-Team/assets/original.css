@@ -177,3 +177,120 @@ figcaption > p {
   font-style: italic;
   color: #ccc;
 }
+
+/* custom css */
+/* Base styling (default for small screens) */
+.Frame67 {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Frame67 img, .IconSocial {
+  width: 40px;
+  height: 40px;
+}
+
+.CopieDeErtLogoBlanc1, .Frame66 {
+  visibility: hidden;
+}
+
+/* 375px and above */
+@media (min-width: 375px) {
+  .Frame67 img, .IconSocial {
+    width: 45px;
+    height: 45px;
+  }
+
+  .CopieDeErtLogoBlanc1, .Frame66 {
+      visibility: hidden;
+  }
+}
+
+/* 425px and above */
+@media (min-width: 425px) {
+  .Frame67 img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .CopieDeErtLogoBlanc1, .Frame66 {
+      visibility: hidden;
+  }
+}
+
+/* 600px and above */
+@media (min-width: 600px) {
+  .Frame67 img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .CopieDeErtLogoBlanc1, .Frame66 {
+      visibility: hidden;
+  }
+}
+
+/* 768px and above */
+@media (min-width: 768px) {
+  .Frame67 img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .CopieDeErtLogoBlanc1, .Frame66 {
+      visibility: visible;
+  }
+
+  .LogoVerticalFullW {
+      left: 35px;
+  }
+}
+
+/* 900px and above */
+@media (min-width: 900px) {
+  .Frame67 img {
+    width: 75px;
+    height: 75px;
+  }
+
+  .LogoVerticalFullW {
+      left: 70px;
+  }
+}
+
+/* 1024px and above */
+@media (min-width: 1024px) {
+  .Frame67 img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* 1280px and above */
+@media (min-width: 1280px) {
+  .Frame67 img {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+/* 1440px and above */
+@media (min-width: 1440px) {
+  .Frame67 img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* 2160px and above */
+@media (min-width: 2160px) {
+  .Frame67 img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
