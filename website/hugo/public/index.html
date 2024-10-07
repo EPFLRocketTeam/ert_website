@@ -58,10 +58,132 @@
 
   <link rel="alternate" type="application/rss+xml" href="https://example.com/index.xml" title="EPFL Rocket Team" />
   
+<style>
+	body { margin: 0; }
+	@font-face {
+	    font-family: 'Aspekta';
+	    src: url('fonts/Aspekta-50.ttf')  format('truetype'),  
+		 url('fonts/Aspekta-100.ttf') format('truetype'), 
+		 url('fonts/Aspekta-150.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-200.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-250.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-300.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-350.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-400.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-450.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-500.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-550.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-600.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-650.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-700.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-750.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-800.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-850.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-900.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-950.ttf')  format('truetype'), 
+		 url('fonts/Aspekta-1000.ttf')  format('truetype'),
+		 url('fonts/Aspekta-50.woff2')  format('woff'),  
+		 url('fonts/Aspekta-100.woff2')  format('woff'),
+		 url('fonts/Aspekta-150.woff2')  format('woff'), 
+		 url('fonts/Aspekta-200.woff2')  format('woff'), 
+		 url('fonts/Aspekta-250.woff2')  format('woff'), 
+		 url('fonts/Aspekta-300.woff2')  format('woff'), 
+		 url('fonts/Aspekta-350.woff2')  format('woff'), 
+		 url('fonts/Aspekta-400.woff2')  format('woff'), 
+		 url('fonts/Aspekta-450.woff2')  format('woff'), 
+		 url('fonts/Aspekta-500.woff2')  format('woff'), 
+		 url('fonts/Aspekta-550.woff2')  format('woff'), 
+		 url('fonts/Aspekta-600.woff2')  format('woff'), 
+		 url('fonts/Aspekta-650.woff2')  format('woff'), 
+		 url('fonts/Aspekta-700.woff2')  format('woff'), 
+		 url('fonts/Aspekta-750.woff2')  format('woff'), 
+		 url('fonts/Aspekta-800.woff2')  format('woff'), 
+		 url('fonts/Aspekta-850.woff2')  format('woff'), 
+		 url('fonts/Aspekta-900.woff2')  format('woff'), 
+		 url('fonts/Aspekta-950.woff2')  format('woff'), 
+		 url('fonts/Aspekta-1000.woff2') format('woff');
+	    font-display: swap;
+	}
+</style>
 </head>
 
 <body>
-  <header style="max-width: 720px; margin: auto; padding: 20px;"><a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Image and Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: calc(100vw * 2 / 3);  
+            background-color: darkred;  
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 15px;
+        }
+
+        .navbar ul {
+            list-style: none;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <a href="/" class="title"><h1>EPFL Rocket Team</h1></a>
 <nav>
@@ -80,7 +202,8 @@
   
 
 </nav>
-</header>
+
+  </header>
   <main id="main-content" style="max-width: 720px; margin: auto; padding: 20px;">
 <p>Hello World, this should be <code>_index.md</code> !</p>
 
@@ -125,7 +248,7 @@
 	  
 	 <form>
 	     <input type="text" id="fname" name="fname" placeholder="YOUR EMAIL" 
-  style="width: 355px; color: #464646; font-size: 16px; font-family: Aspekta; font-weight: 600; 
+  style="width: 355px; color: #A6A6A6; font-size: 16px; font-family: Aspekta; font-weight: 600; 
   text-transform: uppercase; line-height: 20px; word-wrap: break-word; 
   border: none; background-color: transparent;">
 <br>

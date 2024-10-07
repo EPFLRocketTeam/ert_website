@@ -1,4 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Image and Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            position: relative;
+            width: 100%;
+            height: calc(100vw * 2 / 3); /* 3:2 aspect ratio */
+            background-color: darkred; /* Placeholder color */
+        }
+
+        .navbar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 15px;
+        }
+
+        .navbar ul {
+            list-style: none;
+        }
+
+        .navbar ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <a class="skip-link" href="#main-content">{{ i18n "skip-link" }}</a>
+-->
 
 <a href="{{ relURL .Site.Home.RelPermalink }}" class="title"><h1>{{ .Site.Title }}</h1></a>
 <nav>{{- partial "nav.html" . -}}</nav>

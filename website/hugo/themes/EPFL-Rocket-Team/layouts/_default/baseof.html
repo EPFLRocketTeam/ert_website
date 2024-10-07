@@ -35,8 +35,10 @@
 </head>
 
 <body>
-  <header style="max-width: 720px; margin: auto; padding: 20px;">
+  <header>
+      <!--div style="max-width: 720px; margin: auto; padding: 20px;"-->
     {{- partial "header.html" . -}}
+      <!--/div-->
   </header>
   <main id="main-content" style="max-width: 720px; margin: auto; padding: 20px;">
     {{- block "main" . }}{{- end }}
