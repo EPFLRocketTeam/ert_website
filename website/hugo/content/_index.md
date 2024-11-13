@@ -33,3 +33,5 @@ upgrades. It's also compatible with modern
 users don't have to worry about browsing your website.
 
 Made with 💟 by [Caio lente](https://lente.dev/en).
+
+</div>
