@@ -1,0 +1,26 @@
+version: '3'
+services:
+  hugo:
+    build:
+      context: .
+      dockerfile: ./Dockerfile  # Path to the custom Dockerfile
+    network_mode: host
+    volumes:
+      - ./website/hugo:/src  # Your Hugo site folder
+      - ./website/hugo/public:/output  # Where Nginx will serve from
+    entrypoint: ["sh", "-c", "while true; do hugo -D -d /output; sleep 60; done"]
+    restart: always  
+    dns:
+      - 8.8.8.8   # Google's DNS
+      - 8.8.4.4   # Another Google DNS
+  nginx:
+    image: nginx:latest
+    ports:
+      - "1234:80"  # Map external port 1234 to Nginx's default port 80
+    dns:
+      - 8.8.8.8   # Google's DNS
+      - 8.8.4.4   # Another Google DNS
+    volumes:
+      - ./website/hugo/public:/usr/share/nginx/html:ro  # Mount the Hugo public folder
+      - ./nginx.conf:/etc/nginx/nginx.conf  # Custom Nginx config file
+
