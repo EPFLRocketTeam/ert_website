@@ -1,6 +1,6 @@
 ---
 title: "Shop"
-menu: "shop"
+menu: "main"
 weight: 8
 ---
 

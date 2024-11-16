@@ -1,6 +1,6 @@
 ---
 title: "About"
-menu: "about"
+menu: "main"
 weight: 5
 ---
 

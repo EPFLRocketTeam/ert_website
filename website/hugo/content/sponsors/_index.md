@@ -1,6 +1,6 @@
 ---
 title: "Sponsors"
-menu: "sponsors"
+menu: "main"
 weight: 4
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Join Us"
-menu: "join-us"
+menu: "main"
 weight: 3
 ---
 

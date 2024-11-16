@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-menu: "projects"
+menu: "main"
 weight: 2
 ---
 
