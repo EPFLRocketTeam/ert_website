@@ -15,6 +15,16 @@
                 href="https://example.com/"
                 />
   </url><url>
+    <loc>https://example.com/projects/</loc>
+  </url><url>
+    <loc>https://example.com/join-us/</loc>
+  </url><url>
+    <loc>https://example.com/sponsors/</loc>
+  </url><url>
+    <loc>https://example.com/about/</loc>
+  </url><url>
+    <loc>https://example.com/contact/</loc>
+  </url><url>
     <loc>https://example.com/blog/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -27,6 +37,8 @@
                 hreflang="en-UK"
                 href="https://example.com/blog/"
                 />
+  </url><url>
+    <loc>https://example.com/shop/</loc>
   </url><url>
     <loc>https://example.com/posts/</loc>
     <lastmod>2024-09-22T08:55:02+02:00</lastmod>
