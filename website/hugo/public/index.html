@@ -137,7 +137,7 @@ Let’s change this, one website at a time! Bear Cub is a Hugo theme based on Hu
         }
 
         .header {
-            position: fixed;
+            position: relative;
 	    top: 0;
 	    left: 0;
             width: 100%;
@@ -146,42 +146,48 @@ Let’s change this, one website at a time! Bear Cub is a Hugo theme based on Hu
 	    background-image: url("/images/uploads/2024_trailer_ert.mp4");
         }
 
-	video {
-	  position: absolute;
-	  top: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  min-width: 100%;
-	  min-height: 100%;
-	  z-index: -1;
-	  object-position: center;
-	  object-fit: cover;
+	.navbar {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    padding: 15px;
 	}
 
-        .navbar {
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 15px;
-        }
+	.navbar ul {
+	    list-style: none;
+	    margin: 0;
+	    padding: 0;
+	}
 
-        .navbar ul {
-            list-style: none;
-        }
+	.navbar ul li {
+	    display: inline-block;
+	    margin-left: 20px;
+	}
 
-        .navbar ul li {
-            display: inline;
-            margin-left: 20px;
-        }
+	.navbar ul li a {
+	    text-decoration: none;
+	    color: white;
+	    font-size: 18px;
+	    font-weight: bold;
+	}
 
-        .navbar ul li a {
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-        }
-    </style>
+	header .header {
+	    position: relative;
+	    width: 100%;
+	    height: 100vh;  
+	    top: 0;
+	    left: 0;
+	}
+
+	video {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	}
+   </style>
 </head>
 <body>
     <header class="header">
@@ -238,7 +244,7 @@ Let’s change this, one website at a time! Bear Cub is a Hugo theme based on Hu
 
 
   </header>
-  <main id="main-content" style="max-width: 720px; margin: auto; padding: 20px; position: relative">
+  <main id="main-content" style="max-width: 720px; margin: auto; padding: 20px; position: relative; top: 30px">
 <h1 id="ᕦʕ-ᴥʔᕤ-bear-cub">ᕦʕ •ᴥ•ʔᕤ Bear Cub</h1>
 <p>Today&rsquo;s websites are bloated, slow, and full of scripts, ads, and trackers. This
 became so commonplace that we lost all sense of perspective, to the point that
