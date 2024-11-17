@@ -1,0 +1,114 @@
+<head>
+    <link rel="stylesheet" href="/website/hugo/themes/EPFL-Rocket-Team/layouts/_default/fonts.css">
+    <style>
+          * {
+            box-sizing: border-box;
+          }
+      
+          body {
+            font-family:'Aspekta';
+            margin: 5px;
+            padding: 0;
+            background-color: black;
+            vertical-align: bottom;
+          }
+      
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 4px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            }
+      
+            .column1 {
+            flex: 40%;
+            max-width: 40%;
+            padding: 0 4px;
+            text-align: right;
+
+            }
+
+            .column2 {
+            flex: 14%;
+            max-width: 14%;
+            padding: 0 4px;
+            }
+
+
+            .row img{
+                margin-top: 8px;
+                width: 100%;
+                border-radius: 10px;
+                vertical-align: bottom;
+            }
+      
+            .title{
+                position: absolute;
+                top: 4px;
+                left: 4px;
+                width: 60%;
+                font-family: 'Aspekta'; 
+                color: white; 
+                font-weight: bolder;
+                font-size: 3.5vw;
+            }
+
+            @media screen and (max-width: 1024px) {
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
+        
+                .column1 {
+                    flex: 60%;
+                    max-width: 60%;
+                }
+                .column2 {
+                    flex: 21%;
+                    max-width: 21%;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+        
+                .column1 {
+                    flex: 70%;
+                    max-width: 70%;
+                }
+                .column2 {
+                    flex: 24.5%;
+                    max-width: 24.5%;
+                }
+            }
+    </style>
+  </head>
+  <body>
+   
+    <div class="row">
+        <div class="title">Engaging students<br>in space technology projects,<br>in collaboration with academia<br>and industry partners</div> 
+      <div class="column1">
+        <img src="/website/hugo/themes/EPFL-Rocket-Team/images/RocketBuilding3.webp" style="width:35%;">
+        <img src="/website/hugo/themes/EPFL-Rocket-Team/images/RocketBuilding1.webp">
+    </div>
+
+    <div class="column2">
+        <img src="/website/hugo/themes/EPFL-Rocket-Team/images/BuildingParts1.webp">
+        <img src="/website/hugo/themes/EPFL-Rocket-Team/images/RocketLaunch1.webp">
+        <img src="/website/hugo/themes/EPFL-Rocket-Team/images/RocketBuilding2.webp">
+    </div>
+     
+    </div>
+  
+  </body>
+  
