@@ -1,8 +1,8 @@
 ---
-title: Projects
+title: "Projects"
+date: 2024-11-18T20:38:42+01:00
 menu: main
 weight: 2
-layout: single
-date: 2024-11-18T19:45:00.000Z
 ---
-Hi world, this is a tester text.
+
+This is the projects page tadaaa!

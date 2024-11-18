@@ -5,4 +5,4 @@ weight: 3
 layout: single
 ---
 
-Hi world, this is the join us page.
+Please Join Us nowwww!
