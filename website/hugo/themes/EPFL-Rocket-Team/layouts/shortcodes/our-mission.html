@@ -1,20 +1,10 @@
-<head>
-    <link rel="stylesheet" href="/layouts/_default/stylesheet.css">
+<head>   
     <style>
-          * {
-            box-sizing: border-box;
-          }
-      
-          body {
-            font-family:'Aspekta';
-            margin: 5px;
-            padding: 0;
-            background-color: black;
-            vertical-align: bottom;
-          }
-      
+
           .row {
             display: flex;
+            width: 100%;
+            height: 90vh;
             flex-wrap: wrap;
             padding: 4px;
             justify-content: flex-end;
@@ -35,21 +25,11 @@
             padding: 0 4px;
             }
 
-
             .row img{
                 margin-top: 8px;
                 width: 100%;
                 border-radius: 10px;
                 vertical-align: bottom;
-            }
-      
-            .title{
-                position: absolute;
-                width: 60%;
-                font-family: 'Aspekta'; 
-                color: white; 
-                font-weight: 400;
-                font-size: 3.5vw;
             }
 
             @media screen and (max-width: 1024px) {
@@ -92,21 +72,21 @@
     </style>
   </head>
   <body>
-   
-    <div class="row">
-        <div class="title">Engaging students<br>in space technology projects,<br>in collaboration with academia<br>and industry partners</div> 
-        <div class="column1">
-            <img src="/images/RocketBuilding3.webp" style="width:35%;">
-            <img src="/images/RocketBuilding1.webp">
+   <div class="main">
+    <div class="page">our mission</div>
+        <div class="row">
+            <div style="display: inline-block; align-self: flex-start;"><h1>Engaging students<br>in space technology projects,<br>in collaboration with academia<br>and industry partners</h1></div>          
+            <div class="column1">
+                <img src="/images/originalQuality/RocketBuilding3.jpeg" style="width:35%;">
+                <img src="/images/originalQuality/RocketBuilding1.jpeg">
+            </div>
+            <div class="column2">
+                <img src="/images/originalQuality/BuildingParts1.jpeg">
+                <img src="/images/originalQuality/RocketLaunch1.jpeg">
+                <img src="/images/originalQuality/RocketBuilding2.jpeg">
+            </div>    
         </div>
-
-        <div class="column2">
-            <img src="/images/BuildingParts1.webp">
-            <img src="/images/RocketLaunch1.webp">
-            <img src="/images/RocketBuilding2.webp">
-        </div>    
-    </div>
-    <button type="button" class="button">Read our story and discover the team</button>
-  
+        <button type="button" class="button">Read our story and discover the team</button>
+    </div>  
   </body>
   

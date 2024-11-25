@@ -9,6 +9,8 @@ Welcome to the website
 
 {{< youtube -JFF9GNy8vA >}}
 
+{{<our-projects>}}
+
 {{<our-mission>}}
 
 {{<sponsors>}}
