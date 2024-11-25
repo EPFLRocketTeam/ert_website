@@ -2,7 +2,7 @@
 <html lang="en-UK">
 
 <head>
-	<meta name="generator" content="Hugo 0.134.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.136.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,11 @@
   <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Home">
-  <meta property="og:description" content="EPFL Rocket Team Welcome to the website">
+  <meta property="og:description" content="EPFL Rocket Team Welcome to the website
+Engaging students
+in space technology projects,
+in collaboration with academia
+and industry partners Read our story and discover the team They believe in us discover all our sponsors">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/share.webp">
@@ -34,24 +38,32 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
   <meta name="twitter:title" content="Home">
-  <meta name="twitter:description" content="EPFL Rocket Team Welcome to the website">
+  <meta name="twitter:description" content="EPFL Rocket Team Welcome to the website
+Engaging students
+in space technology projects,
+in collaboration with academia
+and industry partners Read our story and discover the team They believe in us discover all our sponsors">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="Home">
-  <meta itemprop="description" content="EPFL Rocket Team Welcome to the website">
+  <meta itemprop="description" content="EPFL Rocket Team Welcome to the website
+Engaging students
+in space technology projects,
+in collaboration with academia
+and industry partners Read our story and discover the team They believe in us discover all our sponsors">
   <meta itemprop="datePublished" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="dateModified" content="2024-11-18T20:38:42+01:00">
-  <meta itemprop="wordCount" content="7">
+  <meta itemprop="wordCount" content="35">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
   
   <link href="/original.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="/layouts/_default/stylesheet.css">
   
 
   
@@ -235,7 +247,7 @@
 
 
   </header>
-  <main id="main-content" style="max-width: 720px; margin: auto; padding: 20px; position: relative; top: 30px">
+  <main id="main-content" style="max-width: 100%; margin: auto; padding: 0px; position: relative; top: 30px">
 <h1 id="epfl-rocket-team">EPFL Rocket Team</h1>
 <p>Welcome to the website</p>
 
@@ -246,27 +258,142 @@
       ></iframe>
     </div>
 
-
-
-  </main>
-  <head>
+<head>
+    <link rel="stylesheet" href="/layouts/_default/stylesheet.css">
     <style>
+          * {
+            box-sizing: border-box;
+          }
+      
+          body {
+            font-family:'Aspekta';
+            margin: 5px;
+            padding: 0;
+            background-color: black;
+            vertical-align: bottom;
+          }
+      
+          .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 4px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            }
+      
+            .column1 {
+            flex: 40%;
+            max-width: 40%;
+            padding: 0 4px;
+            text-align: right;
 
+            }
+
+            .column2 {
+            flex: 14%;
+            max-width: 14%;
+            padding: 0 4px;
+            }
+
+
+            .row img{
+                margin-top: 8px;
+                width: 100%;
+                border-radius: 10px;
+                vertical-align: bottom;
+            }
+      
+            .title{
+                position: absolute;
+                width: 60%;
+                font-family: 'Aspekta'; 
+                color: white; 
+                font-weight: 400;
+                font-size: 3.5vw;
+            }
+
+            @media screen and (max-width: 1024px) {
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                }
+        
+                .column1 {
+                    flex: 60%;
+                    max-width: 60%;
+                }
+                .column2 {
+                    flex: 21%;
+                    max-width: 21%;
+                }
+            }
+
+            @media screen and (max-width: 800px) {
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+        
+                .column1 {
+                    flex: 70%;
+                    max-width: 70%;
+                }
+                .column2 {
+                    flex: 24.5%;
+                    max-width: 24.5%;
+                }
+            }
+    </style>
+  </head>
+  <body>
+   
+    <div class="row">
+        <div class="title">Engaging students<br>in space technology projects,<br>in collaboration with academia<br>and industry partners</div> 
+        <div class="column1">
+            <img src="/images/RocketBuilding3.webp" style="width:35%;">
+            <img src="/images/RocketBuilding1.webp">
+        </div>
+
+        <div class="column2">
+            <img src="/images/BuildingParts1.webp">
+            <img src="/images/RocketLaunch1.webp">
+            <img src="/images/RocketBuilding2.webp">
+        </div>    
+    </div>
+    <button type="button" class="button">Read our story and discover the team</button>
+  
+  </body>
+  
+<head>
+  <link rel="stylesheet" href="/layouts/_default/stylesheet.css">
+    <style>
         * {
           box-sizing: border-box;
         }
+
+        @font-face {
+          font-family: 'Aspekta';
+          src: url('website/hugo/fonts/Aspekta-250.ttf')  format('truetype');         
+          font-display: swap;
+        }
     
         body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
+          font-family:'Aspekta';
+          margin: 5px;
+          padding: 20px;
           background-color: black;
         }
     
         .container {
           display: grid;
           grid-gap: 20px;
-          margin: 20px;
+          margin-top: 20px;
         }
     
         .column {   
@@ -280,7 +407,13 @@
             justify-content: center;
             align-items: center;
         }
-    
+
+        .column img{
+            max-width: 20vw;
+            height: auto;           
+        }
+        
+      
          
     
          
@@ -330,16 +463,14 @@
           }
         }
 
-        .column img{
-            max-width: 20vw;
-            height: auto;           
-        }
+        
     
       </style>
 </head>
 <body>
-    
-  <div class="container" style="position: relative">
+  <div class="title">They believe in us</div>
+  <button type="button" onclick="location.href='#'" class="button">discover all our sponsors </button>
+  <div class="container">
     <div class="column"><img src="/images/EPFL.webp"></div>
     <div class="column"><img src="/images/apco.webp"></div>
     <div class="column"><img src="/images/KISTLER.webp"></div>
@@ -352,6 +483,10 @@
 
 </body>
 
+
+
+  </main>
+  
   <footer><small>
   John Doe (CC BY 4.0) | Made with <a href="https://github.com/clente/hugo-bearcub">Bear Cub</a>
 </small>

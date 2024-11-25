@@ -13,7 +13,7 @@
 
   {{ $style := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
-
+  <link rel="stylesheet" href="/layouts/_default/stylesheet.css">
   {{ if (.Page.Store.Get "hasCodeBlock") }}
     {{ $syntax := resources.Get "syntax.css" | minify }}
     <link href="{{ $syntax.RelPermalink }}" rel="stylesheet">
@@ -40,10 +40,10 @@
     {{- partial "header.html" . -}}
       <!--/div-->
   </header>
-  <main id="main-content" style="max-width: 720px; margin: auto; padding: 20px; position: relative; top: 30px">
+  <main id="main-content" style="max-width: 100%; margin: auto; padding: 0px; position: relative; top: 30px">
     {{- block "main" . }}{{- end }}
   </main>
-  {{ partial "sponsors.html" . }}
+  
   <footer>
     {{- partial "footer.html" . -}}
   </footer>

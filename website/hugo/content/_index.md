@@ -8,3 +8,9 @@ weight: 1
 Welcome to the website
 
 {{< youtube -JFF9GNy8vA >}}
+
+{{<our-mission>}}
+
+{{<sponsors>}}
+
+
