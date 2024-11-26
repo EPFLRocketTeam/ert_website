@@ -25,7 +25,47 @@
             max-width: 20vw;
             height: auto;           
         }
-        
+
+  /* Large screens (laptops, <1200px) -> 9 Columns */
+    @media (max-width: 1200px) {
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Medium screens (tablets, <1024px) -> 7 Columns */
+  @media (max-width: 1024px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Medium-small screens (tablets, <900px) -> 5 Columns */
+  @media (max-width: 900px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+        /* Small screens (large phones, tablets, <768px) -> 4 Columns */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Extra small screens (phones, <600px) -> 3 Columns */
+  @media (max-width: 600px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Extra small screens (phones, <420px) -> 2 Columns */
+  @media (max-width: 420px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
       </style>
 </head>
 <body>

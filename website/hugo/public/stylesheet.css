@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family:'Aspekta';
+    padding: 20px;
+    background-color: black;
+    vertical-align: bottom;
+    color: white;
+}
+
+h1{
+    position: relative;
+    font-family: 'Aspekta'; 
+    color: white; 
+    font-size: 3.5vw;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Aspekta'; 
+    font-weight: 400;
+    font-size: 2vw;
+    color: white;
+}
+
+p{
+    font-family: 'Aspekta';
+    font-size: 16px;
+}
+
+.main{
+    margin: 20px 0px 100px;
+}
+
+.page{
+    font-weight: 400;
+    font-size: 1vw;
+    color: #464646;
+    text-transform: uppercase;
+    
+}
+
+.button{
+    position: relative;
+    display: block;
+    right: 0px;
+    font-weight: 400;
+    font-size: 1vw;
+    color: white;
+    text-transform: uppercase;
+    text-align: right;
+    background-color: transparent;
+    border: none;    
+}
+
+.button::after{
+    content: '\2192';
+    font-size: 1.6vw;
+    font-weight: 200;
+    vertical-align: baseline;
+}
+
+.button:hover{
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+.right-align{
+    float: right;
+}
+
+#our-projects{
+    position: relative;
+    width: 80%; 
+    display: flex;  
+    margin: auto auto 60px;
+    
+}
+
+.our-project-images{
+    flex: 60%;
+    /* background-color: yellowgreen; 
+    background-image: url("/images/originalQuality/RocketLaunch1.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat; */ 
+}
+
+
+.our-project-list{
+    flex: 25%;
+    text-align: left;
+    /* background-color: blue;  */ 
+}
+
+/* #op-firehorn:hover, #op-spacerace:hover, #op-hyperion:hover, #op-icarus:hover{
+    background-color: chocolate;
+}
+
+testing that the hover works
+
+#op-spacerace:hover + .our-project-images{
+    background-image: url("/images/originalQuality/RocketLaunch2.jpeg");
+
+} */ 
+
+
+/* Large screens (laptops, <1200px) -> 9 Columns */
+  @media (max-width: 1200px) {
+    .container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Medium screens (tablets, <1024px) -> 7 Columns */
+  @media (max-width: 1024px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Medium-small screens (tablets, <900px) -> 5 Columns */
+  @media (max-width: 900px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .button, .button::after, .page{
+      font-size: 12px;
+    }
+
+    h1{
+      font-size: 40px;
+    }
+
+    h2{
+      font-size: 32px;
+    }
+
+  }
+
+  
