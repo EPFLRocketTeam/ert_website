@@ -35,17 +35,17 @@
   {{- partial "custom_head.html" . -}}
 </head>
 
-<body>
+<body style="padding: 0">
   <header>
       <!--div style="max-width: 720px; margin: auto; padding: 20px;"-->
     {{- partial "header.html" . -}}
       <!--/div-->
   </header>
-  <main id="main-content" style="max-width: 100%; margin: auto; padding: 0px; position: relative; top: 30px">
+  <main id="main-content" style="max-width: 100%; margin: auto; padding: 30px; position: relative; top: 30px">
     {{- block "main" . }}{{- end }}
   </main>
   
-  <footer>
+  <footer style="padding: 30px">
     {{- partial "footer.html" . -}}
   </footer>
 
