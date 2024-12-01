@@ -1,18 +1,59 @@
 <head>
+    <style>
+    #our-projects{
+        position: relative;
+        width: 100%; 
+        display: flex;  
+        margin: auto auto 60px;
+        height: 65vh;
+    }
+
+    .our-project-images{
+        flex: 70%;
+        text-align: center;   
+        /* background-color: orangered;  */
+    }
+
+    .our-project-images img{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        max-height: 100%; 
+        max-width: 90%;
+    }
+
+    #op-spacerace-img{
+    
+    }
+
+    .our-project-list{
+        flex: 30%;
+        padding-left: 50px;
+        text-align: left;
+        /* background-color: blue;  */
+    }
+
+    /* #op-firehorn:hover, #op-spacerace:hover, #op-hyperion:hover, #op-icarus:hover{
+        background-color: chocolate;
+    }
+
+    testing that the hover works*/
+    </style>
 </head>
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
-        $('#op-firehorn').hover(function() {
-            $('#op-firehorn-img').toggle();
-        });      
+      
     </script>
     <div class="main">
         <div class="page">our projects</div>
         <h2>The EPFL Rocket Team is currently engaged<br>in four different projects</h2>
         <div id="our-projects">
-            <img src="/images/originalQuality/op_firehorn.png">
             <div class="our-project-images">
+                <img src="/images/originalQuality/op_firehorn.png" id="op-firehorn-img">
+                <!-- <img src="/images/originalQuality/op_spacerace.png" id="op-spacerace-img"> -->
+                <!-- <img src="/images/originalQuality/op_icarus.png" id="op-icarus-img"> -->
+                <!-- <img id="op-hyperion-img" src="/images/originalQuality/op_hyperion.png"> -->
             </div>
             <div class="our-project-list">
                 <div id="op-firehorn">

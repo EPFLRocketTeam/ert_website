@@ -105,15 +105,9 @@
 </style>
 </head>
 
-<body style="padding: 0">
+<body style="overflow-x: hidden; padding: 0">
   <header>
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header with Image and Navbar</title>
-    <style>
+          <style>
         * {
             margin: 0;
             padding: 0;
@@ -122,7 +116,8 @@
 
         body, html {
             height: 100%;
-            font-family: Arial, sans-serif;
+            font-family: Aspekta, sans-serif;
+	    font-weight: 400;
         }
 
         .header {
@@ -130,7 +125,7 @@
 	    top: 0;
 	    left: 0;
             width: 100%;
-            height: calc(100vw * 9 / 16);  
+            height: 100vh;  
             background-color: black;  
 	    background-image: url("/images/uploads/2024_trailer_ert.mp4");
         }
@@ -157,7 +152,7 @@
 	    text-decoration: none;
 	    color: white;
 	    font-size: 18px;
-	    font-weight: bold;
+	    font-weight: 400;
 	}
 
 	header .header {
@@ -177,8 +172,6 @@
 	    object-fit: cover;
 	}
    </style>
-</head>
-<body>
     <header class="header">
 	<video autoplay muted loop src="/images/uploads/2024_trailer_ert.mp4"></video>
         <nav class="navbar">
@@ -216,11 +209,10 @@
 	    
             </ul>
         </nav>
+	<h1 style="left: 30px; top: 68vh; font-size: 90px; font-weight: 400">EPFL ROCKET TEAM</h1>
+
+	<h1 style="left: 30px; top: 68vh; max-width: 820px; font-size: 20px; font-weight: 400">We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise thus shaping the next generation of space industry's leaders.</h1>
     </header>
-</body>
-</html>
-
-
 
 
 
@@ -282,11 +274,11 @@
 
 <div class="Footer" style="width: 100%; height: 571px; left: 0px; position: absolute">
   <div class="Frame66" style="right: 70px; top: 24px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
-    <div class="Projects" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 600; text-transform: uppercase; line-height: 20px; word-wrap: break-word">PROJECTS</div>
-    <div class="JoinUs" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 600; text-transform: uppercase; line-height: 20px; word-wrap: break-word">JOIN US</div>
-    <div class="Sponsors" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 600; text-transform: uppercase; line-height: 20px; word-wrap: break-word">SPONSORS</div>
-    <div class="About" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 600; text-transform: uppercase; line-height: 20px; word-wrap: break-word">ABOUT</div>
-    <div class="Contact" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 600; text-transform: uppercase; line-height: 20px; word-wrap: break-word">CONTACT</div>
+    <div class="Projects" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word">PROJECTS</div>
+    <div class="JoinUs" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word">JOIN US</div>
+    <div class="Sponsors" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word">SPONSORS</div>
+    <div class="About" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word">ABOUT</div>
+    <div class="Contact" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word">CONTACT</div>
   </div>
   <div class="LogoVerticalFullW" style="width: 137px; height: 427px; top: 24px; position: absolute; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
     <img class="CopieDeErtLogoBlanc1" alt="EPFL Rocket Team Logo" style="width: 137px; height: 427px" src="/images/ERTwhite.webp" />
@@ -298,7 +290,7 @@
     <div class="epfl-rocket-team" style="flex: 1 1 180px; margin: 4px; white-space: nowrap;">2024 EPFL Rocket Team</div>
     <div class="webmaster" style="flex: 1 1 160px; margin: 4px; white-space: nowrap;">Webmaster <a href="https://inforweb.ch">inforweb.ch</a></div>
     <div class="website-design" style="flex: 1 1 180px; margin: 4px; white-space: nowrap;">Design by <a href="https://fr.linkedin.com/in/marguerite-lorthiois-793913168">Marguerite Lorthiois</a></div>
-    <div class="website-code" style="flex: 1 1 160px; margin: 4px; white-space: nowrap;">Code by Jordan Warne</div>
+    <div class="website-code" style="flex: 1 1 160px; margin: 4px; white-space: nowrap;">Code by Sirui Li and Jordan Warne</div>
     <div class="privacy-policy" style="flex: 1 1 100px; margin: 4px; white-space: nowrap;">Privacy Policy</div>
     <div class="status" style="flex: 1 1 60px; margin: 4px; white-space: nowrap;">Status</div>
   </div>
@@ -315,7 +307,7 @@
 	  
 	 <form>
 	     <input type="text" id="fname" name="fname" placeholder="YOUR EMAIL" 
-  style="width: 355px; color: #A6A6A6; font-size: 16px; font-family: Aspekta; font-weight: 600; 
+  style="width: 355px; color: #A6A6A6; font-size: 16px; font-family: Aspekta; font-weight: 400; 
   text-transform: uppercase; line-height: 20px; word-wrap: break-word; 
   border: none; background-color: transparent;">
 <br>
