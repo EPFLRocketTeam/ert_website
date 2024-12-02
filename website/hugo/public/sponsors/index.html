@@ -113,63 +113,105 @@
             box-sizing: border-box;
         }
 
-        body, html {
-            height: 100%;
-            font-family: Aspekta, sans-serif;
-	    font-weight: 400;
-        }
-
-        .header {
-            position: relative;
-	    top: 0;
-	    left: 0;
-            width: 100%;
-            height: 100vh;  
-            background-color: black;  
-	    background-image: url("/images/uploads/2024_trailer_ert.mp4");
-        }
-
-	.navbar {
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    padding: 15px;
-	}
-
-	.navbar ul {
-	    list-style: none;
+	 
+	body, html {
 	    margin: 0;
 	    padding: 0;
+	    box-sizing: border-box;
+            font-family: Aspekta, sans-serif;
 	}
 
-	.navbar ul li {
-	    display: inline-block;
-	    margin-left: 20px;
-	}
-
-	.navbar ul li a {
-	    text-decoration: none;
-	    color: white;
-	    font-size: 18px;
-	    font-weight: bold;
-	}
-
-	header .header {
+	.header {
 	    position: relative;
 	    width: 100%;
-	    height: 100vh;  
-	    top: 0;
-	    left: 0;
+	    height: 100vh;
+	    overflow: hidden;
 	}
 
-	video {
+	header video {
 	    position: absolute;
 	    top: 0;
 	    left: 0;
 	    width: 100%;
 	    height: 100%;
 	    object-fit: cover;
+	    z-index: -1;
 	}
+
+	.navbar ul {
+	    list-style: none;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: right;
+	    margin: 0;
+	    padding: 10px;
+	    background: kransparent;
+	}
+
+	.navbar li {
+	    margin: 0 15px;
+	}
+
+	.navbar a {
+	    text-decoration: none;
+	    color: white;
+	    font-size: 1rem;
+	    font-weight: bold;
+	}
+
+	.intro-text {
+	    position: absolute;
+	    bottom: 5%;
+	    left: 5%;
+	    color: white;
+	    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	    max-width: 90%;
+	}
+
+	.title {
+	    font-size: 3rem;
+	    font-weight: bold;
+	    margin: 0;
+	}
+
+	.description {
+	    font-size: 1.2rem;
+	    margin-top: 10px;
+	    line-height: 1.6;
+	    max-width: 40rem;
+	    font-weight: bolder;
+	}
+
+	 
+	@media (max-width: 768px) {
+	    .title {
+		font-size: 2rem;
+	    }
+
+	    .description {
+		font-size: 1rem;
+	    }
+	}
+
+	@media (max-width: 480px) {
+	    .navbar ul {
+		flex-direction: column;
+		padding: 10px 0;
+	    }
+
+	    .navbar li {
+		margin: 5px 0;
+	    }
+
+	    .title {
+		font-size: 1.5rem;
+	    }
+
+	    .description {
+		font-size: 0.9rem;
+	    }
+	}
+
    </style>
     <header class="header">
 	<video autoplay muted loop src="/images/uploads/2024_trailer_ert.mp4"></video>
@@ -208,9 +250,16 @@
 	    
             </ul>
         </nav>
-	<h1 style="left: 30px; top: 68vh; font-size: 90px; font-weight: bold">EPFL ROCKET TEAM</h1>
-
-	<h1 style="left: 30px; top: 68vh; max-width: 820px; font-size: 20px; font-weight: bolder">We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise thus shaping the next generation of space industry's leaders.</h1>
+	<div class="intro-text">
+		<h1 class="title">EPFL ROCKET TEAM</h1>
+		<p class="description">
+		    We are a dynamic association of 200 students from prestigious Swiss
+		    universities, dedicated to designing and manufacturing rockets,
+		    through which we immerse students in space technologies and provide
+		    them hands-on training and field-related expertise, thus shaping
+		    the next generation of space industry's leaders.
+		</p>
+	</dik>
     </header>
 
 
