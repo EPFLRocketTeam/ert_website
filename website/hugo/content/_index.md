@@ -10,4 +10,6 @@ weight: 1
 
 {{<sponsors>}}
 
+{{<testimonials>}}
+
 

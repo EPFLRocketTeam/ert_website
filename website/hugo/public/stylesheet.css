@@ -15,20 +15,23 @@ body {
 h1{
     position: relative;
     font-family: 'Aspekta'; 
-    color: white; 
-    font-size: 3.5vw;
+    color: #f6f6f6; 
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70px;
 }
 
 h2 {
     font-family: 'Aspekta'; 
+    font-size: 36px;
+    color: #f6f6f6; 
     font-weight: 400;
-    font-size: 2vw;
-    color: white;
 }
 
 p{
-    font-family: 'Aspekta';
+    font-family: 'Aspekta-200';
     font-size: 16px;
+    color: #f6f6f6; 
 }
 
 .main{
@@ -36,14 +39,14 @@ p{
 }
 
 .page{
-    font-weight: 400;
-    font-size: 1vw;
+  font-family: 'Aspekta-600';
+    font-size: 18px;
     color: #464646;
     text-transform: uppercase;
-    
+    margin-bottom: 10px;
 }
 
-.button{
+.button-right, .button-left{
     position: relative;
     display: block;
     right: 0px;
@@ -56,14 +59,21 @@ p{
     border: none;    
 }
 
-.button::after{
-    content: '\2192';
+.button-right::after, .button-left::after{
     font-size: 1.6vw;
     font-weight: 200;
     vertical-align: baseline;
 }
 
-.button:hover{
+.button-right::after{
+  content: '\2192';
+}
+
+.button-left::after{
+  content: '\2190';
+}
+
+.button-right:hover, .button-left:hover{
     cursor: pointer;
     text-decoration:underline;
 }
@@ -72,51 +82,38 @@ p{
     float: right;
 }
 
-#our-projects{
-    position: relative;
-    width: 100%; 
-    display: flex;  
-    margin: auto auto 60px;
-    height: 65vh;
-    
-}
-
-.our-project-images{
-    flex: 70%;
-    text-align: center;   
-    background-color: orangered; 
-}
-
-.our-project-images img{
+.testimonial{
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  max-height: 100%; 
-  max-width: 90%;
+  margin: auto;
+  width: 70vw;
+  height: fit-content;
+  color: #f6f6f6; 
 }
 
-#op-spacerace-img{
-   
+.testimonial-text{  
+  font-family: 'Aspekta-350'; 
+  font-size: 36px;  
+  font-weight: 400;
+  text-indent: 20px;
+  margin-bottom: 20px;
 }
 
-.our-project-list{
-    flex: 30%;
-    padding-left: 50px;
-    text-align: left;
-    background-color: blue; 
+.testimonial-bio{
+  display: flex;
+  vertical-align: middle;
 }
 
-/* #op-firehorn:hover, #op-spacerace:hover, #op-hyperion:hover, #op-icarus:hover{
-    background-color: chocolate;
+.testimonial-bio img{
+  max-width: 115px;
+  max-height: 130px;
+  border-radius: 10px;
+  margin-right: 15px;
 }
 
-testing that the hover works
-
-#op-spacerace:hover + .our-project-images{
-    background-image: url("/images/originalQuality/RocketLaunch2.jpeg");
-
-} */ 
-
+.testimonial-bio-text{
+  display: inline-block;
+  align-self: flex-end;
+}
 
 /* Large screens (laptops, <1200px) -> 9 Columns */
   @media (max-width: 1200px) {
@@ -138,7 +135,7 @@ testing that the hover works
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .button, .button::after, .page{
+    .button-right, .button-right::after, .page{
       font-size: 12px;
     }
 
