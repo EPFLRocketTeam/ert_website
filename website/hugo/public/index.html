@@ -2,11 +2,11 @@
 <html lang="en-UK">
 
 <head>
-	<meta name="generator" content="Hugo 0.134.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.134.3">
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<link rel="shortcut icon" href="https://example.com/images/favicon.png" />
 <title>Home | EPFL Rocket Team</title>
 <meta name="title" content="Home" />
 <meta name="description" content="Bear Cub Demo" />
@@ -19,7 +19,7 @@
 
 
   
-  <meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:url" content="https://example.com/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Home">
   <meta property="og:description" content=" our projects The EPFL Rocket Team is currently engaged
@@ -27,14 +27,14 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
 Space Race Training students in aerospace technologies">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/images/share.webp">
+    <meta property="og:image" content="https://example.com/images/share.webp">
         <meta property="fb:admins" content="0000000000">
 
 
   
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
+  <meta name="twitter:image" content="https://example.com/images/share.webp">
   <meta name="twitter:title" content="Home">
   <meta name="twitter:description" content=" our projects The EPFL Rocket Team is currently engaged
 in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions
@@ -50,8 +50,8 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
 Space Race Training students in aerospace technologies">
   <meta itemprop="datePublished" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="dateModified" content="2024-11-18T20:38:42+01:00">
-  <meta itemprop="wordCount" content="158">
-  <meta itemprop="image" content="http://localhost:1313/images/share.webp">
+  <meta itemprop="wordCount" content="178">
+  <meta itemprop="image" content="https://example.com/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -62,7 +62,7 @@ Space Race Training students in aerospace technologies">
 
   
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="EPFL Rocket Team" />
+  <link rel="alternate" type="application/rss+xml" href="https://example.com/index.xml" title="EPFL Rocket Team" />
   
 <link rel="stylesheet" href="fonts.css">
 
@@ -207,7 +207,7 @@ Space Race Training students in aerospace technologies">
 	    
 		<li><a href="/shop/">Shop</a></li>
 	    
-	    <li><a href='http://localhost:1313/index.xml'>RSS</a></li>
+	    <li><a href='https://example.com/index.xml'>RSS</a></li>
 	    
 	    
 	    
@@ -420,6 +420,180 @@ Space Race Training students in aerospace technologies">
   </body>
   
 
+<style>
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: black;  
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 350px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 0 20px;
+}
+
+.timeline-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.timeline-item {
+    flex: 0 0 auto;  
+    position: relative;
+    width: 200px;
+    height: 200px;  
+    margin: 0 40px;
+    border-radius: 50%;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-clip: border-box;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.timeline-item.highlight {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 0px solid #f00;
+}
+
+.timeline-item.dimmed {
+    opacity: 0.4;
+    transform: scale(0.9);
+}
+
+.timeline-item span {
+    position: absolute;
+    top: -40px;  
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.timeline-item .line {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 150px;
+    background-color: white;
+}
+
+.item-1 { background-color: red; }
+.item-2 { background-color: orange; }
+.item-3 { background-color: blue; }
+.item-4 { background-color: green; }
+.item-5 { background-color: purple; }
+.item-6 { background-color: yellow; }
+.item-7 { background-color: pink; }
+.item-8 { background-color: teal; }
+.item-9 { background-color: brown; }
+.item-10 { background-color: grey; }
+
+ 
+.placeholder {
+    flex: 0 0 50%;  
+    height: 100%;     
+}
+</style>
+<div class="timeline-container">
+
+<div class="placeholder">
+</div>
+
+
+<div class="timeline-item item-1">
+    <span>Project 1</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-2">
+    <span>Project 2</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-3">
+    <span>Project 3</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-4">
+    <span>Project 4</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-5">
+    <span>Project 5</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-6">
+    <span>Project 6</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-7">
+    <span>Project 7</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-8">
+    <span>Project 8</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-9">
+    <span>Project 9</span>
+    <div class="line"></div>
+</div>
+<div class="timeline-item item-10">
+    <span>Project 10</span>
+    <div class="line"></div>
+</div>
+
+
+<div class="placeholder"></div>
+</div>
+
+<script>
+const items = document.querySelectorAll('.timeline-item');
+
+const updateHighlight = () => {
+    const viewportWidth = window.innerWidth;
+    const container = document.querySelector('.timeline-container');
+
+    
+    items.forEach((item) => {
+item.classList.remove('highlight');
+item.classList.add('dimmed');
+    });
+
+    
+    let highlightedItem = null;
+
+    items.forEach((item) => {
+const rect = item.getBoundingClientRect();
+const centerX = rect.left + rect.width / 2;
+
+if (centerX > viewportWidth / 4 && centerX < (3 * viewportWidth) / 4) {
+    highlightedItem = item;
+}
+    });
+
+    if (highlightedItem) {
+highlightedItem.classList.add('highlight');
+highlightedItem.classList.remove('dimmed');
+    }
+};
+
+document.querySelector('.timeline-container').addEventListener('scroll', updateHighlight);
+
+window.addEventListener('resize', updateHighlight);
+window.addEventListener('load', updateHighlight);
+</script>
 <head>
     <style>
     

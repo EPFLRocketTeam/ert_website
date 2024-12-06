@@ -8,6 +8,8 @@ weight: 1
 
 {{<our-mission>}}
 
+{{<timeline>}}
+
 {{<sponsors>}}
 
 {{<testimonials>}}
