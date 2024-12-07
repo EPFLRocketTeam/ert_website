@@ -15,6 +15,7 @@ body {
     padding: 0 20px;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    position: relative;
 }
 
 .timeline-container::-webkit-scrollbar {
@@ -67,9 +68,26 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 150px;
+    height: 150px; /* Default line height */
     background-color: white;
+    transition: height 0.3s ease; /* Smooth transition for height adjustment */
 }
+
+.horizontal-line {
+    position: absolute;
+    bottom: 50px; /* Position at the bottom of the container */
+    left: 0;
+    width: 500%; /* Full width of the timeline container */
+    height: 2px; /* Thickness of the line */
+    background-color: white; /* Line color */
+    opacity: 0.4;
+    z-index: 0; /* Ensure it stays behind other elements */
+}
+
+.timeline-item.highlight .line {
+    height: 105px; /* Shorter line when highlighted */
+}
+
 
 .item-1 { background-color: red; }
 .item-2 { background-color: orange; }
@@ -93,6 +111,7 @@ body {
 }
 </style>
 <div class="timeline-container">
+<div class="horizontal-line"></div>
 <!-- Empty space at the beginning -->
 <div class="placeholder-first">
 </div>
