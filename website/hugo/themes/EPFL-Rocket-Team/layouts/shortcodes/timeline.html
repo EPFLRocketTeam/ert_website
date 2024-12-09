@@ -68,10 +68,34 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: 150px; /* Default line height */
+    height: 125px; /* Default line height */
     background-color: white;
     transition: height 0.3s ease; /* Smooth transition for height adjustment */
 }
+
+.droplet {
+    position: absolute;
+    bottom: 50px; /* Position at the bottom of the container */
+    height: 50px; /* Thickness of the line */
+    z-index: 1; /* Ensure it stays behind other elements */
+    transition: opacity 0.3s, transform 0.3s filter 0.3s;
+}
+.droplet.highlight {
+    filter: brightness(1);
+}
+.droplet.dimmed {
+    filter: brightness(0.4);
+}
+.d1 { left: 156.5px; }
+.d2 { left: 436.5px; }
+.d3 { left: 716.5px; }
+.d4 { left: 996.5px; }
+.d5 { left: 1276.5px; }
+.d6 { left: 1556.5px; }
+.d7 { left: 1836.5px; }
+.d8 { left: 2116.5px; }
+.d9 { left: 2396.5px; }
+.d10 { left: 2676.5px; }
 
 .horizontal-line {
     position: absolute;
@@ -79,13 +103,13 @@ body {
     left: 0;
     width: 500%; /* Full width of the timeline container */
     height: 2px; /* Thickness of the line */
-    background-color: white; /* Line color */
-    opacity: 0.4;
+    background-color: #666666; /* Line color */
+    opacity: 1;
     z-index: 0; /* Ensure it stays behind other elements */
 }
 
 .timeline-item.highlight .line {
-    height: 105px; /* Shorter line when highlighted */
+    height: 80px; /* Shorter line when highlighted */
 }
 
 
@@ -112,6 +136,16 @@ body {
 </style>
 <div class="timeline-container">
 <div class="horizontal-line"></div>
+<img class="droplet d1" src="/icons/invertedDroplet.svg">
+<img class="droplet d2" src="/icons/invertedDroplet.svg">
+<img class="droplet d3" src="/icons/invertedDroplet.svg">
+<img class="droplet d4" src="/icons/invertedDroplet.svg">
+<img class="droplet d5" src="/icons/invertedDroplet.svg">
+<img class="droplet d6" src="/icons/invertedDroplet.svg">
+<img class="droplet d7" src="/icons/invertedDroplet.svg">
+<img class="droplet d8" src="/icons/invertedDroplet.svg">
+<img class="droplet d9" src="/icons/invertedDroplet.svg">
+<img class="droplet d10" src="/icons/invertedDroplet.svg">
 <!-- Empty space at the beginning -->
 <div class="placeholder-first">
 </div>
@@ -164,6 +198,7 @@ body {
 
 <script>
 const items = document.querySelectorAll('.timeline-item');
+const droplets = document.querySelectorAll('.droplet');
 
 const updateHighlight = () => {
     const container = document.querySelector('.timeline-container');
@@ -174,8 +209,13 @@ const updateHighlight = () => {
         item.classList.remove('highlight');
         item.classList.add('dimmed');
     });
+    droplets.forEach((item) => {
+        item.classList.remove('highlight');
+        item.classList.add('dimmed');
+    });
 
     let highlightedItem = null;
+    let highlightedDroplet = null;
 
     // Find the leftmost fully visible item
     for (let item of items) {
@@ -189,11 +229,26 @@ const updateHighlight = () => {
             break; // Stop after finding the first fully visible item
         }
     }
+    for (let droplet of droplets) {
+        const rect = droplet.getBoundingClientRect();
+
+        if (
+            rect.left - 34 >= containerRect.left && // Left edge fully visible
+            rect.right + 34 <= containerRect.right // Right edge fully visible
+        ) {
+            highlightedDroplet = droplet;
+            break; // Stop after finding the first fully visible item
+        }
+    }
 
     // Highlight the item if found
     if (highlightedItem) {
         highlightedItem.classList.add('highlight');
         highlightedItem.classList.remove('dimmed');
+    }
+    if (highlightedDroplet) {
+	highlightedDroplet.classList.add('highlight');
+	highlightedDroplet.classList.remove('dimmed');
     }
 };
 
