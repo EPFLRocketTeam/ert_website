@@ -56,7 +56,8 @@ p{
     text-transform: uppercase;
     text-align: right;
     background-color: transparent;
-    border: none;    
+    border: none;  
+    cursor: pointer;  
 }
 
 .button-right::after, .button-left::after{
@@ -82,12 +83,18 @@ p{
     float: right;
 }
 
+.testimonial-box{
+  position: relative;
+  display: block;
+}
+
 .testimonial{
   position: relative;
   margin: auto;
   width: 70vw;
   height: fit-content;
   color: #f6f6f6; 
+  display: none;
 }
 
 .testimonial-text{  

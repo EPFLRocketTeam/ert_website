@@ -10,7 +10,11 @@ weight: 1
 
 {{<timeline>}}
 
+{{<numbers>}}
+
 {{<sponsors>}}
+
+{{<newsletter>}}
 
 {{<testimonials>}}
 
