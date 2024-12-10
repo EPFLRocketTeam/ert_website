@@ -23,8 +23,7 @@
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Home">
   <meta property="og:description" content="our projects The EPFL Rocket Team is currently engaged
-in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions
-Space Race Training students in aerospace technologies">
+in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/share.webp">
@@ -37,8 +36,7 @@ Space Race Training students in aerospace technologies">
   <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
   <meta name="twitter:title" content="Home">
   <meta name="twitter:description" content="our projects The EPFL Rocket Team is currently engaged
-in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions
-Space Race Training students in aerospace technologies">
+in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
       <meta name="twitter:site" content="@example">
 
 
@@ -46,8 +44,7 @@ Space Race Training students in aerospace technologies">
   
   <meta itemprop="name" content="Home">
   <meta itemprop="description" content="our projects The EPFL Rocket Team is currently engaged
-in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions
-Space Race Training students in aerospace technologies">
+in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta itemprop="datePublished" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="dateModified" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="wordCount" content="306">
@@ -249,9 +246,9 @@ Space Race Training students in aerospace technologies">
   <main id="main-content" style="max-width: 100%; margin: auto; padding: 30px; position: relative; top: 30px">
 <head>
     <style>
-        h1{
-            margin-bottom: 10px;
-        }
+    h1{
+        margin-bottom: 10px;
+    }
     
     #our-projects{
         position: relative;
@@ -259,69 +256,85 @@ Space Race Training students in aerospace technologies">
         display: flex;  
         margin: auto auto 60px;
         height: 65vh;
+        flex-direction: row-reverse;
     }
 
     .our-project-images{
-        flex: 70%;
-        text-align: center;   
-         
+        flex: 70%;  
     }
 
     .our-project-images img{
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        margin: auto;
         max-height: 100%; 
         max-width: 90%;
-    }
-
-    #op-spacerace-img{
-    
+        display: none;
     }
 
     .our-project-list{
         flex: 30%;
         padding-left: 0px;
         text-align: left;
-         
+        
     }
 
-     
     </style>
 </head>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-      
+    <script>  
+    function hoverImage_firehorn(event) {
+        var x = document.querySelectorAll("#hover_img_firehorn");
+        var sDisplay = (event.type === "mouseout") ? "none" : "block";
+        x[0].style.display = sDisplay;
+    }
+
+    function hoverImage_spacerace(event) {
+        var x = document.querySelectorAll("#hover_img_spacerace");
+        var sDisplay = (event.type === "mouseout") ? "none" : "block";
+        x[0].style.display = sDisplay;
+    }
+
+    function hoverImage_icarus(event) {
+        var x = document.querySelectorAll("#hover_img_icarus");
+        var sDisplay = (event.type === "mouseout") ? "none" : "block";
+        x[0].style.display = sDisplay;
+    }
+
+    function hoverImage_hyperion(event) {
+        var x = document.querySelectorAll("#hover_img_hyperion");
+        var sDisplay = (event.type === "mouseout") ? "none" : "block";
+        x[0].style.display = sDisplay;
+    }
     </script>
     <div class="main">
         <div class="page">our projects</div>
         <h2>The EPFL Rocket Team is currently engaged<br>in four different projects</h2>
         <div id="our-projects">
-            <div class="our-project-images">
-                <img src="/images/originalQuality/op_firehorn.png" id="op-firehorn-img">
-                
-                
-                
-            </div>
             <div class="our-project-list">
-                <div id="op-firehorn">
+                <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">
                     <h1>Firehorn</h1>
                     <p>Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
                 </div>
-                <div id="op-spacerace">
+                <div id="op-spacerace" onmouseover="hoverImage_spacerace(event)" onmouseout="hoverImage_spacerace(event)">
                     <h1>Space Race</h1>
                     <p>Training students in aerospace technologies</p>
                 </div>
-                <div id="op-icarus">
+                <div id="op-icarus" onmouseover="hoverImage_icarus(event)" onmouseout="hoverImage_icarus(event)">
                     <h1>Icarus</h1>
                     <p>Developing efficient GNC algorithms and Crafting Space-X style re-landing systems</p>
                 </div>
-                <div id="op-hyperion">
+                <div id="op-hyperion" onmouseover="hoverImage_hyperion(event)" onmouseout="hoverImage_hyperion(event)">
                     <h1>Hyperion</h1>
                     <p>Developing cutting-edge fully in-house bi-liquid propellant engines</p>
                 </div>
             </div>
+            <div class="our-project-images">
+                <img src="/images/originalQuality/op_firehorn.png" class="hover_img_firehorn" id="hover_img_firehorn" style="">
+                <img src="/images/originalQuality/op_spacerace.png" class="hover_img_spacerace" id="hover_img_spacerace"> 
+                <img src="/images/originalQuality/op_icarus.png" class="hover_img_icarus" id="hover_img_icarus" > 
+                <img src="/images/originalQuality/op_hyperion.png" class="hover_img_hyperion" id="hover_img_hyperion" style="top: 20%;">
+            </div>
+            
         </div>
         <button type="button" onclick="location.href='#'" class="button-right right-align">discover all our projects </button>
     </div>

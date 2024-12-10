@@ -1,8 +1,8 @@
 <head>
     <style>
-        h1{
-            margin-bottom: 10px;
-        }
+    h1{
+        margin-bottom: 10px;
+    }
     
     #our-projects{
         position: relative;
@@ -10,73 +10,85 @@
         display: flex;  
         margin: auto auto 60px;
         height: 65vh;
+        flex-direction: row-reverse;
     }
 
     .our-project-images{
-        flex: 70%;
-        text-align: center;   
-        /* background-color: orangered;  */
+        flex: 70%;  
     }
 
     .our-project-images img{
         position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        margin: auto;
         max-height: 100%; 
         max-width: 90%;
-    }
-
-    #op-spacerace-img{
-    
+        display: none;
     }
 
     .our-project-list{
         flex: 30%;
         padding-left: 0px;
         text-align: left;
-        /* background-color: blue;  */
+        
     }
 
-    /* #op-firehorn:hover, #op-spacerace:hover, #op-hyperion:hover, #op-icarus:hover{
-        background-color: chocolate;
-    }
-
-    testing that the hover works*/
     </style>
 </head>
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script>
-      
+    <script> /* hovering over the div of each project displays their respective image */
+    function hoverImage_firehorn(event) {
+        var x = document.querySelectorAll("#hover_img_firehorn");
+        var sDisplay = (event.type === "mouseout") ? "none" : "block";
+        x[0].style.display = sDisplay;
+    }
+
+    function hoverImage_spacerace(event) {
+        var x = document.querySelectorAll("#hover_img_spacerace");
+        var sDisplay = (event.type === "mouseout") ? "none" : "block";
+        x[0].style.display = sDisplay;
+    }
+
+    function hoverImage_icarus(event) {
+        var x = document.querySelectorAll("#hover_img_icarus");
+        var sDisplay = (event.type === "mouseout") ? "none" : "block";
+        x[0].style.display = sDisplay;
+    }
+
+    function hoverImage_hyperion(event) {
+        var x = document.querySelectorAll("#hover_img_hyperion");
+        var sDisplay = (event.type === "mouseout") ? "none" : "block";
+        x[0].style.display = sDisplay;
+    }
     </script>
     <div class="main">
         <div class="page">our projects</div>
         <h2>The EPFL Rocket Team is currently engaged<br>in four different projects</h2>
         <div id="our-projects">
-            <div class="our-project-images">
-                <img src="/images/originalQuality/op_firehorn.png" id="op-firehorn-img">
-                <!-- <img src="/images/originalQuality/op_spacerace.png" id="op-spacerace-img"> -->
-                <!-- <img src="/images/originalQuality/op_icarus.png" id="op-icarus-img"> -->
-                <!-- <img id="op-hyperion-img" src="/images/originalQuality/op_hyperion.png"> -->
-            </div>
             <div class="our-project-list">
-                <div id="op-firehorn">
+                <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">
                     <h1>Firehorn</h1>
                     <p>Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
                 </div>
-                <div id="op-spacerace">
+                <div id="op-spacerace" onmouseover="hoverImage_spacerace(event)" onmouseout="hoverImage_spacerace(event)">
                     <h1>Space Race</h1>
                     <p>Training students in aerospace technologies</p>
                 </div>
-                <div id="op-icarus">
+                <div id="op-icarus" onmouseover="hoverImage_icarus(event)" onmouseout="hoverImage_icarus(event)">
                     <h1>Icarus</h1>
                     <p>Developing efficient GNC algorithms and Crafting Space-X style re-landing systems</p>
                 </div>
-                <div id="op-hyperion">
+                <div id="op-hyperion" onmouseover="hoverImage_hyperion(event)" onmouseout="hoverImage_hyperion(event)">
                     <h1>Hyperion</h1>
                     <p>Developing cutting-edge fully in-house bi-liquid propellant engines</p>
                 </div>
             </div>
+            <div class="our-project-images">
+                <img src="/images/originalQuality/op_firehorn.png" class="hover_img_firehorn" id="hover_img_firehorn" style="">
+                <img src="/images/originalQuality/op_spacerace.png" class="hover_img_spacerace" id="hover_img_spacerace"> 
+                <img src="/images/originalQuality/op_icarus.png" class="hover_img_icarus" id="hover_img_icarus" > 
+                <img src="/images/originalQuality/op_hyperion.png" class="hover_img_hyperion" id="hover_img_hyperion" style="top: 20%;">
+            </div>
+            
         </div>
         <button type="button" onclick="location.href='#'" class="button-right right-align">discover all our projects </button>
     </div>
