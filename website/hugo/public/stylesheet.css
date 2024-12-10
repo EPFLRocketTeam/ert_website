@@ -136,20 +136,24 @@ p{
   margin: 0;
   display: block;
   align-items: center;
-  height: 50vh;
+  height: fit-content;
 }
 
 .numbers-line{
   border-bottom: 0.5px solid #f6f6f6;
   width: 100%;
   height: fit-content;
-  padding-bottom: 0px;
 }
 
 .numbers{
   display: flex;
   align-content: first baseline;
   margin-bottom: 0px;
+  background-color: black;
+}
+
+
+#numbers-students:hover{
 }
 
 /* Large screens (laptops, <1200px) -> 9 Columns */

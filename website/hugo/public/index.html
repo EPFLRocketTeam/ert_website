@@ -47,7 +47,7 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
 in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta itemprop="datePublished" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="dateModified" content="2024-11-18T20:38:42+01:00">
-  <meta itemprop="wordCount" content="306">
+  <meta itemprop="wordCount" content="311">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -261,13 +261,15 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
 
     .our-project-images{
         flex: 70%;  
+        align-content: flex-start;
     }
 
     .our-project-images img{
         position: relative;
         margin: auto;
+        right: 5%;
         max-height: 100%; 
-        max-width: 90%;
+        max-width: 80%;
         display: none;
     }
 
@@ -329,10 +331,10 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
                 </div>
             </div>
             <div class="our-project-images">
-                <img src="/images/originalQuality/op_firehorn.png" class="hover_img_firehorn" id="hover_img_firehorn" style="">
-                <img src="/images/originalQuality/op_spacerace.png" class="hover_img_spacerace" id="hover_img_spacerace"> 
-                <img src="/images/originalQuality/op_icarus.png" class="hover_img_icarus" id="hover_img_icarus" > 
-                <img src="/images/originalQuality/op_hyperion.png" class="hover_img_hyperion" id="hover_img_hyperion" style="top: 20%;">
+                <img src="/images/originalQuality/op_firehorn.png" class="hover_img_firehorn" id="hover_img_firehorn" style="height: 100%; display: block;">
+                <img src="/images/originalQuality/op_spacerace.png" class="hover_img_spacerace" id="hover_img_spacerace" style="max-height: 150%; max-width: auto;"> 
+                <img src="/images/originalQuality/op_hyperion.png" class="hover_img_icarus" id="hover_img_icarus" style="width: 40%; top: 20%;"> 
+                <img src="/images/originalQuality/op_icarus.png" class="hover_img_hyperion" id="hover_img_hyperion" style="top: 20%;">
             </div>
             
         </div>
@@ -697,14 +699,21 @@ window.addEventListener('load', updateHighlight);
     <div class="main">
         <div class="page">the epfl rocket team in numbers</div>
         <div class="numbers-box">
-            <div class="numbers-line">
-                <div class="numbers"><h3>200+</h3><p>participants</p></div>
+            <div class="numbers-line" id="numbers-students">
+                <div class="numbers"><h3>200+</h3><p>Students</p></div>
             </div>
-            <div class="numbers-line">
-                <div class="numbers"><h3>200+</h3><p>participants</p></div>
+            <div class="numbers-line" id="numbers-launches">
+                <div class="numbers"><h3>50+</h3><p>Launches</p></div>
             </div>
-            <div class="numbers-line">
-                <div class="numbers"><h3>200+</h3><p>participants</p></div>
+            <div class="numbers-line" id="numbers-projects">
+                <div class="numbers"><h3>15</h3><p>Projects</p></div>
+            </div>
+            <div class="numbers-line" id="numbers-awards">
+                <div class="numbers"><h3>7</h3><p>Awards in competition</p></div>
+            </div>
+
+            <div class="numbers-line" id="numbers-research">
+                <div class="numbers"><h3>4</h3><p>Research papers</p></div>
             </div>
         </div>
          
