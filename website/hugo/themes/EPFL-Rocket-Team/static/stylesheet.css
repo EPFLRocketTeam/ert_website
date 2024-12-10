@@ -28,6 +28,13 @@ h2 {
     font-weight: 400;
 }
 
+h3 {
+  font-family: 'Aspekta'; 
+  font-size: 86px;
+  color: #f6f6f6; 
+  font-weight: 400;
+}
+
 p{
     font-family: 'Aspekta-200';
     font-size: 16px;
@@ -120,6 +127,29 @@ p{
 .testimonial-bio-text{
   display: inline-block;
   align-self: flex-end;
+}
+
+.numbers-box{
+  display:flex; 
+  flex-direction:column;
+  position: relative;
+  margin: 0;
+  display: block;
+  align-items: center;
+  height: 50vh;
+}
+
+.numbers-line{
+  border-bottom: 0.5px solid #f6f6f6;
+  width: 100%;
+  height: fit-content;
+  padding-bottom: 0px;
+}
+
+.numbers{
+  display: flex;
+  align-content: first baseline;
+  margin-bottom: 0px;
 }
 
 /* Large screens (laptops, <1200px) -> 9 Columns */
