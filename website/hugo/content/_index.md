@@ -14,8 +14,6 @@ weight: 1
 
 {{<sponsors>}}
 
-{{<newsletter>}}
-
 {{<testimonials>}}
 
 

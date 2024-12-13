@@ -47,7 +47,7 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
 in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta itemprop="datePublished" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="dateModified" content="2024-11-18T20:38:42+01:00">
-  <meta itemprop="wordCount" content="311">
+  <meta itemprop="wordCount" content="292">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -262,6 +262,10 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
     .our-project-images{
         flex: 70%;  
         align-content: flex-start;
+        background-image: url("/images/originalQuality/op_firehorn.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
     }
 
     .our-project-images img{
@@ -276,38 +280,16 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
     .our-project-list{
         flex: 30%;
         padding-left: 0px;
-        text-align: left;
-        
+        text-align: left;      
+    }
+
+    .our-project-list:hover + .our-project-images{
+        background: none;      
     }
 
     </style>
 </head>
 <body>
-    <script>  
-    function hoverImage_firehorn(event) {
-        var x = document.querySelectorAll("#hover_img_firehorn");
-        var sDisplay = (event.type === "mouseout") ? "none" : "block";
-        x[0].style.display = sDisplay;
-    }
-
-    function hoverImage_spacerace(event) {
-        var x = document.querySelectorAll("#hover_img_spacerace");
-        var sDisplay = (event.type === "mouseout") ? "none" : "block";
-        x[0].style.display = sDisplay;
-    }
-
-    function hoverImage_icarus(event) {
-        var x = document.querySelectorAll("#hover_img_icarus");
-        var sDisplay = (event.type === "mouseout") ? "none" : "block";
-        x[0].style.display = sDisplay;
-    }
-
-    function hoverImage_hyperion(event) {
-        var x = document.querySelectorAll("#hover_img_hyperion");
-        var sDisplay = (event.type === "mouseout") ? "none" : "block";
-        x[0].style.display = sDisplay;
-    }
-    </script>
     <div class="main">
         <div class="page">our projects</div>
         <h2>The EPFL Rocket Team is currently engaged<br>in four different projects</h2>
@@ -331,15 +313,40 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
                 </div>
             </div>
             <div class="our-project-images">
-                <img src="/images/originalQuality/op_firehorn.png" class="hover_img_firehorn" id="hover_img_firehorn" style="height: 100%; display: block;">
-                <img src="/images/originalQuality/op_spacerace.png" class="hover_img_spacerace" id="hover_img_spacerace" style="max-height: 100%; max-width: auto;"> 
-                <img src="/images/originalQuality/op_icarus.png" class="hover_img_icarus" id="hover_img_icarus" style="width: 40%; top: 20%;"> 
-                <img src="/images/originalQuality/op_hyperion.png" class="hover_img_hyperion" id="hover_img_hyperion" style="top: 20%;">
+                <img src="/images/originalQuality/op_firehorn.png" id="hover_img_firehorn" style="height: 100%; right: 0%;">
+                <img src="/images/originalQuality/op_spacerace.png" id="hover_img_spacerace" style="height: 95%; top: 5%"> 
+                <img src="/images/originalQuality/op_icarus.png" id="hover_img_icarus" style="width: 40%; top: 20%;"> 
+                <img src="/images/originalQuality/op_hyperion.png" id="hover_img_hyperion" style="top: 20%;">
             </div>
             
         </div>
         <button type="button" onclick="location.href='#'" class="button-right right-align">discover all our projects </button>
     </div>
+    <script>  
+        function hoverImage_firehorn(event) {
+            var x = document.querySelectorAll("#hover_img_firehorn");
+            var sDisplay = (event.type === "mouseout") ? "none" : "block";
+            x[0].style.display = sDisplay;           
+        }
+          
+        function hoverImage_spacerace(event) {
+            var x = document.querySelectorAll("#hover_img_spacerace");
+            var sDisplay = (event.type === "mouseout") ? "none" : "block";
+            x[0].style.display = sDisplay;
+        }
+    
+        function hoverImage_icarus(event) {
+            var x = document.querySelectorAll("#hover_img_icarus");
+            var sDisplay = (event.type === "mouseout") ? "none" : "block";
+            x[0].style.display = sDisplay;
+        }
+    
+        function hoverImage_hyperion(event) {
+            var x = document.querySelectorAll("#hover_img_hyperion");
+            var sDisplay = (event.type === "mouseout") ? "none" : "block";
+            x[0].style.display = sDisplay;
+        }
+        </script>
 </body>
 <head>   
     <style>
@@ -809,13 +816,6 @@ window.addEventListener('load', updateHighlight);
   </div>
 </body>
 
-<body>
-    <div class="main">
-        <h1>Subscribe to our newsletter</h1>
-        <br>
-        <p>We share information about our latest advancements<br>so subscribe so you do not miss anything!</p>
-    </div>
-</body>
 <head>
     <style>
         .prev, .next {
