@@ -47,7 +47,7 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
 in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta itemprop="datePublished" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="dateModified" content="2024-11-18T20:38:42+01:00">
-  <meta itemprop="wordCount" content="292">
+  <meta itemprop="wordCount" content="304">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -280,13 +280,29 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
     .our-project-list{
         flex: 30%;
         padding-left: 0px;
-        text-align: left;      
+        text-align: left; 
+        cursor: default;     
     }
 
     .our-project-list:hover + .our-project-images{
         background: none;      
     }
 
+    #op-firehorn:hover h1{
+        color: #DA291C;
+    }
+
+    #op-spacerace:hover h1{
+        color: #DA291C;
+    }
+
+    #op-icarus:hover h1{
+        color: #DA291C;
+    }
+
+    #op-hyperion:hover h1{
+        color: #DA291C;
+    }
     </style>
 </head>
 <body>
@@ -578,6 +594,8 @@ body {
     height: 100%;     
 }
 </style>
+<div class="main"> 
+<div class="page">our past and future competition projects</div>
 <div class="timeline-container">
 <div class="horizontal-line"></div>
 <img class="droplet d1" src="/icons/invertedDroplet.svg">
@@ -639,7 +657,8 @@ body {
 
 <div class="placeholder-last"></div>
 </div>
-
+<button type="button" onclick="location.href='#'" class="button-right right-align">participate in the competition with us </button>
+</div>
 <script>
 const items = document.querySelectorAll('.timeline-item');
 const droplets = document.querySelectorAll('.droplet');
@@ -706,7 +725,11 @@ window.addEventListener('load', updateHighlight);
     <div class="main">
         <div class="page">the epfl rocket team in numbers</div>
         <div class="numbers-box">
-            <div class="numbers-line" id="numbers-students">
+            <div class="numbers-line numbers-students">
+                <div class="number-img" style="width: 100px;"><img src="/images/originalQuality/NumbersStudents1.png" style="height: 200px; width: auto;"></div>
+                
+                <div class="number-img" style="width: 200px;"><img src="/images/originalQuality/NumbersStudents2.jpg"></div>
+                <div class="number-img" style="width: 100px;"><img src="/images/originalQuality/NumbersStudents3.jpg"></div>
                 <div class="numbers"><h3>200+</h3><p>Students</p></div>
             </div>
             <div class="numbers-line" id="numbers-launches">
