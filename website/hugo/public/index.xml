@@ -55,18 +55,18 @@
 <table>
   <thead>
       <tr>
-          <th>Name</th>
-          <th>Age</th>
+          <th style="text-align: left">Name</th>
+          <th style="text-align: left">Age</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>Bob</td>
-          <td>27</td>
+          <td style="text-align: left">Bob</td>
+          <td style="text-align: left">27</td>
       </tr>
       <tr>
-          <td>Alice</td>
-          <td>23</td>
+          <td style="text-align: left">Alice</td>
+          <td style="text-align: left">23</td>
       </tr>
   </tbody>
 </table>
@@ -74,16 +74,16 @@
 <table>
   <thead>
       <tr>
-          <th>Italics</th>
-          <th>Bold</th>
-          <th>Code</th>
+          <th style="text-align: left">Italics</th>
+          <th style="text-align: left">Bold</th>
+          <th style="text-align: left">Code</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><em>italics</em></td>
-          <td><strong>bold</strong></td>
-          <td><code>code</code></td>
+          <td style="text-align: left"><em>italics</em></td>
+          <td style="text-align: left"><strong>bold</strong></td>
+          <td style="text-align: left"><code>code</code></td>
       </tr>
   </tbody>
 </table>
