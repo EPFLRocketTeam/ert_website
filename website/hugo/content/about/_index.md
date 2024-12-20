@@ -5,4 +5,4 @@ weight: 5
 layout: single
 ---
 
-Hi world, this is the about page.
+{{< board >}}

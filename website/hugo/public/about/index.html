@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-UK">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<link rel="shortcut icon" href="https://example.com/images/favicon.png" />
 <title>About | EPFL Rocket Team</title>
 <meta name="title" content="About" />
 <meta name="description" content="Bear Cub Demo" />
@@ -18,31 +18,31 @@
 
 
   
-  <meta property="og:url" content="http://localhost:1313/about/">
+  <meta property="og:url" content="https://example.com/about/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="About">
-  <meta property="og:description" content="Hi world, this is the about page.">
+  <meta property="og:description" content=" Jérémie Huser President Rayane Maalouf Vice President Grégoire Delplace Chief Financial Officer Antoine Marchand Truchot Chief Technical Officer Jeremy Jariod Chief Safety Officer Juliette Zoghbi Head of Communication Fanny Mathieu Head of Sponsoring Uku Haukanõmm Head of Logistics Pedro Soares Head of Strategy Gehna Yadav Head of IT Victor Rytwinski SpaceRace Damien Delespaul Systems Engineer Hyperion Léonard Bongiovanni Systems Engineer Hyperion Samuel Wahba Systems Engineer Competition Guillaume Hueber Systems Engineer Icarus Matthieu Tonneau Systems Engineer Hyperion Valentino Lekimpe Systems Engineer SpaceRace Zina Randriamanantena Team Leader Competition Aubin Mercier Hyperion Representant Joachim Despature Advisor Emmanuelle David eSpace President ">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/images/share.webp">
+    <meta property="og:image" content="https://example.com/images/share.webp">
         <meta property="fb:admins" content="0000000000">
 
 
   
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
+  <meta name="twitter:image" content="https://example.com/images/share.webp">
   <meta name="twitter:title" content="About">
-  <meta name="twitter:description" content="Hi world, this is the about page.">
+  <meta name="twitter:description" content=" Jérémie Huser President Rayane Maalouf Vice President Grégoire Delplace Chief Financial Officer Antoine Marchand Truchot Chief Technical Officer Jeremy Jariod Chief Safety Officer Juliette Zoghbi Head of Communication Fanny Mathieu Head of Sponsoring Uku Haukanõmm Head of Logistics Pedro Soares Head of Strategy Gehna Yadav Head of IT Victor Rytwinski SpaceRace Damien Delespaul Systems Engineer Hyperion Léonard Bongiovanni Systems Engineer Hyperion Samuel Wahba Systems Engineer Competition Guillaume Hueber Systems Engineer Icarus Matthieu Tonneau Systems Engineer Hyperion Valentino Lekimpe Systems Engineer SpaceRace Zina Randriamanantena Team Leader Competition Aubin Mercier Hyperion Representant Joachim Despature Advisor Emmanuelle David eSpace President ">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="About">
-  <meta itemprop="description" content="Hi world, this is the about page.">
-  <meta itemprop="wordCount" content="7">
-  <meta itemprop="image" content="http://localhost:1313/images/share.webp">
+  <meta itemprop="description" content=" Jérémie Huser President Rayane Maalouf Vice President Grégoire Delplace Chief Financial Officer Antoine Marchand Truchot Chief Technical Officer Jeremy Jariod Chief Safety Officer Juliette Zoghbi Head of Communication Fanny Mathieu Head of Sponsoring Uku Haukanõmm Head of Logistics Pedro Soares Head of Strategy Gehna Yadav Head of IT Victor Rytwinski SpaceRace Damien Delespaul Systems Engineer Hyperion Léonard Bongiovanni Systems Engineer Hyperion Samuel Wahba Systems Engineer Competition Guillaume Hueber Systems Engineer Icarus Matthieu Tonneau Systems Engineer Hyperion Valentino Lekimpe Systems Engineer SpaceRace Zina Randriamanantena Team Leader Competition Aubin Mercier Hyperion Representant Joachim Despature Advisor Emmanuelle David eSpace President ">
+  <meta itemprop="wordCount" content="97">
+  <meta itemprop="image" content="https://example.com/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -53,7 +53,7 @@
 
   
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/about/index.xml" title="EPFL Rocket Team" />
+  <link rel="alternate" type="application/rss+xml" href="https://example.com/about/index.xml" title="EPFL Rocket Team" />
   
 <link rel="stylesheet" href="fonts.css">
 
@@ -198,7 +198,7 @@
 	    
 		<li><a href="/shop/">Shop</a></li>
 	    
-	    <li><a href='http://localhost:1313/index.xml'>RSS</a></li>
+	    <li><a href='https://example.com/index.xml'>RSS</a></li>
 	    
 	    
 	    
@@ -241,7 +241,304 @@
   <main id="main-content" style="max-width: 100%; margin: auto; padding: 30px; position: relative; top: 30px">
 
 <content>
-  <p>Hi world, this is the about page.</p>
+  <style>
+  body { background: black; }
+  .board-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .board-item {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  img {
+    object-fit: cover;
+  }
+
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .info-title {
+    color: #DA291C;
+    font-size: 36px;
+    font-family: Aspekta;
+    font-weight: 400;
+    line-height: 50px;
+    word-wrap: break-word;
+  }
+
+  .info-divider {
+    height: 0;
+    border: 1px solid #DA291C;
+  }
+
+  .info-subtitle {
+    color: #F6F6F6;
+    font-size: 16px;
+    font-family: Aspekta;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+  }
+</style>
+
+<div class="board-container">
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/JeremieHuser.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Jérémie Huser</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">President</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/RayaneMaalouf.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Rayane Maalouf</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Vice President</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/GregoireDelplace.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Grégoire Delplace</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Chief Financial Officer</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/AntoineMarchandTruchot.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Antoine Marchand Truchot</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Chief Technical Officer</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/JeremyJariod.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Jeremy Jariod</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Chief Safety Officer</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/JulietteZoghbi.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Juliette Zoghbi</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Head of Communication</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/FannyMathieu.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Fanny Mathieu</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Head of Sponsoring</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/UkuHaukanomm.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Uku Haukanõmm</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Head of Logistics</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/PedroSoares.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Pedro Soares</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Head of Strategy</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/GehnaYadav.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Gehna Yadav</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Head of IT</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/VictorRytwinski.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Victor Rytwinski</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">SpaceRace</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/DamienDelespaul.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Damien Delespaul</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Systems Engineer Hyperion</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/LeonardBongiovanni.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Léonard Bongiovanni</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Systems Engineer Hyperion</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/SamuelWahba.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Samuel Wahba</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Systems Engineer Competition</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/GuillaumeHueber.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Guillaume Hueber</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Systems Engineer Icarus</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/MatthieuTonneau.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Matthieu Tonneau</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Systems Engineer Hyperion</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/VelentinoLekimpe.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Valentino Lekimpe</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Systems Engineer SpaceRace</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/ZinaRandriamanantena.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Zina Randriamanantena</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Team Leader Competition</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/AubinMercier.jpg" alt="Placeholder" style="width: 100%; height: 100%; position: absolute;">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Aubin Mercier</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Hyperion Representant</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/ERT.png" alt="Placeholder" style="width: 100%; height: 100%; position: absolute; object-fit: scale-down">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Joachim Despature</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">Advisor</div>
+    </div>
+  </div>
+  <div class="board-item">
+    <div class="image-container">
+      <div style="background: #121212; width: 100%; height: 100%; position: absolute;"></div>
+      <img src="/board/ERT.png" alt="Placeholder" style="width: 100%; height: 100%; position: absolute; object-fit: scale-down">
+    </div>
+    <div class="info-container">
+      <div class="info-title">Emmanuelle David</div>
+      <div class="info-divider"></div>
+      <div class="info-subtitle">eSpace President</div>
+    </div>
+  </div>
+  
+</div>
+
 
 </content>
 <p>
@@ -249,11 +546,7 @@
 </p>
 
 
-  <p>
-    <a href='mailto:me@example.com?subject=Reply%20to%20"About"'>
-      Reply to this post by email ↪
-    </a>
-  </p>
+  
 
 
 
