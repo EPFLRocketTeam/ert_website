@@ -430,3 +430,78 @@ html {
     font-size: 8.5vw;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timeline-top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 200px; /* Adjust as needed */
+  margin-top: 50px;
+  align-self: center;
+}
+
+.project-icon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.project-icon span {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  line-height: 1.2;
+}
+
+.curved-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.curved-line path {
+  stroke: white;
+  fill: none;
+  stroke-width: 2;
+}
+
+
+
+.svg-container {
+  max-width: 90%; /* Optional: Scale the SVG for responsiveness */
+  max-height: 90%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.svg-container svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
