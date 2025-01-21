@@ -10,4 +10,4 @@ weight: 5
 layout: single
 ---
 
-{{< board >}}
+{{< diagonal-display >}}
