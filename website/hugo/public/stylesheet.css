@@ -585,3 +585,7 @@ html {
   color: #f6f6f6;
   text-decoration: none;
 }
+
+.mobile-lang a {
+  color: black;
+}
