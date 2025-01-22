@@ -3,6 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/fr/</loc>
+    <lastmod>2024-11-18T20:38:42+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
@@ -12,6 +13,67 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://example.com/fr/"
+                />
+  </url><url>
+    <loc>https://example.com/fr/projects/</loc>
+    <lastmod>2024-11-18T20:38:42+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://example.com/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://example.com/fr/projects/"
+                />
+  </url><url>
+    <loc>https://example.com/fr/join-us/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://example.com/join-us/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://example.com/fr/join-us/"
+                />
+  </url><url>
+    <loc>https://example.com/fr/sponsors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://example.com/sponsors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://example.com/fr/sponsors/"
+                />
+  </url><url>
+    <loc>https://example.com/fr/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://example.com/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://example.com/fr/about/"
+                />
+  </url><url>
+    <loc>https://example.com/fr/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://example.com/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://example.com/fr/contact/"
                 />
   </url><url>
     <loc>https://example.com/fr/blog/</loc>
@@ -24,6 +86,44 @@
                 rel="alternate"
                 hreflang="fr"
                 href="https://example.com/fr/blog/"
+                />
+  </url><url>
+    <loc>https://example.com/fr/shop/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://example.com/shop/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://example.com/fr/shop/"
+                />
+  </url><url>
+    <loc>https://example.com/fr/posts/</loc>
+    <lastmod>2024-09-22T08:55:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://example.com/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://example.com/fr/posts/"
+                />
+  </url><url>
+    <loc>https://example.com/fr/posts/test/</loc>
+    <lastmod>2024-09-22T08:55:02+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://example.com/posts/test/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://example.com/fr/posts/test/"
                 />
   </url><url>
     <loc>https://example.com/fr/categories/</loc>
