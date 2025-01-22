@@ -26,12 +26,14 @@
 			<li><a href="{{ .URL }}">{{ .Name }}</a></li>
 			{{ end }}
 			<li><a href='{{ absURL "index.xml" }}'>RSS</a></li>
+			<li><button class="menu-icon" onclick="showMenu()">☰</button></li>
 
 			<!-- Convert this page's translations into a dict -->
 			{{ $translations := dict }}
 			{{ range .Translations }}
 			{{ $translations = merge $translations (dict .Language.Lang .) }}
 			{{ end }}
+
 
 			<!-- Create a link to every translation -->
 			{{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
