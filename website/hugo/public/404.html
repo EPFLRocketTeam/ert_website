@@ -59,7 +59,37 @@
 
 <body style="overflow-x: hidden; padding: 0">
   <header>
-      <header class="header">
+      <div class="mobile-menu">
+	<div style="display: flex;">
+		<a style="margin-top: 20px; margin-left: 40px; margin-right: auto;" href="/">
+			<img style="height: 64px" src="/images/originalQuality/ERT.png">
+		</a>
+
+		<button class="close-icon" onclick="hideMenu()">✖</button>
+	</div>
+
+	<div class="mobile-menu-items">
+		
+		<a href="/">Home</a>
+		
+		<a href="/projects/">Projects</a>
+		
+		<a href="/join-us/">Join Us</a>
+		
+		<a href="/sponsors/">Sponsors</a>
+		
+		<a href="/about/">About</a>
+		
+		<a href="/contact/">Contact</a>
+		
+		<a href="/blog/">Blog</a>
+		
+		<a href="/shop/">Shop</a>
+		
+	</div>
+</div>
+
+<header class="header">
 	
 	<video autoplay muted loop src="/images/uploads/2024_trailer_ert.mp4"></video>
 	
@@ -70,7 +100,7 @@
 
 	<nav style="align-items: center; height: 64px;" class="navbar">
 		<ul style="height: 64px; align-items: center;">
-			<li style="margin-right: auto;">
+			<li style="margin-left: 0px; margin-right: auto;">
 				<a href="/">
 					<img style="margin-top: 12px; height: 64px" src="/images/originalQuality/ERT.png">
 				</a>
