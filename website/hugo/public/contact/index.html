@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-UK">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<link rel="shortcut icon" href="https://example.com/images/favicon.png" />
 <title>Contact | EPFL Rocket Team</title>
 <meta name="title" content="Contact" />
 <meta name="description" content="Bear Cub Demo" />
@@ -18,31 +18,31 @@
 
 
   
-  <meta property="og:url" content="http://localhost:1313/contact/">
+  <meta property="og:url" content="https://example.com/contact/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Contact">
-  <meta property="og:description" content="Hello World! Contact form.">
+  <meta property="og:description" content="Name Email Message SEND">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/images/share.webp">
+    <meta property="og:image" content="https://example.com/images/share.webp">
         <meta property="fb:admins" content="0000000000">
 
 
   
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
+  <meta name="twitter:image" content="https://example.com/images/share.webp">
   <meta name="twitter:title" content="Contact">
-  <meta name="twitter:description" content="Hello World! Contact form.">
+  <meta name="twitter:description" content="Name Email Message SEND">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="Contact">
-  <meta itemprop="description" content="Hello World! Contact form.">
+  <meta itemprop="description" content="Name Email Message SEND">
   <meta itemprop="wordCount" content="4">
-  <meta itemprop="image" content="http://localhost:1313/images/share.webp">
+  <meta itemprop="image" content="https://example.com/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -53,7 +53,7 @@
 
   
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/contact/index.xml" title="EPFL Rocket Team" />
+  <link rel="alternate" type="application/rss+xml" href="https://example.com/contact/index.xml" title="EPFL Rocket Team" />
   
 <link rel="stylesheet" href="fonts.css">
 
@@ -91,7 +91,7 @@
 			
 			<li><a href="/shop/">Shop</a></li>
 			
-			<li><a href='http://localhost:1313/index.xml'>RSS</a></li>
+			<li><a href='https://example.com/index.xml'>RSS</a></li>
 
 			
 			
@@ -120,7 +120,27 @@
   <main id="main-content" style="max-width: 100%; margin: auto; padding: 30px; position: relative; top: 30px">
 
 <content>
-  Hello World! Contact form.
+  <form action="/submit" method="POST" style="max-width: 1000px; margin: 0 auto; background: none; color: #ffffff; padding: 20px; border-radius: 10px;">
+    <div style="margin-bottom: 15px;">
+      <label for="name" style="font-size: 2rem; display: block; margin-bottom: 5px;">Name</label>
+      <input type="text" id="name" name="name" placeholder="Name" style="width: 100%; padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label for="email" style="font-size: 2rem; display: block; margin-bottom: 5px;">Email</label>
+      <input type="email" id="email" name="email" placeholder="Email" style="width: 100%; padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label for="message" style="font-size: 2rem; display: block; margin-bottom: 5px;">Message</label>
+      <textarea id="message" name="message" placeholder="Message" rows="4" style="width: 100%; padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required></textarea>
+    </div>
+    
+    <button type="submit" style="width: 100%; padding: 15px; font-size: 1rem; font-weight: bold; border: none; border-radius: 25px; background: red; color: #ffffff; cursor: pointer;">
+      SEND
+    </button>
+  </form>
+  
 
 </content>
 <p>
