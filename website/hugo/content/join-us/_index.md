@@ -8,4 +8,4 @@ weight: 3
 layout: single
 ---
 
-
+{{< diagonal-join-section >}}
