@@ -561,10 +561,9 @@ html {
   color: #da291c;
   font-size: 56px;
   cursor: pointer;
-  align-self: right;
   margin-left: auto;
-  margin-right: 30px;
-  margin-top: 10px;
+  margin-right: 40px;
+  margin-top: 9px;
 }
 
 @media (max-width: 940px) {
