@@ -451,7 +451,8 @@ html {
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 200px; /* Adjust as needed */
+  height: 200px;
+  /* Adjust as needed */
   margin-top: 50px;
   align-self: center;
 }
@@ -493,13 +494,15 @@ html {
 
 
 .svg-container {
-  max-width: 90%; /* Optional: Scale the SVG for responsiveness */
+  max-width: 90%;
+  /* Optional: Scale the SVG for responsiveness */
   max-height: 90%;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin-top: 50px;
 }
+
 .svg-container svg {
   display: block;
   max-width: 100%;
@@ -529,6 +532,18 @@ html {
   background: none;
   border: none;
   color: white;
-  font-size: 36px;
+  font-size: 72px;
   cursor: pointer;
+}
+
+@media (max-width: 940px) {
+  .desktop-menu-item {
+    display: none;
+  }
+}
+
+@media (min-width: 940px) {
+  .menu-icon {
+    display: none;
+  }
 }

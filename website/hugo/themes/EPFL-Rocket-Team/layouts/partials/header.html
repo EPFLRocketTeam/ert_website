@@ -23,29 +23,29 @@
 				</a>
 			</li>
 			{{ range .Site.Menus.main.ByWeight }}
-			<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+			<li class="desktop-menu-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
 			{{ end }}
-			<li><a href='{{ absURL "index.xml" }}'>RSS</a></li>
-			<li><button class="menu-icon" onclick="showMenu()">☰</button></li>
-
+			<!--li class="desktop-menu-item"><a href='{{ absURL "index.xml" }}'>RSS</a></li-->
+			
 			<!-- Convert this page's translations into a dict -->
 			{{ $translations := dict }}
 			{{ range .Translations }}
 			{{ $translations = merge $translations (dict .Language.Lang .) }}
 			{{ end }}
-
-
+			
+			
 			<!-- Create a link to every translation -->
 			{{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
 			{{ with (index $translations .Lang) }}
-			<li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+			<li><a class="desktop-menu-item" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
 			{{ else }}
 			<!-- The complicated setup was necessary to make a grayed out link -->
 			{{ if not .Params.hideUntranslated }}
-			<a class="disabled" role="link" aria-disabled="true">{{ .LanguageName }}</a>
+			<a class="disabled desktop-menu-item" role="link" aria-disabled="true">{{ .LanguageName }}</a>
 			{{ end }}
 			{{ end }}
 			{{ end }}
+			<li><button style="transform: translate(0,-3px);" class="menu-icon" onclick="showMenu()">☰</button></li>
 		</ul>
 	</nav>
 

@@ -24,14 +24,14 @@ enableRobotsTXT = true
 [languages]
   [languages.en]
     title = "EPFL Rocket Team"
-    languageName = "en-UK 🇬🇧"
+    languageName = "🇬🇧"
     LanguageCode = "en-UK"
     contentDir = "content"
     [languages.en.params]
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
   [languages.fr]
     title = "EPFL Rocket Team"
-    languageName = "fr 🇫🇷"
+    languageName = "🇫🇷"
     LanguageCode = "fr"
     contentDir = "content.fr"
     [languages.fr.params]
