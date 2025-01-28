@@ -1,5 +1,5 @@
 # Basic config
-baseURL = "https://example.com"
+baseURL = "https://rocketteam.epfl.ch"
 theme = "EPFL-Rocket-Team"
 copyright = "John Doe (CC BY 4.0)"
 defaultContentLanguage = "en"
@@ -39,7 +39,7 @@ enableRobotsTXT = true
 
 [params]
   # The description of your website
-  description = "Bear Cub Demo"
+  description = "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry’s leaders."
 
   # The path to your favicon
   favicon = "/images/originalQuality/ERT.png"
@@ -52,7 +52,7 @@ enableRobotsTXT = true
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
-  title = "Bear Cub"
+  title = "EPFL Rocket Team"
 
   # Dates are displayed following the format below. For more information about
   # formatting, see https://gohugo.io/functions/format/
