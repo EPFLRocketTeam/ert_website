@@ -1,170 +1,111 @@
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<div class="mobile-menu">
+	<div style="display: flex; flex-direction: row; align-items: center; padding: 10px; width: 100%;">
+		<a style="margin-top: 30px; margin-left: 30px; margin-right: auto;" href="/">
+			<img style="height: 64px" src="/images/originalQuality/ERT.png">
+		</a>
 
-	/* General Reset */
-	body, html {
-	    margin: 0;
-	    padding: 0;
-	    box-sizing: border-box;
-        font-family: Aspekta, sans-serif;
-		color: #f6f6f6;
-	}
+		<button class="close-icon" onclick="hideMenu()">✖</button>
+	</div>
 
-	.header {
-	    position: relative;
-	    width: 100%;
-	    height: 100vh;
-	    overflow: hidden;
-	}
+	<div class="mobile-menu-items">
+		{{ range .Site.Menus.main.ByWeight }}
+		<a href="{{ .URL }}">{{ .Name }}</a>
+		{{ end }}
 
-	header video {
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    object-fit: cover;
-	    z-index: -1;
-	}
-
-	.navbar ul {
-	    list-style: none;
-	    display: flex;
-	    flex-wrap: wrap;
-	    justify-content: right;
-	    margin: 0;
-	    padding: 10px;
-	    background: kransparent;
-	}
-
-	.navbar li {
-	    margin: 0 15px;
-	}
-
-	.navbar a {
-	    text-decoration: none;
-	    color: #f6f6f6;
-	    font-size: 1rem;
-	    font-weight: bold;
-	}
-
-	.intro-text {
-	    position: absolute;
-		bottom: 5vh;
-		left: 0;
-		right: 0;
-		margin-left: auto;
-		margin-right: auto;
-	    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-	    max-width: 98%;
-		text-align: left;
-	}
-
-	.title {
-		display: inline-block;
-  		align-self: flex-end;
-	    font-size: 9.8vw;
-	    font-weight: bold;
-	    margin-bottom: 50px;
-	}
-
-	.description {
-		display: inline-block;
-  		align-self: flex-end;
-	    font-size: 18px;
-	    line-height: 20px;
-		margin-top: 10px;
-		margin-left: 5px;
-	    max-width: 38vw;
-	}
-
-	/* Responsive Design */
-	@media (max-width: 768px) {
-	    .title {
-		font-size: 120px;
-	    }
-
-	    .description {
-		font-size: 40px;
-	    }
-	}
-
-
-	@media (max-width: 480px) {
-	    .navbar ul {
-		flex-direction: column;
-		padding: 10px 0;
-	    }
-
-	    .navbar li {
-		margin: 5px 0;
-	    }
-
-	    .title {
-		font-size: 60px;
-	    }
-
-	    .description {
-		font-size: 20px;
-	    }
-	}
-
-   </style>
-    <header class="header">
-	<video autoplay muted loop src="/images/uploads/2024_trailer_ert.mp4"></video>
-        <nav class="navbar">
-            <ul>
-	    {{ range .Site.Menus.main.ByWeight }}
-		<li><a href="{{ .URL }}">{{ .Name }}</a></li>
-	    {{ end }}
-	    <li><a href='{{ absURL "index.xml" }}'>RSS</a></li>
-	    <!-- Convert this page's translations into a dict -->
-	    {{ $translations := dict }}
-	    {{ range .Translations }}
-	      {{ $translations = merge $translations (dict .Language.Lang .) }}
-	    {{ end }}
-
-	    <!-- Create a link to every translation -->
-	    {{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
-	      {{ with (index $translations .Lang) }}
-	      <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
-	      {{ else }}
+		<!-- Convert this page's translations into a dict -->
+		{{ $translations := dict }}
+		{{ range .Translations }}
+		{{ $translations = merge $translations (dict .Language.Lang .) }}
+		{{ end }}
+		
+		
+		<!-- Create a link to every translation -->
+		{{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
+		{{ with (index $translations .Lang) }}
+		<li style="list-style-type: none;"><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+		{{ else }}
 		<!-- The complicated setup was necessary to make a grayed out link -->
 		{{ if not .Params.hideUntranslated }}
-		  <a class="disabled" role="link" aria-disabled="true">{{ .LanguageName }}</a>
+		<a class="disabled desktop-menu-item" role="link" aria-disabled="true">{{ .LanguageName }}</a>
 		{{ end }}
-	      {{ end }}
-	    {{ end }}
-            </ul>
-        </nav>
+		{{ end }}
+		{{ end }}
+	</div>
+</div>
+
+<header class="header">
+	{{ if .Params.header_background }}
+	{{ if hasPrefix .Params.header_background ".mp4" }}
+	<video autoplay muted loop>
+		<source src="{{ .Params.header_background }}" type="video/mp4">
+	</video>
+	{{ else }}
+	<div class="background-image" style="background-image: url('{{ .Params.header_background }}');"></div>
+	{{ end }}
+	{{ else }}
+	<video autoplay muted loop src="/images/uploads/2024_trailer_ert.mp4"></video>
+	{{ end }}
+
+	<!-- Darkening overlay (applies to both video and image) -->
+	<div class="background-overlay"></div>
+
+
+	<nav style="align-items: center; height: 64px;" class="navbar">
+		<ul style="height: 64px; align-items: center;">
+			<li style="margin-left: 0px; margin-right: auto;">
+				<a href="/">
+					<img style="margin-top: 30px; height: 64px" src="/images/originalQuality/ERT.png">
+				</a>
+			</li>
+			{{ range .Site.Menus.main.ByWeight }}
+			<li class="desktop-menu-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+			{{ end }}
+			<!--li class="desktop-menu-item"><a href='{{ absURL "index.xml" }}'>RSS</a></li-->
+			
+			<!-- Convert this page's translations into a dict -->
+			{{ $translations := dict }}
+			{{ range .Translations }}
+			{{ $translations = merge $translations (dict .Language.Lang .) }}
+			{{ end }}
+			
+			
+			<!-- Create a link to every translation -->
+			{{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
+			{{ with (index $translations .Lang) }}
+			<li><a class="desktop-menu-item" href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+			{{ else }}
+			<!-- The complicated setup was necessary to make a grayed out link -->
+			{{ if not .Params.hideUntranslated }}
+			<a class="disabled desktop-menu-item" role="link" aria-disabled="true">{{ .LanguageName }}</a>
+			{{ end }}
+			{{ end }}
+			{{ end }}
+			<li><button style="transform: translate(0,-3px);" class="menu-icon" onclick="showMenu()">☰</button></li>
+		</ul>
+	</nav>
+
 	<div class="intro-text">
-		<h1 class="title">EPFL ROCKET TEAM</h1>
+		<h1 class="title">{{ .Params.header_title | default "EPFL ROCKET TEAM" }}</h1>
 		<p class="description">
-		    We are a dynamic association of 200 students from prestigious Swiss
-		    universities, dedicated to designing and manufacturing rockets,
-		    through which we immerse students in space technologies and provide
-		    them hands-on training and field-related expertise, thus shaping
-		    the next generation of space industry's leaders.
+			{{ .Params.header_text | markdownify | default "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry's leaders." }}
 		</p>
-	</dik>
-    </header>
+	</div>
+</header>
 
+<script>
+	function showMenu() {
+  document.querySelector('.mobile-menu').style.display = 'flex';
+  document.querySelector('.header').style.display = 'none';
+  document.querySelector('main').style.display = 'none';
+  document.querySelector('footer').style.display = 'none';
 
+}
 
+function hideMenu() {
+  document.querySelector('.mobile-menu').style.display = 'none';
+  document.querySelector('.header').style.display = 'block';
+  document.querySelector('main').style.display = 'block';
+  document.querySelector('footer').style.display = 'bl';
 
-
-
-
-
-
-
-<!--
-<a class="skip-link" href="#main-content">{{ i18n "skip-link" }}</a>
-
-<a href="{{ relURL .Site.Home.RelPermalink }}" class="title"><h1>{{ .Site.Title }}</h1></a>
-<nav>{{- partial "nav.html" . -}}</nav>
--->
+}
+</script>
