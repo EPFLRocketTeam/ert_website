@@ -41,6 +41,14 @@ p {
   color: #f6f6f6;
 }
 
+a {
+  text-decoration: none;
+}
+
+a::after{
+  text-decoration: none;
+}
+
 .main {
   margin: 20px 0px 100px;
 }
