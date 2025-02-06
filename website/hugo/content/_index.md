@@ -14,6 +14,8 @@ weight: 1
 
 {{<numbers>}}
 
+{{<join-us>}}
+
 {{<sponsors>}}
 
 {{<testimonials>}}

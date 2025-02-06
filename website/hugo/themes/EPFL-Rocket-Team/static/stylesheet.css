@@ -783,6 +783,16 @@ p{
   justify-content: space-between;
 }
 
+.joinus-crop{
+  position: relative;
+  overflow: hidden;
+}
+
+#join-us-img img{
+  position: relative;
+  border-radius: 10px;
+}
+
 /* Large screens (laptops, <1200px) -> 9 Columns */
   @media (max-width: 1200px) {
     .container {
