@@ -907,3 +907,38 @@ p{
 /* 2160px and above */
 @media (min-width: 2160px) {
 }
+
+
+
+.how-to-join-us {
+    width: 50%;
+    height: auto;
+    color: #F6F6F6;
+    font-size: 120px;
+    font-family: Aspekta;
+    font-weight: 400;
+    line-height: 144px;
+    word-wrap: break-word;
+}
+
+.how-to-join-us-text {
+    width: 33%;
+    color: #F6F6F6;
+    font-size: 16px;
+    font-family: Aspekta;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 1024px) {
+    .how-to-join-us {
+	font-size: 80px;
+	line-height: 96px;
+    }
+
+    .how-to-join-us-text {
+	font-size: 14px;
+	line-height: 18px;
+    }
+}

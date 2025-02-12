@@ -64,6 +64,8 @@
                 href="https://rocketteam.epfl.ch/about/"
                 />
   </url><url>
+    <loc>https://rocketteam.epfl.ch/about/board/</loc>
+  </url><url>
     <loc>https://rocketteam.epfl.ch/contact/</loc>
     <xhtml:link
                 rel="alternate"
