@@ -41,6 +41,16 @@ p {
   color: #f6f6f6;
 }
 
+input, textarea {
+  font-family: 'Aspekta-200';
+  font-size: 20px;
+  color: #f6f6f6;
+}
+
+button {
+  font-family: 'Aspekta-600';
+}
+
 a {
   text-decoration: none;
 }
