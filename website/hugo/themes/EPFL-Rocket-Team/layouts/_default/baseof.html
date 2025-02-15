@@ -33,15 +33,6 @@
   Simply place a custom_head.html into
   your local /layouts/partials-directory -->
   {{- partial "custom_head.html" . -}}
-
-  <script>
-      document.addEventListener("DOMContentLoaded", function() {
-	const images = document.querySelectorAll('img');
-	images.forEach(img => {
-	  img.setAttribute('loading', 'lazy');
-	});
-      });
-    </script>
 </head>
 
 <body style="overflow-x: hidden; padding: 0">
