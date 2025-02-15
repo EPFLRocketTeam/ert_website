@@ -41,6 +41,16 @@ p {
   color: #f6f6f6;
 }
 
+input, textarea {
+  font-family: 'Aspekta-200';
+  font-size: 20px;
+  color: #f6f6f6;
+}
+
+button {
+  font-family: 'Aspekta-600';
+}
+
 a {
   text-decoration: none;
 }
@@ -906,4 +916,66 @@ p{
 
 /* 2160px and above */
 @media (min-width: 2160px) {
+}
+
+
+
+.how-to-join-us {
+    width: 100%;
+    height: auto;
+    color: #F6F6F6;
+    font-size: 108px;
+    font-family: Aspekta;
+    font-weight: 400;
+    line-height: 132px;
+    word-wrap: break-word;
+}
+
+.how-to-join-us-text {
+    width: 80%;
+    color: #F6F6F6;
+    font-size: 16px;
+    font-family: Aspekta;
+    font-weight: 400;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.meet-the-team {
+    width: 50%;
+    height: auto;
+    color: #F6F6F6;
+    font-size: 108px;
+    font-family: Aspekta;
+    font-weight: 400;
+    line-height: 132px;
+    word-wrap: break-word;
+}
+
+.board-container {
+    padding: 30px;
+}
+
+@media (max-width: 450px) {
+    .meet-the-team {
+	font-size: 54px;
+	line-height: 66px;
+    }
+
+    .meet-the-team-text {
+	font-size: 14px;
+	line-height: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .how-to-join-us {
+	font-size: 72px;
+	line-height: 88px;
+    }
+
+    .how-to-join-us-text {
+	font-size: 14px;
+	line-height: 18px;
+    }
 }
