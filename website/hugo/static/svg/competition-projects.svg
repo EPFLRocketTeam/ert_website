@@ -254,6 +254,7 @@
      style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect115047);fill:#000000;fill-opacity:1;stroke:none"
      transform="matrix(0.9111118,0,0,0.92017474,-6.6370173,0.86646999)" />
   <g
+     class="group"
      id="g1996"
      transform="matrix(0.93139202,0,0,0.94065667,-0.01987286,2.772886)"
      style="mix-blend-mode:lighten">
@@ -317,6 +318,7 @@
          id="tspan3023">2030</tspan></text>
   </g>
   <g
+     class="group"
      id="g2158"
      style="mix-blend-mode:lighten">
     <rect
@@ -396,6 +398,7 @@
          id="tspan3031">2026</tspan></text>
   </g>
   <g
+     class="group"
      id="g2283"
      style="mix-blend-mode:lighten">
     <path
@@ -476,4 +479,22 @@
        x="-166.43646"
        y="196.59319"
        style="stroke-width:0.936013" /></text>
-</svg>
+
+    <script type="application/ecmascript">
+    <![CDATA[
+        document.addEventListener("DOMContentLoaded", function() {
+            var groups = document.querySelectorAll('g');
+            groups.forEach(function(group) {
+                group.setAttribute('opacity', '0.4'); // Default opacity
+                group.addEventListener('mouseenter', function() {
+                    group.setAttribute('opacity', '1');
+                });
+                group.addEventListener('mouseleave', function() {
+                    group.setAttribute('opacity', '0.4');
+                });
+            });
+        });
+    ]]>
+    </script>
+    </svg>
+    

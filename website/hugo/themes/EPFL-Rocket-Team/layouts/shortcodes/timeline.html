@@ -1,5 +1,18 @@
 <div class="main"> <!-- this div contains all the content in each section and sets a margin between each shortcode -->
 <div class="page" style="padding: 30px;">our past and future competition projects</div>
-<object style="width: 100%;" type="image/svg+xml" data="svg/competition-projects.svg"></object>
+<object id="mySvg" style="width: 100%;" type="image/svg+xml" data="svg/competition-projects.svg"></object>
 
 <button type="button" onclick="location.href=''" class="button-right right-align">Parcitipate in the competition with us </button>
+
+<script>
+document.getElementById('mySvg').addEventListener('load', function() {
+    var svgDoc = this.contentDocument; // Get the internal SVG document
+    var groups = svgDoc.querySelectorAll('g');
+
+    groups.forEach(group => {
+	group.setAttribute('opacity', '0.4'); // Default opacity
+	group.addEventListener('mouseenter', () => group.setAttribute('opacity', '1'));
+	group.addEventListener('mouseleave', () => group.setAttribute('opacity', '0.4'));
+    });
+});
+</script>
