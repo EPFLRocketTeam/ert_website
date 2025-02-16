@@ -59,9 +59,7 @@ a::after{
   text-decoration: none;
 }
 
-.main {
-  margin: 20px 0px 100px;
-}
+
 
 .page {
   font-family: 'Aspekta-600';
@@ -176,12 +174,6 @@ a::after{
   height: 100px;
 }
 
-/* .numbers-students img{
-  float: inline-start;
-  max-height: 100px;
-  margin-right: 15px;
-  margin-bottom: 0px;
-} */
 
 .numbers-img {
   display: flex;
@@ -650,7 +642,7 @@ p{
 }
 
 .main{
-    margin: 20px 0px 100px;
+    margin: 20px 0px 40px;
 }
 
 .page{
@@ -809,7 +801,7 @@ p{
 }
 
 .parent img{
-  width: 100%;
+width: 100%;
 height: 100%;
 object-fit: cover;
 border-radius: 10px;
@@ -867,8 +859,75 @@ border-radius: 10px;
    grid-row-end: 6;
    grid-column-end: 6;
 }
-      
 
+.parent-mission{
+  margin-left: 20px;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  gap: 15px;
+}
+
+.parent-mission img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  }
+
+.mission1{
+  position: relative;
+  right: 20px;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 11;
+}
+
+.mission2{
+  grid-row-start: 2;
+  grid-column-start: 14;
+  grid-row-end: 5;
+  grid-column-end: 17;
+}
+
+.mission3{
+  grid-row-start: 5;
+  grid-column-start: 14;
+  grid-row-end: 11;
+  grid-column-end: 17;
+}
+
+.mission4{
+  grid-row-start: 11;
+  grid-column-start: 14;
+  grid-row-end: 14;
+  grid-column-end: 17;
+}
+
+.mission5{
+  grid-row-start: 4;
+  grid-column-start: 11;
+  grid-row-end: 7;
+  grid-column-end: 14;
+}
+
+.mission6{
+  grid-row-start: 7;
+  grid-column-start: 7;
+  grid-row-end: 14;
+  grid-column-end: 14;
+}
+
+.mission7{
+
+  grid-row-start: 13;
+  grid-column-start: 1;
+  grid-row-end: 14;
+  grid-column-end: 6;
+}
 /* Large screens (laptops, <1200px) -> 9 Columns */
   @media (max-width: 1200px) {
     .container {
