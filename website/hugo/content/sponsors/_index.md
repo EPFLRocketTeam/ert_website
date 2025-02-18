@@ -8,4 +8,4 @@ weight: 4
 layout: single
 ---
 
-Hi world, this is the sponsors page.
+{{< prestige-sponsors >}}
