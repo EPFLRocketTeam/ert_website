@@ -8,4 +8,4 @@ menu: main
 weight: 2
 ---
 
-This is the projects page tadaaa!
+{{< project-sp >}}
