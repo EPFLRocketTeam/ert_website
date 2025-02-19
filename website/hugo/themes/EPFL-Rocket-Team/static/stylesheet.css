@@ -1,3 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family:'Aspekta';
+  padding: 20px;
+  background-color: black;
+  vertical-align: bottom;
+  color: white;
+}
+
+h1{
+  position: relative;
+  font-family: 'Aspekta'; 
+  color: #f6f6f6; 
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+h2 {
+  font-family: 'Aspekta'; 
+  font-size: 36px;
+  color: #f6f6f6; 
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Aspekta'; 
+  font-size: 86px;
+  color: #f6f6f6; 
+  font-weight: 400;
+}
+
+h4{
+  font-family: 'Aspekta-300';
+  font-size : 60px;
+  color: #f6f6f6;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+p{
+    font-family: 'Aspekta-200';
+    font-size: 16px;
+    color: #f6f6f6; 
+}
+
+
+.main{
+  margin: 20px 0px 40px;
+}
+
+.page{
+font-family: 'Aspekta-600';
+  font-size: 18px;
+  color: #464646;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.button-right, .button-left{
+  position: relative;
+  display: block;
+  right: 0px;
+  font-weight: 400;
+  font-size: 1vw;
+  color: white;
+  text-transform: uppercase;
+  text-align: right;
+  background-color: transparent;
+  border: none;  
+  cursor: pointer;  
+}
+
+.button-right::after, .button-left::after{
+  font-size: 1.6vw;
+  font-weight: 200;
+  vertical-align: baseline;
+}
+
+.button-right::after{
+content: '\2192';
+}
+
+.button-left::after{
+content: '\2190';
+}
+
+.button-right:hover, .button-left:hover{
+  cursor: pointer;
+  text-decoration:underline;
+}
+
+.right-align{
+  float: right;
+}
 
 
 input, textarea {
@@ -307,96 +406,7 @@ html {
 .mobile-lang a {
   color: black;
 }
-* {
-    box-sizing: border-box;
-}
 
-body {
-    position: relative;
-    font-family:'Aspekta';
-    padding: 20px;
-    background-color: black;
-    vertical-align: bottom;
-    color: white;
-}
-
-h1{
-    position: relative;
-    font-family: 'Aspekta'; 
-    color: #f6f6f6; 
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 70px;
-}
-
-h2 {
-    font-family: 'Aspekta'; 
-    font-size: 36px;
-    color: #f6f6f6; 
-    font-weight: 400;
-}
-
-h3 {
-  font-family: 'Aspekta'; 
-  font-size: 86px;
-  color: #f6f6f6; 
-  font-weight: 400;
-}
-
-p{
-    font-family: 'Aspekta-200';
-    font-size: 16px;
-    color: #f6f6f6; 
-}
-
-.main{
-    margin: 20px 0px 40px;
-}
-
-.page{
-  font-family: 'Aspekta-600';
-    font-size: 18px;
-    color: #464646;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.button-right, .button-left{
-    position: relative;
-    display: block;
-    right: 0px;
-    font-weight: 400;
-    font-size: 1vw;
-    color: white;
-    text-transform: uppercase;
-    text-align: right;
-    background-color: transparent;
-    border: none;  
-    cursor: pointer;  
-}
-
-.button-right::after, .button-left::after{
-    font-size: 1.6vw;
-    font-weight: 200;
-    vertical-align: baseline;
-}
-
-.button-right::after{
-  content: '\2192';
-}
-
-.button-left::after{
-  content: '\2190';
-}
-
-.button-right:hover, .button-left:hover{
-    cursor: pointer;
-    text-decoration:underline;
-}
-
-.right-align{
-    float: right;
-}
 
 .testimonial-box{
   position: relative;
@@ -418,6 +428,7 @@ p{
   font-weight: 400;
   text-indent: 20px;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .testimonial-bio{
@@ -591,7 +602,7 @@ border-radius: 10px;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 6;
-  grid-column-end: 11;
+  grid-column-end: 12;
 }
 
 .mission2{
@@ -636,41 +647,100 @@ border-radius: 10px;
   grid-row-end: 14;
   grid-column-end: 6;
 }
+
+
+
+@media (max-width: 1280px) {
+  h1{
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  h2{
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  h3{
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  h4{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .mission1{
+    grid-column-end: 15;
+  }
+
+  .mission2, .mission3, .mission4{
+
+  }
+
+  .mission7{
+    grid-row-start: 6;
+    grid-column-end: 7;
+  }
+}
+
+
 /* Large screens (laptops, <1200px) -> 9 Columns */
   @media (max-width: 1200px) {
-    .container {
-      grid-template-columns: repeat(4, 1fr);
-    }
+    
   }
 
   /* Medium screens (tablets, <1024px) -> 7 Columns */
   @media (max-width: 1024px) {
-    .container {
-      grid-template-columns: repeat(3, 1fr);
+    h1{
+      font-size: 34px;
+      line-height: 40px;
+    }
+  
+    h2{
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    h3{
+      font-size: 72px;
+      line-height: 72px;
+    }
+
+    h4{
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    .testimonial-text{
+      font-size: 16px;
     }
   }
 
   /* Medium-small screens (tablets, <900px) -> 5 Columns */
   @media (max-width: 900px) {
-    .container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+    
 
     .button-right, .button-right::after, .page{
       font-size: 12px;
     }
 
-    h1{
-      font-size: 40px;
-    }
-
-    h2{
-      font-size: 32px;
-    }
-
   }
 
+  @media (max-width: 430px) {
+    h1{
+      font-size: 34px;
+      line-height: 40px;
+    }
   
+    h2{
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+
 /* custom css */
 /* Base styling (default for small screens) */
 .Frame67 {
