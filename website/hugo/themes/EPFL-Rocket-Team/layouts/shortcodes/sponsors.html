@@ -22,7 +22,7 @@
         }
 
         .column img{
-            max-width: 20vw;
+            max-width: 100%;
             height: auto;           
         }
 
@@ -36,20 +36,23 @@
   /* Medium screens (tablets, <1024px) -> 7 Columns */
   @media (max-width: 1024px) {
     .container {
-      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-columns: repeat(3, 1fr); */
     }
   }
 
   /* Medium-small screens (tablets, <900px) -> 5 Columns */
   @media (max-width: 900px) {
     .container {
-      grid-template-columns: repeat(3, 1fr);
+      /* grid-template-columns: repeat(3, 1fr); */
     }
   }
         /* Small screens (large phones, tablets, <768px) -> 4 Columns */
   @media (max-width: 768px) {
     .container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .column{
+      height: 15vh;
     }
   }
 

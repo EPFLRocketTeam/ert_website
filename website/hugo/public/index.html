@@ -250,7 +250,7 @@ function hideMenu() {
         color: #DA291C;
     }
     </style>
-</head>
+</head> 
 <body>
     <div class="main" style="padding: 30px;">
         <div class="page">our projects</div>
@@ -1027,7 +1027,7 @@ document.getElementById('mySvg').addEventListener('load', function() {
         }
 
         .column img{
-            max-width: 20vw;
+            max-width: 100%;
             height: auto;           
         }
 
@@ -1041,20 +1041,23 @@ document.getElementById('mySvg').addEventListener('load', function() {
    
   @media (max-width: 1024px) {
     .container {
-      grid-template-columns: repeat(3, 1fr);
+       
     }
   }
 
    
   @media (max-width: 900px) {
     .container {
-      grid-template-columns: repeat(3, 1fr);
+       
     }
   }
          
   @media (max-width: 768px) {
     .container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .column{
+      height: 15vh;
     }
   }
 
