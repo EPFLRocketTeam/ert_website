@@ -57,12 +57,61 @@
     #op-hyperion:hover h1{
         color: #DA291C;
     }
+
+    @media (max-width: 744px) {
+        #our-projects{
+            position: relative;
+            top: 300px;
+        width: 100%; 
+        display: flex;  
+        margin: auto auto 60px;
+        height: 65vh;
+            flex-direction: column-reverse;
+        }
+        
+        .our-project-list{
+            /* position: relative;
+             */
+            display: grid;
+            width: 100vw;  
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);   
+        }
+
+        #op-firehorn{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        #op-spacerace{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        #op-icarus{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        #op-hyperion{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    }
     </style>
 </head> 
 <body>
     <div class="main" style="padding: 30px;">
         <div class="page">our projects</div>
-        <h2>The EPFL Rocket Team is currently engaged<br>in four different projects</h2>
+        <h2>The EPFL Rocket Team is currently engaged in four different projects</h2>
         <div id="our-projects">
             <div class="our-project-list">
                 <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">

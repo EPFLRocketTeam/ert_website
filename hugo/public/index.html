@@ -22,8 +22,7 @@
   <meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Home">
-  <meta property="og:description" content="our projects The EPFL Rocket Team is currently engaged
-in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
+  <meta property="og:description" content="our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/share.webp">
@@ -35,16 +34,14 @@ in four different projects Firehorn Designing and manufacturing a supersonic bi-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
   <meta name="twitter:title" content="Home">
-  <meta name="twitter:description" content="our projects The EPFL Rocket Team is currently engaged
-in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
+  <meta name="twitter:description" content="our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="Home">
-  <meta itemprop="description" content="our projects The EPFL Rocket Team is currently engaged
-in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
+  <meta itemprop="description" content="our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta itemprop="datePublished" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="dateModified" content="2024-11-18T20:38:42+01:00">
   <meta itemprop="wordCount" content="382">
@@ -249,12 +246,60 @@ function hideMenu() {
     #op-hyperion:hover h1{
         color: #DA291C;
     }
+
+    @media (max-width: 744px) {
+        #our-projects{
+            position: relative;
+            top: 300px;
+        width: 100%; 
+        display: flex;  
+        margin: auto auto 60px;
+        height: 65vh;
+            flex-direction: column-reverse;
+        }
+        
+        .our-project-list{
+             
+            display: grid;
+            width: 100vw;  
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);   
+        }
+
+        #op-firehorn{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        #op-spacerace{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        #op-icarus{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        #op-hyperion{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+    }
     </style>
 </head> 
 <body>
     <div class="main" style="padding: 30px;">
         <div class="page">our projects</div>
-        <h2>The EPFL Rocket Team is currently engaged<br>in four different projects</h2>
+        <h2>The EPFL Rocket Team is currently engaged in four different projects</h2>
         <div id="our-projects">
             <div class="our-project-list">
                 <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">
