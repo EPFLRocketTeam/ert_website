@@ -14,12 +14,13 @@
     }
 
     .our-project-images{
-        flex: 70%;  
+        flex: 70%; 
         align-content: flex-start;
         background-image: url("/images/originalQuality/op_firehorn.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        /* background-color: #DA291C; */
     }
 
     .our-project-images img{
@@ -29,6 +30,7 @@
         max-height: 100%; 
         max-width: 80%;
         display: none;
+        object-fit: contain;
     }
 
     .our-project-list{
@@ -70,41 +72,26 @@
         }
         
         .our-project-list{
-            /* position: relative;
-             */
-            display: grid;
-            width: 100vw;  
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);   
+            flex: 100%;
+            flex-wrap: wrap;
+            position: relative;
+            margin: auto;
+            width: 100vw;
+            display: flex; 
+            flex-direction: column;
         }
 
-        #op-firehorn{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
+        #proj-1, #proj-2{
+            flex:50vw;
+            text-wrap: wrap;
         }
 
-        #op-spacerace{
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
+        .our-project-images{
+            flex:100%;
         }
 
-        #op-icarus{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-        }
-
-        #op-hyperion{
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        }
+        
+        
     }
     </style>
 </head> 
@@ -114,33 +101,40 @@
         <h2>The EPFL Rocket Team is currently engaged in four different projects</h2>
         <div id="our-projects">
             <div class="our-project-list">
-                <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">
-                    <h1>Firehorn</h1>
-                    <p>Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
+                <div id="proj-1">
+                    <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">
+                        <h1>Firehorn</h1>
+                        <p>Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
+                    </div>
+                    <div id="op-spacerace" onmouseover="hoverImage_spacerace(event)" onmouseout="hoverImage_spacerace(event)">
+                        <h1>Space Race</h1>
+                        <p>Training students in aerospace technologies</p>
+                    </div>
                 </div>
-                <div id="op-spacerace" onmouseover="hoverImage_spacerace(event)" onmouseout="hoverImage_spacerace(event)">
-                    <h1>Space Race</h1>
-                    <p>Training students in aerospace technologies</p>
+                
+                <div id="proj-2">
+                    <div id="op-icarus" onmouseover="hoverImage_icarus(event)" onmouseout="hoverImage_icarus(event)">
+                        <h1>Icarus</h1>
+                        <p>Developing efficient GNC algorithms and Crafting Space-X style re-landing systems</p>
+                    </div>
+                    <div id="op-hyperion" onmouseover="hoverImage_hyperion(event)" onmouseout="hoverImage_hyperion(event)">
+                        <h1>Hyperion</h1>
+                        <p>Developing cutting-edge fully in-house bi-liquid propellant engines</p>
+                    </div>
                 </div>
-                <div id="op-icarus" onmouseover="hoverImage_icarus(event)" onmouseout="hoverImage_icarus(event)">
-                    <h1>Icarus</h1>
-                    <p>Developing efficient GNC algorithms and Crafting Space-X style re-landing systems</p>
-                </div>
-                <div id="op-hyperion" onmouseover="hoverImage_hyperion(event)" onmouseout="hoverImage_hyperion(event)">
-                    <h1>Hyperion</h1>
-                    <p>Developing cutting-edge fully in-house bi-liquid propellant engines</p>
-                </div>
+                
             </div>
             <div class="our-project-images">
-                <img src="/images/originalQuality/op_firehorn.png" id="hover_img_firehorn" style="height: 100%; right: 0%;">
+                <img src="/images/originalQuality/op_firehorn.png" id="hover_img_firehorn" style="height: 100%; width:auto; right: 0%;">
                 <img src="/images/originalQuality/op_spacerace.png" id="hover_img_spacerace" style="height: 95%; top: 5%"> 
                 <img src="/images/originalQuality/op_icarus.png" id="hover_img_icarus" style="width: 40%; top: 20%;"> 
                 <img src="/images/originalQuality/op_hyperion.png" id="hover_img_hyperion" style="top: 20%;">
             </div>
             
         </div>
-        <button type="button" onclick="location.href='/projects/'" class="button-right right-align">discover all our projects </button>
+        
     </div>
+    <button type="button" onclick="location.href='/projects/'" class="button-right right-align">discover all our projects </button>
     <script> /* hovering over the div of each project displays their respective image */
         function hoverImage_firehorn(event) {
             var x = document.querySelectorAll("#hover_img_firehorn");

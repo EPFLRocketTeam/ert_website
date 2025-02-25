@@ -50,7 +50,9 @@ p{
 
 
 .main{
+  position: relative;
   margin: 20px 0px 40px;
+  height: max-content;
 }
 
 .page{
@@ -580,12 +582,12 @@ border-radius: 10px;
 }
 
 .parent-mission{
-  margin-left: 20px;
+/*   margin-left: 20px; */
   display: grid;
-  width: 100vw;
+  width: 105vw;
   height: 100vh;
-  grid-template-columns: repeat(17, 1fr);
-  grid-template-rows: repeat(14, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(13, 1fr);
   gap: 15px;
 }
 
@@ -597,54 +599,53 @@ border-radius: 10px;
   }
 
 .mission1{
-  position: relative;
-  right: 20px;
+/*   position: relative;
+  right: 20px; */
   grid-row-start: 1;
   grid-column-start: 1;
-  grid-row-end: 6;
-  grid-column-end: 12;
+  grid-row-end: 4;
+  grid-column-end: 8;
 }
 
 .mission2{
-  grid-row-start: 2;
-  grid-column-start: 14;
-  grid-row-end: 5;
-  grid-column-end: 17;
+  grid-row-start: 4;
+  grid-column-start: 10;
+  grid-row-end: 7;
+  grid-column-end: 12;
 }
 
 .mission3{
-  grid-row-start: 5;
-  grid-column-start: 14;
-  grid-row-end: 11;
-  grid-column-end: 17;
+  grid-row-start: 7;
+  grid-column-start: 10;
+  grid-row-end: 14;
+  grid-column-end: 12;
 }
 
 .mission4{
-  grid-row-start: 11;
-  grid-column-start: 14;
-  grid-row-end: 14;
-  grid-column-end: 17;
+  grid-row-start: 14;
+  grid-column-start: 10;
+  grid-row-end: 16;
+  grid-column-end: 12;
 }
 
 .mission5{
-  grid-row-start: 4;
-  grid-column-start: 11;
-  grid-row-end: 7;
-  grid-column-end: 14;
+  grid-row-start: 6;
+  grid-column-start: 8;
+  grid-row-end: 9;
+  grid-column-end: 10;
 }
 
 .mission6{
-  grid-row-start: 7;
-  grid-column-start: 7;
-  grid-row-end: 14;
-  grid-column-end: 14;
+  grid-row-start: 9;
+  grid-column-start: 4;
+  grid-row-end: 16;
+  grid-column-end: 10;
 }
 
 .mission7{
-
-  grid-row-start: 13;
+  grid-row-start: 15;
   grid-column-start: 1;
-  grid-row-end: 14;
+  grid-row-end: 15;
   grid-column-end: 6;
 }
 
@@ -671,8 +672,12 @@ border-radius: 10px;
     line-height: 50px;
   }
 
+  .parent-mission{
+
+  }
+
   .mission1{
-    grid-column-end: 15;
+    grid-column-end: 16;
   }
 
   .mission2, .mission3, .mission4{
@@ -682,6 +687,10 @@ border-radius: 10px;
   .mission7{
     grid-row-start: 6;
     grid-column-end: 7;
+  }
+
+  .button-right, .button-right::after, .page{
+    font-size: 12px;
   }
 }
 
