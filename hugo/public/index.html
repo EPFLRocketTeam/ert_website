@@ -209,7 +209,7 @@ function hideMenu() {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
-         
+        background-color: #DA291C;
     }
 
     .our-project-images img{
@@ -249,10 +249,14 @@ function hideMenu() {
         color: #DA291C;
     }
 
+    #proj-1, #proj-2{
+            flex:100vw;
+            text-wrap: wrap;
+        }
+
     @media (max-width: 744px) {
         #our-projects{
         position: relative;
-        top: 300px;
         width: 100%; 
         display: flex;  
         margin: auto auto 60px;
@@ -267,11 +271,16 @@ function hideMenu() {
             margin: auto;
             width: 100vw;
             display: flex; 
-            flex-direction: column;
+            flex-direction:row;
         }
 
-        #proj-1, #proj-2{
-            flex:50vw;
+        #proj-1{ 
+            flex:45%;
+            text-wrap: wrap;
+        }
+
+        #proj-2{ 
+            flex:45%;
             text-wrap: wrap;
         }
 
@@ -279,7 +288,10 @@ function hideMenu() {
             flex:100%;
         }
 
-        
+        #hover_img_spacerace{
+            height: 40%;
+            width: auto;
+        }
         
     }
     </style>
@@ -874,7 +886,7 @@ function hideMenu() {
     </svg>
 </div>
 
-<button type="button" onclick="location.href=''" class="button-right right-align">Parcitipate in the competition with us </button>
+<button type="button" onclick="location.href=''" class="button-right right-align">Participate in the competition with us </button>
 
 <script>
 document.getElementById('mySvg').addEventListener('load', function() {

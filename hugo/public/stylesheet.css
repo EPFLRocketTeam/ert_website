@@ -9,6 +9,7 @@ body {
   background-color: black;
   vertical-align: bottom;
   color: white;
+  overflow-x: hidden;
 }
 
 h1{
@@ -775,63 +776,57 @@ border-radius: 10px;
     
 
     .parent-mission {
-      height: 100vh;
+      height: 110vh;
       grid-template-columns: repeat(7, 1fr);
-      grid-template-rows: repeat(8, 1fr);
+      grid-template-rows: repeat(10, 1fr);
       gap: 15px;
     }
 
     .mission1{
-      /* position: relative;
-      right: 20px; */
       grid-row-start: 1;
       grid-column-start: 1;
-      grid-row-end: 5;
+      grid-row-end: 6;
       grid-column-end: 7;
     }
 
     .mission2{
-      grid-row-start: 5;
+      grid-row-start: 7;
       grid-column-start: 1;
-      grid-row-end: 6;
+      grid-row-end: 8;
       grid-column-end: 4;
     }
 
     .mission3{
-      grid-row-start: 5;
+      grid-row-start: 7;
       grid-column-start: 4;
-      grid-row-end: 7;
+      grid-row-end: 9;
       grid-column-end: 7;
     }
     
     .mission4{
-      grid-row-start: 6;
+      grid-row-start: 8;
       grid-column-start: 1;
-      grid-row-end: 7;
+      grid-row-end: 9;
       grid-column-end: 4;
     }
     
     .mission5{
       display: none;
-      /* grid-row-start: 4;
-      grid-column-start: 11;
-      grid-row-end: 7;
-      grid-column-end: 14; */
     }
     
     .mission6{
-      grid-row-start: 7;
+      grid-row-start: 9;
       grid-column-start: 1;
-      grid-row-end: 8;
+      grid-row-end: 10;
       grid-column-end: 7;
     }
     
     .mission7{
     
-      grid-row-start: 4;
+      grid-row-start: 6;
       grid-column-start: 1;
-      grid-row-end: 5;
-      grid-column-end: 5;
+      grid-row-end: 7;
+      grid-column-end: 6;
     }
 
   }
