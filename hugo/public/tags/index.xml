@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on EPFL Rocket Team</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://rocketteam.epfl.ch/tags/</link>
     <description>Recent content in Tags on EPFL Rocket Team</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-UK</language>
@@ -10,60 +10,60 @@
     <webMaster>me@example.com (John Doe)</webMaster>
     <copyright>John Doe (CC BY 4.0)</copyright>
     <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://rocketteam.epfl.ch/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Css</title>
-      <link>http://localhost:1313/tags/css/</link>
+      <link>https://rocketteam.epfl.ch/tags/css/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (John Doe)</author>
-      <guid>http://localhost:1313/tags/css/</guid>
+      <guid>https://rocketteam.epfl.ch/tags/css/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Html</title>
-      <link>http://localhost:1313/tags/html/</link>
+      <link>https://rocketteam.epfl.ch/tags/html/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (John Doe)</author>
-      <guid>http://localhost:1313/tags/html/</guid>
+      <guid>https://rocketteam.epfl.ch/tags/html/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Markdown</title>
-      <link>http://localhost:1313/tags/markdown/</link>
+      <link>https://rocketteam.epfl.ch/tags/markdown/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (John Doe)</author>
-      <guid>http://localhost:1313/tags/markdown/</guid>
+      <guid>https://rocketteam.epfl.ch/tags/markdown/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Privacy</title>
-      <link>http://localhost:1313/tags/privacy/</link>
+      <link>https://rocketteam.epfl.ch/tags/privacy/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (John Doe)</author>
-      <guid>http://localhost:1313/tags/privacy/</guid>
+      <guid>https://rocketteam.epfl.ch/tags/privacy/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Shortcodes</title>
-      <link>http://localhost:1313/tags/shortcodes/</link>
+      <link>https://rocketteam.epfl.ch/tags/shortcodes/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (John Doe)</author>
-      <guid>http://localhost:1313/tags/shortcodes/</guid>
+      <guid>https://rocketteam.epfl.ch/tags/shortcodes/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Text</title>
-      <link>http://localhost:1313/tags/text/</link>
+      <link>https://rocketteam.epfl.ch/tags/text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (John Doe)</author>
-      <guid>http://localhost:1313/tags/text/</guid>
+      <guid>https://rocketteam.epfl.ch/tags/text/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
     <item>
       <title>Emoji</title>
-      <link>http://localhost:1313/tags/emoji/</link>
+      <link>https://rocketteam.epfl.ch/tags/emoji/</link>
       <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate><author>me@example.com (John Doe)</author>
-      <guid>http://localhost:1313/tags/emoji/</guid>
+      <guid>https://rocketteam.epfl.ch/tags/emoji/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
