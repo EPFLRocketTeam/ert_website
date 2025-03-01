@@ -76,18 +76,6 @@
                 href="https://rocketteam.epfl.ch/fr/contact/"
                 />
   </url><url>
-    <loc>https://rocketteam.epfl.ch/fr/blog/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="https://rocketteam.epfl.ch/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rocketteam.epfl.ch/fr/blog/"
-                />
-  </url><url>
     <loc>https://rocketteam.epfl.ch/fr/shop/</loc>
     <xhtml:link
                 rel="alternate"

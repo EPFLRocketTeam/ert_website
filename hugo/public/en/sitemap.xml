@@ -78,19 +78,6 @@
                 href="https://rocketteam.epfl.ch/contact/"
                 />
   </url><url>
-    <loc>https://rocketteam.epfl.ch/blog/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rocketteam.epfl.ch/fr/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="https://rocketteam.epfl.ch/blog/"
-                />
-  </url><url>
     <loc>https://rocketteam.epfl.ch/shop/</loc>
     <xhtml:link
                 rel="alternate"
@@ -130,7 +117,6 @@
                 />
   </url><url>
     <loc>https://rocketteam.epfl.ch/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -142,23 +128,7 @@
                 href="https://rocketteam.epfl.ch/categories/"
                 />
   </url><url>
-    <loc>https://rocketteam.epfl.ch/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/blog/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://rocketteam.epfl.ch/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -169,32 +139,5 @@
                 hreflang="en-UK"
                 href="https://rocketteam.epfl.ch/tags/"
                 />
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/blog/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/blog/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/blog/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/blog/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
   </url>
 </urlset>
