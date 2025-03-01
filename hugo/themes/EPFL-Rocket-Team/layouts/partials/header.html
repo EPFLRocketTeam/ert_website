@@ -58,7 +58,17 @@
 				</a>
 			</li>
 			{{ range .Site.Menus.main.ByWeight }}
-			<li class="desktop-menu-item"><a href="{{ .URL }}">{{ .Name }}</a></li>
+      <!--li class="desktop-menu-item"><a href="{{ .URL }}">{{ .Name }}</a></li-->
+        <li class="desktop-menu-item">
+          <a href="{{ .URL }}">{{ .Name }}{{ if .Page.Params.children }} ▾{{ end }}</a>
+            {{ if .Page.Params.children }}
+                <ul class="submenu">
+                    {{ range .Page.Params.children }}
+                       <li><a href="{{ .url }}">{{ .name }}</a></li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        </li>
 			{{ end }}
 			<!--li class="desktop-menu-item"><a href='{{ absURL "index.xml" }}'>RSS</a></li-->
 			

@@ -40,18 +40,6 @@
                 href="https://rocketteam.epfl.ch/join-us/"
                 />
   </url><url>
-    <loc>https://rocketteam.epfl.ch/sponsors/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rocketteam.epfl.ch/fr/sponsors/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="https://rocketteam.epfl.ch/sponsors/"
-                />
-  </url><url>
     <loc>https://rocketteam.epfl.ch/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -65,6 +53,18 @@
                 />
   </url><url>
     <loc>https://rocketteam.epfl.ch/about/board/</loc>
+  </url><url>
+    <loc>https://rocketteam.epfl.ch/sponsors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://rocketteam.epfl.ch/fr/sponsors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://rocketteam.epfl.ch/sponsors/"
+                />
   </url><url>
     <loc>https://rocketteam.epfl.ch/contact/</loc>
     <xhtml:link
