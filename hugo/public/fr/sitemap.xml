@@ -76,19 +76,7 @@
                 href="http://localhost:1313/fr/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/blog/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="http://localhost:1313/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/blog/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/fr/shop/</loc>
+    <loc>https://rocketteam.epfl.ch/fr/shop/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"

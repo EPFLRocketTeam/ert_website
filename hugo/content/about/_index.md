@@ -6,8 +6,11 @@ Some text describing the vibe in the team and what are the qualities of the stud
 Some text describing the vibe in the team and what are the qualities of the students, and some information on how the team was built over the years etc."
 header_background: "/images/originalQuality/AboutUsBackground.jpeg"
 menu: "main"
-weight: 5
+weight: 4
 layout: single
+children:
+  - name: "Board"
+    url: "/about/board/"
 ---
 
 {{< diagonal-display >}}

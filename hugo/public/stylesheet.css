@@ -990,3 +990,60 @@ border-radius: 10px;
 	line-height: 18px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.desktop-menu-item {
+    position: relative;
+    padding: 10px;
+}
+
+.desktop-menu-item:hover {
+  background: white;
+}
+
+.desktop-menu-item:hover a {
+  color: black;
+}
+
+.desktop-menu-item .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.desktop-menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px;
+    margin: 0px;
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 0.7rem;
+}
+
+.submenu li a:hover {
+    background: none;
+}

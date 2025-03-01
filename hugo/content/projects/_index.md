@@ -6,6 +6,15 @@ header_background: "/images/originalQuality/All-Projects.jpeg"
 date: 2024-11-18T20:38:42+01:00
 menu: main
 weight: 2
+children:
+  - name: "Competition"
+    url: "/projects/competition/"
+  - name: "Hyperion"
+    url: "/projects/hyperion/"
+  - name: "Icarus"
+    url: "/projects/icarus/"
+  - name: "Education"
+    url: "/projects/education/"
 ---
 
 {{< project-sp >}}
