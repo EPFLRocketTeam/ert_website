@@ -776,7 +776,7 @@ border-radius: 10px;
     
 
     .parent-mission {
-      height: 110vh;
+      height: 105vh;
       grid-template-columns: repeat(7, 1fr);
       grid-template-rows: repeat(10, 1fr);
       gap: 15px;
