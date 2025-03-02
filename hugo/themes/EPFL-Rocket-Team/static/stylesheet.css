@@ -31,8 +31,11 @@ h2 {
 h3 {
   font-family: 'Aspekta';
   font-size: 86px;
+  line-height: 90px;
   color: #f6f6f6;
   font-weight: 400;
+  display: flex;
+  align-items: flex-end;
 }
 
 h4 {
@@ -499,6 +502,59 @@ html {
   justify-content: space-between;
 }
 
+#numstudents{
+  left:67vw;
+}
+
+#numlaunches{
+  left: 49vw;
+}
+
+#numprojects{
+  left: 34vw;
+}
+
+#numawards{
+  left: 16vw;
+}
+
+#ns1, #ns2, #ns3, #ns4, #ns5{
+  right: 8.3vw;
+}
+
+#ns6{
+  left:11.5vw;
+}
+
+#nl1, #nl2, #nl3{
+  right: 4vw;
+}
+
+#nl4, #nl5{
+  left: 12.3vw;
+}
+
+#np1, #np2{
+  right: 3.6vw;
+}
+
+#np3, #np4, #np5{
+  left: 7.3vw;
+}
+
+#na1, #na2{
+  right: 6vw;
+}
+
+#na3, #na4, #na5, #na6, #na7{
+  left:9vw;
+}
+
+#nr1, #nr2, #nr3, #nr4, #nr5, #nr6, #nr7{
+  left:13vw;
+}
+
+
 .joinus-crop {
   position: relative;
   overflow: hidden;
@@ -655,11 +711,6 @@ html {
     line-height: 48px;
   }
 
-  /* h3{
-    font-size: 86px;
-    line-height: 110px;
-  } */
-
   h4 {
     font-size: 45px;
     line-height: 50px;
@@ -683,8 +734,58 @@ html {
 
   .numbers-line img {
     display: block;
+  }
 
+  #ns1, #na7, #nr6, #nr7{
+    display: none;
+  }
 
+  #ns2, #ns3, #ns4, #ns5{
+    left: -3vw;
+  }
+
+  #ns6{
+    left: 20vw;
+  }
+
+  #nl1{
+    right:11vw;
+  }
+
+  #nl2{
+    right:10vw;
+  }
+
+  #nl3{
+    right: 9vw;
+  }
+
+  #nl4{
+    left: 11.3vw;
+  }
+
+  #np1{
+    right: 8vw;
+  }
+
+  #np2{
+    right: 7vw;
+  }
+
+  #np4{
+    left: 8.3vw;
+  }
+
+  #np5{
+    left: 9.5vw;
+  }
+
+  #na1, #na2{
+    right: 9vw;
+  }
+
+  #nr1, #nr2, #nr3, #nr4, #nr5, #nr6, #nr7{
+    left:15vw;
   }
 }
 
@@ -713,6 +814,59 @@ html {
   .testimonial-text {
     font-size: 16px;
   }
+
+  #ns2, #ns6,  #nr5, #na1, #nr4{
+    display: none;
+  }
+
+  #ns3, #ns4, #ns5{
+    left: -4vw;
+  }
+
+  #nl1{
+    right:12vw;
+  }
+
+  #nl2{
+    right:10.5vw;
+  }
+
+  #nl3{
+    right: 9vw;
+  }
+
+  #nl4{
+    left: 13.5vw;
+  }
+
+  #nl5{
+    left: 15.5vw;
+  }
+
+  #np3{
+    left: 8.5vw;
+  }
+
+  #np4{
+    left: 9.8vw;
+  }
+
+  #np5{
+    left: 11.2vw;
+  }
+
+  #na2{
+    right:0vw;
+  }
+
+  #na3, #na4, #na5, #na6{
+    left:22vw;
+  }
+
+  #nr1, #nr2, #nr3, #nr4, #nr5, #nr6, #nr7{
+    left:19vw;
+  }
+
 }
 
 /* Medium-small screens (tablets, <900px) -> 5 Columns */
@@ -819,11 +973,26 @@ html {
   }
 
   .mission7 {
-
     grid-row-start: 6;
     grid-column-start: 1;
     grid-row-end: 7;
     grid-column-end: 6;
+  }
+
+  #numstudents{
+    left:32vw;
+  }
+
+  #numlaunches{
+    left: 21vw;
+  }
+
+  #numprojects{
+    left:14vw;
+  }
+
+  #numawards{
+    left: 9vw;
   }
 
 }
