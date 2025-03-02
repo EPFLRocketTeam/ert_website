@@ -40,7 +40,7 @@
                 href="http://localhost:1313/join-us/"
                 />
   </url><url>
-    <loc>https://rocketteam.epfl.ch/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -54,52 +54,28 @@
   </url><url>
     <loc>http://localhost:1313/about/board/</loc>
   </url><url>
-<<<<<<< HEAD
+    <loc>http://localhost:1313/sponsors/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="http://localhost:1313/fr/sponsors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="http://localhost:1313/sponsors/"
+                />
+  </url><url>
     <loc>http://localhost:1313/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
                 href="http://localhost:1313/fr/contact/"
-=======
-    <loc>https://rocketteam.epfl.ch/sponsors/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rocketteam.epfl.ch/fr/sponsors/"
->>>>>>> fb1e7ce51f275d718b8c49878a3ec996bf78300b
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-<<<<<<< HEAD
                 href="http://localhost:1313/contact/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/fr/blog/"
-=======
-                href="https://rocketteam.epfl.ch/sponsors/"
-                />
-  </url><url>
-    <loc>https://rocketteam.epfl.ch/contact/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://rocketteam.epfl.ch/fr/contact/"
->>>>>>> fb1e7ce51f275d718b8c49878a3ec996bf78300b
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-<<<<<<< HEAD
-                href="http://localhost:1313/blog/"
-=======
-                href="https://rocketteam.epfl.ch/contact/"
->>>>>>> fb1e7ce51f275d718b8c49878a3ec996bf78300b
                 />
   </url><url>
     <loc>http://localhost:1313/shop/</loc>
@@ -140,12 +116,7 @@
                 href="http://localhost:1313/posts/test/"
                 />
   </url><url>
-<<<<<<< HEAD
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-=======
-    <loc>https://rocketteam.epfl.ch/categories/</loc>
->>>>>>> fb1e7ce51f275d718b8c49878a3ec996bf78300b
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -157,27 +128,7 @@
                 href="http://localhost:1313/categories/"
                 />
   </url><url>
-<<<<<<< HEAD
-    <loc>http://localhost:1313/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-=======
-    <loc>https://rocketteam.epfl.ch/tags/</loc>
->>>>>>> fb1e7ce51f275d718b8c49878a3ec996bf78300b
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
@@ -188,35 +139,5 @@
                 hreflang="en-UK"
                 href="http://localhost:1313/tags/"
                 />
-<<<<<<< HEAD
-  </url><url>
-    <loc>http://localhost:1313/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/privacy/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/shortcodes/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/math-typesetting/</loc>
-    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/blog/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-=======
->>>>>>> fb1e7ce51f275d718b8c49878a3ec996bf78300b
   </url>
 </urlset>

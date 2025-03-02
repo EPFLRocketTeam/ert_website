@@ -76,7 +76,7 @@
                 href="http://localhost:1313/fr/contact/"
                 />
   </url><url>
-    <loc>https://rocketteam.epfl.ch/fr/shop/</loc>
+    <loc>http://localhost:1313/fr/shop/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
