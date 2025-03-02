@@ -1,0 +1,65 @@
+<style>
+    .bronze-box {
+        margin: 30px;
+        width: auto;
+        height: auto;
+        border: 2px solid #8C6239;
+        position: relative;
+        background-color: black;
+        color: #8C6239;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 18px;
+        border-radius: 24px;
+    }
+
+    .bronze-label {
+        position: absolute;
+        top: -12px;
+        left: 24px;
+        background-color: black;
+        padding: 0 5px;
+        font-size: 24px;
+    }
+
+    .bronze-img {
+      max-height: 100px;
+    }
+
+    .bronze-sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        /* Center logos vertically */
+        /* Center-align logos */
+        gap: 20px;
+        padding: 20px;
+        /* Space between logos */
+        border-radius: 6px;
+        background: linear-gradient(to right, #A77F57, #8C6239);
+    }
+
+    .bronze-sponsor {
+        flex: 1 1 200px;
+        /* Adjusts size dynamically, min 200px */
+        max-width: 400px;
+        /* Prevents oversized logos */
+        text-align: center;
+    }
+
+    .bronze-sponsor img {
+        max-width: 100%;
+        /* Ensures logos are responsive */
+        height: auto;
+    }
+</style>
+
+<div class="bronze-box">
+    <span class="bronze-label">BRONZE</span>
+    <div class="bronze-sponsors">
+        <div class="bronze-sponsor"><img src="/images/originalQuality/EPFL.png" alt="Sponsor 1"></div>
+        <div class="bronze-sponsor"><img src="/images/originalQuality/apco.png" alt="Sponsor 2"></div>
+        <div class="bronze-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Sponsor 3"></div>
+      </div>
+</div>
