@@ -5,12 +5,12 @@
         height: auto;
         border: 2px solid #CBA135;
         position: relative;
-        background-color: #09060d;
+        background-color: black;
         color: #CBA135;
-        font-family: Arial, sans-serif;
         font-size: 16px;
-        padding: 10px;
-        border-radius: 12px;
+        line-height: 24px;
+        padding: 18px;
+        border-radius: 24px;
     }
 
     .gold-label {
@@ -25,8 +25,44 @@
     .gold-img {
       max-height: 100px;
     }
+
+    .gold-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* Center logos vertically */
+    /* Center-align logos */
+    gap: 20px;
+    padding: 20px;
+    /* Space between logos */
+    border-radius: 6px;
+    background: linear-gradient(to right, #E0B35B, #CBA135);
+}
+
+  .gold-sponsor {
+    flex: 1 1 200px;
+    /* Adjusts size dynamically, min 200px */
+    max-width: 400px;
+    /* Prevents oversized logos */
+    text-align: center;
+  }
+
+  .gold-sponsor img {
+    max-width: 100%;
+    /* Ensures logos are responsive */
+    height: auto;
+  }
+
 </style>
 
 <div class="gold-box">
     <span class="gold-label">GOLD</span>
+    <div class="gold-sponsors">
+        <div class="gold-sponsor"><img src="/images/originalQuality/Swagelok.png" alt="Swagelok"></div>
+        <div class="gold-sponsor"><img src="/images/originalQuality/3DprecisionSA.png" alt="3D Precision SA"></div>
+        <div class="gold-sponsor"><img src="/images/originalQuality/KISTLER.png" alt="Kistler"></div>
+        <div class="gold-sponsor"><img src="/images/originalQuality/maxon.png" alt="Maxon"></div>
+        <div class="gold-sponsor"><img src="/images/originalQuality/SchoellerBleckmann.png" alt="Schoeller Bleckmann"></div>
+      </div>
 </div>

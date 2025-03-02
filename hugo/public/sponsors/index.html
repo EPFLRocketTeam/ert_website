@@ -248,10 +248,10 @@ function hideMenu() {
     height: auto;
     border: 2px solid #9063CD;
     position: relative;
-    background-color: #09060d;
+    background-color: black;
     color: #9063CD;
-    font-family: Arial, sans-serif;
     font-size: 16px;
+    line-height: 24px;
     padding: 18px;
     border-radius: 24px;
   }
@@ -277,6 +277,7 @@ function hideMenu() {
      
      
     gap: 20px;
+    padding: 20px;
      
     border-radius: 6px;
     background: linear-gradient(to right, #B28BFF, #9063CD);
@@ -294,17 +295,15 @@ function hideMenu() {
     max-width: 100%;
      
     height: auto;
-    filter: drop-shadow(2px 2px 5px rgba(144, 99, 205, 0.5));
-     
   }
 </style>
 
 <div class="prestige-box">
   <span class="prestige-label">PRESTIGE</span>
   <div class="prestige-sponsors">
-    <div class="prestige-sponsor"><img src="/images/originalQuality/EPFL.png" alt="Sponsor 1"></div>
-    <div class="prestige-sponsor"><img src="/images/originalQuality/apco.png" alt="Sponsor 2"></div>
-    <div class="prestige-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Sponsor 3"></div>
+    <div class="prestige-sponsor"><img src="/images/originalQuality/EPFL.png" alt="EPFL"></div>
+    <div class="prestige-sponsor"><img src="/images/originalQuality/apco.png" alt="apco"></div>
+    <div class="prestige-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Constellium"></div>
   </div>
 </div>
 <style>
@@ -314,12 +313,12 @@ function hideMenu() {
         height: auto;
         border: 2px solid #CBA135;
         position: relative;
-        background-color: #09060d;
+        background-color: black;
         color: #CBA135;
-        font-family: Arial, sans-serif;
         font-size: 16px;
-        padding: 10px;
-        border-radius: 12px;
+        line-height: 24px;
+        padding: 18px;
+        border-radius: 24px;
     }
 
     .gold-label {
@@ -334,10 +333,46 @@ function hideMenu() {
     .gold-img {
       max-height: 100px;
     }
+
+    .gold-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+     
+     
+    gap: 20px;
+    padding: 20px;
+     
+    border-radius: 6px;
+    background: linear-gradient(to right, #E0B35B, #CBA135);
+}
+
+  .gold-sponsor {
+    flex: 1 1 200px;
+     
+    max-width: 400px;
+     
+    text-align: center;
+  }
+
+  .gold-sponsor img {
+    max-width: 100%;
+     
+    height: auto;
+  }
+
 </style>
 
 <div class="gold-box">
     <span class="gold-label">GOLD</span>
+    <div class="gold-sponsors">
+        <div class="gold-sponsor"><img src="/images/originalQuality/Swagelok.png" alt="Swagelok"></div>
+        <div class="gold-sponsor"><img src="/images/originalQuality/3DprecisionSA.png" alt="3D Precision SA"></div>
+        <div class="gold-sponsor"><img src="/images/originalQuality/KISTLER.png" alt="Kistler"></div>
+        <div class="gold-sponsor"><img src="/images/originalQuality/maxon.png" alt="Maxon"></div>
+        <div class="gold-sponsor"><img src="/images/originalQuality/SchoellerBleckmann.png" alt="Schoeller Bleckmann"></div>
+      </div>
 </div>
 
 <style>
@@ -347,12 +382,12 @@ function hideMenu() {
         height: auto;
         border: 2px solid #A8A9AD;
         position: relative;
-        background-color: #09060d;
+        background-color: black;
         color: #A8A9AD;
-        font-family: Arial, sans-serif;
         font-size: 16px;
-        padding: 10px;
-        border-radius: 12px;
+        line-height: 24px;
+        padding: 18px;
+        border-radius: 24px;
     }
 
     .silver-label {
@@ -365,14 +400,46 @@ function hideMenu() {
     }
 
     .silver-img {
-      max-height: 100px;
+        max-height: 100px;
+    }
+
+    .silver-sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+         
+         
+        gap: 20px;
+        padding: 20px;
+         
+        border-radius: 6px;
+        background: linear-gradient(to right, #D1D3D4, #A8A9AD);
+    }
+
+    .silver-sponsor {
+        flex: 1 1 200px;
+         
+        max-width: 400px;
+         
+        text-align: center;
+    }
+
+    .silver-sponsor img {
+        max-width: 100%;
+         
+        height: auto;
     }
 </style>
 
 <div class="silver-box">
     <span class="silver-label">SILVER</span>
+    <div class="silver-sponsors">
+        <div class="silver-sponsor"><img src="/images/originalQuality/EPFL.png" alt="Sponsor 1"></div>
+        <div class="silver-sponsor"><img src="/images/originalQuality/apco.png" alt="Sponsor 2"></div>
+        <div class="silver-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Sponsor 3"></div>
+      </div>
 </div>
-
 <style>
     .bronze-box {
         margin: 30px;
@@ -380,12 +447,12 @@ function hideMenu() {
         height: auto;
         border: 2px solid #8C6239;
         position: relative;
-        background-color: #09060d;
+        background-color: black;
         color: #8C6239;
-        font-family: Arial, sans-serif;
         font-size: 16px;
-        padding: 10px;
-        border-radius: 12px;
+        line-height: 24px;
+        padding: 18px;
+        border-radius: 24px;
     }
 
     .bronze-label {
@@ -400,10 +467,43 @@ function hideMenu() {
     .bronze-img {
       max-height: 100px;
     }
+
+    .bronze-sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+         
+         
+        gap: 20px;
+        padding: 20px;
+         
+        border-radius: 6px;
+        background: linear-gradient(to right, #A77F57, #8C6239);
+    }
+
+    .bronze-sponsor {
+        flex: 1 1 200px;
+         
+        max-width: 400px;
+         
+        text-align: center;
+    }
+
+    .bronze-sponsor img {
+        max-width: 100%;
+         
+        height: auto;
+    }
 </style>
 
 <div class="bronze-box">
     <span class="bronze-label">BRONZE</span>
+    <div class="bronze-sponsors">
+        <div class="bronze-sponsor"><img src="/images/originalQuality/EPFL.png" alt="Sponsor 1"></div>
+        <div class="bronze-sponsor"><img src="/images/originalQuality/apco.png" alt="Sponsor 2"></div>
+        <div class="bronze-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Sponsor 3"></div>
+      </div>
 </div>
 
 <style>
@@ -413,12 +513,12 @@ function hideMenu() {
         height: auto;
         border: 2px solid #008080;
         position: relative;
-        background-color: #09060d;
+        background-color: black;
         color: #008080;
-        font-family: Arial, sans-serif;
         font-size: 16px;
-        padding: 10px;
-        border-radius: 12px;
+        line-height: 24px;
+        padding: 18px;
+        border-radius: 24px;
     }
 
     .support-label {
@@ -433,10 +533,43 @@ function hideMenu() {
     .support-img {
       max-height: 100px;
     }
+
+    .support-sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+         
+         
+        gap: 20px;
+        padding: 20px;
+         
+        border-radius: 6px;
+        background: linear-gradient(to right, #66B2B2, #008080);
+    }
+
+    .support-sponsor {
+        flex: 1 1 200px;
+         
+        max-width: 400px;
+         
+        text-align: center;
+    }
+
+    .support-sponsor img {
+        max-width: 100%;
+         
+        height: auto;
+    }
 </style>
 
 <div class="support-box">
     <span class="support-label">SUPPORT</span>
+    <div class="support-sponsors">
+        <div class="support-sponsor"><img src="/images/originalQuality/EPFL.png" alt="Sponsor 1"></div>
+        <div class="support-sponsor"><img src="/images/originalQuality/apco.png" alt="Sponsor 2"></div>
+        <div class="support-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Sponsor 3"></div>
+      </div>
 </div>
 
 
