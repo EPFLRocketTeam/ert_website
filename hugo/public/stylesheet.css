@@ -502,6 +502,7 @@ html {
   height: 100px;
   width: fit-content;
   display: flex;
+  overflow: hidden;
   justify-content: space-between;
 }
 
