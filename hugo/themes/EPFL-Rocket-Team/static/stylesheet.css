@@ -924,8 +924,6 @@ html {
     grid-column-end: 6;
   }
 
-
-
   .parent-mission {
     height: 105vh;
     grid-template-columns: repeat(7, 1fr);
@@ -980,7 +978,7 @@ html {
   }
 
   #numstudents{
-    left:32vw;
+    left:28vw;
   }
 
   #numlaunches{
@@ -995,9 +993,63 @@ html {
     left: 9vw;
   }
 
+  #ns3, #ns5, #nl1, #nl2, #np1, #np5, #na6, #nr3, #nr4, #nr5, #nr6, #nr7{
+    display: none;
+  }
+
+  #ns6{
+    display: block;
+    left: 32vw;
+  }
+
+
+  #nl3{
+    right: 7vw;
+  }
+
+  #nl4{
+    left: 26vw;
+  }
+
+  #nl5{
+    left: 28vw;
+  }
+
+  #np2{
+    right: 8vw;
+  }
+
+  #np3{
+    left: 11.8vw;
+  }
+
+  #np4{
+    left: 12vw;
+  }
+
+  #na2{
+    right:14vw;
+  }
+
+  #na3{
+    left:20vw;
+  }
+
+  #na5{
+    left: 24vw;
+  }
+
+  #nr1, #nr2{
+    left:27vw;
+  }
+
 }
 
 @media (max-width: 430px) {
+  body{
+    overflow-x: hidden;
+  }
+
   h1 {
     font-size: 34px;
     line-height: 40px;
@@ -1008,14 +1060,42 @@ html {
     line-height: 28px;
   }
 
-  h3 {
-    font-size: 40px;
-    line-height: 44px;
-  }
-
   h4 {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  #nl5, #np4, #na4, #na5, #nr2{
+    display: none;
+  }
+
+  #ns4{
+    left: -24vw;
+  }
+
+  #ns6{
+    left: 39vw;
+  }
+
+  #nl3{
+    right: 24vw;
+  }
+
+  #nl4{
+    left: 29vw;
+  }
+
+  #np2{
+    right: 22vw;
+  }
+
+  #na2{
+    right:29vw;
+  }
+  
+
+  #nr1{
+    left:42vw;
   }
 }
 
