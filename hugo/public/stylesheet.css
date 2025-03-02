@@ -57,6 +57,7 @@ p {
   position: relative;
   margin: 20px 0px 40px;
   height: max-content;
+  overflow: hidden;
 }
 
 .page {
@@ -635,11 +636,10 @@ html {
 }
 
 .parent-mission {
-  /*   margin-left: 20px; */
   display: grid;
-  width: 105vw;
-  height: 100vh;
-  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(13, 1fr);
   gap: 15px;
 }
@@ -721,7 +721,7 @@ html {
   }
 
   .mission1 {
-    grid-column-end: 16;
+    grid-column-end: 7;
   }
 
 
@@ -933,9 +933,9 @@ html {
   }
 
   .parent-mission {
-    height: 105vh;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    height: auto;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: 15px;
   }
 
