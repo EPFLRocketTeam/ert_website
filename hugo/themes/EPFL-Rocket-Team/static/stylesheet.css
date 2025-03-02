@@ -978,7 +978,7 @@ html {
   }
 
   #numstudents{
-    left:28vw;
+    left:32vw;
   }
 
   #numlaunches{
@@ -1063,6 +1063,10 @@ html {
   h4 {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  #numstudents{
+    left:28vw;
   }
 
   #nl5, #np4, #na4, #na5, #nr2{
