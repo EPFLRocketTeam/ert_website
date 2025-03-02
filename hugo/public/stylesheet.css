@@ -105,6 +105,7 @@ p {
 
 .right-align {
   float: right;
+  right: 30px;
 }
 
 
@@ -421,6 +422,7 @@ html {
 .testimonial-box {
   position: relative;
   display: block;
+  min-height: 30rem;
 }
 
 .testimonial {
@@ -815,6 +817,10 @@ html {
     font-size: 16px;
   }
 
+  .testimonial {
+    min-height: 17rem;
+  }
+
   #ns2, #ns6,  #nr5, #na1, #nr4{
     display: none;
   }
@@ -978,7 +984,7 @@ html {
   }
 
   #numstudents{
-    left:28vw;
+    left:32vw;
   }
 
   #numlaunches{
@@ -1063,6 +1069,10 @@ html {
   h4 {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  #numstudents{
+    left:28vw;
   }
 
   #nl5, #np4, #na4, #na5, #nr2{

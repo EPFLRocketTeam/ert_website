@@ -105,6 +105,7 @@ p {
 
 .right-align {
   float: right;
+  right: 30px;
 }
 
 
@@ -421,6 +422,7 @@ html {
 .testimonial-box {
   position: relative;
   display: block;
+  min-height: 30rem;
 }
 
 .testimonial {
@@ -813,6 +815,10 @@ html {
 
   .testimonial-text {
     font-size: 16px;
+  }
+
+  .testimonial {
+    min-height: 17rem;
   }
 
   #ns2, #ns6,  #nr5, #na1, #nr4{
