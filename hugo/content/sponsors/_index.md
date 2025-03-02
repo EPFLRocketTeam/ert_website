@@ -9,3 +9,11 @@ layout: single
 ---
 
 {{< prestige-sponsors >}}
+
+{{< gold-sponsors >}}
+
+{{< silver-sponsors >}}
+
+{{< bronze-sponsors >}}
+
+{{< support-sponsors >}}

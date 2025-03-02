@@ -1,36 +1,66 @@
 <style>
-    body {
-      background-color: black;
-    }
-    .prestige-box {
-        margin: 30px;
-        width: auto;
-        height: auto;
-        border: 2px solid #9063CD;
-        position: relative;
-        background-color: #09060d;
-        color: #9063CD;
-        font-family: Arial, sans-serif;
-        font-size: 16px;
-        padding: 10px;
-    }
+  .prestige-box {
+    margin: 30px;
+    width: auto;
+    height: auto;
+    border: 2px solid #9063CD;
+    position: relative;
+    background-color: #09060d;
+    color: #9063CD;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 18px;
+    border-radius: 24px;
+  }
 
-    .prestige-label {
-        position: absolute;
-        top: -12px;
-        left: 10px;
-        background-color: black;
-        padding: 0 5px;
-        font-size: 24px;
-    }
+  .prestige-label {
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background-color: black;
+    padding: 0 5px;
+    font-size: 24px;
+  }
 
-    .prestige-img {
-      max-height: 100px;
-    }
+  .prestige-img {
+    max-height: 100px;
+  }
+
+  .prestige-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* Center logos vertically */
+    /* Center-align logos */
+    gap: 20px;
+    /* Space between logos */
+    border-radius: 6px;
+    background: linear-gradient(to right, #B28BFF, #9063CD);
+  }
+
+  .prestige-sponsor {
+    flex: 1 1 200px;
+    /* Adjusts size dynamically, min 200px */
+    max-width: 400px;
+    /* Prevents oversized logos */
+    text-align: center;
+  }
+
+  .prestige-sponsor img {
+    max-width: 100%;
+    /* Ensures logos are responsive */
+    height: auto;
+    filter: drop-shadow(2px 2px 5px rgba(144, 99, 205, 0.5));
+    /* Optional amethyst glow */
+  }
 </style>
 
 <div class="prestige-box">
-    <span class="prestige-label">PRESTIGE</span>
-    <img class="prestige-img" src="/images/originalQuality/EPFL.png"><br>
-    <img class="prestige-img" src="/images/originalQuality/apco.png">
+  <span class="prestige-label">PRESTIGE</span>
+  <div class="prestige-sponsors">
+    <div class="prestige-sponsor"><img src="/images/originalQuality/EPFL.png" alt="Sponsor 1"></div>
+    <div class="prestige-sponsor"><img src="/images/originalQuality/apco.png" alt="Sponsor 2"></div>
+    <div class="prestige-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Sponsor 3"></div>
+  </div>
 </div>

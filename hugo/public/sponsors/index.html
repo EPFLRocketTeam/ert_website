@@ -21,7 +21,7 @@
   <meta property="og:url" content="https://rocketteam.epfl.ch/sponsors/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Sponsors">
-  <meta property="og:description" content="PRESTIGE">
+  <meta property="og:description" content="PRESTIGE GOLD SILVER BRONZE SUPPORT">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
     <meta property="og:image" content="https://rocketteam.epfl.ch/images/share.webp">
@@ -33,15 +33,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://rocketteam.epfl.ch/images/share.webp">
   <meta name="twitter:title" content="Sponsors">
-  <meta name="twitter:description" content="PRESTIGE">
+  <meta name="twitter:description" content="PRESTIGE GOLD SILVER BRONZE SUPPORT">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="Sponsors">
-  <meta itemprop="description" content="PRESTIGE">
-  <meta itemprop="wordCount" content="1">
+  <meta itemprop="description" content="PRESTIGE GOLD SILVER BRONZE SUPPORT">
+  <meta itemprop="wordCount" content="5">
   <meta itemprop="image" content="https://rocketteam.epfl.ch/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -242,40 +242,201 @@ function hideMenu() {
 
 <content>
   <style>
-    body {
-      background-color: black;
-    }
-    .prestige-box {
+  .prestige-box {
+    margin: 30px;
+    width: auto;
+    height: auto;
+    border: 2px solid #9063CD;
+    position: relative;
+    background-color: #09060d;
+    color: #9063CD;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .prestige-label {
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background-color: black;
+    padding: 0 5px;
+    font-size: 24px;
+  }
+
+  .prestige-img {
+    max-height: 100px;
+  }
+
+  .prestige-sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+     
+     
+    gap: 20px;
+     
+    border-radius: 6px;
+    background: linear-gradient(to right, #B28BFF, #9063CD);
+  }
+
+  .prestige-sponsor {
+    flex: 1 1 200px;
+     
+    max-width: 400px;
+     
+    text-align: center;
+  }
+
+  .prestige-sponsor img {
+    max-width: 100%;
+     
+    height: auto;
+    filter: drop-shadow(2px 2px 5px rgba(144, 99, 205, 0.5));
+     
+  }
+</style>
+
+<div class="prestige-box">
+  <span class="prestige-label">PRESTIGE</span>
+  <div class="prestige-sponsors">
+    <div class="prestige-sponsor"><img src="/images/originalQuality/EPFL.png" alt="Sponsor 1"></div>
+    <div class="prestige-sponsor"><img src="/images/originalQuality/apco.png" alt="Sponsor 2"></div>
+    <div class="prestige-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Sponsor 3"></div>
+  </div>
+</div>
+<style>
+    .gold-box {
         margin: 30px;
         width: auto;
         height: auto;
-        border: 2px solid #9063CD;
+        border: 2px solid #CBA135;
         position: relative;
         background-color: #09060d;
-        color: #9063CD;
+        color: #CBA135;
         font-family: Arial, sans-serif;
         font-size: 16px;
         padding: 10px;
+        border-radius: 12px;
     }
 
-    .prestige-label {
+    .gold-label {
         position: absolute;
         top: -12px;
-        left: 10px;
+        left: 24px;
         background-color: black;
         padding: 0 5px;
         font-size: 24px;
     }
 
-    .prestige-img {
+    .gold-img {
       max-height: 100px;
     }
 </style>
 
-<div class="prestige-box">
-    <span class="prestige-label">PRESTIGE</span>
-    <img class="prestige-img" src="/images/originalQuality/EPFL.png"><br>
-    <img class="prestige-img" src="/images/originalQuality/apco.png">
+<div class="gold-box">
+    <span class="gold-label">GOLD</span>
+</div>
+
+<style>
+    .silver-box {
+        margin: 30px;
+        width: auto;
+        height: auto;
+        border: 2px solid #A8A9AD;
+        position: relative;
+        background-color: #09060d;
+        color: #A8A9AD;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .silver-label {
+        position: absolute;
+        top: -12px;
+        left: 24px;
+        background-color: black;
+        padding: 0 5px;
+        font-size: 24px;
+    }
+
+    .silver-img {
+      max-height: 100px;
+    }
+</style>
+
+<div class="silver-box">
+    <span class="silver-label">SILVER</span>
+</div>
+
+<style>
+    .bronze-box {
+        margin: 30px;
+        width: auto;
+        height: auto;
+        border: 2px solid #8C6239;
+        position: relative;
+        background-color: #09060d;
+        color: #8C6239;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .bronze-label {
+        position: absolute;
+        top: -12px;
+        left: 24px;
+        background-color: black;
+        padding: 0 5px;
+        font-size: 24px;
+    }
+
+    .bronze-img {
+      max-height: 100px;
+    }
+</style>
+
+<div class="bronze-box">
+    <span class="bronze-label">BRONZE</span>
+</div>
+
+<style>
+    .support-box {
+        margin: 30px;
+        width: auto;
+        height: auto;
+        border: 2px solid #008080;
+        position: relative;
+        background-color: #09060d;
+        color: #008080;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 12px;
+    }
+
+    .support-label {
+        position: absolute;
+        top: -12px;
+        left: 24px;
+        background-color: black;
+        padding: 0 5px;
+        font-size: 24px;
+    }
+
+    .support-img {
+      max-height: 100px;
+    }
+</style>
+
+<div class="support-box">
+    <span class="support-label">SUPPORT</span>
 </div>
 
 
