@@ -5,7 +5,7 @@
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="https://rocketteam.epfl.ch/images/originalQuality/ERT.png" />
+<link rel="shortcut icon" href="https://rocketteam.epfl.ch/icons/favicon.png" />
 <title>Categories | EPFL Rocket Team</title>
 <meta name="title" content="Categories" />
 <meta name="description" content="We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry’s leaders." />
@@ -60,14 +60,17 @@
 
 <body style="overflow-x: hidden; padding: 0">
   <header>
-      <div class="mobile-menu">
-	<div style="position: relative; display: flex; flex-direction: row; align-items: center; padding: 0px; width: 100%;">
-		<a style="margin-top: 4px; margin-bottom: 4px; margin-left: 30px; margin-right: 16px;" href="/">
-			<img style="height: 40px" src="/images/originalQuality/ERT.png">
-		</a>
-
-		<button style="font-size: 40px;" class="close-icon" onclick="hideMenu()">✖</button>
-	</div>
+      <div class="mobile-menu" style="position: fixed; align-items: center; height: max-content; width: 100%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.5); padding: 0px;" class="navbar">
+  <ul style="height: max-content; align-items: center; width: 100%">
+    <li style="margin-left: 16px; margin-right: auto;">
+      <a href="/">
+        <img style="margin-top: 4px; margin-bottom: 4px; height: 40px" src="/images/originalQuality/ERT.png">
+      </a>
+    </li>
+    <li>
+		  <button style="font-size: 36px;" class="close-icon" onclick="hideMenu()">✖</button>
+    </li>
+  </ul>
 
 	<div class="mobile-menu-items">
 		
@@ -176,8 +179,9 @@
 			<li><a class="desktop-menu-item" href="/categories/">🇬🇧</a></li>
 			
 			
-			<li><button style="font-size: 40px; transform: translate(0,-5px);" class="menu-icon" onclick="showMenu()">☰</button></li>
+			<li><button style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="showMenu()">☰</button></li>
 		</ul>
+
 	</nav>
 
 	<div class="intro-text">

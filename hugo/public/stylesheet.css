@@ -190,14 +190,14 @@ html {
   z-index: 1;
 }
 
-.navbar ul {
+.navbar ul, .mobile-menu ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: right;
   margin: 0;
   padding: 10px;
-  background: kransparent;
+  background: transparent;
 }
 
 .navbar li {
@@ -360,11 +360,12 @@ html {
 .mobile-menu-items {
   display: flex;
   position: relative;
-  margin-bottom: auto;
+  margin-bottom: 0;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: black;
   color: white;
   flex-direction: column;
@@ -389,8 +390,7 @@ html {
   font-size: 56px;
   cursor: pointer;
   margin-left: auto;
-  margin-right: 40px;
-  margin-top: 9px;
+  margin-right: 16px;
 }
 
 @media (max-width: 940px) {
