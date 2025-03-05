@@ -503,16 +503,3 @@
 </div>
 
 <button type="button" onclick="location.href='/projects/competition'" class="button-right right-align">Participate in the competition with us </button>
-
-<script>
-document.getElementById('mySvg').addEventListener('load', function() {
-    var svgDoc = this.contentDocument; // Get the internal SVG document
-    var groups = svgDoc.querySelectorAll('g');
-
-    groups.forEach(group => {
-	group.setAttribute('opacity', '0.4'); // Default opacity
-	group.addEventListener('mouseenter', () => group.setAttribute('opacity', '1'));
-	group.addEventListener('mouseleave', () => group.setAttribute('opacity', '0.4'));
-    });
-});
-</script>

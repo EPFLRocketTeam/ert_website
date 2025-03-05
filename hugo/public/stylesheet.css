@@ -187,8 +187,6 @@ html {
 .navbar {
   height: 4vw;
   align-content: center;
-  padding-left: 30px;
-  padding-right: 30px;
   z-index: 1;
 }
 
@@ -1316,4 +1314,8 @@ html {
 
 .submenu li a:hover {
   background: none;
+}
+
+.submenu-item:hover {
+  background: #ff4a3d;
 }
