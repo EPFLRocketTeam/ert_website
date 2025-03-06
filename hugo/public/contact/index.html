@@ -21,7 +21,7 @@
   <meta property="og:url" content="https://rocketteam.epfl.ch/contact/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Contact">
-  <meta property="og:description" content=" Name Email Message SEND ">
+  <meta property="og:description" content="Name Email Message SEND">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
     <meta property="og:image" content="https://rocketteam.epfl.ch/images/share.webp">
@@ -33,14 +33,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://rocketteam.epfl.ch/images/share.webp">
   <meta name="twitter:title" content="Contact">
-  <meta name="twitter:description" content=" Name Email Message SEND ">
+  <meta name="twitter:description" content="Name Email Message SEND">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="Contact">
-  <meta itemprop="description" content=" Name Email Message SEND ">
+  <meta itemprop="description" content="Name Email Message SEND">
   <meta itemprop="wordCount" content="4">
   <meta itemprop="image" content="https://rocketteam.epfl.ch/images/share.webp">
 
@@ -61,52 +61,7 @@
 
 <body style="overflow-x: hidden; padding: 0">
   <header>
-      <div class="mobile-menu" style="position: fixed; align-items: center; height: max-content; width: 100%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.5); padding: 0px;" class="navbar">
-  <ul style="height: max-content; align-items: center; width: 100%">
-    <li style="margin-left: 16px; margin-right: auto;">
-      <a href="/">
-        <img style="margin-top: 4px; margin-bottom: 4px; height: 40px" src="/images/originalQuality/ERT.png">
-      </a>
-    </li>
-    <li>
-		  <button style="font-size: 36px;" class="close-icon" onclick="hideMenu()">✖</button>
-    </li>
-  </ul>
-
-	<div class="mobile-menu-items">
-		
-		<a href="/">Home</a>
-		
-		<a href="/projects/">Projects</a>
-		
-		<a href="/join-us/">Join Us</a>
-		
-		<a href="/about/">About</a>
-		
-		<a href="/sponsors/">Sponsors</a>
-		
-		<a href="/contact/">Contact</a>
-		
-		<a href="/shop/">Shop</a>
-		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<li style="list-style-type: none;"><a href="/fr/contact/">🇫🇷</a></li>
-		
-		
-	</div>
-</div>
-
-<header class="header">
+      <header class="header">
 	
 	
 	<div class="background-image" style="background-image: url('/images/originalQuality/Contact.jpg');"></div>
@@ -208,8 +163,40 @@
 			<li><a class="desktop-menu-item" href="/fr/contact/">🇫🇷</a></li>
 			
 			
-			<li><button style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="showMenu()">☰</button></li>
+			<li><button id="menuButton" style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="toggleMenu()">☰</button></li>
 		</ul>
+
+	<div class="mobile-menu-items">
+		
+		<a href="/">Home</a>
+		
+		<a href="/projects/">Projects</a>
+		
+		<a href="/join-us/">Join Us</a>
+		
+		<a href="/about/">About</a>
+		
+		<a href="/sponsors/">Sponsors</a>
+		
+		<a href="/contact/">Contact</a>
+		
+		<a href="/shop/">Shop</a>
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<li style="list-style-type: none;"><a href="/fr/contact/">🇫🇷</a></li>
+		
+		
+	</div>
 
 	</nav>
 
@@ -222,20 +209,31 @@
 </header>
 
 <script>
-	function showMenu() {
-  document.querySelector('.mobile-menu').style.display = 'flex';
-  document.querySelector('.header').style.display = 'none';
-  document.querySelector('main').style.display = 'none';
-  document.querySelector('footer').style.display = 'none';
+function toggleMenu() {
+    let button = document.getElementById("menuButton");
+    if (button.innerHTML === "☰") {
+        button.innerHTML = "✖"; 
+        button.style.color = "red"; 
+        showMenu(); 
+    } else {
+        button.innerHTML = "☰"; 
+        button.style.color = ""; 
+        hideMenu(); 
+    }
+}
 
+function showMenu() {
+    console.log("Menu shown");
+    
+    document.querySelector('.mobile-menu-items').style.display = 'flex';
+    document.querySelector("nav").style.height = "100%";
 }
 
 function hideMenu() {
-  document.querySelector('.mobile-menu').style.display = 'none';
-  document.querySelector('.header').style.display = 'block';
-  document.querySelector('main').style.display = 'block';
-  document.querySelector('footer').style.display = 'bl';
-
+    console.log("Menu hidden");
+    
+    document.querySelector('.mobile-menu-items').style.display = 'none';
+    document.querySelector("nav").style.height = "max-content";
 }
 </script>
 

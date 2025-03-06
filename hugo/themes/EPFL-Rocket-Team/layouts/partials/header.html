@@ -1,41 +1,3 @@
-<div class="mobile-menu" style="position: fixed; align-items: center; height: max-content; width: 100%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.5); padding: 0px;" class="navbar">
-  <ul style="height: max-content; align-items: center; width: 100%">
-    <li style="margin-left: 16px; margin-right: auto;">
-      <a href="/">
-        <img style="margin-top: 4px; margin-bottom: 4px; height: 40px" src="/images/originalQuality/ERT.png">
-      </a>
-    </li>
-    <li>
-		  <button style="font-size: 36px;" class="close-icon" onclick="hideMenu()">✖</button>
-    </li>
-  </ul>
-
-	<div class="mobile-menu-items">
-		{{ range .Site.Menus.main.ByWeight }}
-		<a href="{{ .URL }}">{{ .Name }}</a>
-		{{ end }}
-
-		<!-- Convert this page's translations into a dict -->
-		{{ $translations := dict }}
-		{{ range .Translations }}
-		{{ $translations = merge $translations (dict .Language.Lang .) }}
-		{{ end }}
-		
-		
-		<!-- Create a link to every translation -->
-		{{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
-		{{ with (index $translations .Lang) }}
-		<li style="list-style-type: none;"><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
-		{{ else }}
-		<!-- The complicated setup was necessary to make a grayed out link -->
-		{{ if not .Params.hideUntranslated }}
-		<a class="disabled desktop-menu-item" role="link" aria-disabled="true">{{ .LanguageName }}</a>
-		{{ end }}
-		{{ end }}
-		{{ end }}
-	</div>
-</div>
-
 <header class="header">
 	{{ if .Params.header_background }}
 	{{ if hasPrefix .Params.header_background ".mp4" }}
@@ -93,8 +55,33 @@
 			{{ end }}
 			{{ end }}
 			{{ end }}
-			<li><button style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="showMenu()">☰</button></li>
+			<li><button id="menuButton" style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="toggleMenu()">☰</button></li>
 		</ul>
+
+	<div class="mobile-menu-items">
+		{{ range .Site.Menus.main.ByWeight }}
+		<a href="{{ .URL }}">{{ .Name }}</a>
+		{{ end }}
+
+		<!-- Convert this page's translations into a dict -->
+		{{ $translations := dict }}
+		{{ range .Translations }}
+		{{ $translations = merge $translations (dict .Language.Lang .) }}
+		{{ end }}
+		
+		
+		<!-- Create a link to every translation -->
+		{{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
+		{{ with (index $translations .Lang) }}
+		<li style="list-style-type: none;"><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+		{{ else }}
+		<!-- The complicated setup was necessary to make a grayed out link -->
+		{{ if not .Params.hideUntranslated }}
+		<a class="disabled desktop-menu-item" role="link" aria-disabled="true">{{ .LanguageName }}</a>
+		{{ end }}
+		{{ end }}
+		{{ end }}
+	</div>
 
 	</nav>
 
@@ -107,19 +94,30 @@
 </header>
 
 <script>
-	function showMenu() {
-  document.querySelector('.mobile-menu').style.display = 'flex';
-  document.querySelector('.header').style.display = 'none';
-  document.querySelector('main').style.display = 'none';
-  document.querySelector('footer').style.display = 'none';
+function toggleMenu() {
+    let button = document.getElementById("menuButton");
+    if (button.innerHTML === "☰") {
+        button.innerHTML = "✖"; // Change to close icon
+        button.style.color = "red"; // Change color to red
+        showMenu(); // Call showMenu function
+    } else {
+        button.innerHTML = "☰"; // Change back to menu icon
+        button.style.color = ""; // Reset color
+        hideMenu(); // Call hideMenu function
+    }
+}
 
+function showMenu() {
+    console.log("Menu shown");
+    // Add your menu display logic here
+    document.querySelector('.mobile-menu-items').style.display = 'flex';
+    document.querySelector("nav").style.height = "100%";
 }
 
 function hideMenu() {
-  document.querySelector('.mobile-menu').style.display = 'none';
-  document.querySelector('.header').style.display = 'block';
-  document.querySelector('main').style.display = 'block';
-  document.querySelector('footer').style.display = 'bl';
-
+    console.log("Menu hidden");
+    // Add your menu hide logic here
+    document.querySelector('.mobile-menu-items').style.display = 'none';
+    document.querySelector("nav").style.height = "max-content";
 }
 </script>
