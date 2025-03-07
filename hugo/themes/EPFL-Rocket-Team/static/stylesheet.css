@@ -1297,6 +1297,14 @@ html {
   display: block;
 }
 
+.desktop-menu-item:has(> a:hover) {
+  background: #ff4a3d;
+}
+
+.desktop-menu-item-without-subitems:hover {
+  background: #ff4a3d;
+}
+
 .submenu li {
   padding: 10px;
   margin: 0px;
