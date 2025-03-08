@@ -128,77 +128,6 @@ a::after {
 }
 
 /* General Reset */
-body,
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Aspekta, sans-serif;
-  color: #f6f6f6;
-}
-
-.header {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.header video,
-.header .background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Ensures it covers the entire area without distortion */
-  background-repeat: no-repeat;
-  /* Prevents the image from repeating */
-  background-size: cover;
-  /* Ensures the image covers the whole area */
-  background-position: bottom center;
-  /* Aligns the bottom of the image to the bottom of the container */
-  z-index: -2;
-}
-
-/* Darken overlay for both video and image */
-.header .background-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Black color with 30% opacity, adjust to darken more/less */
-  z-index: -1;
-  /* Places it above the image or video but below other content */
-}
-
-.navbar {
-  z-index: 1;
-}
-
-.navbar ul, .mobile-menu ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: right;
-  margin: 0;
-  padding: 10px;
-  background: transparent;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #f6f6f6;
-  font-size: 1rem;
-  font-weight: bold;
-}
 
 .intro-text {
   display: inline-block;
@@ -1201,42 +1130,6 @@ html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.desktop-menu-item {
-  position: relative;
-  padding: 10px;
-}
-
-.desktop-menu-item:hover {
-  background: white;
-}
-
-.desktop-menu-item:hover a {
-  color: black;
-}
-
-.desktop-menu-item .submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: white;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .desktop-menu-item:hover .submenu {
   display: block;
 }
@@ -1265,6 +1158,3 @@ html {
   background: none;
 }
 
-.submenu-item:hover {
-  background: #ff4a3d;
-}

@@ -21,7 +21,7 @@
 		<ul style="height: max-content; align-items: center;">
 			<li style="margin-left: 16px; margin-right: auto;">
 				<a href="/">
-					<img style="margin-top: 4px; margin-bottom: 4px; height: 40px" src="/images/originalQuality/ERT.png">
+					<img style="margin-top: 4px; margin-bottom: 4px; height: 40px;" src="/images/originalQuality/ERT.png">
 				</a>
 			</li>
 			{{ range .Site.Menus.main.ByWeight }}
@@ -31,7 +31,7 @@
             {{ if .Page.Params.children }}
                 <ul class="submenu">
                     {{ range .Page.Params.children }}
-                       <li class="submenu-item"><a class="submenu-item-text" href="{{ .url }}">{{ .name }}</a></li>
+                       <li class="submenu-item" style="margin: 0"><a class="submenu-item-text" href="{{ .url }}">{{ .name }}</a></li>
                     {{ end }}
                 </ul>
             {{ end }}
