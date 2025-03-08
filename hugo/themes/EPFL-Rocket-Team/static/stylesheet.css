@@ -13,9 +13,7 @@ body {
 }
 
 h1 {
-  position: relative;
   font-family: 'Aspekta';
-  color: #f6f6f6;
   font-size: 64px;
   font-weight: 400;
   line-height: 70px;
@@ -49,7 +47,6 @@ h4 {
 p {
   font-family: 'Aspekta-200';
   font-size: 16px;
-  color: #f6f6f6;
 }
 
 
@@ -221,53 +218,6 @@ html {
   max-width: 100%;
   text-align: left;
 }
-
-.title {
-  display: inline-block;
-  align-self: flex-end;
-  font-size: 9.3vw;
-  font-weight: bold;
-  letter-spacing: -1%;
-}
-
-.description {
-  display: inline-block;
-  align-self: flex-end;
-  font-size: 22px;
-  line-height: 28px;
-  margin-left: 0.5vw;
-  margin-top: 1vw;
-  max-width: 60ch;
-  letter-spacing: -1%;
-  font-weight: 600;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .title {
-    font-size: 8.9vw;
-  }
-}
-
-
-@media (max-width: 500px) {
-  .title {
-    font-size: 8.5vw;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .timeline-top {
   position: relative;
