@@ -5,6 +5,7 @@
     url('/fonts/Aspekta-50.woff2')  format('woff');
     font-weight: 50;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -14,6 +15,7 @@
     url('/fonts/Aspekta-100.woff2')  format('woff');
     font-weight: 100;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -23,6 +25,7 @@
     url('/fonts/Aspekta-150.woff2')  format('woff');
     font-weight: 150;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -32,6 +35,7 @@
     url('/fonts/Aspekta-200.woff2')  format('woff');
     font-weight: 200;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -41,6 +45,7 @@
     url('/fonts/Aspekta-250.woff2')  format('woff');
     font-weight: 250;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -50,6 +55,7 @@
     url('/fonts/Aspekta-300.woff2')  format('woff');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -59,6 +65,7 @@
     url('/fonts/Aspekta-350.woff2')  format('woff');
     font-weight: 350;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -68,6 +75,7 @@
     url('/fonts/Aspekta-400.woff2')  format('woff');
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -77,6 +85,7 @@
     url('/fonts/Aspekta-450.woff2')  format('woff');
     font-weight: 450;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -86,6 +95,7 @@
     url('/fonts/Aspekta-500.woff2')  format('woff');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -95,6 +105,7 @@
     url('/fonts/Aspekta-550.woff2')  format('woff');
     font-weight: 550;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -104,6 +115,7 @@
     url('/fonts/Aspekta-600.woff2')  format('woff');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -113,6 +125,7 @@
     url('/fonts/Aspekta-650.woff2')  format('woff');
     font-weight: 650;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -122,6 +135,7 @@
     url('/fonts/Aspekta-700.woff2')  format('woff');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -131,6 +145,7 @@
     url('/fonts/Aspekta-750.woff2')  format('woff');
     font-weight: 750;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -140,6 +155,7 @@
     url('/fonts/Aspekta-800.woff2')  format('woff');
     font-weight: 800;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -149,6 +165,7 @@
     url('/fonts/Aspekta-850.woff2')  format('woff');
     font-weight: 850;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -158,6 +175,7 @@
     url('/fonts/Aspekta-900.woff2')  format('woff');
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -167,6 +185,7 @@
     url('/fonts/Aspekta-950.woff2')  format('woff');
     font-weight: 950;
     font-style: normal;
+    font-display: swap;
     
 }
 
@@ -176,5 +195,6 @@
     url('/fonts/Aspekta-1000.woff2')  format('woff');
     font-weight: 1000;
     font-style: normal;
+    font-display: swap;
     
 }

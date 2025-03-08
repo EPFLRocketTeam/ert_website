@@ -13,8 +13,8 @@
 
   <!-- {{ $style := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet"> -->
-  <link rel="preload" href="/stylesheet.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="/fonts.css" as="font">
+  <link rel="stylesheet" href="/stylesheet.css">
+  <link rel="preload" href="/fonts.css" as="style">
   {{ if (.Page.Store.Get "hasCodeBlock") }}
     {{ $syntax := resources.Get "syntax.css" | minify }}
     <link href="{{ $syntax.RelPermalink }}" rel="stylesheet">
