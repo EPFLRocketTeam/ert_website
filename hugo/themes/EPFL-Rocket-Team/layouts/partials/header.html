@@ -1,21 +1,23 @@
-<header class="header">
+<header style="position: relative; width: 100%; height: 100vh; overflow: hidden;" class="header">
 	{{ if .Params.header_background }}
 	{{ if hasPrefix .Params.header_background ".mp4" }}
-	<video autoplay muted loop>
+	<video autoplay muted loop preload="none" poster="/images/originalQuality/RocketLaunch3.jpeg">
 		<source src="{{ .Params.header_background }}" type="video/mp4">
 	</video>
 	{{ else }}
 	<div class="background-image" style="background-image: url('{{ .Params.header_background }}');"></div>
 	{{ end }}
 	{{ else }}
-	<video autoplay muted loop src="/images/uploads/2024_trailer_ert.mp4"></video>
+	<video autoplay muted loop preload="none" poster="/images/originalQuality/RocketLaunch3.jpeg">
+		<source src="/images/uploads/2024_trailer_ert.mp4" type="video/mp4">
+  </video>
 	{{ end }}
 
 	<!-- Darkening overlay (applies to both video and image) -->
 	<div class="background-overlay"></div>
 
 
-	<nav style="position: fixed; align-items: center; height: max-content; width: 100%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.5); padding: 0px;" class="navbar">
+	<nav style="position: fixed; align-items: center; height: max-content; width: 100%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.5); padding: 0px; z-index: 1;" class="navbar">
 		<ul style="height: max-content; align-items: center;">
 			<li style="margin-left: 16px; margin-right: auto;">
 				<a href="/">
@@ -85,7 +87,7 @@
 
 	</nav>
 
-	<div class="intro-text">
+	<div style="display: inline-block; position: absolute; bottom: 5vh; margin-left: 30px; margin-right: 30px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); max-width: 100%; text-align: left;">
 		<h1 style="line-height: 70px; font-family: 'Aspekta'; display: inline-block; font-size: 9.3vw; font-weight: bold; letter-spacing: -1%; width: auto; margin-left: -9px;">{{ .Params.header_title | default "EPFL ROCKET TEAM" }}</h1>
 		<p style="font-family: 'Aspekta-200'; display: inline-block; font-size: 22px; line-height: 28px; margin-left: 0px; margin-top: 1vw; max-width: 60ch; letter-spacing: -1%; font-weight: 400;">
 			{{ .Params.header_text | markdownify | default "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry's leaders." }}
