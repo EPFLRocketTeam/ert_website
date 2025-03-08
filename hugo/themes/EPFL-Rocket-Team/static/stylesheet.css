@@ -228,22 +228,6 @@ a::after {
   font-family: 'Aspekta';
 }
 
-.mobile-menu-items {
-  display: none;
-  position: relative;
-  margin-bottom: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-  font-family: 'Aspekta';
-}
 
 .menu-icon {
   background: none;
@@ -275,13 +259,6 @@ a::after {
   }
 }
 
-.mobile-menu-items a {
-  font-family: 'Aspekta';
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #f6f6f6;
-  text-decoration: none;
-}
 
 .mobile-lang a {
   color: black;
