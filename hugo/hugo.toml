@@ -42,7 +42,7 @@ enableRobotsTXT = true
   description = "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry’s leaders."
 
   # The path to your favicon
-  favicon = "/images/originalQuality/ERT.png"
+  favicon = "/icons/favicon.png"
 
   # These images will show up when services want to generate a preview of a link
   # to your site. Ignored if `generateSocialCard = true`. For more information

@@ -13,8 +13,8 @@ children:
     url: "/projects/hyperion/"
   - name: "Icarus"
     url: "/projects/icarus/"
-  - name: "Education"
-    url: "/projects/education/"
+  - name: "Space Race"
+    url: "/projects/space-race/"
 ---
 
 {{< project-sp >}}

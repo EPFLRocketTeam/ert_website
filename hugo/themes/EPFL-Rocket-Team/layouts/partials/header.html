@@ -1,60 +1,27 @@
-<div class="mobile-menu">
-	<div style="display: flex; flex-direction: row; align-items: center; padding: 10px; width: 100%;">
-		<a style="margin-top: 30px; margin-left: 30px; margin-right: auto;" href="/">
-			<img style="height: 64px" src="/images/originalQuality/ERT.png">
-		</a>
-
-		<button class="close-icon" onclick="hideMenu()">✖</button>
-	</div>
-
-	<div class="mobile-menu-items">
-		{{ range .Site.Menus.main.ByWeight }}
-		<a href="{{ .URL }}">{{ .Name }}</a>
-		{{ end }}
-
-		<!-- Convert this page's translations into a dict -->
-		{{ $translations := dict }}
-		{{ range .Translations }}
-		{{ $translations = merge $translations (dict .Language.Lang .) }}
-		{{ end }}
-		
-		
-		<!-- Create a link to every translation -->
-		{{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
-		{{ with (index $translations .Lang) }}
-		<li style="list-style-type: none;"><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
-		{{ else }}
-		<!-- The complicated setup was necessary to make a grayed out link -->
-		{{ if not .Params.hideUntranslated }}
-		<a class="disabled desktop-menu-item" role="link" aria-disabled="true">{{ .LanguageName }}</a>
-		{{ end }}
-		{{ end }}
-		{{ end }}
-	</div>
-</div>
-
-<header class="header">
+<header style="position: relative; width: 100%; height: 100vh; overflow: hidden;" class="header">
 	{{ if .Params.header_background }}
 	{{ if hasPrefix .Params.header_background ".mp4" }}
-	<video autoplay muted loop>
+	<video autoplay muted loop preload="none">
 		<source src="{{ .Params.header_background }}" type="video/mp4">
 	</video>
 	{{ else }}
 	<div class="background-image" style="background-image: url('{{ .Params.header_background }}');"></div>
 	{{ end }}
 	{{ else }}
-	<video autoplay muted loop src="/images/uploads/2024_trailer_ert.mp4"></video>
+	<video autoplay muted loop preload="none">
+		<source src="/images/uploads/2024_trailer_ert.mp4" type="video/mp4">
+  </video>
 	{{ end }}
 
 	<!-- Darkening overlay (applies to both video and image) -->
 	<div class="background-overlay"></div>
 
 
-	<nav style="align-items: center; height: 64px;" class="navbar">
-		<ul style="height: 64px; align-items: center;">
-			<li style="margin-left: 0px; margin-right: auto;">
+	<nav style="position: fixed; align-items: center; height: max-content; width: 100%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.5); padding: 0px; z-index: 1;" class="navbar">
+		<ul style="height: max-content; align-items: center;">
+			<li style="margin-left: 16px; margin-right: auto;">
 				<a href="/">
-					<img style="margin-top: 30px; height: 64px" src="/images/originalQuality/ERT.png">
+					<img alt="EPFL Rocket Team Logo" style="margin-top: 4px; margin-bottom: 4px; height: 40px;" src="/images/originalQuality/ERT.png">
 				</a>
 			</li>
 			{{ range .Site.Menus.main.ByWeight }}
@@ -64,7 +31,7 @@
             {{ if .Page.Params.children }}
                 <ul class="submenu">
                     {{ range .Page.Params.children }}
-                       <li><a href="{{ .url }}">{{ .name }}</a></li>
+                       <li class="submenu-item" style="margin: 0"><a class="submenu-item-text" href="{{ .url }}">{{ .name }}</a></li>
                     {{ end }}
                 </ul>
             {{ end }}
@@ -90,32 +57,69 @@
 			{{ end }}
 			{{ end }}
 			{{ end }}
-			<li><button style="transform: translate(0,-3px);" class="menu-icon" onclick="showMenu()">☰</button></li>
+			<li><button id="menuButton" style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="toggleMenu()">☰</button></li>
 		</ul>
+
+	<div class="mobile-menu-items">
+		{{ range .Site.Menus.main.ByWeight }}
+		<a href="{{ .URL }}">{{ .Name }}</a>
+		{{ end }}
+
+		<!-- Convert this page's translations into a dict -->
+		{{ $translations := dict }}
+		{{ range .Translations }}
+		{{ $translations = merge $translations (dict .Language.Lang .) }}
+		{{ end }}
+		
+		
+		<!-- Create a link to every translation -->
+		{{ range where .Site.Languages "Lang" "!=" .Page.Lang }}
+		{{ with (index $translations .Lang) }}
+		<li style="list-style-type: none;"><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+		{{ else }}
+		<!-- The complicated setup was necessary to make a grayed out link -->
+		{{ if not .Params.hideUntranslated }}
+		<a class="disabled desktop-menu-item" role="link" aria-disabled="true">{{ .LanguageName }}</a>
+		{{ end }}
+		{{ end }}
+		{{ end }}
+	</div>
+
 	</nav>
 
-	<div class="intro-text">
-		<h1 class="title">{{ .Params.header_title | default "EPFL ROCKET TEAM" }}</h1>
-		<p class="description">
+	<div style="display: inline-block; position: absolute; bottom: 5vh; margin-left: 30px; margin-right: 30px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); max-width: 100%; text-align: left;">
+		<h1 style="line-height: 70px; font-family: 'Aspekta'; display: inline-block; font-size: 9.3vw; font-weight: bold; letter-spacing: -1%; width: 100%; margin-left: 0; margin-right: 0;">{{ .Params.header_title | default "EPFL ROCKET TEAM" }}</h1>
+		<p style="font-family: 'Aspekta-200'; display: inline-block; font-size: 22px; line-height: 28px; margin-left: 0px; margin-top: 1vw; max-width: 60ch; letter-spacing: -1%; font-weight: 400;">
 			{{ .Params.header_text | markdownify | default "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry's leaders." }}
 		</p>
 	</div>
 </header>
 
 <script>
-	function showMenu() {
-  document.querySelector('.mobile-menu').style.display = 'flex';
-  document.querySelector('.header').style.display = 'none';
-  document.querySelector('main').style.display = 'none';
-  document.querySelector('footer').style.display = 'none';
+function toggleMenu() {
+    let button = document.getElementById("menuButton");
+    if (button.innerHTML === "☰") {
+        button.innerHTML = "✖"; // Change to close icon
+        button.style.color = "red"; // Change color to red
+        showMenu(); // Call showMenu function
+    } else {
+        button.innerHTML = "☰"; // Change back to menu icon
+        button.style.color = ""; // Reset color
+        hideMenu(); // Call hideMenu function
+    }
+}
 
+function showMenu() {
+    console.log("Menu shown");
+    // Add your menu display logic here
+    document.querySelector('.mobile-menu-items').style.display = 'flex';
+    document.querySelector("nav").style.height = "100%";
 }
 
 function hideMenu() {
-  document.querySelector('.mobile-menu').style.display = 'none';
-  document.querySelector('.header').style.display = 'block';
-  document.querySelector('main').style.display = 'block';
-  document.querySelector('footer').style.display = 'bl';
-
+    console.log("Menu hidden");
+    // Add your menu hide logic here
+    document.querySelector('.mobile-menu-items').style.display = 'none';
+    document.querySelector("nav").style.height = "max-content";
 }
 </script>
