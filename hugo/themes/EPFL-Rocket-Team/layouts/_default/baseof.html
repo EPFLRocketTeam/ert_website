@@ -32,6 +32,33 @@
   your local /layouts/partials-directory -->
   {{- partial "custom_head.html" . -}}
   <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    position: relative;
+    font-family: 'Aspekta';
+    padding: 20px;
+    background-color: black;
+    vertical-align: bottom;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-family: 'Aspekta';
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70px;
+  }
+  @media (max-width: 1280px) {
+    h1 {
+      font-size: 50px;
+      line-height: 56px;
+    }
+  }
   .navbar {z-index: 1}
   .navbar ul, .mobile-menu ul {
     list-style: none;
@@ -58,7 +85,7 @@
   }
   .header {
     position: relative;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
     overflow: hidden;
   }
@@ -67,8 +94,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     object-fit: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,12 +106,11 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: -1;
   }
-  .submenu-item:hover {background: #ff4a3d;}
   .desktop-menu-item {
     position: relative;
     padding: 10px;
@@ -102,6 +128,21 @@
     padding: 0;
     margin: 0;
   }
+  .desktop-menu-item:hover .submenu {display: block;}
+  .desktop-menu-item:has(> a:hover) {background: #ff4a3d;}
+  .desktop-menu-item-without-subitems:hover {background: #ff4a3d;}
+  .submenu li {
+    padding: 10px;
+    margin: 0px;
+  }
+  .submenu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 0.7rem;
+  }
+  .submenu li a:hover {background: none;}
+  .submenu-item:hover {background: #ff4a3d;}
   .mobile-menu-items {
     display: none;
     position: relative;
@@ -125,6 +166,26 @@
     color: #f6f6f6;
     text-decoration: none;
   }
+  a {text-decoration: none;}
+  a::after {text-decoration: none;}
+  .menu-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 56px;
+    cursor: pointer;
+  }
+  @media (max-width: 940px) {
+    .desktop-menu-item {
+      display: none;
+    }
+  }
+  @media (min-width: 940px) {
+    .menu-icon {
+      display: none;
+    }
+  }
+  button {font-family: 'Aspekta-600';}
   </style>
 </head>
 

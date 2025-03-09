@@ -1,24 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  position: relative;
-  font-family: 'Aspekta';
-  padding: 20px;
-  background-color: black;
-  vertical-align: bottom;
-  color: white;
-  overflow-x: hidden;
-}
-
-h1 {
-  font-family: 'Aspekta';
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 70px;
-}
-
 h2 {
   font-family: 'Aspekta';
   font-size: 36px;
@@ -106,25 +85,6 @@ textarea {
   font-family: 'Aspekta-200';
   font-size: 20px;
   color: #f6f6f6;
-}
-
-button {
-  font-family: 'Aspekta-600';
-}
-
-a {
-  text-decoration: none;
-}
-
-a::after {
-  text-decoration: none;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* General Reset */
@@ -229,35 +189,6 @@ a::after {
 }
 
 
-.menu-icon {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 56px;
-  cursor: pointer;
-}
-
-.close-icon {
-  background: none;
-  border: none;
-  color: #da291c;
-  font-size: 56px;
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: 16px;
-}
-
-@media (max-width: 940px) {
-  .desktop-menu-item {
-    display: none;
-  }
-}
-
-@media (min-width: 940px) {
-  .menu-icon {
-    display: none;
-  }
-}
 
 
 .mobile-lang a {
@@ -547,14 +478,7 @@ a::after {
   grid-column-end: 6;
 }
 
-
-
 @media (max-width: 1280px) {
-  h1 {
-    font-size: 50px;
-    line-height: 56px;
-  }
-
   h2 {
     font-size: 34px;
     line-height: 48px;
@@ -1106,32 +1030,4 @@ a::after {
   }
 }
 
-
-.desktop-menu-item:hover .submenu {
-  display: block;
-}
-
-.desktop-menu-item:has(> a:hover) {
-  background: #ff4a3d;
-}
-
-.desktop-menu-item-without-subitems:hover {
-  background: #ff4a3d;
-}
-
-.submenu li {
-  padding: 10px;
-  margin: 0px;
-}
-
-.submenu li a {
-  text-decoration: none;
-  color: black;
-  display: block;
-  font-size: 0.7rem;
-}
-
-.submenu li a:hover {
-  background: none;
-}
 
