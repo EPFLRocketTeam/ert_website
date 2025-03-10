@@ -8,23 +8,7 @@ layout: single
 padding: 30px
 math: true
 ---
-# Semester Projects
-## Subsection
-Hello World!
-
-1. one 
-2. two
-3. three
-
-- a
-- b
-- c
-
-
-```python
-print("hello world!")
-```
-
-$$\int f(x) dx$$
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
 {{< semester-projects >}}
+

@@ -1,0 +1,41 @@
+<body>
+    <p style="width: 60vw; position: relative; margin:auto;">If you can’t find your dream project down here, but have an idea or would like to suggest your own project to do with us, we are open to suggestions! Feel free to contact us and we can talk about it.</p>
+    <span class="line"><h5>SPRING 2025</h5></span>
+    <div class="sempos">
+        <button type="button" class="collapsible">Competition Project</button>
+        <div class="content">
+        <p>Lorem ipsum...</p>
+        </div> 
+        <button type="button" class="collapsible">Icarus Project</button>
+        <div class="content">
+        <p>Lorem ipsum...</p>
+        </div> 
+        <button type="button" class="collapsible">Hyperion Project</button>
+        <div class="content">
+        <p>Lorem ipsum...</p>
+        </div> 
+        <button type="button" class="collapsible">Management</button>
+        <div class="content">
+        <p>Lorem ipsum...</p>
+        </div> 
+    </div>
+    
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        } 
+    </script>
+</body>

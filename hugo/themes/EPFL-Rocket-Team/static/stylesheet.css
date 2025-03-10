@@ -478,6 +478,77 @@ textarea {
   grid-column-end: 6;
 }
 
+ .line {
+  display:block; 
+  width:100%; 
+  border-bottom:5px solid #DA291C; 
+  margin-top:25px; 
+  text-align:center;
+  margin-bottom: 40px; 
+}
+
+.line h5 {
+  font-size:35px;  
+  position:relative; 
+  margin: auto;
+  top:25px; 
+  padding:0 15px;
+  display:inline-block; 
+  background:black;
+  color: #DA291C;
+} 
+
+.sempos{
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column; 
+  width: 100%;
+  border-bottom: 5px solid #DA291C;
+  /* border-left: 5px solid #DA291C;
+  border-right: 5px solid #DA291C; */
+  padding-bottom: 20px;
+}
+
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+  background-color: transparent;
+  color:#f6f6f6;
+  cursor: pointer;
+  padding: 20px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  outline: none;
+  font-size: 30px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  color: #DA291C;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  border: 2px solid #666;
+  width: 70vw;
+} 
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #DA291C;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 @media (max-width: 1280px) {
   h2 {
     font-size: 34px;
@@ -504,7 +575,7 @@ textarea {
   .page {
     font-size: 12px;
   }
-
+ 
   .numbers-line img {
     display: block;
   }
