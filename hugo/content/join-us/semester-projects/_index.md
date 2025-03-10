@@ -5,7 +5,26 @@ header_text: "Are you an EPFL student and looking for a semester credited, Bache
 header_background: ""
 weight: 5
 layout: single
+padding: 30px
+math: true
 ---
+# Semester Projects
+## Subsection
+Hello World!
 
+1. one 
+2. two
+3. three
+
+- a
+- b
+- c
+
+
+```python
+print("hello world!")
+```
+
+$$\int f(x) dx$$
 
 {{< semester-projects >}}

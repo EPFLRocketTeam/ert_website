@@ -27,6 +27,10 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
+  {{ if or .Params.math .Site.Params.math }}
+  {{ partial "math.html" . }}
+  {{ end }}
+
   <!-- A partial to be overwritten by the user.
   Simply place a custom_head.html into
   your local /layouts/partials-directory -->
@@ -34,7 +38,6 @@
   <style>
   * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
   body {
@@ -196,7 +199,10 @@
     {{- partial "header.html" . -}}
       <!--/div-->
       <!--/header-->
-  <main id="main-content" style="max-width: 100%; margin: auto; padding: 0; position: relative; top: 30px">
+  <main id="main-content" 
+        style="width: 100%; margin: auto; position: relative; 
+               padding: {{ .Params.padding | default "0px" }}; 
+               top: 30px">
     {{- block "main" . }}{{- end }}
   </main>
   
