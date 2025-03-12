@@ -9,6 +9,7 @@
             flex-direction: row-reverse;
             align-items: stretch;
             width: 100%;
+            padding: 30px 0 30px 0;
         }
         
         .our-project-images {
@@ -17,13 +18,14 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            padding: 15px 0 15px 0;
         }
         
         .our-project-images img {
             margin: 5px;
             height: 400px;
             max-width: 80%;
-            display: none;
+            display: block;
             object-fit: contain;
         }
         
@@ -36,10 +38,19 @@
             max-width: 60ch;
             cursor: default;
             min-width: 0;
+            color: #808080;
         }
 
         .our-project-list > div {
             min-width: 0;
+        }
+
+        .our-project-list > div:hover h1 {
+          color: #da291c;
+        }
+
+        .our-project-list > div:hover p {
+          color: #da291c;
         }
 
         @media (max-width: 744px) {
@@ -53,6 +64,10 @@
                 grid-template-rows: 2fr 2fr;
             }
 
+            .our-project-images img {
+                height: 180px;
+            }
+
             .our-project-list h1 {
               font-size: 24px;
             }
@@ -64,38 +79,41 @@
     </style>
 </head>
 <body>
-    <div class="main" style="padding: 30px; overflow: hidden;">
+    <div class="main" style="padding: 30px; margin: 0; overflow: hidden;">
         <div class="page">our projects</div>
         <h2>The EPFL Rocket Team is currently engaged in four different projects</h2>
         <div id="our-projects">
             <div class="our-project-list">
-                <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">
+                <div id="op-firehorn" onmouseover="setProjectImage('/images/originalQuality/op_firehorn.png')" style="color: white">
                     <h1>Firehorn</h1>
                     <p>Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
                 </div>
-                <div id="op-spacerace" onmouseover="hoverImage_spacerace(event)" onmouseout="hoverImage_spacerace(event)">
+                <div id="op-spacerace" onmouseover="setProjectImage('/images/originalQuality/op_spacerace.png')">
                     <h1>Space Race</h1>
                     <p>Training students in aerospace technologies</p>
                 </div>
-                <div id="op-icarus" onmouseover="hoverImage_icarus(event)" onmouseout="hoverImage_icarus(event)">
+                <div id="op-icarus" onmouseover="setProjectImage('/images/originalQuality/op_icarus.png')">
                     <h1>Icarus</h1>
                     <p>Developing efficient GNC algorithms and crafting Space-X style re-landing systems</p>
                 </div>
-                <div id="op-hyperion" onmouseover="hoverImage_hyperion(event)" onmouseout="hoverImage_hyperion(event)">
+                <div id="op-hyperion" onmouseover="setProjectImage('/images/originalQuality/op_hyperion.png')">
                     <h1>Hyperion</h1>
                     <p>Developing cutting-edge fully in-house bi-liquid propellant engines</p>
                 </div>
             </div>
             <div class="our-project-images">
-                <img loading="lazy" src="/images/originalQuality/op_firehorn.png" id="hover_img_firehorn" style="display: block;">
-                <img loading="lazy" src="/images/originalQuality/op_spacerace.png" id="hover_img_spacerace">
-                <img loading="lazy" src="/images/originalQuality/op_icarus.png" id="hover_img_icarus">
-                <img loading="lazy" src="/images/originalQuality/op_hyperion.png" id="hover_img_hyperion">
+                <img loading="lazy" src="/images/originalQuality/op_firehorn.png" id="project-image">
             </div>
         </div>
     </div>
     <button type="button" onclick="location.href='/projects/'" class="button-right right-align">discover all our projects</button>
     <script> /* hovering over the div of each project displays their respective image */
+      function setProjectImage(filename) {
+        document.getElementById("project-image").src = filename;
+      }
+      function highLight(itemId) {
+        document.getElementById("project-image").style.color = "white";
+      }
         function hoverImage_firehorn(event) {
             var x = document.querySelectorAll("#hover_img_firehorn");
             var sDisplay = (event.type === "mouseout") ? "none" : "block";
