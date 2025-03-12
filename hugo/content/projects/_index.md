@@ -8,13 +8,13 @@ menu: main
 weight: 2
 children:
   - name: "Competition"
-    url: "/projects/competition/"
+    url: "/projects/firehorn-2025/"
   - name: "Hyperion"
-    url: "/projects/hyperion/"
+    url: "/projects/hyperion-2025/"
   - name: "Icarus"
-    url: "/projects/icarus/"
+    url: "/projects/icarus-2025/"
   - name: "Space Race"
-    url: "/projects/space-race/"
+    url: "/projects/space-race-2025/"
 ---
 
 {{< project-sp >}}
