@@ -1,168 +1,100 @@
 <head>
     <style>
-    h1{
-        margin-bottom: 10px;
-    }
-    
-    #our-projects{
-        position: relative;
-        width: 100%; 
-        display: flex;  
-        margin: auto auto 0px;
-        height: max-content;
-        flex-direction: row-reverse;
-        align-items: stretch;
-    }
-
-    .our-project-images{
-        flex: 70%; 
-        display: flex;
-        align-content: flex-start;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        justify-content: center; /* Align horizontally */
-        align-items: center; /* Align vertically (optional) */
-        text-align: center;
-    }
-
-    .our-project-images img{
-        position: relative;
-        margin: 5px;
-        height: 400px;
-        max-width: 80%;
-        display: none;
-        object-fit: contain;
-    }
-
-    .our-project-list{
-        flex: 30%;
-        padding-left: 0px;
-        text-align: left; 
-        cursor: default;     
-        max-width: 60ch;
-    }
-
-    .our-project-list:hover + .our-project-images{
-        background: none;      
-    }
-
-    #op-firehorn:hover h1{
-        color: #DA291C;
-    }
-
-    #op-spacerace:hover h1{
-        color: #DA291C;
-    }
-
-    #op-icarus:hover h1{
-        color: #DA291C;
-    }
-
-    #op-hyperion:hover h1{
-        color: #DA291C;
-    }
-
-    #proj-1, #proj-2{
-            flex:100vw;
-            text-wrap: wrap;
-        }
-
-    @media (max-width: 744px) {
-        #our-projects{
-        position: relative;
-        width: auto; 
-        display: flex;  
-        margin: auto auto 60px;
-        height: max-content;
-            flex-direction: column-reverse;
+        h1 {
+            margin-bottom: 0;
         }
         
-        .our-project-list{
-            flex: 1;
-            flex-wrap: wrap;
-            position: relative;
-            margin: auto;
-            width: auto;
-            display: flex; 
-            flex-direction:row;
-            min-width: 0;
-        }
-
-        .our-project-list h1 {
-          font-size: 36px;
-        }
-
-        #proj-1{ 
-            flex:30%;
-            text-wrap: wrap;
-            min-width: 0;
-        }
-
-        #proj-2{ 
-            flex:30%;
-            text-wrap: wrap;
-            min-width: 0;
-        }
-
-        .our-project-images{
-            flex:100%;
+        #our-projects {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: stretch;
             width: 100%;
-            height: 400px;
-        }
-
-        #hover_img_firehorn{
-            top:20%;
-        }
-
-        #hover_img_spacerace{
-            width: auto;
-            top: 20%;
         }
         
-    }
+        .our-project-images {
+            flex: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .our-project-images img {
+            margin: 5px;
+            height: 400px;
+            max-width: 80%;
+            display: none;
+            object-fit: contain;
+        }
+        
+        .our-project-list {
+            flex: 30%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+            gap: 5px;
+            max-width: 60ch;
+            cursor: default;
+            min-width: 0;
+        }
+
+        .our-project-list > div {
+            min-width: 0;
+        }
+
+        @media (max-width: 744px) {
+            #our-projects {
+                flex-direction: column-reverse;
+            }
+            
+            .our-project-list {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 2fr 2fr;
+            }
+
+            .our-project-list h1 {
+              font-size: 24px;
+            }
+
+            .our-project-list p {
+              font-size: 12px;
+            }
+        }
     </style>
-</head> 
+</head>
 <body>
     <div class="main" style="padding: 30px; overflow: hidden;">
         <div class="page">our projects</div>
         <h2>The EPFL Rocket Team is currently engaged in four different projects</h2>
         <div id="our-projects">
-            <div class="our-project-list" style="overflow: hidden;">
-                <div id="proj-1">
-                    <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">
-                        <h1>Firehorn</h1>
-                        <p>Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
-                    </div>
-                    <div id="op-spacerace" onmouseover="hoverImage_spacerace(event)" onmouseout="hoverImage_spacerace(event)">
-                        <h1>Space Race</h1>
-                        <p>Training students in aerospace technologies</p>
-                    </div>
+            <div class="our-project-list">
+                <div id="op-firehorn" onmouseover="hoverImage_firehorn(event)" onmouseout="hoverImage_firehorn(event)">
+                    <h1>Firehorn</h1>
+                    <p>Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
                 </div>
-                
-                <div id="proj-2">
-                    <div id="op-icarus" onmouseover="hoverImage_icarus(event)" onmouseout="hoverImage_icarus(event)">
-                        <h1>Icarus</h1>
-                        <p>Developing efficient GNC algorithms and Crafting Space-X style re-landing systems</p>
-                    </div>
-                    <div id="op-hyperion" onmouseover="hoverImage_hyperion(event)" onmouseout="hoverImage_hyperion(event)">
-                        <h1>Hyperion</h1>
-                        <p>Developing cutting-edge fully in-house bi-liquid propellant engines</p>
-                    </div>
+                <div id="op-spacerace" onmouseover="hoverImage_spacerace(event)" onmouseout="hoverImage_spacerace(event)">
+                    <h1>Space Race</h1>
+                    <p>Training students in aerospace technologies</p>
                 </div>
-                
+                <div id="op-icarus" onmouseover="hoverImage_icarus(event)" onmouseout="hoverImage_icarus(event)">
+                    <h1>Icarus</h1>
+                    <p>Developing efficient GNC algorithms and crafting Space-X style re-landing systems</p>
+                </div>
+                <div id="op-hyperion" onmouseover="hoverImage_hyperion(event)" onmouseout="hoverImage_hyperion(event)">
+                    <h1>Hyperion</h1>
+                    <p>Developing cutting-edge fully in-house bi-liquid propellant engines</p>
+                </div>
             </div>
             <div class="our-project-images">
-                <img loading="lazy" src="/images/originalQuality/op_firehorn.png" id="hover_img_firehorn" style="display: block">
-                <img loading="lazy" src="/images/originalQuality/op_spacerace.png" id="hover_img_spacerace" style=""> 
-                <img loading="lazy" src="/images/originalQuality/op_icarus.png" id="hover_img_icarus" style=""> 
-                <img loading="lazy" src="/images/originalQuality/op_hyperion.png" id="hover_img_hyperion" style="">
+                <img loading="lazy" src="/images/originalQuality/op_firehorn.png" id="hover_img_firehorn" style="display: block;">
+                <img loading="lazy" src="/images/originalQuality/op_spacerace.png" id="hover_img_spacerace">
+                <img loading="lazy" src="/images/originalQuality/op_icarus.png" id="hover_img_icarus">
+                <img loading="lazy" src="/images/originalQuality/op_hyperion.png" id="hover_img_hyperion">
             </div>
-            
         </div>
-        
     </div>
-    <button type="button" onclick="location.href='/projects/'" class="button-right right-align">discover all our projects </button>
+    <button type="button" onclick="location.href='/projects/'" class="button-right right-align">discover all our projects</button>
     <script> /* hovering over the div of each project displays their respective image */
         function hoverImage_firehorn(event) {
             var x = document.querySelectorAll("#hover_img_firehorn");
