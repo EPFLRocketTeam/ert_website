@@ -87,30 +87,42 @@
 
 	</nav>
 
-  <div style="display: inline-block; position: absolute; bottom: 5vh; margin-left: 30px; margin-right: 30px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);">
-    <div style="margin: 5px 0 5px 0;">
-      {{ range .Ancestors.Reverse }}
-        <a href="{{ .RelPermalink }}" style="color: white">{{ .Title }}</a>
-        <img src="/icons/left.svg" alt="left">
-      {{ end }}
-      <a href="{{ .RelPermalink }}" style="color: white">{{ .Title }}</a>
+  <div style="display: block; position: absolute; bottom: 30px; margin-left: 30px; margin-right: 30px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); width: auto; left: 0; right: 0">
+    <div style="display: flex; gap: 0; width: auto; left: 0; right: 0">
+      <div style="flex: 1 1 auto; width: auto; right: 0; left: 0; min-width: 0"> <!--Left side-->
+        <div style="margin: 5px 0 5px 0;">
+          {{ range .Ancestors.Reverse }}
+            <a href="{{ .RelPermalink }}" style="color: white">{{ .Title }}</a>
+            <img src="/icons/left.svg" alt="left">
+          {{ end }}
+          <a href="{{ .RelPermalink }}" style="color: white">{{ .Title }}</a>
+        </div>
+        <h2>{{ .Params.subtitle }}</h2>
+        <!-- Container that shrink-wraps its contents -->
+        <div style="display: inline-block; text-align: left;">
+          <!-- hr takes 100% of its container, which now is only as wide as the h1's text -->
+          <hr style="display: block; width: 100%; border: 1px solid white; margin: 0;">
+          <div style="height: 2.6vw"></div>
+          <!-- Remove width: 100% so it only fits the text -->
+          <h1 style="line-height: 40px; font-family: 'Aspekta-500'; display: inline-block; font-size: 8vw; letter-spacing: -1%;">
+            {{ .Params.header_title | default "EPFL ROCKET TEAM" }}
+          </h1>
+        </div>
+        <div style="left: 0; right: 0">
+          <p style="font-family: 'Aspekta-200'; display: inline-block; line-height: 28px; margin-left: 0; margin-top: 1vw; max-width: 60ch; letter-spacing: -1%; font-weight: 400;">
+          {{ .Params.header_text | markdownify | default "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets..." }}
+          </p>
+        </div>
+      </div>
+      <div style="height: auto; flex: 3; display: flex; justify-content: flex-end; align-items: flex-end;"> <!--Right side-->
+        <div style="width: auto; height: auto; border-radius: 10px; background-color: rgba(0, 0, 0, 0.8); padding: 20px; backdrop-filter: blur(10px);">
+          Want to participate in the next competition?
+          <div style="display:flex; align-items: flex-end; justify-content: flex-end; margin-top: 15px;">
+            <a href="/join-us/" style="padding: 10px; font-size: 18px; border-radius: 5px; border: 0px solid #444; background: rgba(255, 255, 255, 0.2); color: #ffffff; display: flex; align-items: center; justify-content: center;">JOIN THE ERT <img src="/icons/left-arrow.svg" alt="left" style="margin-left: 10px;"></a>
+          </div>
+        </div>
+      </div>
     </div>
-    <h2>{{ .Params.subtitle }}</h2>
-    <!-- Container that shrink-wraps its contents -->
-    <div style="display: inline-block; text-align: left;">
-      <!-- hr takes 100% of its container, which now is only as wide as the h1's text -->
-      <hr style="display: block; width: 100%; border: 1px solid white; margin: 0;">
-      <div style="height: 2.6vw"></div>
-      <!-- Remove width: 100% so it only fits the text -->
-      <h1 style="line-height: 40px; font-family: 'Aspekta-500'; display: inline-block; font-size: 8vw; letter-spacing: -1%;">
-        {{ .Params.header_title | default "EPFL ROCKET TEAM" }}
-      </h1>
-    </div>
-    <div style="left: 0; right: 0">
-      <p style="font-family: 'Aspekta-200'; display: inline-block; line-height: 28px; margin-left: 0; margin-top: 1vw; max-width: 60ch; letter-spacing: -1%; font-weight: 400;">
-      {{ .Params.header_text | markdownify | default "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets..." }}
-      </p>
-    <div>
   </div>
 </header>
 
