@@ -88,20 +88,14 @@
 	</nav>
 
   <div style="display: inline-block; position: absolute; bottom: 5vh; margin-left: 30px; margin-right: 30px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);">
-    <div>
-      <a href="/" style="color: white">
-      Home
-      </a>
-      <img src="/icons/left.svg" alt="left">
-      <a href="/projects/" style="color: white">
-      All Projects
-      </a>
-      <img src="/icons/left.svg" alt="left">
-      <a href="/projects/firehorn-2025/" style="color: white">
-      Firehorn II 
-      </a>
-    <div>
-    <h2>COMPETITION PROJECT</h2>
+    <div style="margin: 5px 0 5px 0;">
+      {{ range .Ancestors.Reverse }}
+        <a href="{{ .RelPermalink }}" style="color: white">{{ .Title }}</a>
+        <img src="/icons/left.svg" alt="left">
+      {{ end }}
+      <a href="{{ .RelPermalink }}" style="color: white">{{ .Title }}</a>
+    </div>
+    <h2>{{ .Params.subtitle }}</h2>
     <!-- Container that shrink-wraps its contents -->
     <div style="display: inline-block; text-align: left;">
       <!-- hr takes 100% of its container, which now is only as wide as the h1's text -->
