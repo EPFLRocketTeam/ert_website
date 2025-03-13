@@ -87,12 +87,27 @@
 
 	</nav>
 
-	<div style="display: inline-block; position: absolute; bottom: 5vh; margin-left: 30px; margin-right: 30px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7); width: auto; text-align: left;">
-		<h1 style="line-height: 70px; font-family: 'Aspekta'; display: inline-block; font-size: 8vw; font-weight: bold; letter-spacing: -1%; width: 100%; margin-left: 0; margin-right: 0;">{{ .Params.header_title | default "EPFL ROCKET TEAM" }}</h1>
-		<p style="font-family: 'Aspekta-200'; display: inline-block; line-height: 28px; margin-left: 0px; margin-top: 1vw; max-width: 60ch; letter-spacing: -1%; font-weight: 400;">
-			{{ .Params.header_text | markdownify | default "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry's leaders." }}
-		</p>
-	</div>
+  <div style="display: inline-block; position: absolute; bottom: 5vh; margin-left: 30px; margin-right: 30px; text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);">
+    <div>
+      Home > All Projects > Firehorn II 
+    <div>
+    <h2>COMPETITION PROJECT</h2>
+    <!-- Container that shrink-wraps its contents -->
+    <div style="display: inline-block; text-align: left;">
+      <!-- hr takes 100% of its container, which now is only as wide as the h1's text -->
+      <hr style="display: block; width: 100%; border: 1px solid white; margin: 0;">
+      <div style="height: 2.6vw"></div>
+      <!-- Remove width: 100% so it only fits the text -->
+      <h1 style="line-height: 40px; font-family: 'Aspekta-500'; display: inline-block; font-size: 8vw; letter-spacing: -1%;">
+        {{ .Params.header_title | default "EPFL ROCKET TEAM" }}
+      </h1>
+    </div>
+    <div style="left: 0; right: 0">
+      <p style="font-family: 'Aspekta-200'; display: inline-block; line-height: 28px; margin-left: 0; margin-top: 1vw; max-width: 60ch; letter-spacing: -1%; font-weight: 400;">
+      {{ .Params.header_text | markdownify | default "We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets..." }}
+      </p>
+    <div>
+  </div>
 </header>
 
 <script>
