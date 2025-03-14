@@ -1,85 +1,107 @@
 - name: Jérémie Huser
   position: President
   image: "/board/JeremieHuser.jpg"
+  email: jeremie.huser@epfl.ch
+  linkedin: "/in/j%C3%A9r%C3%A9mie-huser-2a752031b/"
 
 - name: Rayane Maalouf
   position: Vice President
   image: "/board/RayaneMaalouf.jpg"
+  email: rayane.maalouf@epfl.ch
 
 - name: Grégoire Delplace
   position: Chief Financial Officer
   image: "/board/GregoireDelplace.jpg"
+  email: cfo@epflrocketteam.ch
 
 - name: Antoine Marchand Truchot
   position: Chief Technical Officer
   image: "/board/AntoineMarchandTruchot.jpg"
+  email: antoine.marchand@epfl.ch
 
 - name: Jeremy Jariod
   position: Chief Safety Officer
   image: "/board/JeremyJariod.jpg"
+  email: jeremy.jariod@epfl.ch
 
 - name: Juliette Zoghbi
   position: Head of Communication
   image: "/board/JulietteZoghbi.jpg"
+  email: juliette.zoghbi@epfl.ch
 
 - name: Fanny Mathieu
   position: Head of Sponsoring
   image: "/board/FannyMathieu.jpg"
+  email: fanny.mathieu@epflrocketteam.ch
 
 - name: Uku Haukanõmm
   position: Head of Logistics
   image: "/board/UkuHaukanomm.jpg"
+  email: uku.haukanomm@epfl.ch
 
 - name: Pedro Soares
   position: Head of Strategy
   image: "/board/PedroSoares.jpg"
+  email: pedro.oliveiradebritorodriguessoares@epfl.ch
 
 - name: Gehna Yadav
   position: Head of IT
   image: "/board/GehnaYadav.jpg"
+  email: gehna.yadav@epfl.ch
 
 - name: Victor Rytwinski
   position: SpaceRace
   image: "/board/VictorRytwinski.jpg"
+  email: victor.rytwinski@epfl.ch
 
 - name: Damien Delespaul
   position: Systems Engineer Hyperion
   image: "/board/DamienDelespaul.jpg"
+  email: damien.delespaul@epfl.ch
 
 - name: Léonard Bongiovanni
   position: Systems Engineer Hyperion
   image: "/board/LeonardBongiovanni.jpg"
+  email: leonard.bongiovanni@epfl.ch
 
 - name: Samuel Wahba
   position: Systems Engineer Competition
   image: "/board/SamuelWahba.jpg"
+  email: samuel.wahba@epfl.ch
 
 - name: Guillaume Hueber
   position: Systems Engineer Icarus
   image: "/board/GuillaumeHueber.jpg"
+  email: guillaume.hueber@epfl.ch
 
 - name: Matthieu Tonneau
   position: Systems Engineer Hyperion
   image: "/board/MatthieuTonneau.jpg"
+  email: matthieu.tonneau@epflrocketteam.ch
 
 - name: Valentino Lekimpe
   position: Systems Engineer SpaceRace
   image: "/board/VelentinoLekimpe.jpg"
+  email: valentino.lekimpe@epfl.ch
 
 - name: Zina Randriamanantena
   position: Team Leader Competition
   image: "/board/ZinaRandriamanantena.jpg"
+  email: zina.randriamanantena@epfl.ch
 
 - name: Aubin Mercier
   position: Hyperion Representant
   image: "/board/AubinMercier.jpg"
+  email: aubin.mercier@epfl.ch
 
-- name: JoachimDespature
+- name: Joachim Despature
   position: Advisor
   image: "/board/ERT.png"
   object_fit: "scale-down"
+  email: joachim.despature@epfl.ch
 
 - name: Emmanuelle David
   position: eSpace President
   image: "/board/ERT.png"
   object_fit: "scale-down"
+  email: emmanuelle.david@epfl.ch
