@@ -27,12 +27,19 @@
     object-fit: cover;
   }
 
-  .social-icon {
+  .linkedin-icon {
     height: 15px;
     width: 15px;
     margin-left: 5px;
     margin-bottom: -2.5px;
-}
+  }
+
+  .mail-icon {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    margin-bottom: -5px;
+  }
 
   .info-container {
     display: flex;
@@ -81,7 +88,10 @@
       <div class="info-subtitle">
         {{ .position }}
         <a href="https://linkedin.com">
-          <img class="social-icon" loading="lazy" src="/icons/LinkedIn.svg" alt="LinkedIn icon"></img>
+          <img class="linkedin-icon" loading="lazy" src="/icons/LinkedIn.svg" alt="LinkedIn icon"></img>
+        </a>
+        <a href="mailto:">
+          <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="LinkedIn icon"></img>
         </a>
       </div>
     </div>
