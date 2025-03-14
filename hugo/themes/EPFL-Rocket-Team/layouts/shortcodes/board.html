@@ -27,6 +27,12 @@
     object-fit: cover;
   }
 
+  .social-icon {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+    margin-bottom: -2.5px;
+}
 
   .info-container {
     display: flex;
@@ -56,6 +62,9 @@
     font-weight: 400;
     line-height: 20px;
     word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 </style>
 
@@ -69,7 +78,12 @@
     <div class="info-container">
       <div class="info-title">{{ .name }}</div>
       <div class="info-divider"></div>
-      <div class="info-subtitle">{{ .position }}</div>
+      <div class="info-subtitle">
+        {{ .position }}
+        <a href="https://linkedin.com">
+          <img class="social-icon" loading="lazy" src="/icons/LinkedIn.svg" alt="LinkedIn icon"></img>
+        </a>
+      </div>
     </div>
   </div>
   {{ end }}
