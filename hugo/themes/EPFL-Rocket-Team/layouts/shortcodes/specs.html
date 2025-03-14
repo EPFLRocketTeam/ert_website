@@ -2,12 +2,12 @@
 {{ $specs := .Page.Params.specs }}
 
 {{ range $specs }}
-<hr>
+<hr style="margin: 5px 0 5px 0;">
 <div style="display: flex; width: 100%;">
-  <div style="flex: 1; text-align: left;">
+  <div style="flex: 1; text-align: left; font-size: 1rem;">
     {{ .key }}:
   </div>
-  <div style="text-align: right; margin-left: auto;">
+  <div style="text-align: right; margin-left: auto; font-size: 2rem; height: 4rem;">
     {{ .value }}
   </div>
 </div>
