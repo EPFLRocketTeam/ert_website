@@ -49,13 +49,16 @@
     color: white;
     overflow-x: hidden;
   }
-
+  h1, h2, h3, h4, h5, h6{
+    margin: 30px;
+  }
   h1 {
     font-family: 'Aspekta';
     font-size: 64px;
     font-weight: 400;
     margin-left: -8px;
     pointer-events: none;
+    margin: default;
   }
 
   p {font-size: 24px;}
@@ -211,8 +214,7 @@
       <!--/header-->
   <main id="main-content" 
         style="width: 100%; margin: auto; position: relative; 
-               padding: {{ .Params.padding | default "0px" }}; 
-               top: 30px">
+               padding: {{ .Params.padding | default "0px" }};">
     {{- block "main" . }}{{- end }}
   </main>
   

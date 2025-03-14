@@ -1,0 +1,15 @@
+{{/* Shortcode: specs.html */}}
+{{ $specs := .Page.Params.specs }}
+
+{{ range $specs }}
+<hr>
+<div style="display: flex; width: 100%;">
+  <div style="flex: 1; text-align: left;">
+    {{ .key }}:
+  </div>
+  <div style="text-align: right; margin-left: auto;">
+    {{ .value }}
+  </div>
+</div>
+{{ end }}
+

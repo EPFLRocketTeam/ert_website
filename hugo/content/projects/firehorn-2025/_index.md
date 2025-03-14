@@ -10,9 +10,20 @@ padding: 30px
 callToAction:
     text: "Want to participate in the next competition?"
     action: "JOIN THE ERT"
+specs:
+  - key: "Year"
+    value: "2025"
+  - key: "City/Country"
+    value: "Somewhere"
+  - key: "Goal"
+    value: "42 km"
+  - key: "Team members"
+    value: "42"
 ---
 
 # Specifications
+
+{{< specs >}}
 
 # Highlights
 
