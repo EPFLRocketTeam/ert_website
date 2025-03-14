@@ -1,0 +1,85 @@
+- name: Jérémie Huser
+  position: President
+  image: "/board/JeremieHuser.jpg"
+
+- name: Rayane Maalouf
+  position: Vice President
+  image: "/board/RayaneMaalouf.jpg"
+
+- name: Grégoire Delplace
+  position: Chief Financial Officer
+  image: "/board/GregoireDelplace.jpg"
+
+- name: Antoine Marchand Truchot
+  position: Chief Technical Officer
+  image: "/board/AntoineMarchandTruchot.jpg"
+
+- name: Jeremy Jariod
+  position: Chief Safety Officer
+  image: "/board/JeremyJariod.jpg"
+
+- name: Juliette Zoghbi
+  position: Head of Communication
+  image: "/board/JulietteZoghbi.jpg"
+
+- name: Fanny Mathieu
+  position: Head of Sponsoring
+  image: "/board/FannyMathieu.jpg"
+
+- name: Uku Haukanõmm
+  position: Head of Logistics
+  image: "/board/UkuHaukanomm.jpg"
+
+- name: Pedro Soares
+  position: Head of Strategy
+  image: "/board/PedroSoares.jpg"
+
+- name: Gehna Yadav
+  position: Head of IT
+  image: "/board/GehnaYadav.jpg"
+
+- name: Victor Rytwinski
+  position: SpaceRace
+  image: "/board/VictorRytwinski.jpg"
+
+- name: Damien Delespaul
+  position: Systems Engineer Hyperion
+  image: "/board/DamienDelespaul.jpg"
+
+- name: Léonard Bongiovanni
+  position: Systems Engineer Hyperion
+  image: "/board/LeonardBongiovanni.jpg"
+
+- name: Samuel Wahba
+  position: Systems Engineer Competition
+  image: "/board/SamuelWahba.jpg"
+
+- name: Guillaume Hueber
+  position: Systems Engineer Icarus
+  image: "/board/GuillaumeHueber.jpg"
+
+- name: Matthieu Tonneau
+  position: Systems Engineer Hyperion
+  image: "/board/MatthieuTonneau.jpg"
+
+- name: Valentino Lekimpe
+  position: Systems Engineer SpaceRace
+  image: "/board/VelentinoLekimpe.jpg"
+
+- name: Zina Randriamanantena
+  position: Team Leader Competition
+  image: "/board/ZinaRandriamanantena.jpg"
+
+- name: Aubin Mercier
+  position: Hyperion Representant
+  image: "/board/AubinMercier.jpg"
+
+- name: JoachimDespature
+  position: Advisor
+  image: "/board/ERT.png"
+  object_fit: "scale-down"
+
+- name: Emmanuelle David
+  position: eSpace President
+  image: "/board/ERT.png"
+  object_fit: "scale-down"
