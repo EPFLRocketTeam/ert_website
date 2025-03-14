@@ -28,7 +28,12 @@ specs:
 
 # Specifications
 
-{{< specs >}}
+
+{{< flexbox >}}
+    {{< specs >}}
+    {{< logotype >}}
+{{< /flexbox >}}
+
 
 # Highlights
 
