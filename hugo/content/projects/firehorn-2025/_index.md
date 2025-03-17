@@ -19,6 +19,11 @@ specs:
     value: "42 km"
   - key: "Team members"
     value: "42"
+highlights:
+  - key: "Max reachable speed (Mach 1.5+)"
+    value: "1850+ km/h"
+  - key: "Max reachable height (apogee)"
+    value: "9000+ m"
 ---
 <style>
   h1, h2, h3, h4, h5, h6{
@@ -28,14 +33,14 @@ specs:
 
 # Specifications
 
-
 {{< flexbox >}}
     {{< specs >}}
     {{< logotype >}}
 {{< /flexbox >}}
 
-
 # Highlights
+
+{{< highlights >}}
 
 # Awards
 

@@ -1,0 +1,19 @@
+{{/* Shortcode: highlights.html */}}
+{{ $highlights := .Page.Params.highlights }}
+
+<div style="display: flex; flex-direction: row; min-width: 250px; width: 100%; justify-content: center; color: #da291c">
+  {{ range $index, $item := $highlights }}
+    <div style="flex: 1; display: flex; flex-direction: column; margin: 30px; justify-content: center; text-align: center">
+      <div style="font-size: 3rem;">
+        {{ $item.value }}
+      </div>
+      <div style="font-size: 1rem;">
+        {{ $item.key }}:
+      </div>
+    </div>
+    {{ if lt (add $index 1) (len $highlights) }}
+      <hr style="margin: 5px 0; color: #da291c;">
+    {{ end }}
+  {{ end }}
+</div>
+
