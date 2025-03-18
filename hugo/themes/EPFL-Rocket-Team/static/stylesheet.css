@@ -563,18 +563,24 @@ textarea {
   margin-bottom: 30px;
 }
 
-.semproject-title{
+.semprojecttitle{
+  cursor: pointer;
   font-weight: bold;
-  width: 15vw;
   margin: 0 10px;
+  background: none;
+  color: #F6F6F6;
+  border: none;
+  text-align: left;
+  font-size: 18px;
 }
 
-.semproject-title:hover{
+.projectslist button:hover, .projectslist button.active{
   color: #DA291C;
 }
 
-.project-details{
 
+.projectdetails{
+  display: none;
 }
 
 @media (max-width: 1280px) {

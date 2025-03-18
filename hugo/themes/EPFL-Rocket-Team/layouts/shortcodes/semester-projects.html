@@ -6,46 +6,140 @@
         <div class="content">
             <span class="line"><h5>Structure</h5></span>
             <div class="projectslist">
-                <div class="semproject-title">
+                <button type="button" class="semprojecttitle defaultOpen" onclick="openProject(event, 'competition-structure-1')">
                     Structural assembly FE model validation via experimental modal analysis
-                </div>
-                <div class="semproject-title">
+                </button>
+                    
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'competition-structure-2')">
                     Experimental analysis of rocket tanks sloshing and vortex buildup
-                </div>
-                <div class="semproject-title">
+                </button>
+                <button type="button" class="semprojecttitle">
                     Manufacturing Technique for composite parts
-                </div>
-                <div class="semproject-title">
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
                     Study, Design, and Analysis of Anti-Buckling Rings: Material Selection, Production, and Performance Testing
-                </div>
+                </button>
             </div>
             <div>
-                <div class="project-details">
+                <div class="projectdetails" id="competition-structure-1">
                     PROJECT DESCRIPTION
 
-In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.
+                    In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.
 
-A common method used in aerospace engineering to verify/validate large coupled FE models is to compare simulated and experimental modal analysis. By experimentally extracting the modal frequencies and mode shapes and correcting the FE models until the simulation results match with the experiment, it is possible to verify and correct large coupled FE models in a non-destructive manner.
+                    A common method used in aerospace engineering to verify/validate large coupled FE models is to compare simulated and experimental modal analysis. By experimentally extracting the modal frequencies and mode shapes and correcting the FE models until the simulation results match with the experiment, it is possible to verify and correct large coupled FE models in a non-destructive manner.
 
                 </div>
+
+                <div class="projectdetails" id="competition-structure-2">
+                    PROJECT DESCRIPTION<br>
+
+                    The EPFL Rocket Team is currently developing a new class of rockets aimed at launching at an altitude of 9 km during the EuRoC 25 student rocketry competition and to launch at an altitude of 30 km in 2026. These launch vehicles are propelled by a biliquid engine. Two cylindrical aluminum tanks are located along the rocket length to store the propellant and oxidizer.
+
+                </div>
+            </div>
+            <span class="line"><h5>Recovery</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Mission Analysis and Feasibility Study for the Recovery System of a Suborbital Rocket
+                </button>              
             </div>
         </div> 
         <button type="button" class="collapsible">Icarus Project</button>
         <div class="content">
-        <p>Lorem ipsum...</p>
+            <span class="line"></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Design, manufacture and testing of a Reaction Control Wheel
+                </button> 
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Preliminary Design of Active Control on a Suborbital Rocket through the use of Canards
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Design and Implementation of a Multi-Point Vibration Sensing System
+                </button>            
+            </div>
+            <div>
+                <div class="projectdetails" id="f">
+                    PROJECT DESCRIPTION<br>
+
+                    The EPFL Rocket Team is developing a Vertical Takeoff, Vertical Landing (VTVL) Hopper named Icarus. Its aim is to perform “hops” : brief, low-altitude (maximum 5 metres), vertical trajectories with hovering time at the apogee. To achieve precise thrust vectoring, Icarus is equipped with a gimbal system that redirects the engine’s thrust, allowing for stabilized control during flight. Given this setup, understanding the vehicle’s vibrational behavior is critical for ensuring the integrity of the structure, the performance of the gimbal, and the reliability of the avionics system. 
+
+                </div>
+            </div>
         </div> 
         <button type="button" class="collapsible">Hyperion Project</button>
         <div class="content">
-        <p>Lorem ipsum...</p>
+            <span class="line"><h5>P-Class</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Creating a custom interface for a plasma thruster test bench
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Power electronics conversion for vacuum compatibility
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Architecture design of a gas delivery system for a Hall-Effect Thruster
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Developing a modular power processing unit (PPU) for an Hall-Effect Thruster (HET)
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Advanced design of a Pulsed Plasma Thruster
+                </button>
+            </div>
+            <div>
+                <div class="projectdetails" id="f">
+                    PROJECT DESCRIPTION<br>
+
+                    In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts 
+
+                </div>
+            </div>
+            <span class="line"><h5>Testing Facility</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Safety analysis for the Firehorn II adaptation of the Testing Facility
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Measurements of emissions during propulsion tests
+                </button>          
+            </div>
+            <span class="line"><h5>A-Class</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Design, manufacture and testing of a Cold Gas Thruster for Roll Control on a Hopper
+                </button>        
+            </div>
+
+            <span class="line"><h5>B-Class</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    Development of a Barske E-pump for a Rocket Engine
+                </button>              
+            </div>
+
+            <span class="line"><h5>C-Class</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    DESIGN OF A 15KN BI-LIQUID ROCKET ENGINE (DEMO-C1)
+                </button>        
+            </div>
         </div> 
         <button type="button" class="collapsible">Management</button>
         <div class="content">
-        <p>Lorem ipsum...</p>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                    LLM FOR RESOURCE BANKS QUERYING 
+                </button>          
+            </div>
         </div> 
     </div>
     
 
-
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementsByClassName("defaultOpen").click();
+    </script>
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
@@ -60,6 +154,27 @@ A common method used in aerospace engineering to verify/validate large coupled F
             content.style.display = "block";
             }
         });
+        } 
+
+        function openProject(evt, cityName) {
+        // Declare all variables
+        var i, projectdetails, semprojecttitle;
+
+        // Get all elements with class="projectdetails" and hide them
+        projectdetails = document.getElementsByClassName("projectdetails");
+        for (i = 0; i < projectdetails.length; i++) {
+            projectdetails[i].style.display = "none";
+        }
+
+        // Get all elements with class="semprojecttitle" and remove the class "active"
+        semprojecttitle = document.getElementsByClassName("semprojecttitle");
+        for (i = 0; i < semprojecttitle.length; i++) {
+            semprojecttitle[i].className = semprojecttitle[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
         } 
     </script>
 </body>
