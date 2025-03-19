@@ -583,6 +583,10 @@ textarea {
   display: none;
 }
 
+.defaultOpen{
+  display: block;
+}
+
 @media (max-width: 1280px) {
   h2 {
     font-size: 34px;

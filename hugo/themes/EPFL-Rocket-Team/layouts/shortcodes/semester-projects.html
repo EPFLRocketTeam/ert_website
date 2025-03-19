@@ -6,7 +6,7 @@
         <div class="content">
             <span class="line"><h5>Structure</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle defaultOpen" onclick="openProject(event, 'competition-structure-1')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'competition-structure-1')">
                     Structural assembly FE model validation via experimental modal analysis
                 </button> 
                     
@@ -21,7 +21,7 @@
                 </button>
             </div>
             <div>
-                <div class="projectdetails" id="competition-structure-1">
+                <div class="projectdetails defaultOpen" id="competition-structure-1">
                     PROJECT DESCRIPTION
 
                     In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.
@@ -39,12 +39,12 @@
             </div>
             <span class="line"><h5>Recovery</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle defaultOpen" onclick="openProject(event, 'competition-recovery-1')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'competition-recovery-1')">
                     Mission Analysis and Feasibility Study for the Recovery System of a Suborbital Rocket
                 </button>              
             </div>
             <div>
-                <div class="projectdetails" id="competition-recovery-1">
+                <div class="projectdetails defaultOpen" id="competition-recovery-1">
                     PROJECT DESCRIPTION<br>
 
                     In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.
@@ -185,9 +185,9 @@
         // Get the element with id="defaultOpen" and click on it
        /*  document.getElementById("defaultOpen").click(); */
 
-        defaultOpen = document.getElementsByClassName("defaultOpen");
+        /* defaultOpen = document.getElementsByClassName("defaultOpen");
         for (i = 0; i < defaultOpen.length; i++) {
             defaultOpen[i].click();
-        }
+        } */
     </script>
 </body>
