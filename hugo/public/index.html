@@ -87,7 +87,12 @@
     pointer-events: none;
   }
 
-  p {font-size: 24px;}
+  p {
+    font-size: 24px;
+    max-width: 80ch;
+    text-align: justify;
+    font-family: 'Aspekta-200';
+  }
   @media (max-width: 1280px) {
     h1 {
       font-size: 50px;
@@ -1469,7 +1474,7 @@ function hideMenu() {
   <footer style="padding: 30px">
 
 <div class="Footer" style="width: 100%; height: auto; left: 0px; position: absolute">
-  <div class="footer-right" style="visibility: hidden; right: 70px; top: 24px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+  <div class="footer-right" style="right: 70px; top: 24px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
     <div class="Projects" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word"><a href="/projects/">PROJECTS</a></div>
     <div class="JoinUs" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word"><a href="/join-us/">JOIN US</a></div>
     <div class="About" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word"><a href="/about/">ABOUT</a></div>

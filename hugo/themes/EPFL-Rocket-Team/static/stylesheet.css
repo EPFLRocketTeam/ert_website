@@ -1029,6 +1029,10 @@ textarea {
   visibility: hidden;
 }
 
+.footer-right {
+  visibility: hidden;
+}
+
 /* 375px and above */
 @media (min-width: 375px) {
 
