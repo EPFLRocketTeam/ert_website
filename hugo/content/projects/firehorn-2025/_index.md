@@ -25,11 +25,6 @@ highlights:
   - key: "Max reachable height (apogee)"
     value: "9000+ m"
 ---
-<style>
-  h1, h2, h3, h4, h5, h6{
-    margin: 30px;
-  }
-</style>
 
 # Specifications
 

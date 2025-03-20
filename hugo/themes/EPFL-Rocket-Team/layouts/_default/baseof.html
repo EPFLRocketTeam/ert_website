@@ -37,8 +37,14 @@
   {{- partial "custom_head.html" . -}}
   <style>
   * {
-    margin: 0;
     box-sizing: border-box;
+  }
+  .zero-margin {
+    margin: 0;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
   }
   body {
     position: relative;
@@ -53,9 +59,7 @@
     font-family: 'Aspekta';
     font-size: 64px;
     font-weight: 400;
-    margin-left: -8px;
     pointer-events: none;
-    margin: default;
   }
 
   p {font-size: 24px;}

@@ -1020,29 +1020,6 @@ textarea {
     width: 45px;
     height: 45px;
   }
-
-  .CopieDeErtLogoBlanc1,
-  .Frame66 {
-    visibility: hidden;
-  }
-}
-
-/* 425px and above */
-@media (min-width: 425px) {
-
-  .CopieDeErtLogoBlanc1,
-  .Frame66 {
-    visibility: hidden;
-  }
-}
-
-/* 600px and above */
-@media (min-width: 600px) {
-
-  .CopieDeErtLogoBlanc1,
-  .Frame66 {
-    visibility: hidden;
-  }
 }
 
 /* 768px and above */
@@ -1055,6 +1032,10 @@ textarea {
 
   .LogoVerticalFullW {
     left: 35px;
+  }
+
+  .footer-right {
+    visibility: visible;
   }
 }
 
