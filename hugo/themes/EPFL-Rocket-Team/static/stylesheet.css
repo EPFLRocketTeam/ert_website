@@ -581,6 +581,23 @@ textarea {
 
 .projectdetails{
   display: none;
+  padding-top: 20px;
+}
+
+.projectdetails p{
+  font-size: 17px;
+  line-height: 200%;
+}
+
+.projectdetails h1{
+  font-family: 'Aspekta-600';
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-weight: 600;
+}
+.projectdetails span{
+  color: #DA291C;
 }
 
 .defaultOpen{

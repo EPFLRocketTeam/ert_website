@@ -6,50 +6,64 @@
         <div class="content">
             <span class="line"><h5>Structure</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'competition-structure-1')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'competition-structure-1')">
                     Structural assembly FE model validation via experimental modal analysis
                 </button> 
                     
                 <button type="button" class="semprojecttitle" onclick="openProject(event, 'competition-structure-2')">
                     Experimental analysis of rocket tanks sloshing and vortex buildup
                 </button>
-                <button type="button" class="semprojecttitle">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'competition-structure-3')">
                     Manufacturing Technique for composite parts
                 </button>
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'competition-structure-4')">
                     Study, Design, and Analysis of Anti-Buckling Rings: Material Selection, Production, and Performance Testing
                 </button>
             </div>
             <div>
                 <div class="projectdetails defaultOpen" id="competition-structure-1">
-                    PROJECT DESCRIPTION
+                    <h1>project <span>description</span></h1>
+                    <p>In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.</p>
 
-                    In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.
+                    <p>A common method used in aerospace engineering to verify/validate large coupled FE models is to compare simulated and experimental modal analysis. By experimentally extracting the modal frequencies and mode shapes and correcting the FE models until the simulation results match with the experiment, it is possible to verify and correct large coupled FE models in a non-destructive manner.</p>
 
-                    A common method used in aerospace engineering to verify/validate large coupled FE models is to compare simulated and experimental modal analysis. By experimentally extracting the modal frequencies and mode shapes and correcting the FE models until the simulation results match with the experiment, it is possible to verify and correct large coupled FE models in a non-destructive manner.
-
+                    <p>This project has three goals: to establish a procedure/methodology to conduct experimental modal analysis, to establish a methodology to update FE models to match with experimental results, and to apply both methodologies on a rocket structural segment as a case study. The experimental modal analysis can be done using accelerometers and impulse excitation (hammer). The finite element model to validate will be created in ANSYS, which will also be used for the simulated modal analysis. </p>
+                    
+                    <h1>project <span>unfolding</span>:</h1>
                 </div>
 
-                <div class="projectdetails" id="competition-structure-2">
-                    PROJECT DESCRIPTION<br>
+                <div class="projectdetails" id="competition-structure-2">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The EPFL Rocket Team is currently developing a new class of rockets aimed at launching at an altitude of 9 km during the EuRoC 25 student rocketry competition and to launch at an altitude of 30 km in 2026. These launch vehicles are propelled by a biliquid engine. Two cylindrical aluminum tanks are located along the rocket length to store the propellant and oxidizer.</p>
+                </div>
 
-                    The EPFL Rocket Team is currently developing a new class of rockets aimed at launching at an altitude of 9 km during the EuRoC 25 student rocketry competition and to launch at an altitude of 30 km in 2026. These launch vehicles are propelled by a biliquid engine. Two cylindrical aluminum tanks are located along the rocket length to store the propellant and oxidizer.
+                <div class="projectdetails" id="competition-structure-3">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The association plans to launch a sounding rocket named FIREHORN, that will fly at an altitude of 9 km in October 2025 and at 30km in October 2026. Many of the parts used in these rockets are made of carbon composite, and can be very expensive to produce. An innovative solution was tested last semester using 3D-printed molds. This type of production proved promising and merits further research and improvement.</p>
+                    
+                    <p>The aim of this project is to improve the production process using 3D printed molds. Students will start by researching the different materials available for 3D printing, and then look for the right parameters to obtain a satisfactory mold. They will continue with manufacturing and testing.</p>
+                </div>
 
+                <div class="projectdetails" id="competition-structure-4">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The association plans to launch a sounding rocket named FIREHORN, that will fly at an altitude of 9 km in October 2025 and at 30km in October 2026. The firehorn structure is made up of different modules, each of which is made up of a coupling system linked by 4 carbon rods. In order to guarantee resistance to load and buckling in particular, the structure has aluminium parts called “Anti-buckling rings” placed in each module according to their size.</p>
+
+                    <p>This structure was studied during the previous year, and it was deduced that there is potential in the search for lighter, more resistant materials for this type of part.</p>
                 </div>
             </div>
             <span class="line"><h5>Recovery</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'competition-recovery-1')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'competition-recovery-1')">
                     Mission Analysis and Feasibility Study for the Recovery System of a Suborbital Rocket
                 </button>              
             </div>
             <div>
                 <div class="projectdetails defaultOpen" id="competition-recovery-1">
-                    PROJECT DESCRIPTION<br>
+                    <h1>project <span>description</span></h1>
 
-                    In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.
+                    <p>The EPFL Rocket Team’s goal is to fly a rocket that will reach the Karman line by 2030. One critical stage of the mission is the rocket’s recovery. The rocket team has been working on recovery systems since it first started; however, our target apogee has never been above 9km. Given that the target apogee altitude is considerably higher than any previous missions, the operational environment requirements have also changed.</p>
 
-                    A common method used in aerospace engineering to verify/validate large coupled FE models is to compare simulated and experimental modal analysis. By experimentally extracting the modal frequencies and mode shapes and correcting the FE models until the simulation results match with the experiment, it is possible to verify and correct large coupled FE models in a non-destructive manner.
+                    <p>Following the change of requirements, several assemblies of the recovery subsystem’s design will need to change. Thus we would like to start the mission analysis, needs identification and feasibility study (ECSS Project Phase 0 and A) for the recovery subsystem.</p>
 
                 </div>
             </div>
@@ -58,22 +72,35 @@
         <div class="content">
             <span class="line"></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'icarus-1')">
                     Design, manufacture and testing of a Reaction Control Wheel
                 </button> 
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'icarus-2')">
                     Preliminary Design of Active Control on a Suborbital Rocket through the use of Canards
                 </button>
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'icarus-3')">
                     Design and Implementation of a Multi-Point Vibration Sensing System
                 </button>            
             </div>
             <div>
-                <div class="projectdetails" id="f">
-                    PROJECT DESCRIPTION<br>
+                <div class="projectdetails defaultOpen" id="icarus-1">
+                    <h1>project <span>description</span></h1>
 
-                    The EPFL Rocket Team is developing a Vertical Takeoff, Vertical Landing (VTVL) Hopper named Icarus. Its aim is to perform “hops” : brief, low-altitude (maximum 5 metres), vertical trajectories with hovering time at the apogee. To achieve precise thrust vectoring, Icarus is equipped with a gimbal system that redirects the engine’s thrust, allowing for stabilized control during flight. Given this setup, understanding the vehicle’s vibrational behavior is critical for ensuring the integrity of the structure, the performance of the gimbal, and the reliability of the avionics system. 
+                    <p>The EPFL Rocket Team is developing a Vertical Takeoff, Vertical Landing (VTVL) Hopper named Icarus. Its aim is to perform “hops” : brief, low-altitude (maximum 5 metres), vertical trajectories with hovering time at the apogee. In order to achieve thrust vectoring capabilities, Icarus has developed a gimbal system to redirect the engine’s thrust, thereby enabling control over the yaw and pitch of the vehicle. This, however, leaves roll – <i>rotations around the vertical axis</i> – completely unchecked.</p> 
+                </div>
 
+                <div class="projectdetails" id="icarus-2">
+                    <h1>project <span>description</span></h1>
+
+                    <p>The EPFL Rocket Team’s goal is to fly a rocket that will reach the Karman line (100km altitude) by 2030. The Icarus project has the aim of providing active control to this rocket.</p> 
+
+                    <p>The goal of this project is to design and implement a set of controllable canards that can adjust the rocket’s pitch, yaw, and roll in real-time, providing critical stability and directionality during ascent and descent. Unlike traditional fins, which offer only passive stabilization, these actively controlled canards will allow for dynamic adjustments to compensate for environmental disturbances and flight path deviations.</p>
+                </div>
+
+                <div class="projectdetails" id="icarus-3">
+                    <h1>project <span>description</span></h1>
+
+                    <p>The EPFL Rocket Team is developing a Vertical Takeoff, Vertical Landing (VTVL) Hopper named Icarus. Its aim is to perform “hops” : brief, low-altitude (maximum 5 metres), vertical trajectories with hovering time at the apogee. To achieve precise thrust vectoring, Icarus is equipped with a gimbal system that redirects the engine’s thrust, allowing for stabilized control during flight. Given this setup, understanding the vehicle’s vibrational behavior is critical for ensuring the integrity of the structure, the performance of the gimbal, and the reliability of the avionics system. </p> 
                 </div>
             </div>
         </div> 
@@ -81,7 +108,7 @@
         <div class="content">
             <span class="line"><h5>P-Class</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'Projectname')">
                     Creating a custom interface for a plasma thruster test bench
                 </button>
                 <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
@@ -98,16 +125,39 @@
                 </button>
             </div>
             <div>
-                <div class="projectdetails" id="f">
-                    PROJECT DESCRIPTION<br>
+                <div class="projectdetails defaultOpen" id="competition-structure-1">
+                    <h1>project <span>description</span></h1>
+                    <p>In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.</p>
 
-                    In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts 
+                    <p>A common method used in aerospace engineering to verify/validate large coupled FE models is to compare simulated and experimental modal analysis. By experimentally extracting the modal frequencies and mode shapes and correcting the FE models until the simulation results match with the experiment, it is possible to verify and correct large coupled FE models in a non-destructive manner.</p>
 
+                    <p>This project has three goals: to establish a procedure/methodology to conduct experimental modal analysis, to establish a methodology to update FE models to match with experimental results, and to apply both methodologies on a rocket structural segment as a case study. The experimental modal analysis can be done using accelerometers and impulse excitation (hammer). The finite element model to validate will be created in ANSYS, which will also be used for the simulated modal analysis. </p>
+                    
+                    <h1>project <span>unfolding</span>:</h1>
+                </div>
+
+                <div class="projectdetails" id="competition-structure-2">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The EPFL Rocket Team is currently developing a new class of rockets aimed at launching at an altitude of 9 km during the EuRoC 25 student rocketry competition and to launch at an altitude of 30 km in 2026. These launch vehicles are propelled by a biliquid engine. Two cylindrical aluminum tanks are located along the rocket length to store the propellant and oxidizer.</p>
+                </div>
+
+                <div class="projectdetails" id="competition-structure-3">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The association plans to launch a sounding rocket named FIREHORN, that will fly at an altitude of 9 km in October 2025 and at 30km in October 2026. Many of the parts used in these rockets are made of carbon composite, and can be very expensive to produce. An innovative solution was tested last semester using 3D-printed molds. This type of production proved promising and merits further research and improvement.</p>
+                    
+                    <p>The aim of this project is to improve the production process using 3D printed molds. Students will start by researching the different materials available for 3D printing, and then look for the right parameters to obtain a satisfactory mold. They will continue with manufacturing and testing.</p>
+                </div>
+
+                <div class="projectdetails" id="competition-structure-4">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The association plans to launch a sounding rocket named FIREHORN, that will fly at an altitude of 9 km in October 2025 and at 30km in October 2026. The firehorn structure is made up of different modules, each of which is made up of a coupling system linked by 4 carbon rods. In order to guarantee resistance to load and buckling in particular, the structure has aluminium parts called “Anti-buckling rings” placed in each module according to their size.</p>
+
+                    <p>This structure was studied during the previous year, and it was deduced that there is potential in the search for lighter, more resistant materials for this type of part.</p>
                 </div>
             </div>
             <span class="line"><h5>Testing Facility</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'Projectname')">
                     Safety analysis for the Firehorn II adaptation of the Testing Facility
                 </button>
                 <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
@@ -116,21 +166,21 @@
             </div>
             <span class="line"><h5>A-Class</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'Projectname')">
                     Design, manufacture and testing of a Cold Gas Thruster for Roll Control on a Hopper
                 </button>        
             </div>
 
             <span class="line"><h5>B-Class</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'Projectname')">
                     Development of a Barske E-pump for a Rocket Engine
                 </button>              
             </div>
 
             <span class="line"><h5>C-Class</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'Projectname')">
                     DESIGN OF A 15KN BI-LIQUID ROCKET ENGINE (DEMO-C1)
                 </button>        
             </div>
@@ -138,7 +188,7 @@
         <button type="button" class="collapsible">Management</button>
         <div class="content">
             <div class="projectslist">
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'Projectname')">
                     LLM FOR RESOURCE BANKS QUERYING 
                 </button>          
             </div>
