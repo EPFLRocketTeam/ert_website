@@ -579,9 +579,14 @@ textarea {
 }
 
 
+
 .projectdetails{
   display: none;
   padding-top: 20px;
+  padding: auto;
+  margin: auto;
+  width: max-content;
+
 }
 
 .projectdetails p{

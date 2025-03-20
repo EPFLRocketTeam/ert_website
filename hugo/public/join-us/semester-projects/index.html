@@ -44,7 +44,7 @@ SPRING 2025 Competition Project Structure Structural assembly FE model validatio
   <meta itemprop="name" content="Semester Projects">
   <meta itemprop="description" content="If you can’t find your dream project down here, but have an idea or would like to suggest your own project to do with us, we are open to suggestions! Feel free to contact us and we can talk about it.
 SPRING 2025 Competition Project Structure Structural assembly FE model validation via experimental modal analysis Experimental analysis of rocket tanks sloshing and vortex buildup Manufacturing Technique for composite parts Study, Design, and Analysis of Anti-Buckling Rings: Material Selection, Production, and Performance Testing project description In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.">
-  <meta itemprop="wordCount" content="1613">
+  <meta itemprop="wordCount" content="1758">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -93,7 +93,12 @@ SPRING 2025 Competition Project Structure Structural assembly FE model validatio
     pointer-events: none;
   }
 
-  p {font-size: 24px;}
+  p {
+    font-size: 24px;
+    max-width: 80ch;
+    text-align: justify;
+    font-family: 'Aspekta-200';
+  }
   @media (max-width: 1280px) {
     h1 {
       font-size: 50px;
@@ -566,51 +571,59 @@ function hideMenu() {
         <div class="content">
             <span class="line"><h5>P-Class</h5></span>
             <div class="projectslist">
-                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'hyperion-pclass-1')">
                     Creating a custom interface for a plasma thruster test bench
                 </button>
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-pclass-2')">
                     Power electronics conversion for vacuum compatibility
                 </button>
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-pclass-3')">
                     Architecture design of a gas delivery system for a Hall-Effect Thruster
                 </button>
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-pclass-4')">
                     Developing a modular power processing unit (PPU) for an Hall-Effect Thruster (HET)
                 </button>
-                <button type="button" class="semprojecttitle" onclick="openProject(event, 'Projectname')">
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-pclass-5')">
                     Advanced design of a Pulsed Plasma Thruster
                 </button>
             </div>
             <div>
-                <div class="projectdetails defaultOpen" id="competition-structure-1">
+                <div class="projectdetails defaultOpen" id="hyperion-pclass-1">
                     <h1>project <span>description</span></h1>
-                    <p>In order to dimension the structural parts of its rockets, the EPFL Rocket Team mainly uses structural simulations based on the Finite Element Method (FEM). Simulating an entire structural segment (like the one in the image below) is a difficult task, in part because the contacts between all of the different parts introduce a lot of nonlinearities. Moreover, using destructive testing to verify/validate simulations can be very expensive.</p>
+                    <p>The Hyperion Plasma team works on electric space propulsion. The Team developed one thruster and is in the process of making another one. In order to test the thrusters in vacuum condition, they need to be put in vacuum chambers with specific interfaces.</p>
 
-                    <p>A common method used in aerospace engineering to verify/validate large coupled FE models is to compare simulated and experimental modal analysis. By experimentally extracting the modal frequencies and mode shapes and correcting the FE models until the simulation results match with the experiment, it is possible to verify and correct large coupled FE models in a non-destructive manner.</p>
+                    <p>The test bench is already built but the electric interfaces and plumbing interfaces need to be adapted to the team needs. This includes cable management, gas feed into the chamber and vacuum compatibility of all the components. The project also includes a thorough literature review to ensure the interface meets international aerospace standards. </p>
 
-                    <p>This project has three goals: to establish a procedure/methodology to conduct experimental modal analysis, to establish a methodology to update FE models to match with experimental results, and to apply both methodologies on a rocket structural segment as a case study. The experimental modal analysis can be done using accelerometers and impulse excitation (hammer). The finite element model to validate will be created in ANSYS, which will also be used for the simulated modal analysis. </p>
                     
-                    <h1>project <span>unfolding</span>:</h1>
+                    <h1>what the student(s) <span>will do</span>:</h1>
                 </div>
 
-                <div class="projectdetails" id="competition-structure-2">                   
+                <div class="projectdetails" id="hyperion-pclass-2">                   
                     <h1>project <span>description</span></h1>
-                    <p>The EPFL Rocket Team is currently developing a new class of rockets aimed at launching at an altitude of 9 km during the EuRoC 25 student rocketry competition and to launch at an altitude of 30 km in 2026. These launch vehicles are propelled by a biliquid engine. Two cylindrical aluminum tanks are located along the rocket length to store the propellant and oxidizer.</p>
+                    <p>The Hyperion Plasma team works on electric space propulsion. The Team developed one thruster and is in the process of making another one. In order to qualify those thrusters, they need to be put in vacuum chambers and in stringent conditions. This poses some challenges namely to feed the various energy and fluid supplies into the thruster. To alleviate some of that challenge, the team would like to place the thruster control and power electronics directly into the vacuum chamber next to the thrusters. However this poses some challenges with regards to the circuit design. This project aims to convert an existing power processing unit (PPU) design for vacuum use.</p>
+
+                    <p>The student will first delve into what it means for electronic systems to be “vacuum compatible” by doing a thorough literature review and documenting all relevant findings. Once the scope of the project is more understood, the student will then review the current PPU board and identify key improvement points. After rigorously planning and detailing all the necessary changes, the student will move onto the manufacturing and/or improvement of the design hands-on.</p>
                 </div>
 
-                <div class="projectdetails" id="competition-structure-3">                   
+                <div class="projectdetails" id="hyperion-pclass-3">                   
                     <h1>project <span>description</span></h1>
-                    <p>The association plans to launch a sounding rocket named FIREHORN, that will fly at an altitude of 9 km in October 2025 and at 30km in October 2026. Many of the parts used in these rockets are made of carbon composite, and can be very expensive to produce. An innovative solution was tested last semester using 3D-printed molds. This type of production proved promising and merits further research and improvement.</p>
+                    <p>The Hyperion Plasma Team focuses on electric propulsion. The Team has done research on the overall concept of the Hall Effect thruster (HET) and has come down to a preliminary design. In order to make a functional thruster, the plumbing (gas delivery system) and the design of the gas injector has to be done. </p>
                     
-                    <p>The aim of this project is to improve the production process using 3D printed molds. Students will start by researching the different materials available for 3D printing, and then look for the right parameters to obtain a satisfactory mold. They will continue with manufacturing and testing.</p>
+                    <p>The goal of the project is to to design the plumbing of the thruster responsible for the gas injection into the chamber. The gas delivery system is constrained by weight and size limitations as well as material choices. The injector is also to be designed to maximize the gas volume in the chamber of the thruster. </p>
                 </div>
 
-                <div class="projectdetails" id="competition-structure-4">                   
+                <div class="projectdetails" id="hyperion-pclass-4">                   
                     <h1>project <span>description</span></h1>
-                    <p>The association plans to launch a sounding rocket named FIREHORN, that will fly at an altitude of 9 km in October 2025 and at 30km in October 2026. The firehorn structure is made up of different modules, each of which is made up of a coupling system linked by 4 carbon rods. In order to guarantee resistance to load and buckling in particular, the structure has aluminium parts called “Anti-buckling rings” placed in each module according to their size.</p>
+                    <p>Through the Hyperion plasma class (H-PC) project, the EPFL Rocket Team endeavors to develop, test and qualify thrusters for space applications. A first set of technologies were selected: a pulsed plasma thruster (PPT) and a hall-effect thruster (HET).</p>
 
-                    <p>This structure was studied during the previous year, and it was deduced that there is potential in the search for lighter, more resistant materials for this type of part.</p>
+                    <p>A Hall-effect thruster (HET) is an advanced electric propulsion device commonly used in satellites. It operates by ionizing a neutral gas, typically xenon, with an electric field. The ions are then accelerated by a combination of electric and magnetic fields, creating thrust as they exit the thruster. A magnetic field traps electrons in a circular path (the “Hall effect”), maintaining ionization while allowing efficient acceleration of ions. This design provides high efficiency and specific impulse, making it ideal for long-duration space missions.</p>
+                </div>
+
+                <div class="projectdetails" id="hyperion-pclass-5">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The Hyperion Plasma team works on electric propulsion. The Team developed a first version of a pulsed plasma thruster which is currently undergoing testing. It is expected that the lessons learned from this first campaign will reveal some improvement perspectives which the students are expected to take advantage of.</p>
+
+                    <p>The goal of the project is to improve the design of the thruster based on the feedback from the test. The manufacturability has to be taken into account as well as the material choices. While the improvements will remain at the conceptual stage, the students are expected to end up with a comprehensive CAD model that encompasses all of the improvements. If time allows, the students may begin part of the manufacturing.</p>
                 </div>
             </div>
             <span class="line"><h5>Testing Facility</h5></span>
@@ -713,7 +726,7 @@ function hideMenu() {
   <footer style="padding: 30px">
 
 <div class="Footer" style="width: 100%; height: auto; left: 0px; position: absolute">
-  <div class="footer-right" style="visibility: hidden; right: 70px; top: 24px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
+  <div class="footer-right" style="right: 70px; top: 24px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: inline-flex">
     <div class="Projects" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word"><a href="/projects/">PROJECTS</a></div>
     <div class="JoinUs" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word"><a href="/join-us/">JOIN US</a></div>
     <div class="About" style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; text-transform: uppercase; line-height: 20px; word-wrap: break-word"><a href="/about/">ABOUT</a></div>
