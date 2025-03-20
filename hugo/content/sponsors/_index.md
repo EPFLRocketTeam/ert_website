@@ -6,6 +6,9 @@ header_background: "/images/originalQuality/Sponsors.png"
 menu: "main"
 weight: 5
 layout: single
+callToAction:
+    text: "Want to support our ambitious projects?"
+    action: "BECOME A SPONSOR"
 ---
 
 {{< prestige-sponsors >}}
