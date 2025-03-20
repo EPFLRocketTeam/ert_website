@@ -12,13 +12,13 @@ callToAction:
     action: "JOIN THE ERT"
 specs:
   - key: "Year"
-    value: "2025"
+    value: "2025/26"
   - key: "City/Country"
-    value: "Somewhere"
+    value: "Portugal"
   - key: "Goal"
-    value: "42 km"
+    value: "9 & 30 km"
   - key: "Team members"
-    value: "42"
+    value: "an integer"
 highlights:
   - key: "Max reachable speed (Mach 1.5+)"
     value: "1850+ km/h"
@@ -37,6 +37,16 @@ highlights:
 
 {{< highlights >}}
 
-# Awards
-
 # Rocket components
+
+{{< component-section component="NOSECONE" >}}
+{{< component-section component="RECOVERY BAY" >}}
+{{< component-section component="AVIONICS BAY" >}}
+{{< component-section component="PRESSURANT BAY" >}}
+{{< component-section component="TANKS" >}}
+{{< component-section component="INTERNAL STRUCTURE" >}}
+{{< component-section component="ENGINE BAY" >}}
+
+# Milestones
+
+One of the significant milestones to our journey was the project’s PDR (Preliminary Design Review) held in March, where stakeholders were presented with the initial vehicle design. A comprehensive PDR documentation, covering the technical design and project management details since September, totaling 267 pages, has been sent to stakeholders. In parallel, work on assembling a preliminary CAD model of the Firehorn rocket is underway, providing a tangible visualization of previously abstract technical requirements.
