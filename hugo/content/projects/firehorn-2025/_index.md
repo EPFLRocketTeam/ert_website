@@ -73,7 +73,7 @@ Home to the 7.5kN Ethanol-Liquid Oxygen engine, this bay features cryogenic-rate
 
 # Animation
 
-{{< video autoplay="true" loop="true" src="/images/originalQuality/firehorn_integration.mp4" >}}
+{{< video autoplay="true" loop="true" muted="true" src="/images/originalQuality/firehorn_integration.mp4" >}}
 
 # Milestones
 
