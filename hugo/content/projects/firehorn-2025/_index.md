@@ -40,12 +40,32 @@ highlights:
 # Rocket components
 
 {{< component-section component="NOSECONE" >}}
+Hello World!
+{{< /component-section >}}
+
 {{< component-section component="RECOVERY BAY" >}}
+Hello World!
+{{< /component-section >}}
+
 {{< component-section component="AVIONICS BAY" >}}
+Hello World!
+{{< /component-section >}}
+
 {{< component-section component="PRESSURANT BAY" >}}
+Hello World!
+{{< /component-section >}}
+
 {{< component-section component="TANKS" >}}
+Hello World!
+{{< /component-section >}}
+
 {{< component-section component="INTERNAL STRUCTURE" >}}
+Hello World!
+{{< /component-section >}}
+
 {{< component-section component="ENGINE BAY" >}}
+Hello World!
+{{< /component-section >}}
 
 # Milestones
 

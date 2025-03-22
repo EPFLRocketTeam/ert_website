@@ -1,6 +1,22 @@
 {{/* Shortcode: component-section.html */}}
 
-<div style="font-family: 'Aspekta-600'; font-size: 1.5rem;">
-  {{ .Get "component" }}
+<div x-data="{ expanded: false }">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      {{ .Get "component" }}
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="expanded = !expanded" 
+        x-text="expanded ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="expanded" x-collapse>
+    {{ .Inner }}
+  </div>
 </div>
-<hr style="margin: 2px 0 2px 0">
+
