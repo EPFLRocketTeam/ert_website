@@ -1,5 +1,5 @@
 {{/* Shortcode: tabs-state.html */}}
 
-<div x-data="{openTab: ''}">
+<div x-data="{openTab: '{{ .Get "initial-tab" }}'}">
   {{ .Inner }}
 </div>

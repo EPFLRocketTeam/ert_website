@@ -1,0 +1,19 @@
+{{- $src := .Get "src" -}}
+{{- $poster := .Get "poster" -}}
+{{- $autoplay := .Get "autoplay" | default "false" -}}
+{{- $loop := .Get "loop" | default "false" -}}
+{{- $muted := .Get "muted" | default "false" -}}
+{{- $controls := .Get "controls" | default "true" -}}
+
+<video 
+    {{ if eq $autoplay "true" }}autoplay{{ end }}
+    {{ if eq $loop "true" }}loop{{ end }}
+    {{ if eq $muted "true" }}muted{{ end }}
+    {{ if eq $controls "true" }}controls{{ end }}
+    {{ with $poster }}poster="{{ . }}"{{ end }}
+    style="max-width: 80ch; height: auto; display: block; margin: 0 auto; border-radius: 15px;"
+>
+    <source src="{{ $src }}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+

@@ -21,9 +21,9 @@ specs:
     value: "an integer"
 highlights:
   - key: "Max reachable speed (Mach 1.5+)"
-    value: "1850+ km/h"
+    value: "1,850+ km/h"
   - key: "Max reachable height (apogee)"
-    value: "9000+ m"
+    value: "30,000+ m"
 ---
 
 # Specifications
@@ -39,37 +39,41 @@ highlights:
 
 # Rocket components
 
-{{< tabs-state >}}
+{{< tabs-state initial-tab="NOSECONE" >}}
 
-{{< component-section component="NOSECONE" >}}
+{{< component-section component="NOSECONE" image="/images/originalQuality/firehorn-image1.png" >}}
 Made from CFRP (Carbon Fiber Reinforced Polymer), the nosecone houses the payload and supports the Acoustic Levitation Scientific Experiment. CFRP provides high strength and low weight.
 {{< /component-section >}}
 
-{{< component-section component="RECOVERY BAY" >}}
+{{< component-section component="RECOVERY BAY" image="/images/originalQuality/firehorn-image1.png" >}}
 Constructed with CFRP, this bay contains the reefed parachute and is designed to handle over 30g deceleration forces.
 {{< /component-section >}}
 
-{{< component-section component="AVIONICS BAY" >}}
+{{< component-section component="AVIONICS BAY" image="/images/originalQuality/firehorn-image2.png" >}}
 Built with GFRP (Glass Fiber Reinforced Polymer), this section includes omnidirectional antennas and the flight computer for controlling the rocket.
 {{< /component-section >}}
 
-{{< component-section component="PRESSURANT BAY" >}}
+{{< component-section component="PRESSURANT BAY" image="/images/originalQuality/firehorn-image2.png" >}}
 Equipped with a 400-bar COPV (Composite Overwrapped Pressure Vessel) and a Bang-Bang Pressure Regulator to manage pressure during flight.
 {{< /component-section >}}
 
-{{< component-section component="TANKS" >}}
+{{< component-section component="TANKS" image="/images/originalQuality/firehorn-image3.png" >}}
 Made of 2050 and 2195 aluminium, the tanks are rated for over 60 bar operational pressure. CFRP aerocovers protect external plumbing, and integrated flight cameras monitor the system.
 {{< /component-section >}}
 
-{{< component-section component="INTERNAL STRUCTURE" >}}
+{{< component-section component="INTERNAL STRUCTURE" image="/images/originalQuality/firehorn-image4.png" >}}
 The internal structure includes CFRP rods, anti-buckling rings, and 3D-printed interface rings for added support and durability.
 {{< /component-section >}}
 
-{{< component-section component="ENGINE BAY" >}}
+{{< component-section component="ENGINE BAY" image="/images/originalQuality/firehorn-image4.png" >}}
 Home to the 7.5kN Ethanol-Liquid Oxygen engine, this bay features cryogenic-rated plumbing, valves, and CFRP fins. It interfaces with the ground segment for launch operations.
 {{< /component-section >}}
 
 {{< /tabs-state >}}
+
+# Animation
+
+{{< video autoplay="true" loop="true" src="/images/originalQuality/firehorn_integration.mp4" >}}
 
 # Milestones
 
