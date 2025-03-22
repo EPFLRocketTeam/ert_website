@@ -15,8 +15,17 @@
   </div>
   <hr style="margin: 2px 0 2px 0">
 
-  <div x-show="openTab === name" x-collapse>
-    {{ .Inner }}
+  <div style="" x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 15px;">
+      <div style="flex: 1 1 50%; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          {{ .Inner }}
+        </p>
+      </div>
+      <div style="flex: 1 1 50%; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p>This is where the image will be!</p>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -42,31 +42,31 @@ highlights:
 {{< tabs-state >}}
 
 {{< component-section component="NOSECONE" >}}
-Hello World!
+Made from CFRP (Carbon Fiber Reinforced Polymer), the nosecone houses the payload and supports the Acoustic Levitation Scientific Experiment. CFRP provides high strength and low weight.
 {{< /component-section >}}
 
 {{< component-section component="RECOVERY BAY" >}}
-Hello World!
+Constructed with CFRP, this bay contains the reefed parachute and is designed to handle over 30g deceleration forces.
 {{< /component-section >}}
 
 {{< component-section component="AVIONICS BAY" >}}
-Hello World!
+Built with GFRP (Glass Fiber Reinforced Polymer), this section includes omnidirectional antennas and the flight computer for controlling the rocket.
 {{< /component-section >}}
 
 {{< component-section component="PRESSURANT BAY" >}}
-Hello World!
+Equipped with a 400-bar COPV (Composite Overwrapped Pressure Vessel) and a Bang-Bang Pressure Regulator to manage pressure during flight.
 {{< /component-section >}}
 
 {{< component-section component="TANKS" >}}
-Hello World!
+Made of 2050 and 2195 aluminium, the tanks are rated for over 60 bar operational pressure. CFRP aerocovers protect external plumbing, and integrated flight cameras monitor the system.
 {{< /component-section >}}
 
 {{< component-section component="INTERNAL STRUCTURE" >}}
-Hello World!
+The internal structure includes CFRP rods, anti-buckling rings, and 3D-printed interface rings for added support and durability.
 {{< /component-section >}}
 
 {{< component-section component="ENGINE BAY" >}}
-Hello World!
+Home to the 7.5kN Ethanol-Liquid Oxygen engine, this bay features cryogenic-rated plumbing, valves, and CFRP fins. It interfaces with the ground segment for launch operations.
 {{< /component-section >}}
 
 {{< /tabs-state >}}
