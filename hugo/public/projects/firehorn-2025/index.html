@@ -571,22 +571,27 @@ function hideMenu() {
 <h1 id="rocket-components">Rocket components</h1>
 
 
-<div x-data="{ expanded: false }">
+<div x-data="{openTab: ''}">
+  
+
+
+
+<div x-data="{name: 'NOSECONE'}">
   <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
     <div>
       NOSECONE
     </div>
     <div style="margin-left: auto;">
       <button 
-        @click="expanded = !expanded" 
-        x-text="expanded ? '−' : '+'"
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
         style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
       </button>
     </div>
   </div>
   <hr style="margin: 2px 0 2px 0">
 
-  <div x-show="expanded" x-collapse>
+  <div x-show="openTab === name" x-collapse>
     
 Hello World!
 
@@ -596,22 +601,23 @@ Hello World!
 
 
 
-<div x-data="{ expanded: false }">
+
+<div x-data="{name: 'RECOVERY BAY'}">
   <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
     <div>
       RECOVERY BAY
     </div>
     <div style="margin-left: auto;">
       <button 
-        @click="expanded = !expanded" 
-        x-text="expanded ? '−' : '+'"
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
         style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
       </button>
     </div>
   </div>
   <hr style="margin: 2px 0 2px 0">
 
-  <div x-show="expanded" x-collapse>
+  <div x-show="openTab === name" x-collapse>
     
 Hello World!
 
@@ -621,22 +627,23 @@ Hello World!
 
 
 
-<div x-data="{ expanded: false }">
+
+<div x-data="{name: 'AVIONICS BAY'}">
   <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
     <div>
       AVIONICS BAY
     </div>
     <div style="margin-left: auto;">
       <button 
-        @click="expanded = !expanded" 
-        x-text="expanded ? '−' : '+'"
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
         style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
       </button>
     </div>
   </div>
   <hr style="margin: 2px 0 2px 0">
 
-  <div x-show="expanded" x-collapse>
+  <div x-show="openTab === name" x-collapse>
     
 Hello World!
 
@@ -646,22 +653,23 @@ Hello World!
 
 
 
-<div x-data="{ expanded: false }">
+
+<div x-data="{name: 'PRESSURANT BAY'}">
   <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
     <div>
       PRESSURANT BAY
     </div>
     <div style="margin-left: auto;">
       <button 
-        @click="expanded = !expanded" 
-        x-text="expanded ? '−' : '+'"
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
         style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
       </button>
     </div>
   </div>
   <hr style="margin: 2px 0 2px 0">
 
-  <div x-show="expanded" x-collapse>
+  <div x-show="openTab === name" x-collapse>
     
 Hello World!
 
@@ -671,22 +679,23 @@ Hello World!
 
 
 
-<div x-data="{ expanded: false }">
+
+<div x-data="{name: 'TANKS'}">
   <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
     <div>
       TANKS
     </div>
     <div style="margin-left: auto;">
       <button 
-        @click="expanded = !expanded" 
-        x-text="expanded ? '−' : '+'"
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
         style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
       </button>
     </div>
   </div>
   <hr style="margin: 2px 0 2px 0">
 
-  <div x-show="expanded" x-collapse>
+  <div x-show="openTab === name" x-collapse>
     
 Hello World!
 
@@ -696,22 +705,23 @@ Hello World!
 
 
 
-<div x-data="{ expanded: false }">
+
+<div x-data="{name: 'INTERNAL STRUCTURE'}">
   <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
     <div>
       INTERNAL STRUCTURE
     </div>
     <div style="margin-left: auto;">
       <button 
-        @click="expanded = !expanded" 
-        x-text="expanded ? '−' : '+'"
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
         style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
       </button>
     </div>
   </div>
   <hr style="margin: 2px 0 2px 0">
 
-  <div x-show="expanded" x-collapse>
+  <div x-show="openTab === name" x-collapse>
     
 Hello World!
 
@@ -721,28 +731,33 @@ Hello World!
 
 
 
-<div x-data="{ expanded: false }">
+
+<div x-data="{name: 'ENGINE BAY'}">
   <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
     <div>
       ENGINE BAY
     </div>
     <div style="margin-left: auto;">
       <button 
-        @click="expanded = !expanded" 
-        x-text="expanded ? '−' : '+'"
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
         style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
       </button>
     </div>
   </div>
   <hr style="margin: 2px 0 2px 0">
 
-  <div x-show="expanded" x-collapse>
+  <div x-show="openTab === name" x-collapse>
     
 Hello World!
 
   </div>
 </div>
 
+
+
+
+</div>
 
 <h1 id="milestones">Milestones</h1>
 <p>One of the significant milestones to our journey was the project’s PDR (Preliminary Design Review) held in March, where stakeholders were presented with the initial vehicle design. A comprehensive PDR documentation, covering the technical design and project management details since September, totaling 267 pages, has been sent to stakeholders. In parallel, work on assembling a preliminary CAD model of the Firehorn rocket is underway, providing a tangible visualization of previously abstract technical requirements.</p>

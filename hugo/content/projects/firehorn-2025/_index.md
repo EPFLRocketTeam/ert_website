@@ -39,6 +39,8 @@ highlights:
 
 # Rocket components
 
+{{< tabs-state >}}
+
 {{< component-section component="NOSECONE" >}}
 Hello World!
 {{< /component-section >}}
@@ -66,6 +68,8 @@ Hello World!
 {{< component-section component="ENGINE BAY" >}}
 Hello World!
 {{< /component-section >}}
+
+{{< /tabs-state >}}
 
 # Milestones
 
