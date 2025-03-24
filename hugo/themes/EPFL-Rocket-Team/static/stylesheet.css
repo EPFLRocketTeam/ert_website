@@ -590,6 +590,7 @@ textarea {
 .projectdetails p{
   font-size: 17px;
   line-height: 200%;
+  font-family: 'Aspekta-350';
 }
 
 .projectdetails h1{
@@ -605,6 +606,41 @@ textarea {
 
 .defaultOpen{
   display: block;
+}
+
+.openpos{
+  width: 70vw;
+}
+
+.oppos-flex{
+  display: flex;
+  width: 65vw;
+  justify-content: space-between;
+}
+
+.oppos-flex img{
+  max-width: 50%;
+}
+
+.oppos-flex div{
+  max-width: 50%;
+  margin: 10px;
+  font-family: 'Aspekta-300';
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.open-position-button{
+  background-color: #DA291C;
+  color: #F6F6F6;
+  font-size: 16px;
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+}
+
+.open-position-button a{
+  color: #F6F6F6;
 }
 
 @media (max-width: 1280px) {

@@ -1,3 +1,266 @@
 <body>
-    
+    <div class="sempos">
+        <button type="button" class="open-position-button"><a href="mailto:info@epflrocketteam.ch">Email us to join</a></button>
+        <div class="oppos-flex" style="margin: 50px 0px;">            
+            <div>The recruitment event will take place <b>on the 26th of September 2024 in the CO1 Hall from 19h</b>. If you’re interested in joining one of our projects or semester project we recommend being there. You’ll have the opportunity to meet the team leaders and heads of project, which will present the different projects and the workload in greater details.</div>
+            <img src="/images/originalQuality/Open-Position.jpg">
+        </div>
+        <span class="line openpos"><h5>Semester Projects</h5></span>
+        <div class="oppos-flex">
+            <img src="/images/originalQuality/Semester-Project.jpg" style="width: 40%;">
+            <div>
+                If you would like to join one of our semester projects, you will find the list by clicking on the following link. The Semester projects shown here are related to the research projects (Icarus and Hyperion) as well as our competition project.
+                <br>
+                <br>
+                <button type="button" class="open-position-button" onclick="document.location='/join-us/semester-projects'" style="display: block;">Semester Projects</button>
+            </div>
+            
+        </div>
+            <span class="line openpos"><h5>Management</h5></span>
+            <div class="projectslist openpos">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'management-1')">
+                    Sponsoring Team member
+                </button> 
+                    
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'management-2')">
+                    Communications Team member
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'management-3')">
+                    Logistics Team member
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'management-4')">
+                    Human Ressources Team member
+                </button>
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="management-1">
+                    <p>Our sponsorship team is responsible for seeking out new sponsors while developing the relationship we have with our current partners. This requires good interpersonal skills and some sales and negotiation skills. But we are also looking for students, experienced or not, who are motivated to find new ideas to make our sponsoring services as attractive as possible. This team is led by the Sponsoring Vice-President.</p>
+
+                    <p><b>Skills required:</b> French and English, German a real plus. All sections of EPFL, HEC or HEIG-VD welcome.</p>
+
+                </div>
+
+                <div class="projectdetails" id="management-2">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The EPFL Rocket Team is currently developing a new class of rockets aimed at launching at an altitude of 9 km during the EuRoC 25 student rocketry competition and to launch at an altitude of 30 km in 2026. These launch vehicles are propelled by a biliquid engine. Two cylindrical aluminum tanks are located along the rocket length to store the propellant and oxidizer.</p>
+                </div>
+
+                <div class="projectdetails" id="management-3">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The association plans to launch a sounding rocket named FIREHORN, that will fly at an altitude of 9 km in October 2025 and at 30km in October 2026. Many of the parts used in these rockets are made of carbon composite, and can be very expensive to produce. An innovative solution was tested last semester using 3D-printed molds. This type of production proved promising and merits further research and improvement.</p>
+                    
+                    <p>The aim of this project is to improve the production process using 3D printed molds. Students will start by researching the different materials available for 3D printing, and then look for the right parameters to obtain a satisfactory mold. They will continue with manufacturing and testing.</p>
+                </div>
+
+                <div class="projectdetails" id="management-4">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The association plans to launch a sounding rocket named FIREHORN, that will fly at an altitude of 9 km in October 2025 and at 30km in October 2026. The firehorn structure is made up of different modules, each of which is made up of a coupling system linked by 4 carbon rods. In order to guarantee resistance to load and buckling in particular, the structure has aluminium parts called “Anti-buckling rings” placed in each module according to their size.</p>
+
+                    <p>This structure was studied during the previous year, and it was deduced that there is potential in the search for lighter, more resistant materials for this type of part.</p>
+                </div>
+            </div>
+<!--             <span class="line"><h5>Recovery</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'competition-recovery-1')">
+                    Mission Analysis and Feasibility Study for the Recovery System of a Suborbital Rocket
+                </button>              
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="competition-recovery-1">
+                    <h1>project <span>description</span></h1>
+
+                    <p>The EPFL Rocket Team’s goal is to fly a rocket that will reach the Karman line by 2030. One critical stage of the mission is the rocket’s recovery. The rocket team has been working on recovery systems since it first started; however, our target apogee has never been above 9km. Given that the target apogee altitude is considerably higher than any previous missions, the operational environment requirements have also changed.</p>
+
+                    <p>Following the change of requirements, several assemblies of the recovery subsystem’s design will need to change. Thus we would like to start the mission analysis, needs identification and feasibility study (ECSS Project Phase 0 and A) for the recovery subsystem.</p>
+
+                </div>
+            </div>
+        <button type="button" class="collapsible">Icarus Project</button>
+        <div class="content">
+            <span class="line"></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'icarus-1')">
+                    Design, manufacture and testing of a Reaction Control Wheel
+                </button> 
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'icarus-2')">
+                    Preliminary Design of Active Control on a Suborbital Rocket through the use of Canards
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'icarus-3')">
+                    Design and Implementation of a Multi-Point Vibration Sensing System
+                </button>            
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="icarus-1">
+                    <h1>project <span>description</span></h1>
+
+                    <p>The EPFL Rocket Team is developing a Vertical Takeoff, Vertical Landing (VTVL) Hopper named Icarus. Its aim is to perform “hops” : brief, low-altitude (maximum 5 metres), vertical trajectories with hovering time at the apogee. In order to achieve thrust vectoring capabilities, Icarus has developed a gimbal system to redirect the engine’s thrust, thereby enabling control over the yaw and pitch of the vehicle. This, however, leaves roll – <i>rotations around the vertical axis</i> – completely unchecked.</p> 
+                </div>
+
+                <div class="projectdetails" id="icarus-2">
+                    <h1>project <span>description</span></h1>
+
+                    <p>The EPFL Rocket Team’s goal is to fly a rocket that will reach the Karman line (100km altitude) by 2030. The Icarus project has the aim of providing active control to this rocket.</p> 
+
+                    <p>The goal of this project is to design and implement a set of controllable canards that can adjust the rocket’s pitch, yaw, and roll in real-time, providing critical stability and directionality during ascent and descent. Unlike traditional fins, which offer only passive stabilization, these actively controlled canards will allow for dynamic adjustments to compensate for environmental disturbances and flight path deviations.</p>
+                </div>
+
+                <div class="projectdetails" id="icarus-3">
+                    <h1>project <span>description</span></h1>
+
+                    <p>The EPFL Rocket Team is developing a Vertical Takeoff, Vertical Landing (VTVL) Hopper named Icarus. Its aim is to perform “hops” : brief, low-altitude (maximum 5 metres), vertical trajectories with hovering time at the apogee. To achieve precise thrust vectoring, Icarus is equipped with a gimbal system that redirects the engine’s thrust, allowing for stabilized control during flight. Given this setup, understanding the vehicle’s vibrational behavior is critical for ensuring the integrity of the structure, the performance of the gimbal, and the reliability of the avionics system. </p> 
+                </div>
+            </div>
+        </div> 
+        <button type="button" class="collapsible">Hyperion Project</button>
+        <div class="content">
+            <span class="line"><h5>P-Class</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'hyperion-pclass-1')">
+                    Creating a custom interface for a plasma thruster test bench
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-pclass-2')">
+                    Power electronics conversion for vacuum compatibility
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-pclass-3')">
+                    Architecture design of a gas delivery system for a Hall-Effect Thruster
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-pclass-4')">
+                    Developing a modular power processing unit (PPU) for an Hall-Effect Thruster (HET)
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-pclass-5')">
+                    Advanced design of a Pulsed Plasma Thruster
+                </button>
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="hyperion-pclass-1">
+                    <h1>project <span>description</span></h1>
+                    <p>The Hyperion Plasma team works on electric space propulsion. The Team developed one thruster and is in the process of making another one. In order to test the thrusters in vacuum condition, they need to be put in vacuum chambers with specific interfaces.</p>
+
+                    <p>The test bench is already built but the electric interfaces and plumbing interfaces need to be adapted to the team needs. This includes cable management, gas feed into the chamber and vacuum compatibility of all the components. The project also includes a thorough literature review to ensure the interface meets international aerospace standards. </p>
+
+                    
+                    <h1>what the student(s) <span>will do</span>:</h1>
+                </div>
+
+                <div class="projectdetails" id="hyperion-pclass-2">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The Hyperion Plasma team works on electric space propulsion. The Team developed one thruster and is in the process of making another one. In order to qualify those thrusters, they need to be put in vacuum chambers and in stringent conditions. This poses some challenges namely to feed the various energy and fluid supplies into the thruster. To alleviate some of that challenge, the team would like to place the thruster control and power electronics directly into the vacuum chamber next to the thrusters. However this poses some challenges with regards to the circuit design. This project aims to convert an existing power processing unit (PPU) design for vacuum use.</p>
+
+                    <p>The student will first delve into what it means for electronic systems to be “vacuum compatible” by doing a thorough literature review and documenting all relevant findings. Once the scope of the project is more understood, the student will then review the current PPU board and identify key improvement points. After rigorously planning and detailing all the necessary changes, the student will move onto the manufacturing and/or improvement of the design hands-on.</p>
+                </div>
+
+                <div class="projectdetails" id="hyperion-pclass-3">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The Hyperion Plasma Team focuses on electric propulsion. The Team has done research on the overall concept of the Hall Effect thruster (HET) and has come down to a preliminary design. In order to make a functional thruster, the plumbing (gas delivery system) and the design of the gas injector has to be done. </p>
+                    
+                    <p>The goal of the project is to to design the plumbing of the thruster responsible for the gas injection into the chamber. The gas delivery system is constrained by weight and size limitations as well as material choices. The injector is also to be designed to maximize the gas volume in the chamber of the thruster. </p>
+                </div>
+
+                <div class="projectdetails" id="hyperion-pclass-4">                   
+                    <h1>project <span>description</span></h1>
+                    <p>Through the Hyperion plasma class (H-PC) project, the EPFL Rocket Team endeavors to develop, test and qualify thrusters for space applications. A first set of technologies were selected: a pulsed plasma thruster (PPT) and a hall-effect thruster (HET).</p>
+
+                    <p>A Hall-effect thruster (HET) is an advanced electric propulsion device commonly used in satellites. It operates by ionizing a neutral gas, typically xenon, with an electric field. The ions are then accelerated by a combination of electric and magnetic fields, creating thrust as they exit the thruster. A magnetic field traps electrons in a circular path (the “Hall effect”), maintaining ionization while allowing efficient acceleration of ions. This design provides high efficiency and specific impulse, making it ideal for long-duration space missions.</p>
+                </div>
+
+                <div class="projectdetails" id="hyperion-pclass-5">                   
+                    <h1>project <span>description</span></h1>
+                    <p>The Hyperion Plasma team works on electric propulsion. The Team developed a first version of a pulsed plasma thruster which is currently undergoing testing. It is expected that the lessons learned from this first campaign will reveal some improvement perspectives which the students are expected to take advantage of.</p>
+
+                    <p>The goal of the project is to improve the design of the thruster based on the feedback from the test. The manufacturability has to be taken into account as well as the material choices. While the improvements will remain at the conceptual stage, the students are expected to end up with a comprehensive CAD model that encompasses all of the improvements. If time allows, the students may begin part of the manufacturing.</p>
+                </div>
+            </div>
+            <span class="line"><h5>Testing Facility</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'hyperion-testing-1')">
+                    Safety analysis for the Firehorn II adaptation of the Testing Facility
+                </button>
+                <button type="button" class="semprojecttitle" onclick="openProject(event, 'hyperion-testing-2')">
+                    Measurements of emissions during propulsion tests
+                </button>          
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="hyperion-testing-1">
+                    <h1>project <span>description</span></h1>
+                    <p>The EPFL Rocket team (ERT) is currently developing a new generation of  rockets and rocket engines aiming, among other goals, at a spaceshot in the coming years. To support this, a new testing facility has been built for the upcoming testing of these engines. This facility is currently designed and built for engines of up to 15kN, which corresponds to the thrust needed for the Firehorn II rocket, which will be launched at the end of 2026. However, the safety analyses have only been made for the current disposition (engine power of only 5kN). This Bachelor Project aims at furthering the EPFL Rocket Team’s capabilities in terms of safety analyses and at adapting the current safety plan to the 15kN configuration.</p>
+
+                    <p>This Bachelor Project will focus on creating new simulations for the safety analyses of the Testing Facility, and on using both these simulation results and the characteristics of Firehorn II to update our safety analyses. These updates will enable us to make new safety recommendations and to adapt our current procedures, our operations and other technical aspects of the system. </p>
+
+                    
+                    <h1>what the student(s) <span>will do</span>:</h1>
+                </div>
+
+                <div class="projectdetails" id="hyperion-testing-2">                   
+                    <h1>project <span>description</span></h1>
+                    <p>eSpace is actively researching and developing methods and products in space sustainability. This large topic includes work on space debris risks, life cycle assessment of space systems, mitigations of environmental impacts, and decision-making support tools to include sustainable aspects in the early design phase of space missions and systems.</p>
+
+                    <p>The assessment of the environmental impacts of rocket engine exhausts in the atmosphere is not yet backed by solid scientific knowledge. There is no accepted method to translate the emission of a given amount of exhaust species (like CO2, CO, H2O, HCl, black carbon, or else) at high altitude into an <i>impact</i> (like CO2 equivalent). What can be done already is to quantify the emissions of propulsion systems, so as to understand which particles and gases are generated and exhausted by the engine and in what quantity during tests.</p>
+                </div>
+            </div>
+            <span class="line"><h5>A-Class</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'hyperion-aclass-1')">
+                    Design, manufacture and testing of a Cold Gas Thruster for Roll Control on a Hopper
+                </button>        
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="hyperion-aclass-1">
+                    <h1>project <span>description</span></h1>
+                    <p>The EPFL Rocket Team is developing “Icarus,” a Vertical Takeoff, Vertical Landing (VTVL) hopper designed for controlled, low-altitude (up to 5 meters) vertical “hops” with hovering capability. As a technology demonstrator, Icarus will advance control systems critical for stable rocket flight, supporting future missions like the Firehorn rockets. A core feature is the integration of Cold Gas Thruster (CGT) technology, a low-thrust system that stabilizes the vehicle through radial gas expulsion. Commonly used in satellite control and by SpaceX, CGT will help Icarus maintain stability in vertical maneuvers, enhancing our team’s future space-bound capabilities.</p>
+
+                </div>
+            </div>
+
+            <span class="line"><h5>B-Class</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'hyperion-bclass-1')">
+                    Development of a Barske E-pump for a Rocket Engine
+                </button>              
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="hyperion-bclass-1">
+                    <h1>project <span>description</span></h1>
+                    <p>In the context of the Hyperion project, the EPFL Rocket Team is currently in the process of developing a pump-fed rocket engine known as DEMO-B2. </p>
+
+                    <p>In a previous project, we focused on optimizing the pump’s geometry to ensure it met the engine’s requirements. The objective for this semester’s project is to verify the validity of a Barske geometry to assess if it could simplify the manufacturing process while still ensuring compliance with the necessary requirements, and compare the performance with the previous geometry.</p>
+
+                </div>
+            </div>
+
+            <span class="line"><h5>C-Class</h5></span>
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'hyperion-cclass-1')">
+                    DESIGN OF A 15KN BI-LIQUID ROCKET ENGINE (DEMO-C1)
+                </button>        
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="hyperion-cclass-1">
+                    <h1>project <span>description</span></h1>
+                    <p>The EPFL Rocket Team’s Hyperion project has to supply a bi-liquid rocket engine capable of propelling a rocket to an altitude of 30km. </p>
+
+                    <p>The project involves designing DEMO-C1, the engine for the Firehorn 30 rocket, with a thrust of 15kN. The engine will be regeneratively cooled for thermal efficiency, and will use ethanol and liquid oxygen as propellants. Students will build on previous work on the DEMO-B1 engine, which will propel the FH9 rocket with a thrust of 5kN.</p>
+
+                    <p>The DEMO-C1 engine will have to be designed with 3D printing in mind, and post manufacturing constraints will also have to be taken into account.</p>
+
+                </div>
+            </div>
+        </div> 
+        <button type="button" class="collapsible">Management</button>
+        <div class="content">
+            <div class="projectslist">
+                <button type="button" class="semprojecttitle active" onclick="openProject(event, 'management-1')">
+                    LLM FOR RESOURCE BANKS QUERYING 
+                </button>          
+            </div>
+            <div>
+                <div class="projectdetails defaultOpen" id="management-1">
+                    <h1>project <span>description</span></h1>
+                    <p>Since the start of the 2024-2025 academic year, the association has observed a substantial rise in the volume of internally produced documents and externally gathered publications and other resources by the engineering teams. This increase correlates with a renewed approach to systems engineering by the ERT, now more closely aligned with current space industry standards compared to prior years. </p>
+
+                    <p>This project serves as the first step to provide the EPFL Rocket Team with an LLM-based solution for interacting with the full repository of resources accumulated and generated by the team. This solution will support various functions, ranging from training newly recruited members to answering queries from lead engineers on topics such as the ECSS standards.</p>
+
+                </div>
+            </div>
+        </div> 
+    </div> -->
 </body>
