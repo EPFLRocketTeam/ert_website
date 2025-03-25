@@ -41,7 +41,7 @@
   
   <meta itemprop="name" content="Open Positions">
   <meta itemprop="description" content="Email us to join The recruitment event will take place on the 26th of September 2024 in the CO1 Hall from 19h. If you’re interested in joining one of our projects or semester project we recommend being there. You’ll have the opportunity to meet the team leaders and heads of project, which will present the different projects and the workload in greater details. Semester Projects If you would like to join one of our semester projects, you will find the list by clicking on the following link. The Semester projects shown here are related to the research projects (Icarus and Hyperion) as well as our competition project. Semester Projects Management Sponsoring Team member Communications Team member Logistics Team member Human Ressources Team member Our sponsorship team is responsible for seeking out new sponsors while developing the relationship we have with our current partners. This requires good interpersonal skills and some sales and negotiation skills. But we are also looking for students, experienced or not, who are motivated to find new ideas to make our sponsoring services as attractive as possible. This team is led by the Sponsoring Vice-President.">
-  <meta itemprop="wordCount" content="741">
+  <meta itemprop="wordCount" content="827">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -594,8 +594,33 @@ function hideMenu() {
         <div><button type="button" class="open-position-button"><a href="">Sign up here</a></button></div>
             
         <span class="line openpos"><h5>COMPETITION PROJECT</h5></span>
-        <div class="op-section">
-            <button type="button" class="collapsible-op">Open Collapsible</button>
+        <div class="openpos">
+
+        <h5>Avionics</h5>
+
+        <p>The Avionics allows the rocket to figure out and send to the ground information on the rockets status (position, speed, acceleration, etc).<br>
+        The Avionics is also in charge of triggering recovery events to release the parachute at the right time.<br>
+        And finally, according to the engine used, it can also act as intermediary between propulsion systems and some of the ground segment systems.</p>
+
+        <h6>Available <span>Roles</span>:</h6>
+
+            <button type="button" class="collapsible-op">Hardware Electrical Engineer</button>
+            <div class="content-op">
+              <p>Lorem ipsum...</p>
+            </div> 
+            <button type="button" class="collapsible-op">RF Engineer</button>
+            <div class="content-op">
+              <p>Lorem ipsum...</p>
+            </div> 
+            <button type="button" class="collapsible-op">Software Engineer</button>
+            <div class="content-op">
+              <p>Lorem ipsum...</p>
+            </div> 
+            <button type="button" class="collapsible-op">Avionics Structure Design Engineer</button>
+            <div class="content-op">
+              <p>Lorem ipsum...</p>
+            </div> 
+            <button type="button" class="collapsible-op">Cable Harness Engineer</button>
             <div class="content-op">
               <p>Lorem ipsum...</p>
             </div> 
@@ -603,6 +628,21 @@ function hideMenu() {
 
     </div>
     <script>
+        var coll = document.getElementsByClassName("collapsible-op");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active-op");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        } 
+
         function openProject(evt, cityName) {
         
         var i, projectdetails, semprojecttitle;

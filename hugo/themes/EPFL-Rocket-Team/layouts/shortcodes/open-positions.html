@@ -105,8 +105,33 @@
         <div><button type="button" class="open-position-button"><a href="">Sign up here</a></button></div>
             
         <span class="line openpos"><h5>COMPETITION PROJECT</h5></span>
-        <div class="op-section">
-            <button type="button" class="collapsible-op">Open Collapsible</button>
+        <div class="openpos">
+
+        <h5>Avionics</h5>
+
+        <p>The Avionics allows the rocket to figure out and send to the ground information on the rockets status (position, speed, acceleration, etc).<br>
+        The Avionics is also in charge of triggering recovery events to release the parachute at the right time.<br>
+        And finally, according to the engine used, it can also act as intermediary between propulsion systems and some of the ground segment systems.</p>
+
+        <h6>Available <span>Roles</span>:</h6>
+
+            <button type="button" class="collapsible-op">Hardware Electrical Engineer</button>
+            <div class="content-op">
+              <p>Lorem ipsum...</p>
+            </div> 
+            <button type="button" class="collapsible-op">RF Engineer</button>
+            <div class="content-op">
+              <p>Lorem ipsum...</p>
+            </div> 
+            <button type="button" class="collapsible-op">Software Engineer</button>
+            <div class="content-op">
+              <p>Lorem ipsum...</p>
+            </div> 
+            <button type="button" class="collapsible-op">Avionics Structure Design Engineer</button>
+            <div class="content-op">
+              <p>Lorem ipsum...</p>
+            </div> 
+            <button type="button" class="collapsible-op">Cable Harness Engineer</button>
             <div class="content-op">
               <p>Lorem ipsum...</p>
             </div> 
@@ -114,6 +139,21 @@
 
     </div>
     <script>
+        var coll = document.getElementsByClassName("collapsible-op");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active-op");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        } 
+
         function openProject(evt, cityName) {
         // Declare all variables
         var i, projectdetails, semprojecttitle;
