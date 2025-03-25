@@ -41,7 +41,7 @@
     margin: 0;
     font-size: 3.6rem;
     line-height: 1.2;
-    font-weight: bold;
+    font-family: 'Aspekta-600';
     transition: transform 0.5s ease;
   }
   /* The title will shift up when open */
@@ -53,15 +53,18 @@
     font-size: 1.2rem;
     line-height: 1.2;
   }
+  a {
+    color: white;
+  }
 </style>
 
-<div class="card" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+<a href="{{ .Get "link" | safeURL }}" class="card" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
   <!-- Background image -->
   <div class="card-bg" style="background-image: url('{{ .Get "image" }}');" x-bind:style="{ transform: open ? 'scale(1.1)' : 'scale(1)' }"></div>
-  
+
   <!-- Static overlay for text readability -->
   <div class="card-overlay"></div>
-  
+
   <!-- Text container -->
   <div class="card-text">
     <h3 class="card-title" :class="{ 'title-up': open }">{{ .Get "title" }}</h3>
@@ -70,4 +73,4 @@
       <p class="card-desc">{{ .Get "description" }}</p>
     </div>
   </div>
-</div>
+</a>

@@ -1,0 +1,8 @@
+{{/* Shortcode: specs.html */}}
+{{ $specs := .Page.Params.specs }}
+<ul>
+    {{ range $specs }}
+    <div>{{ .key }}: {{ .value }}</div>
+    {{ end }}
+</ul>
+
