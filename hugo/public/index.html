@@ -44,7 +44,7 @@
   <meta itemprop="description" content=" our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta itemprop="datePublished" content="2025-03-13T19:36:46+01:00">
   <meta itemprop="dateModified" content="2025-03-13T19:36:46+01:00">
-  <meta itemprop="wordCount" content="387">
+  <meta itemprop="wordCount" content="384">
   <meta itemprop="image" content="https://rocketteam.epfl.ch/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -243,6 +243,29 @@
    
   
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    media="print" 
+    onload="this.media='all'"
+  />
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      const swiper = new Swiper(".swiper", {
+        direction: "horizontal",
+        loop: true,
+        pagination: { el: ".swiper-pagination" },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: { el: ".swiper-scrollbar" },
+      });
+    });
+  </script>
 </head>
 
 <body style="overflow-x: hidden; padding: 0">
@@ -1396,81 +1419,80 @@ function hideMenu() {
         .prev:hover, .next:hover{
             text-decoration:underline;
         }
+
+        .swiper {
+          margin: 0;
+        }
+        
+        .swiper-button-prev, .swiper-button-next {
+          color: white;
+          margin: 30px;
+        }
     </style>
 </head>
 <body>
-    <div class="main" style="padding: 30px;">
-        <div class="page">testimonials</div>
-        <div class="testimonial-box">
+    
+    <div class="swiper">
+      
+      <div class="swiper-wrapper">
         
-            <div class="testimonial">
-                    <div class="testimonial-text">
-                        “I joined the Rocket Team with no particular knowledge of rocketry or any particular technical field. And yet, in the space of 2 years I have learned an uncountable amount of things, both technically and organisationally. A practical project like this one is a perfect companion to a mostly theoretical study like the one at EPFL.”
-                    </div>
-                    <div class="testimonial-bio">
-                        <img loading="lazy" src="/images/originalQuality/TheophileBalestrini.png">
-                    <div class="testimonial-bio-text">
-                        <h1>Theophile Balestrini</h1>
-                        <p>System Engineer</p>
-                    </div>
-                </div>
+        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
+          <div class="a-testimonial">
+            <div class="testimonial-text">
+            “I joined the Rocket Team with no particular 
+  knowledge of rocketry or any particular technical field. And yet, in the
+  space of 2 years I have learned an uncountable amount of things, both 
+  technically and organisationally. A practical project like this one is a
+  perfect companion to a mostly theoretical study like the one at EPFL.”
             </div>
-
-            <div class="testimonial">
-                <div class="testimonial-text">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
-                </div>
-                <div class="testimonial-bio">
-                    <img loading="lazy" src="/images/originalQuality/RocketLaunch3.jpeg">
-                    <div class="testimonial-bio-text">
-                        <h1>John Doe</h1>
-                        <p>Team Member</p>
-                    </div>
-                </div>
+            <div class="testimonial-bio">
+              <img src="/images/originalQuality/TheophileBalestrini.png">
+              <div class="testimonial-bio-text">
+                <h1>Theophile Balestrini</h1>
+                <p>System Engineer</p>
+              </div>
             </div>
-
-            <div class="testimonial">
-                <div class="testimonial-text">
-                    “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”
-                </div>
-                <div class="testimonial-bio">
-                    <img loading="lazy" src="/images/originalQuality/RocketBuilding3.jpeg">
-                    <div class="testimonial-bio-text">
-                        <h1>Name Surname</h1>
-                        <p>Team Member</p>
-                    </div>
-                </div>
-            </div>
-
-            
-            <a class="prev" href="/previous-slide" onclick="plusSlides(-1); return false;">&#8592;</a>
-            <a class="next" href="/next-slide" onclick="plusSlides(1); return false;">&#8594;</a>
+          </div>
         </div>
-        
+        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
+          <div class="a-testimonial">
+            <div class="testimonial-text">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+            </div>
+            <div class="testimonial-bio">
+              <img src="/images/originalQuality/RocketLaunch3.jpeg">
+              <div class="testimonial-bio-text">
+                <h1>John Doe</h1>
+                <p>Team Member</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
+          <div class="a-testimonial">
+            <div class="testimonial-text">
+              “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”
+            </div>
+            <div class="testimonial-bio">
+              <img src="/images/originalQuality/RocketBuilding3.jpeg">
+              <div class="testimonial-bio-text">
+                <h1>Name Surname</h1>
+                <p>Team Member</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      
+      
     </div>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("testimonial");
-        if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            }
-        slides[slideIndex-1].style.display = "block";
-        } 
-    </script>
 </body>
 
 
