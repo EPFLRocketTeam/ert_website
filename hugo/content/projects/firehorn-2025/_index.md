@@ -30,7 +30,7 @@ highlights:
 
 {{< flexbox >}}
     {{< specs >}}
-    {{< logotype >}}
+    {{< logotype logo="/icons/firehorn.png" >}}
 {{< /flexbox >}}
 
 # Highlights
