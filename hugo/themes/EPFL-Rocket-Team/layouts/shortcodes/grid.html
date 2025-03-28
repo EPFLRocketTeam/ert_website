@@ -1,8 +1,11 @@
-{{/* Shortcode: grid.html */}}
+{{ $min := .Get "min" | default "275px" }}
+{{ $max := .Get "max" | default "1fr" }}
+
 <div style="
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax({{ $min }}, {{ $max }}));
   gap: 15px;
-  ">
+">
     {{ .Inner }}
 </div>
+

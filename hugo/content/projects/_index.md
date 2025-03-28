@@ -50,7 +50,7 @@ children:
 
 # Rocket engine development
 
-{{< grid >}}
+{{< grid max="450px" >}}
 {{< card 
     title="Hyperion" 
     image="/images/originalQuality/Hyperion-Background.jpg" 
@@ -61,7 +61,7 @@ children:
 
 # Attitude control technologies
 
-{{< grid >}}
+{{< grid max="450px" >}}
 {{< card 
     title="Icarus" 
     image="/images/originalQuality/Icarus-Background.jpg" 
@@ -72,7 +72,7 @@ children:
 
 # Educational projects
 
-{{< grid >}}
+{{< grid max="450px" >}}
 {{< card 
     title="Space Race" 
     image="/images/originalQuality/SpaceRace-Background.jpg" 
