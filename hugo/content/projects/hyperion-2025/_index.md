@@ -79,13 +79,13 @@ A description of class-P engines.
 # Images
 
 {{< swiper pagination="true" navigation="true" scrollbar="false" >}}
-  <div class="swiper-slide" style="height: 16rem; width: auto; background-color: #222222; border-radius: 15px; padding: 15px;">
+  <div class="swiper-slide" style="height: 40ch; width: auto; background-color: #222222; border-radius: 15px; padding: 15px;">
     Slide 1
   </div>
-  <div class="swiper-slide" style="height: 16rem; background-color: #222222; border-radius: 15px; padding: 15px;">
+  <div class="swiper-slide" style="height: 40ch; background-color: #222222; border-radius: 15px; padding: 15px;">
     Slide 2
   </div>
-  <div class="swiper-slide" style="height: 16rem; background-color: #222222; border-radius: 15px; padding: 15px;">
+  <div class="swiper-slide" style="height: 40ch; background-color: #222222; border-radius: 15px; padding: 15px;">
     Slide 3
   </div>
 {{< /swiper >}}
