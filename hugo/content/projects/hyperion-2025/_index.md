@@ -10,13 +10,51 @@ padding: 30px
 callToAction:
     text: "Want to participate in this project?"
     action: "JOIN THE ERT"
+specs:
+  - key: "Year"
+    value: "2025/26"
+  - key: "Goal"
+    value: "bi-liquid propellant engine"
+  - key: "Team members"
+    value: "an integer"
 ---
 
 # Specifications
 
-# Highlights
+{{< flexbox >}}
+    {{< specs >}}
+    {{< logotype logo="/icons/hyperion.png" >}}
+{{< /flexbox >}}
 
-# Awards
+# Rocket engine power
 
-# Rocket components
+What does a rocket need to fly? An engine of course. And what better way to learn how a rocket engine works than building one yourself! The experienced students at the bi-liquid propellant project are developing a fully in-house bi-liquid propellant engine that will be later on integrated in our competition rocket.
 
+In order to be able to test the engine our students are also developing a testing facility. Our goal is to be one of the first in Switzerland to create a rocket with a bi-liquid propellant engine and able to fly using this engine in the 2023 edition of EuRoC. We also hope to test the engine on the Hopper rocket of the Icarus project, in June 2023.
+
+In parallel to the bi-liquid propellant engine, our students are also developing engines with liquid Oxygen instead of Nitrous Oxide, that are a lot more powerful (5 kN), as well as electric motor pumps (e-pumps).
+
+
+# Project components
+
+{{< tabs-state initial-tab="Class-A engines" >}}
+
+{{< component-section component="Class-A engines" image="/board/ERT.png" >}}
+A description of class-A engines.
+{{< /component-section >}}
+
+{{< component-section component="Class-B engines" image="/board/ERT.png" >}}
+A description of class-B engines.
+{{< /component-section >}}
+
+{{< component-section component="Testing facility" image="/board/ERT.png" >}}
+A description of the testing facility.
+{{< /component-section >}}
+
+{{< component-section component="Class-P engines" image="/board/ERT.png" >}}
+A description of class-P engines.
+{{< /component-section >}}
+
+{{< /tabs-state >}}
+
+# Images

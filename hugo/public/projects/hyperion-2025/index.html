@@ -21,7 +21,7 @@
   <meta property="og:url" content="http://localhost:1313/projects/hyperion-2025/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Hyperion">
-  <meta property="og:description" content="Specifications Highlights Awards Rocket components">
+  <meta property="og:description" content="Specifications Year: 2025/26 Goal: bi-liquid propellant engine Team members: an integer Logotype Rocket engine power What does a rocket need to fly? An engine of course. And what better way to learn how a rocket engine works than building one yourself! The experienced students at the bi-liquid propellant project are developing a fully in-house bi-liquid propellant engine that will be later on integrated in our competition rocket.">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/share.webp">
@@ -33,17 +33,17 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
   <meta name="twitter:title" content="Hyperion">
-  <meta name="twitter:description" content="Specifications Highlights Awards Rocket components">
+  <meta name="twitter:description" content="Specifications Year: 2025/26 Goal: bi-liquid propellant engine Team members: an integer Logotype Rocket engine power What does a rocket need to fly? An engine of course. And what better way to learn how a rocket engine works than building one yourself! The experienced students at the bi-liquid propellant project are developing a fully in-house bi-liquid propellant engine that will be later on integrated in our competition rocket.">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="Hyperion">
-  <meta itemprop="description" content="Specifications Highlights Awards Rocket components">
+  <meta itemprop="description" content="Specifications Year: 2025/26 Goal: bi-liquid propellant engine Team members: an integer Logotype Rocket engine power What does a rocket need to fly? An engine of course. And what better way to learn how a rocket engine works than building one yourself! The experienced students at the bi-liquid propellant project are developing a fully in-house bi-liquid propellant engine that will be later on integrated in our competition rocket.">
   <meta itemprop="datePublished" content="2025-03-13T19:36:20+01:00">
   <meta itemprop="dateModified" content="2025-03-13T19:36:20+01:00">
-  <meta itemprop="wordCount" content="5">
+  <meta itemprop="wordCount" content="202">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -492,9 +492,217 @@ function hideMenu() {
 
 <content>
   <h1 id="specifications">Specifications</h1>
-<h1 id="highlights">Highlights</h1>
-<h1 id="awards">Awards</h1>
-<h1 id="rocket-components">Rocket components</h1>
+
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+    
+    
+    
+    
+    <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+    
+      <hr style="margin: 5px 0;">
+      <div style="display: flex;">
+        <div style="flex: 1; text-align: left; font-size: 1rem;">
+          Year:
+        </div>
+        <div style="text-align: right; font-size: 2rem; height: 4rem;">
+          2025/26
+        </div>
+      </div>
+    
+      <hr style="margin: 5px 0;">
+      <div style="display: flex;">
+        <div style="flex: 1; text-align: left; font-size: 1rem;">
+          Goal:
+        </div>
+        <div style="text-align: right; font-size: 2rem; height: 4rem;">
+          bi-liquid propellant engine
+        </div>
+      </div>
+    
+      <hr style="margin: 5px 0;">
+      <div style="display: flex;">
+        <div style="flex: 1; text-align: left; font-size: 1rem;">
+          Team members:
+        </div>
+        <div style="text-align: right; font-size: 2rem; height: 4rem;">
+          an integer
+        </div>
+      </div>
+    
+    </div> 
+
+    
+    
+    <div style="flex: 1; display: flex; flex-direction: column; min-width: 17rem; max-width: 100%;">
+      <hr style="margin: 5px 0;">
+      <div style="display: flex;">
+        <div style="flex: 1; text-align: left; font-size: 1rem;">
+          Logotype
+        </div>
+        <div style="text-align: right; font-size: 2rem; height: max-content;">
+          <img loading="lazy" style="max-height: 16rem; max-width: 100%;" src="/icons/hyperion.png"></img>
+        </div>
+      </div>
+    </div> 
+
+
+</div>
+
+<h1 id="rocket-engine-power">Rocket engine power</h1>
+<p>What does a rocket need to fly? An engine of course. And what better way to learn how a rocket engine works than building one yourself! The experienced students at the bi-liquid propellant project are developing a fully in-house bi-liquid propellant engine that will be later on integrated in our competition rocket.</p>
+<p>In order to be able to test the engine our students are also developing a testing facility. Our goal is to be one of the first in Switzerland to create a rocket with a bi-liquid propellant engine and able to fly using this engine in the 2023 edition of EuRoC. We also hope to test the engine on the Hopper rocket of the Icarus project, in June 2023.</p>
+<p>In parallel to the bi-liquid propellant engine, our students are also developing engines with liquid Oxygen instead of Nitrous Oxide, that are a lot more powerful (5 kN), as well as electric motor pumps (e-pumps).</p>
+<h1 id="project-components">Project components</h1>
+
+
+<div x-data="{openTab: 'Class-A engines'}">
+  
+
+
+
+<div x-data="{name: 'Class-A engines'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      Class-A engines
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+A description of class-A engines.
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" style="margin: 0; width: 100%; height: auto; aspect-ratio: 16/9; max-height: 16rem;" src="/board/ERT.png"></img>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{name: 'Class-B engines'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      Class-B engines
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+A description of class-B engines.
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" style="margin: 0; width: 100%; height: auto; aspect-ratio: 16/9; max-height: 16rem;" src="/board/ERT.png"></img>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{name: 'Testing facility'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      Testing facility
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+A description of the testing facility.
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" style="margin: 0; width: 100%; height: auto; aspect-ratio: 16/9; max-height: 16rem;" src="/board/ERT.png"></img>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{name: 'Class-P engines'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      Class-P engines
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+A description of class-P engines.
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" style="margin: 0; width: 100%; height: auto; aspect-ratio: 16/9; max-height: 16rem;" src="/board/ERT.png"></img>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+<h1 id="images">Images</h1>
 
 </content>
 <p>
