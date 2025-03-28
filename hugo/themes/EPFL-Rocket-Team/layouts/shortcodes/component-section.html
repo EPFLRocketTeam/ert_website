@@ -23,7 +23,9 @@
         </p>
       </div>
       <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
-        <img loading="lazy" style="margin: 0; width: 100%; height: auto; aspect-ratio: 16/9; max-height: 16rem;" src="{{ .Get "image" }}"></img>
+        <img loading="lazy" 
+             style="margin: 0; max-width: 100%; height: auto; max-height: 16rem; width: auto; object-fit: {{ .Get "object-fit" | default "cover" }};" 
+             src="{{ .Get "image" }}">
       </div>
     </div>
   </div>

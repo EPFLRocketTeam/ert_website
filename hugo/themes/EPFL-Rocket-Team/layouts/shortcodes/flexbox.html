@@ -1,4 +1,4 @@
 {{/* Shortcode: flexbox.html */}}
-<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+<div style="display: flex; flex-wrap: {{ .Get "wrap" | default "wrap" }}; gap: {{ .Get "gap" | default "15px" }}; justify-content: {{ .Get "justify" | default "flex-start" }}; align-items: {{ .Get "align" | default "stretch" }};">
     {{ .Inner }}
 </div>
