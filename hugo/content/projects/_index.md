@@ -10,13 +10,13 @@ weight: 2
 padding: 30px
 children:
   - name: "Competition"
-    url: "/projects/firehorn-2025/"
+    url: "/projects/firehorn/"
   - name: "Hyperion"
-    url: "/projects/hyperion-2025/"
+    url: "/projects/hyperion/"
   - name: "Icarus"
-    url: "/projects/icarus-2025/"
+    url: "/projects/icarus/"
   - name: "Space Race"
-    url: "/projects/space-race-2025/"
+    url: "/projects/space-race/"
 ---
 
 # Competition projects
