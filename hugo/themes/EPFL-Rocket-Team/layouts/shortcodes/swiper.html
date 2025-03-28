@@ -1,0 +1,19 @@
+<!-- Swiper Shortcode -->
+<div class="swiper">
+  <div class="swiper-wrapper">
+    {{ .Inner }}
+  </div>
+  
+  {{ if eq (.Get "pagination") "true" }}
+  <div class="swiper-pagination"></div>
+  {{ end }}
+
+  {{ if eq (.Get "navigation") "true" }}
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  {{ end }}
+
+  {{ if eq (.Get "scrollbar") "true" }}
+  <div class="swiper-scrollbar"></div>
+  {{ end }}
+</div>
