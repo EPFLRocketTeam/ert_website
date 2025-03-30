@@ -685,6 +685,7 @@ textarea {
 
 .openpos{
   width: 70vw;
+  margin-bottom: 20px;
 }
 
 .openpos p{
@@ -700,10 +701,12 @@ textarea {
 }
 
 .oppos-flex img{
+  max-width: 100%;
   height: auto;
 }
 
 .oppos-flex div{
+  flex: 50%;
   max-width: 50%;
   margin: 10px;
   font-family: 'Aspekta-300';
@@ -728,6 +731,7 @@ textarea {
 h5 {
   font-size:35px;  
   color: #DA291C;
+  font-family: 'Aspekta-500';
 }
 
 .openpos h6{
@@ -761,7 +765,7 @@ h6 span{
 
 .content-op {
   display: none;
-  width: 65vw;
+  width: 70vw;
   font-size: 16px;
   line-height: 200%;
   padding: 10px;
@@ -1119,6 +1123,36 @@ h6 span{
 
   #nr1, #nr2{
     left:27vw;
+  }
+
+  .projectslist{
+    flex-direction: column;
+  }
+
+  .semprojecttitle{
+    border: 1px solid #464646;
+    margin-bottom: 5px;
+  }
+
+  .projectdetails{
+    width: 90vw;
+    word-wrap: break-word;
+  }
+
+  .oppos-flex{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oppos-flex div{
+    width: 100%;
+  }
+  
+  .oppos-flex img{
+    width: 100%;
+    height: auto;
   }
 
 }
