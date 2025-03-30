@@ -13,10 +13,14 @@ callToAction:
 ---
 
 # Specifications
+{{< flexbox >}}
+    {{< specs >}}
+    {{< logotype logo="/icons/icarus.png" >}}
+{{< /flexbox >}}
 
-# Highlights
+# Algorithms
 
-# Awards
+# Drone
 
-# Rocket components
+# Hopper
 
