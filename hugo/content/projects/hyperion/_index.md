@@ -79,13 +79,19 @@ A description of class-P engines.
 # Images
 
 {{< swiper pagination="true" navigation="true" scrollbar="false" >}}
-  <div class="swiper-slide" style="height: 40ch; width: auto; background-color: #222222; border-radius: 15px; padding: 15px;">
-    Slide 1
+  <div class="swiper-slide">
+    <img src="/images/hyperion-pcb.png" style="width: 100%; height: auto; border-radius: 15px; padding: 0;">
   </div>
-  <div class="swiper-slide" style="height: 40ch; background-color: #222222; border-radius: 15px; padding: 15px;">
-    Slide 2
+  <div class="swiper-slide">
+    <img src="/images/hyperion-flame.png" style="width: 100%; height: auto; border-radius: 15px; padding: 0;">
   </div>
-  <div class="swiper-slide" style="height: 40ch; background-color: #222222; border-radius: 15px; padding: 15px;">
-    Slide 3
+  <div class="swiper-slide">
+    <img src="/images/hyperion-stand.png" style="width: 100%; height: auto; border-radius: 15px; padding: 0;">
+  </div>
+  <div class="swiper-slide">
+    <img src="/images/hyperion-drone.png" style="width: 100%; height: auto; border-radius: 15px; padding: 0;">
+  </div>
+  <div class="swiper-slide">
+    <img src="/images/hyperion-software.png" style="width: 100%; height: auto; border-radius: 15px; padding: 0;">
   </div>
 {{< /swiper >}}

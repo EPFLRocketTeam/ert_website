@@ -25,11 +25,9 @@ h4 {
 :root {
   --swiper-theme-color: #DA291C;
 }
-
 .swiper-pagination-bullet-active {
   background: #DA291C !important;
 }
-
 .swiper-button-next,
 .swiper-button-prev {
   color: #DA291C !important;
@@ -38,14 +36,15 @@ h4 {
 .swiper-scrollbar-drag {
   background: #DA291C !important;
 }
-
+.swiper-shortcode {
+  max-width: 100ch;
+}
 .main {
   position: relative;
   margin: 20px 0px 40px;
   height: max-content;
   overflow: hidden;
 }
-
 .page {
   font-family: 'Aspekta-600';
   font-size: 18px;
