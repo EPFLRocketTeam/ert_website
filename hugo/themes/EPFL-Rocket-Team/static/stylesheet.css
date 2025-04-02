@@ -417,8 +417,8 @@ textarea {
   display: grid;
   width: 105vw;
   height: 130vh;
-  grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(11, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   gap: 15px;
 }
 
@@ -475,10 +475,10 @@ textarea {
 }
 
 .div7 {
-  grid-row-start: 3;
+  grid-row-start: 1;
   grid-column-start: 1;
 
-  grid-row-end: 6;
+  grid-row-end: 7;
   grid-column-end: 6;
 }
 
@@ -487,7 +487,7 @@ textarea {
   width: 100%;
   height: auto;
   grid-template-columns: repeat(11, 1fr);
-  grid-template-rows: repeat(13, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   gap: 15px;
 }
 
@@ -508,37 +508,37 @@ textarea {
 }
 
 .mission2 {
-  grid-row-start: 4;
+  grid-row-start: 1;
   grid-column-start: 10;
-  grid-row-end: 7;
+  grid-row-end: 4;
   grid-column-end: 12;
 }
 
 .mission3 {
-  grid-row-start: 7;
+  grid-row-start: 4;
   grid-column-start: 10;
-  grid-row-end: 14;
+  grid-row-end: 11;
   grid-column-end: 12;
 }
 
 .mission4 {
-  grid-row-start: 14;
+  grid-row-start: 11;
   grid-column-start: 10;
-  grid-row-end: 16;
+  grid-row-end: 13;
   grid-column-end: 12;
 }
 
 .mission5 {
-  grid-row-start: 6;
+  grid-row-start: 3;
   grid-column-start: 8;
-  grid-row-end: 9;
+  grid-row-end: 6;
   grid-column-end: 10;
 }
 
 .mission6 {
-  grid-row-start: 9;
+  grid-row-start: 6;
   grid-column-start: 4;
-  grid-row-end: 16;
+  grid-row-end: 13;
   grid-column-end: 10;
 }
 
