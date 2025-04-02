@@ -10,6 +10,13 @@ padding: 30px
 callToAction:
     text: "Want to participate in this project?"
     action: "JOIN THE ERT"
+specs:
+  - key: "Year"
+    value: "2020 -"
+  - key: "Goal"
+    value: "Vehicle capable of propulsive landing"
+  - key: "Team members"
+    value: "an integer"
 highlights:
   - key: ""
     value: ""
