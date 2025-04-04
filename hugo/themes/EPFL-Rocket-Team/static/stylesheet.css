@@ -93,13 +93,26 @@ h4 {
   right: 30px;
 }
 
+.card-join {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background-color: #666666;
+  height: 200px; /* Adjust height as needed */
+  cursor: pointer;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 250px;
+}
+
 .card {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   background-color: #666666;
-  height: 300px; /* Adjust height as needed */
+  height: 250px; /* Adjust height as needed */
   cursor: pointer;
   flex: 1;
   flex-wrap: wrap;
@@ -949,6 +962,15 @@ h6 span{
     left:19vw;
   }
 
+}
+
+.join-card-box { display: grid; }
+@media (min-width: 1280px) {
+  .join-card-box { display: none; }
+}
+
+@media (max-width: 1280px) {
+  .min-1280 { display: none; }
 }
 
 @media (min-width: 744px) {
