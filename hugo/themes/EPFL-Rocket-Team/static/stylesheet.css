@@ -951,9 +951,13 @@ h6 span{
 
 }
 
-/* Medium-small screens (tablets, <900px) -> 5 Columns */
-@media (max-width: 744px) {
+@media (min-width: 744px) {
+  .mobile-only { display: none; }
+}
 
+/* Medium-small screens */
+@media (max-width: 744px) {
+  .desktop-only { display: none; }
   .button-right,
   .button-right::after,
   .page {
