@@ -18,10 +18,10 @@ specs:
   - key: "Team members"
     value: "an integer"
 highlights:
-  - key: ""
-    value: ""
-  - key: ""
-    value: ""
+  - key: "withstandable radial acceleration"
+    value: "3.5 g"
+  - key: "withstandable axial acceleration"
+    value: "10 g"
 ---
 
 # Specifications
@@ -46,15 +46,40 @@ Even though the ICARUS project works on concrete technologies, the base of the p
 
 Due to the complexity of the task and the number of parameters taken into account, the team chose to use predictive control techniques based on a dynamic model previously developed on a simulator. From the flight data collected by our avionics, this technique makes it possible to anticipate in quasi real time the future evolution of the state of the rocket and thus to optimize the control instructions.
 
-# Components
+# Hopper
 
-{{< tabs-state initial-tab="DRONE" >}}
+{{< tabs-state initial-tab="OVERVIEW" >}}
 
-{{< component-section component="DRONE" image="/images/originalQuality/icarus-image1.png" >}}
-Made from functionally efficient, innovative bi-material 3D-printed (PETG + TPU). The 3-pylon, 3 legs design is lighter, more flexible and allows better disassembly.
+{{< component-section component="OVERVIEW" image="/images/originalQuality/icarus-image2.png" >}}
+The Hopper, a pioneering vehicle showing off the ERT versatility, is a new vehicle with custom control systems and homemade structure, GNC algorithms and electronics. Capable of propulsive landing, it is propelled by our bi-liquid DEMO A3 engine. 
 {{< /component-section >}}
+
+
+{{< component-section component="AVIONICS BAY" image="/images/originalQuality/icarus-image7.png" >}}
+Composed of 4 main parts, the avionics hardware collects the sensor data, treats it and feeds it to GNC to subsequently actuate the H-AC motor.
+{{< /component-section >}}
+
+{{< component-section component="UPPER STRUCTURE" image="/images/originalQuality/icarus-image6.png" >}}
+The Hopper's Upper Structure consists of Nordend's coaxial tank system, a COPV tank, the Avionics bay, and the Battery box. 
+{{< /component-section >}}
+
+{{< component-section component="MIDDLE STRUCTURE" image="/images/originalQuality/icarus-image5.png" >}}
+As the central part of the Hopper, the Middle Structure consists as a interface between legs and Upper structure. Mounted on it are the batteries, FTS, COPV, and propulsion interfaces.
+{{< /component-section >}}
+
+{{< component-section component="GIMBAL" image="/images/originalQuality/icarus-image3.png" >}}
+Built with cross-spring pivots, the 2 degree of freedom gimbal mechanism assures Thrust Vector Control (TVC) required to develop an actively controlled hopper vehicle.
+{{< /component-section >}}
+
+{{< component-section component="LEGS" image="/images/originalQuality/icarus-image4.png" >}}
+Designed to land the Hopper and absorb the shock, the legs of the Hopper are comprised of one central leg equipped with a damper and two lateral legs.
+{{< /component-section >}}
+
+<!-- {{< component-section component="DRONE" image="/images/originalQuality/icarus-image1.png" >}}
+Made from functionally efficient, innovative bi-material 3D-printed (PETG + TPU). The 3-pylon, 3 legs design is lighter, more flexible and allows better disassembly.
+{{< /component-section >}} -->
 
 {{< /tabs-state >}}
 
-
+# Drone
 

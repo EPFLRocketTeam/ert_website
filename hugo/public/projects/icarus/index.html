@@ -43,7 +43,7 @@
   <meta itemprop="description" content="Specifications Our mission is to create a vehicle capable of propulsive landing as well as a platform for EPFL Rocket Team to develop technologies pertaining to active control and thrust vectoring for use in future vehicles. Such an usage would be a dedicated module on-board the next Firehorn-class rocket. We aim to foster learning opportunities for students and bring our association closer to space through innovative engineering and collaborative efforts.">
   <meta itemprop="datePublished" content="2025-03-13T19:36:30+01:00">
   <meta itemprop="dateModified" content="2025-03-13T19:36:30+01:00">
-  <meta itemprop="wordCount" content="251">
+  <meta itemprop="wordCount" content="410">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -558,10 +558,10 @@ function hideMenu() {
   
     <div style="flex: 1; display: flex; flex-direction: column; margin: 30px; justify-content: center; text-align: center">
       <div style="font-size: 2.5rem;">
-        
+        3.5 g
       </div>
       <div style="font-size: 1.25rem;">
-        :
+        withstandable radial acceleration:
       </div>
     </div>
     
@@ -570,10 +570,10 @@ function hideMenu() {
   
     <div style="flex: 1; display: flex; flex-direction: column; margin: 30px; justify-content: center; text-align: center">
       <div style="font-size: 2.5rem;">
-        
+        10 g
       </div>
       <div style="font-size: 1.25rem;">
-        :
+        withstandable axial acceleration:
       </div>
     </div>
     
@@ -598,13 +598,236 @@ function hideMenu() {
 </div>
 
 <p>Due to the complexity of the task and the number of parameters taken into account, the team chose to use predictive control techniques based on a dynamic model previously developed on a simulator. From the flight data collected by our avionics, this technique makes it possible to anticipate in quasi real time the future evolution of the state of the rocket and thus to optimize the control instructions.</p>
-<h1 id="components">Components</h1>
+<h1 id="hopper">Hopper</h1>
 
 
-<div x-data="{openTab: 'DRONE'}">
+<div x-data="{openTab: 'OVERVIEW'}">
   
 
 
+
+<div x-data="{name: 'OVERVIEW'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      OVERVIEW
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+The Hopper, a pioneering vehicle showing off the ERT versatility, is a new vehicle with custom control systems and homemade structure, GNC algorithms and electronics. Capable of propulsive landing, it is propelled by our bi-liquid DEMO A3 engine. 
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" 
+             style="margin: 0; max-width: 100%; height: auto; max-height: 16rem; width: auto; object-fit: contain;" 
+             src="/images/originalQuality/icarus-image2.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div x-data="{name: 'AVIONICS BAY'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      AVIONICS BAY
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+Composed of 4 main parts, the avionics hardware collects the sensor data, treats it and feeds it to GNC to subsequently actuate the H-AC motor.
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" 
+             style="margin: 0; max-width: 100%; height: auto; max-height: 16rem; width: auto; object-fit: contain;" 
+             src="/images/originalQuality/icarus-image7.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{name: 'UPPER STRUCTURE'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      UPPER STRUCTURE
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+The Hopper's Upper Structure consists of Nordend's coaxial tank system, a COPV tank, the Avionics bay, and the Battery box. 
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" 
+             style="margin: 0; max-width: 100%; height: auto; max-height: 16rem; width: auto; object-fit: contain;" 
+             src="/images/originalQuality/icarus-image6.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{name: 'MIDDLE STRUCTURE'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      MIDDLE STRUCTURE
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+As the central part of the Hopper, the Middle Structure consists as a interface between legs and Upper structure. Mounted on it are the batteries, FTS, COPV, and propulsion interfaces.
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" 
+             style="margin: 0; max-width: 100%; height: auto; max-height: 16rem; width: auto; object-fit: contain;" 
+             src="/images/originalQuality/icarus-image5.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{name: 'GIMBAL'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      GIMBAL
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+Built with cross-spring pivots, the 2 degree of freedom gimbal mechanism assures Thrust Vector Control (TVC) required to develop an actively controlled hopper vehicle.
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" 
+             style="margin: 0; max-width: 100%; height: auto; max-height: 16rem; width: auto; object-fit: contain;" 
+             src="/images/originalQuality/icarus-image3.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div x-data="{name: 'LEGS'}">
+  <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
+    <div>
+      LEGS
+    </div>
+    <div style="margin-left: auto;">
+      <button 
+        @click="openTab = (openTab === name ? '' : name)" 
+        x-text="openTab == name ? '−' : '+'"
+        style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;">
+      </button>
+    </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0">
+
+  <div x-show="openTab === name" x-collapse>
+    <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 15px;">
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%;">
+        <p style="max-width: 60ch">
+          
+Designed to land the Hopper and absorb the shock, the legs of the Hopper are comprised of one central leg equipped with a damper and two lateral legs.
+
+        </p>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; min-width: 250px; max-width: 100%; background: none; border-radius: 15px; margin: 15px 0 15px;">
+        <img loading="lazy" 
+             style="margin: 0; max-width: 100%; height: auto; max-height: 16rem; width: auto; object-fit: contain;" 
+             src="/images/originalQuality/icarus-image4.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 
 
 <div x-data="{name: 'DRONE'}">
   <div style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center;">
@@ -639,11 +862,12 @@ Made from functionally efficient, innovative bi-material 3D-printed (PETG + TPU)
   </div>
 </div>
 
-
+ -->
 
 
 </div>
 
+<h1 id="drone">Drone</h1>
 
 </content>
 <p>
