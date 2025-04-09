@@ -12,7 +12,7 @@ callToAction:
     action: "JOIN THE ERT"
 specs:
   - key: "Year"
-    value: "2020 -"
+    value: "2025/2026"
   - key: "Goal"
     value: "Vehicle capable of propulsive landing"
   - key: "Team members"
@@ -22,21 +22,28 @@ highlights:
     value: "3.5 g"
   - key: "withstandable axial acceleration"
     value: "10 g"
+faq:
+  - question: "Why do we have drones"
+    answer: "The drone subsytem is part of the Icarus project. Because we do not have the means of crashing a rocket once every 3 months (looking at you SpaceX), we need a way of testing algorithms, avionics and various systems before launching a rocket-powered vehicle. The drones are meant to be small, cheap, reusable, repairable and eventually disposable."
+  - question: "My dad has a camera drone, how are yours any different"
+    answer: "Our drones approximate the dynamical behaviour of a rocket. The first thing is that they have a high weight-to-thrust ratio (as usually does a rocket-powered vehicle). Their center of gravity is also way outside their center of thrust, hence they are quite difficult to control and need comprehensive algorithms. They are built in a specific way such as to ensure that they match the design intent and requirements of both the Hopper and their own."
+  - question: "How are drones useful"
+    answer: "We have two objectives with the drone subsytem. The first one is to build and maintain a fleet of said drones. The second objective is to serve as a test platform for cutting-edge technologies developped quickly from idea to integration to be used at a later date on other projects."
 ---
 
 # Specifications
-
-Our mission is to create a vehicle capable of propulsive landing as well as a platform for EPFL Rocket Team to develop technologies pertaining to active control and thrust vectoring for use in future vehicles. Such an usage would be a dedicated module on-board the next Firehorn-class rocket. We aim to foster learning opportunities for students and bring our association closer to space through innovative engineering and collaborative efforts.
-
 
 {{< flexbox >}}
     {{< specs >}}
     {{< logotype logo="/icons/icarus.png" >}}
 {{< /flexbox >}}
 
+
 # Highlights
 
 {{< highlights >}}
+
+Our mission is to create a vehicle capable of propulsive landing as well as a platform for EPFL Rocket Team to develop technologies pertaining to active control and thrust vectoring for use in future vehicles. Such an usage would be a dedicated module on-board the next Firehorn-class rocket. We aim to foster learning opportunities for students and bring our association closer to space through innovative engineering and collaborative efforts.
 
 # GNC Algorithms
 
@@ -81,5 +88,23 @@ Made from functionally efficient, innovative bi-material 3D-printed (PETG + TPU)
 
 {{< /tabs-state >}}
 
-# Drone
+# Drones
+
+{{< faq >}}
+
+
+{{< tabs-state initial-tab=" " >}}
+
+
+<div align="center">
+  <img src="/images/originalQuality/icarus-image1.png" style="margin: 0; max-width: 100%; height: auto; max-height: 16rem; width: auto; object-fit: {{ .Get "object-fit" | default "contain" }};"/>
+  <div style="font-family:'Aspekta-300'; font-size: 1.15rem; width:50%">
+  Made from functionally efficient, innovative bi-material 3D-printed (PETG + TPU), the 3-pylon, 3 legs drone design is lighter, more flexible and allows better disassembly.
+  </div>
+
+</div>
+
+{{< /tabs-state >}}
+
+
 
