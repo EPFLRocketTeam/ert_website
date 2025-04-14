@@ -1307,7 +1307,6 @@ h6 span{
     height: 45px;
   }
 }
-
 /* 768px and above */
 @media (min-width: 768px) {
 
@@ -1380,6 +1379,17 @@ h6 span{
 
 .board-container {
   padding: 30px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --swiper-navigation-size: 30px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 30px !important;
+    --swiper-navigation-size: 30px !important;
+  }
 }
 
 @media (max-width: 450px) {
