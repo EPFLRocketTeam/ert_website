@@ -8,6 +8,9 @@ menu: main
 layout: single
 weight: 2
 padding: 30px
+callToAction:
+    text: "Want to participate in a project?"
+    action: "JOIN THE ERT"
 children:
   - name: "Competition"
     url: "/projects/firehorn/"
