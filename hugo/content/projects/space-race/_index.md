@@ -10,11 +10,18 @@ padding: 30px
 callToAction:
     text: "Want to participate in this project?"
     action: "JOIN THE ERT"
+highlights:
+  - key: "Students"
+    value: "80+"
+  - key: "Teams"
+    value: "10"
 ---
 
 # Specifications
 
 # Highlights
+
+{{< highlights >}}
 
 # Awards
 

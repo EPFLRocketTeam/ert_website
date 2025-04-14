@@ -20,9 +20,9 @@ specs:
   - key: "Team members"
     value: "an integer"
 highlights:
-  - key: "Max reachable speed (Mach 1.5+)"
+  - key: "Max reachable speed (Mach 1.5+):"
     value: "1,850+ km/h"
-  - key: "Max reachable height (apogee)"
+  - key: "Max reachable height (apogee):"
     value: "30,000+ m"
 ---
 
