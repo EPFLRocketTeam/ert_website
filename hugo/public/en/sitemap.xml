@@ -2,158 +2,158 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://rocketteam.epfl.ch/</loc>
     <lastmod>2025-03-13T19:36:46+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/"
+                href="https://rocketteam.epfl.ch/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/"
+                href="https://rocketteam.epfl.ch/"
                 />
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/</loc>
     <lastmod>2024-11-18T20:38:42+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/projects/"
+                href="https://rocketteam.epfl.ch/fr/projects/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/projects/"
+                href="https://rocketteam.epfl.ch/projects/"
                 />
   </url><url>
-    <loc>http://localhost:1313/join-us/</loc>
+    <loc>https://rocketteam.epfl.ch/join-us/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/join-us/"
+                href="https://rocketteam.epfl.ch/fr/join-us/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/join-us/"
+                href="https://rocketteam.epfl.ch/join-us/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://rocketteam.epfl.ch/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/about/"
+                href="https://rocketteam.epfl.ch/fr/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/about/"
+                href="https://rocketteam.epfl.ch/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/about/board/</loc>
+    <loc>https://rocketteam.epfl.ch/about/board/</loc>
   </url><url>
-    <loc>http://localhost:1313/join-us/open-positions/</loc>
+    <loc>https://rocketteam.epfl.ch/join-us/open-positions/</loc>
   </url><url>
-    <loc>http://localhost:1313/join-us/semester-projects/</loc>
+    <loc>https://rocketteam.epfl.ch/join-us/semester-projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/sponsors/</loc>
+    <loc>https://rocketteam.epfl.ch/sponsors/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/sponsors/"
+                href="https://rocketteam.epfl.ch/fr/sponsors/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/sponsors/"
+                href="https://rocketteam.epfl.ch/sponsors/"
                 />
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://rocketteam.epfl.ch/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/contact/"
+                href="https://rocketteam.epfl.ch/fr/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/contact/"
+                href="https://rocketteam.epfl.ch/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/shop/</loc>
+    <loc>https://rocketteam.epfl.ch/shop/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/shop/"
+                href="https://rocketteam.epfl.ch/fr/shop/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/shop/"
+                href="https://rocketteam.epfl.ch/shop/"
                 />
   </url><url>
-    <loc>http://localhost:1313/projects/space-race/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/space-race/</loc>
     <lastmod>2025-03-13T19:36:46+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/icarus/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/icarus/</loc>
     <lastmod>2025-03-13T19:36:30+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/hyperion/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/hyperion/</loc>
     <lastmod>2025-03-13T19:36:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/firehorn/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/firehorn/</loc>
     <lastmod>2025-03-12T20:54:33+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://rocketteam.epfl.ch/posts/</loc>
     <lastmod>2024-09-22T08:55:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/posts/"
+                href="https://rocketteam.epfl.ch/fr/posts/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/posts/"
+                href="https://rocketteam.epfl.ch/posts/"
                 />
   </url><url>
-    <loc>http://localhost:1313/posts/test/</loc>
+    <loc>https://rocketteam.epfl.ch/posts/test/</loc>
     <lastmod>2024-09-22T08:55:02+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/posts/test/"
+                href="https://rocketteam.epfl.ch/fr/posts/test/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/posts/test/"
+                href="https://rocketteam.epfl.ch/posts/test/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://rocketteam.epfl.ch/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/categories/"
+                href="https://rocketteam.epfl.ch/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/categories/"
+                href="https://rocketteam.epfl.ch/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://rocketteam.epfl.ch/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/tags/"
+                href="https://rocketteam.epfl.ch/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
-                href="http://localhost:1313/tags/"
+                href="https://rocketteam.epfl.ch/tags/"
                 />
   </url>
 </urlset>

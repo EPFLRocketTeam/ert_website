@@ -2,11 +2,11 @@
 <html lang="en-UK">
 
 <head>
-	<meta name="generator" content="Hugo 0.134.3"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.134.3">
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="http://localhost:1313/icons/favicon.png" />
+<link rel="shortcut icon" href="https://rocketteam.epfl.ch/icons/favicon.png" />
 <title>Home | EPFL Rocket Team</title>
 <meta name="title" content="Home" />
 <meta name="description" content="We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry’s leaders." />
@@ -19,20 +19,20 @@
 
 
   
-  <meta property="og:url" content="http://localhost:1313/">
+  <meta property="og:url" content="https://rocketteam.epfl.ch/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Home">
   <meta property="og:description" content=" our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/images/share.webp">
+    <meta property="og:image" content="https://rocketteam.epfl.ch/images/share.webp">
         <meta property="fb:admins" content="0000000000">
 
 
   
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
+  <meta name="twitter:image" content="https://rocketteam.epfl.ch/images/share.webp">
   <meta name="twitter:title" content="Home">
   <meta name="twitter:description" content=" our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
       <meta name="twitter:site" content="@example">
@@ -45,7 +45,7 @@
   <meta itemprop="datePublished" content="2025-03-13T19:36:46+01:00">
   <meta itemprop="dateModified" content="2025-03-13T19:36:46+01:00">
   <meta itemprop="wordCount" content="384">
-  <meta itemprop="image" content="http://localhost:1313/images/share.webp">
+  <meta itemprop="image" content="https://rocketteam.epfl.ch/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -54,7 +54,7 @@
 
   
 
-  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="EPFL Rocket Team" />
+  <link rel="alternate" type="application/rss+xml" href="https://rocketteam.epfl.ch/index.xml" title="EPFL Rocket Team" />
   
 
   
@@ -100,6 +100,15 @@
     }
     p {
       font-size: 18px;
+    }
+  }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 32px;
+      margin-left: 0;
+    }
+    p {
+      font-size: 14px;
     }
   }
   .navbar {z-index: 1}
@@ -1398,102 +1407,127 @@ function hideMenu() {
   </div>
 </body>
 
-<head>
-    <style>
-        .prev, .next {
+<style>
+    .prev, .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: -30px;
-        color: #f6f6f6;
-        font-size: 20px;
+      font-size: 20px;
         user-select: none;
-        }
+    }
 
-        .next {
+    .next {
         position: absolute;
-        right: 0;
+        right: 2%;  
+    }
+
+    .prev {
+        left: 2%;  
+    }
+
+    .prev:hover, .next:hover{
+        text-decoration:underline;
+    }
+
+    .swiper {
+        margin: 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        margin: 2% 3%;  
+    }
+
+    .swiper-slide {
+        margin: auto;
+        padding: 3% 10% 3% 10%;  
+    }
+
+    @media (max-width: 1024px) {  
+        .swiper-slide {
+            padding: 3% 9% 3% 9%;  
         }
 
-        .prev:hover, .next:hover{
-            text-decoration:underline;
-        }
-
-        .swiper {
-          margin: 0;
-        }
-        
         .swiper-button-prev, .swiper-button-next {
-          color: white;
-          margin: 30px;
+            margin: 2% 1%;  
         }
-    </style>
-</head>
-<body>
+    }
+
+    @media (max-width: 768px) {  
+        .swiper-slide {
+            padding: 3% 9% 3% 9%;  
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            margin: 2% 0%;  
+        }
+        .prev, .next {
+            font-size: 10px;
+        }
+    }
+</style>
+
+<div class="swiper">
+  
+  <div class="swiper-wrapper">
     
-    <div class="swiper">
-      
-      <div class="swiper-wrapper">
-        
-        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
-          <div class="a-testimonial">
-            <div class="testimonial-text">
-            “I joined the Rocket Team with no particular 
-  knowledge of rocketry or any particular technical field. And yet, in the
-  space of 2 years I have learned an uncountable amount of things, both 
-  technically and organisationally. A practical project like this one is a
-  perfect companion to a mostly theoretical study like the one at EPFL.”
-            </div>
-            <div class="testimonial-bio">
-              <img loading="lazy" src="/images/originalQuality/TheophileBalestrini.png">
-              <div class="testimonial-bio-text">
-                <h1 style="margin: 0;">Theophile Balestrini</h1>
-                <p style="margin: 0;">System Engineer</p>
-              </div>
-            </div>
-          </div>
+    <div class="swiper-slide" style="display: flex; align-items: center; justify-content: center;">
+      <div class="a-testimonial" style="max-width: 100ch;">
+        <div class="testimonial-text">
+        “I joined the Rocket Team with no particular 
+knowledge of rocketry or any particular technical field. And yet, in the
+space of 2 years I have learned an uncountable amount of things, both 
+technically and organisationally. A practical project like this one is a
+perfect companion to a mostly theoretical study like the one at EPFL.”
         </div>
-        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
-          <div class="a-testimonial">
-            <div class="testimonial-text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
-            </div>
-            <div class="testimonial-bio">
-              <img loading="lazy" src="/images/originalQuality/RocketLaunch3.jpeg">
-              <div class="testimonial-bio-text">
-                <h1 style="margin: 0;">John Doe</h1>
-                <p style="margin: 0;">Team Member</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
-          <div class="a-testimonial">
-            <div class="testimonial-text">
-              “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”
-            </div>
-            <div class="testimonial-bio">
-              <img loading="lazy" src="/images/originalQuality/RocketBuilding3.jpeg">
-              <div class="testimonial-bio-text">
-                <h1 style="margin: 0;">Name Surname</h1>
-                <p style="margin: 0;">Team Member</p>
-              </div>
-            </div>
+        <div class="testimonial-bio">
+          <img loading="lazy" src="/images/originalQuality/TheophileBalestrini.png">
+          <div class="testimonial-bio-text">
+            <h1 style="margin: 0;">Theophile Balestrini</h1>
+            <p style="margin: 0;">System Engineer</p>
           </div>
         </div>
       </div>
-      
-      
-
-      
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      
-      
     </div>
-</body>
+    <div class="swiper-slide" style="display: flex; align-items: center; justify-content: center;">
+      <div class="a-testimonial" style="max-width: 100ch;">
+        <div class="testimonial-text">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+        </div>
+        <div class="testimonial-bio">
+          <img loading="lazy" src="/images/originalQuality/RocketLaunch3.jpeg">
+          <div class="testimonial-bio-text">
+            <h1 style="margin: 0;">John Doe</h1>
+            <p style="margin: 0;">Team Member</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" style="display: flex; align-items: center; justify-content: center;">
+      <div class="a-testimonial" style="max-width: 100ch;">
+        <div class="testimonial-text">
+          “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”
+        </div>
+        <div class="testimonial-bio">
+          <img loading="lazy" src="/images/originalQuality/RocketBuilding3.jpeg">
+          <div class="testimonial-bio-text">
+            <h1 style="margin: 0;">Name Surname</h1>
+            <p style="margin: 0;">Team Member</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+  
+</div>
 
 
 

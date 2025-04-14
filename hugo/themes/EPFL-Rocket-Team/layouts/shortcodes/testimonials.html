@@ -1,96 +1,121 @@
-<head>
-    <style>
-        .prev, .next {
+<style>
+    .prev, .next {
         cursor: pointer;
         position: absolute;
         top: 50%;
         width: auto;
-        margin-top: -30px;
-        color: #f6f6f6;
-        font-size: 20px;
+      font-size: 20px;
         user-select: none;
-        }
+    }
 
-        .next {
+    .next {
         position: absolute;
-        right: 0;
+        right: 2%; /* Adjust as needed */
+    }
+
+    .prev {
+        left: 2%; /* Adjust as needed */
+    }
+
+    .prev:hover, .next:hover{
+        text-decoration:underline;
+    }
+
+    .swiper {
+        margin: 0;
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        margin: 2% 3%; /* Adjust margins with percentages */
+    }
+
+    .swiper-slide {
+        margin: auto;
+        padding: 3% 10% 3% 10%; /* Adjust padding with percentages */
+    }
+
+    @media (max-width: 1024px) { /* Tablet breakpoint */
+        .swiper-slide {
+            padding: 3% 9% 3% 9%; /* Smaller padding for tablets */
         }
 
-        .prev:hover, .next:hover{
-            text-decoration:underline;
-        }
-
-        .swiper {
-          margin: 0;
-        }
-        
         .swiper-button-prev, .swiper-button-next {
-          color: white;
-          margin: 30px;
+            margin: 2% 1%; /* Smaller margins for buttons */
         }
-    </style>
-</head>
-<body>
-    <!-- Slider main container -->
-    <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
-          <div class="a-testimonial">
-            <div class="testimonial-text">
-            “I joined the Rocket Team with no particular 
-  knowledge of rocketry or any particular technical field. And yet, in the
-  space of 2 years I have learned an uncountable amount of things, both 
-  technically and organisationally. A practical project like this one is a
-  perfect companion to a mostly theoretical study like the one at EPFL.”
-            </div>
-            <div class="testimonial-bio">
-              <img loading="lazy" src="/images/originalQuality/TheophileBalestrini.png">
-              <div class="testimonial-bio-text">
-                <h1 style="margin: 0;">Theophile Balestrini</h1>
-                <p style="margin: 0;">System Engineer</p>
-              </div>
-            </div>
-          </div>
+    }
+
+    @media (max-width: 768px) { /* Mobile breakpoint */
+        .swiper-slide {
+            padding: 3% 9% 3% 9%; /* Even smaller padding for mobile */
+        }
+
+        .swiper-button-prev, .swiper-button-next {
+            margin: 2% 0%; /* Smaller margins for buttons */
+        }
+        .prev, .next {
+            font-size: 10px;
+        }
+    }
+</style>
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" style="display: flex; align-items: center; justify-content: center;">
+      <div class="a-testimonial" style="max-width: 100ch;">
+        <div class="testimonial-text">
+        “I joined the Rocket Team with no particular 
+knowledge of rocketry or any particular technical field. And yet, in the
+space of 2 years I have learned an uncountable amount of things, both 
+technically and organisationally. A practical project like this one is a
+perfect companion to a mostly theoretical study like the one at EPFL.”
         </div>
-        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
-          <div class="a-testimonial">
-            <div class="testimonial-text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
-            </div>
-            <div class="testimonial-bio">
-              <img loading="lazy" src="/images/originalQuality/RocketLaunch3.jpeg">
-              <div class="testimonial-bio-text">
-                <h1 style="margin: 0;">John Doe</h1>
-                <p style="margin: 0;">Team Member</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide" style="margin: auto; padding: 30px 120px 30px 120px;">
-          <div class="a-testimonial">
-            <div class="testimonial-text">
-              “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”
-            </div>
-            <div class="testimonial-bio">
-              <img loading="lazy" src="/images/originalQuality/RocketBuilding3.jpeg">
-              <div class="testimonial-bio-text">
-                <h1 style="margin: 0;">Name Surname</h1>
-                <p style="margin: 0;">Team Member</p>
-              </div>
-            </div>
+        <div class="testimonial-bio">
+          <img loading="lazy" src="/images/originalQuality/TheophileBalestrini.png">
+          <div class="testimonial-bio-text">
+            <h1 style="margin: 0;">Theophile Balestrini</h1>
+            <p style="margin: 0;">System Engineer</p>
           </div>
         </div>
       </div>
-      <!-- If we need pagination -->
-      <!--div class="swiper-pagination"></div-->
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <!--div class="swiper-scrollbar"></div--->
     </div>
-</body>
+    <div class="swiper-slide" style="display: flex; align-items: center; justify-content: center;">
+      <div class="a-testimonial" style="max-width: 100ch;">
+        <div class="testimonial-text">
+          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
+        </div>
+        <div class="testimonial-bio">
+          <img loading="lazy" src="/images/originalQuality/RocketLaunch3.jpeg">
+          <div class="testimonial-bio-text">
+            <h1 style="margin: 0;">John Doe</h1>
+            <p style="margin: 0;">Team Member</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide" style="display: flex; align-items: center; justify-content: center;">
+      <div class="a-testimonial" style="max-width: 100ch;">
+        <div class="testimonial-text">
+          “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”
+        </div>
+        <div class="testimonial-bio">
+          <img loading="lazy" src="/images/originalQuality/RocketBuilding3.jpeg">
+          <div class="testimonial-bio-text">
+            <h1 style="margin: 0;">Name Surname</h1>
+            <p style="margin: 0;">Team Member</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <!--div class="swiper-pagination"></div-->
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <!--div class="swiper-scrollbar"></div--->
+</div>
