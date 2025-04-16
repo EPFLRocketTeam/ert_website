@@ -493,7 +493,7 @@ textarea {
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 7;
-  grid-column-end: 6;
+  grid-column-end: 7;
 }
 
 .parent-mission {
@@ -1030,7 +1030,7 @@ h6 span{
     grid-row-start: 1;
     grid-column-start: 1;
     grid-row-end: 4;
-    grid-column-end: 7;
+    grid-column-end: 6;
   }
 
   .parent-mission {

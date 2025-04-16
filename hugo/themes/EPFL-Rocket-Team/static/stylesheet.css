@@ -488,11 +488,12 @@ textarea {
 }
 
 .div7 {
+  display: flex;
+  flex-wrap: wrap;
   grid-row-start: 1;
   grid-column-start: 1;
-
   grid-row-end: 7;
-  grid-column-end: 6;
+  grid-column-end: 7;
 }
 
 .parent-mission {
@@ -988,7 +989,7 @@ h6 span{
 
   .parent {
     height: 100vh;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 1fr);
   }
 
