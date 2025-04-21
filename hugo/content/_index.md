@@ -16,21 +16,48 @@ weight: 1
 
 {{< separator margin="0 30px">}}
 
-{{< image_row margin="0 30px" image1="/images/originalQuality/NumbersStudents3.jpg" image2="/images/originalQuality/NumbersStudents4.jpg" image3="/images/originalQuality/NumbersStudents5.jpg" text="A sequence of related images." text_index="first" >}}
+{{< image_row margin="0 30px" >}}
+  {{< number_in_row value="200+" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+{{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
-{{< image_row image1="/images/a.jpg" image2="/images/b.jpg" text="Another set with text in the middle." text_index="2" >}}
+{{< image_row margin="0 30px" >}}
+  {{< number_in_row value="50+" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+{{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
-{{< image_row image1="/images/p.jpg" image2="/images/q.jpg" image3="/images/r.jpg" image4="/images/s.jpg" text="Text at the end by default." >}}
+{{< image_row margin="0 30px" >}}
+  {{< number_in_row value="15" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+{{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
-{{< image_row image1="/images/x.jpg" text="Only text." >}}
+{{< image_row margin="0 30px" >}}
+  {{< number_in_row value="7" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+{{< /image_row >}}
 
 {{< separator margin="0 30px">}}
+
+{{< image_row margin="0 30px" >}}
+  {{< number_in_row value="4" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
+  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+{{< /image_row >}}
 
 {{<join-us>}}
 

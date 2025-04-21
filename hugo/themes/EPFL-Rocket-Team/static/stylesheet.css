@@ -1412,47 +1412,54 @@ h6 span{
 .image-row {
   display: flex;
   align-items: center;
-  padding: 5px 0;
-  overflow-x: auto; /* Enable horizontal scrolling for the row */
-  white-space: nowrap; /* Prevent text within the row from wrapping */
+  padding: 15px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-row:last-child {
+  border-bottom: none;
 }
 
 .image-container {
   flex-shrink: 0;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
+  height: 100px;
 }
 
 .image-container img {
-  display: inline-block; /* Allows images to sit side-by-side and be affected by white-space: nowrap */
+  display: inline-block;
   height: 100px;
+}
+
+.row-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20px;
+  flex-shrink: 0;
+  width: auto; /* Adjust if needed */
+  text-align: left; /* Adjust if needed */
 }
 
 .text-container {
   flex-grow: 1;
   font-size: 0.9em;
   color: #555;
-  margin-left: 20px; /* Add some space between images and text if text is after images */
+  margin-left: 20px; /* Adjust as needed */
 }
 
-/* Adjust text-container margin if text appears before images */
-.image-row:first-child .text-container {
-  margin-left: 0;
-  margin-right: 20px; /* Add space after text if it's first */
-}
-
-.image-row:last-child .image-container {
-  margin-right: 0;
-}
-
-/* Mobile adjustments (you might need to refine these) */
+/* Mobile adjustments (review and adapt as needed) */
 @media (max-width: 768px) {
   .image-row {
-    /* Keep horizontal scrolling on mobile too */
-    padding: 10px 0;
+    flex-direction: row; /* Or column, depending on desired mobile layout */
+    align-items: flex-start;
+    overflow-x: auto; /* Keep horizontal scroll for images */
+    white-space: nowrap; /* Keep images in a row */
   }
 
   .image-container {
-    margin-right: 5px; /* Adjust spacing on mobile if needed */
+    margin-right: 5px;
   }
 
   .image-container img {
@@ -1461,10 +1468,11 @@ h6 span{
 
   .text-container {
     font-size: 1em;
-    margin-left: 10px; /* Adjust text spacing on mobile */
+    margin-left: 10px;
   }
 
-  .image-row:first-child .text-container {
+  .row-number {
+    font-size: 1.5em;
     margin-right: 10px;
   }
 }
