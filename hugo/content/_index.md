@@ -17,7 +17,7 @@ weight: 1
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< number_in_row value="200+" >}}
+  {{< number_in_row value="200+" unit="Students" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
@@ -26,7 +26,7 @@ weight: 1
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< number_in_row value="50+" >}}
+  {{< number_in_row value="50+" unit="Launches" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
@@ -35,7 +35,7 @@ weight: 1
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< number_in_row value="15" >}}
+  {{< number_in_row value="15" unit="Projects" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
@@ -44,7 +44,7 @@ weight: 1
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< number_in_row value="7" >}}
+  {{< number_in_row value="7" unit="Awards in competition">}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
@@ -53,7 +53,7 @@ weight: 1
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< number_in_row value="4" >}}
+  {{< number_in_row value="4" unit="Research papers">}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
   {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
