@@ -14,6 +14,8 @@ weight: 1
 
 {{<numbers>}}
 
+{{< separator margin="0 30px">}}
+
 {{<join-us>}}
 
 {{<sponsors>}}
