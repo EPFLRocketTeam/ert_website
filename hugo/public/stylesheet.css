@@ -48,7 +48,7 @@ h4 {
 .page {
   font-family: 'Aspekta-600';
   font-size: 18px;
-  color: #464646;
+  color: #A9A9A9;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -62,8 +62,10 @@ h4 {
   color: white;
   text-transform: uppercase;
   text-align: right;
-  background-color: transparent;
-  border: none;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+border: none;
   cursor: pointer;
 }
 
@@ -90,7 +92,7 @@ h4 {
 
 .right-align {
   float: right;
-  right: 30px;
+  /*right: 30px;*/
 }
 
 .card-join {
