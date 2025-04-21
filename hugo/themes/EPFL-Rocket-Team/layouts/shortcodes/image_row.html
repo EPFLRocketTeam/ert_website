@@ -1,0 +1,51 @@
+<div class="image-row" style="display: flex; align-items: center; {{ with .Get "margin" }}margin: {{ . }};{{ end }}">
+  {{ $images := slice }}
+  {{ $textIndex := .Get "text_index" | default "last" }}
+  {{ $text := .Get "text" }}
+
+  {{ range $key, $value := .Params }}
+    {{ if strings.HasPrefix $key "image" }}
+      {{ $images = $images | append $value }}
+    {{ end }}
+  {{ end }}
+
+  {{ $imageCount := len $images }}
+
+  {{ if eq $textIndex "first" }}
+    <div class="text-container">{{ $text }}</div>
+    {{ range $image := $images }}
+      <div class="image-container">
+        <img src="{{ $image }}" alt="Image">
+      </div>
+    {{ end }}
+  {{ else if eq $textIndex "last" }}
+    {{ range $image := $images }}
+      <div class="image-container">
+        <img src="{{ $image }}" alt="Image">
+      </div>
+    {{ end }}
+    {{ if $text }}
+      <div class="text-container">{{ $text }}</div>
+    {{ end }}
+  {{ else if and (gt $imageCount 0) (ne $textIndex "first") (ne $textIndex "last") }}
+    {{ $index := (int $textIndex) | sub 1 }} {{/* Adjust to 0-based index */}}
+    {{ range $i, $image := $images }}
+      {{ if eq $i $index }}
+        <div class="text-container">{{ $text }}</div>
+      {{ end }}
+      <div class="image-container">
+        <img src="{{ $image }}" alt="Image">
+      </div>
+    {{ end }}
+    {{ if gt $imageCount $index }}
+      {{/* Handle case where text index is after the last image */}}
+    {{ else if $text }}
+      <div class="text-container">{{ $text }}</div>
+    {{ end }}
+  {{ else }}
+    {{/* If no images, just show text */}}
+    {{ if $text }}
+      <div class="text-container">{{ $text }}</div>
+    {{ end }}
+  {{ end }}
+</div>

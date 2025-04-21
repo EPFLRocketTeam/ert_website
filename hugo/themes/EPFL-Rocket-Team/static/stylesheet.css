@@ -1409,4 +1409,62 @@ h6 span{
   }
 }
 
+.image-row {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  overflow-x: auto; /* Enable horizontal scrolling for the row */
+  white-space: nowrap; /* Prevent text within the row from wrapping */
+}
 
+.image-container {
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.image-container img {
+  display: inline-block; /* Allows images to sit side-by-side and be affected by white-space: nowrap */
+  height: 100px;
+}
+
+.text-container {
+  flex-grow: 1;
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 20px; /* Add some space between images and text if text is after images */
+}
+
+/* Adjust text-container margin if text appears before images */
+.image-row:first-child .text-container {
+  margin-left: 0;
+  margin-right: 20px; /* Add space after text if it's first */
+}
+
+.image-row:last-child .image-container {
+  margin-right: 0;
+}
+
+/* Mobile adjustments (you might need to refine these) */
+@media (max-width: 768px) {
+  .image-row {
+    /* Keep horizontal scrolling on mobile too */
+    padding: 10px 0;
+  }
+
+  .image-container {
+    margin-right: 5px; /* Adjust spacing on mobile if needed */
+  }
+
+  .image-container img {
+    height: 100px;
+  }
+
+  .text-container {
+    font-size: 1em;
+    margin-left: 10px; /* Adjust text spacing on mobile */
+  }
+
+  .image-row:first-child .text-container {
+    margin-right: 10px;
+  }
+}

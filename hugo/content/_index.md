@@ -16,6 +16,22 @@ weight: 1
 
 {{< separator margin="0 30px">}}
 
+{{< image_row margin="0 30px" image1="/images/originalQuality/NumbersStudents3.jpg" image2="/images/originalQuality/NumbersStudents4.jpg" image3="/images/originalQuality/NumbersStudents5.jpg" text="A sequence of related images." text_index="first" >}}
+
+{{< separator margin="0 30px">}}
+
+{{< image_row image1="/images/a.jpg" image2="/images/b.jpg" text="Another set with text in the middle." text_index="2" >}}
+
+{{< separator margin="0 30px">}}
+
+{{< image_row image1="/images/p.jpg" image2="/images/q.jpg" image3="/images/r.jpg" image4="/images/s.jpg" text="Text at the end by default." >}}
+
+{{< separator margin="0 30px">}}
+
+{{< image_row image1="/images/x.jpg" text="Only text." >}}
+
+{{< separator margin="0 30px">}}
+
 {{<join-us>}}
 
 {{<sponsors>}}
