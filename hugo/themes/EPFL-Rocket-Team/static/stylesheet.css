@@ -435,7 +435,7 @@ textarea {
   width: 105vw;
   height: 130vh;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   gap: 15px;
 }
 
