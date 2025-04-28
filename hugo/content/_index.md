@@ -17,47 +17,64 @@ weight: 1
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
+  {{< image_in_row src="/images/NumbersStudents1.webp" >}}
+  {{< image_in_row src="/images/NumbersStudents2.webp" >}}
+  {{< image_in_row src="/images/NumbersStudents3.webp" >}}
+  {{< image_in_row src="/images/NumbersStudents4.webp" >}}
+  {{< image_in_row src="/images/NumbersStudents5.webp" >}}
   {{< number_in_row value="200+" unit="Students" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+  {{< image_in_row src="/images/NumbersStudents6.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
+  {{< image_in_row src="/images/NumbersLaunches1.webp" >}}
+  {{< image_in_row src="/images/NumbersLaunches2.webp" >}}
+  {{< image_in_row src="/images/NumbersLaunches3.webp" >}}
+  {{< image_in_row src="/images/NumbersLaunches4.webp" >}}
   {{< number_in_row value="50+" unit="Launches" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+  {{< image_in_row src="/images/NumbersLaunches5.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
+  {{< image_in_row src="/images/NumbersProjects1.webp" >}}
+  {{< image_in_row src="/images/NumbersProjects2.webp" >}}
+  {{< image_in_row src="/images/NumbersProjects3.webp" >}}
   {{< number_in_row value="15" unit="Projects" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+  {{< image_in_row src="/images/NumbersProjects4.webp" >}}
+  {{< image_in_row src="/images/NumbersProjects5.webp" >}}
+  {{< image_in_row src="/images/NumbersProjects6.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
+  {{< image_in_row src="/images/NumbersAwards1.webp" >}}
   {{< number_in_row value="7" unit="Awards in competition">}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+  {{< image_in_row src="/images/NumbersAwards2.webp" >}}
+  {{< image_in_row src="/images/NumbersAwards3.webp" >}}
+  {{< image_in_row src="/images/NumbersAwards4.webp" >}}
+  {{< image_in_row src="/images/NumbersAwards5.webp" >}}
+  {{< image_in_row src="/images/NumbersAwards6.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
   {{< number_in_row value="4" unit="Research papers">}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents3.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents4.jpg" >}}
-  {{< image_in_row src="/images/originalQuality/NumbersStudents5.jpg" >}}
+  {{< image_in_row src="/images/NumbersResearch1.webp" >}}
+  {{< image_in_row src="/images/NumbersResearch2.webp" >}}
+  {{< image_in_row src="/images/NumbersResearch3.webp" >}}
+  {{< image_in_row src="/images/NumbersResearch4.webp" >}}
+  {{< image_in_row src="/images/NumbersResearch5.webp" >}}
+  {{< image_in_row src="/images/NumbersResearch6.webp" >}}
+  {{< image_in_row src="/images/NumbersResearch7.webp" >}}
 {{< /image_row >}}
+
+{{< separator margin="0 30px">}}
 
 {{<join-us>}}
 
