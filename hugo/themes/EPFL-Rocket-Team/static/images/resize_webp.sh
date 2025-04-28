@@ -1,6 +1,6 @@
 #!/bin/bash
 
-target_height=512
+target_height=256
 
 find . -maxdepth 1 -type f -name "Numbers*.webp" -print0 | while IFS= read -r -d $'\0' file; do
   if identify -format "%h" "$file" | grep -Eq "^[0-9]+$"; then
