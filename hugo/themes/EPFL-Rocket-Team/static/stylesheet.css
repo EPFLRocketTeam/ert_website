@@ -1433,6 +1433,7 @@ h6 span{
 .image-container img {
   display: inline-block;
   height: 100px;
+  width: auto;
 }
 
 .row-number {
