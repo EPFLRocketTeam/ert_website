@@ -65,13 +65,13 @@ h4 {
   background-color: #1e1e1e;
   padding: 10px;
   border-radius: 10px;
-border: none;
+  border: none;
   cursor: pointer;
 }
 
 .button-right::after,
 .button-left::after {
-  font-size: 1.6vw;
+  font-size: 18px;
   font-weight: 200;
   vertical-align: baseline;
 }
@@ -87,7 +87,9 @@ border: none;
 .button-right:hover,
 .button-left:hover {
   cursor: pointer;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  background-color: #333333;
+  transition: 200ms;
 }
 
 .right-align {
