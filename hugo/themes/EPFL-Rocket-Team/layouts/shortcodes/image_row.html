@@ -3,6 +3,7 @@
   x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
   @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
   style="display: flex; align-items: center; padding: 5px 0; {{ with .Get "margin" }}margin: {{ . }};{{ end }}"
+  x-cloak
 >
   {{ .Inner }}
 </div>
