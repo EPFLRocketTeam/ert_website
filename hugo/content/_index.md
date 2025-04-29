@@ -42,8 +42,8 @@ weight: 1
 {{< image_row margin="0 30px" >}}
   {{< image_in_row src="/images/NumbersProjects1.webp" >}}
   {{< image_in_row src="/images/NumbersProjects2.webp" >}}
-  {{< image_in_row src="/images/NumbersProjects3.webp" >}}
   {{< number_in_row value="15" unit="Projects" >}}
+  {{< image_in_row src="/images/NumbersProjects3.webp" >}}
   {{< image_in_row src="/images/NumbersProjects4.webp" >}}
   {{< image_in_row src="/images/NumbersProjects5.webp" >}}
   {{< image_in_row src="/images/NumbersProjects6.webp" >}}
