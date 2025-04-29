@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>semester-projects on EPFL Rocket Team</title>
+    <title>Semester Projects on EPFL Rocket Team</title>
     <link>http://localhost:1313/join-us/semester-projects/</link>
-    <description>Recent content in semester-projects on EPFL Rocket Team</description>
+    <description>Recent content in Semester Projects on EPFL Rocket Team</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-UK</language>
     <managingEditor>me@example.com (John Doe)</managingEditor>

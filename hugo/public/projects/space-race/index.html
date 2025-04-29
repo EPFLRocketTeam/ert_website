@@ -599,6 +599,76 @@ function hideMenu() {
 <p>The 2024-25 edition of the Space Race programme marked an exciting chapter in aerospace innovation within the ERT community. This year, 80 members participated, divided into ten teams. The challenge centered around building a Level 1 rocket compliant with Tripoli Amateur Launchers Association standards. Teams also had the option to deploy a CanSat at the apogee, while some chose to launch and safely recover a raw egg. The edition showcased a diverse range of designs and strategies.</p>
 <p>Throughout the programme, experienced members mentored the students, ensuring high standards in design and engineering and fostering valuable knowledge transfer to the next generation of aerospace innovators.</p>
 <h1 id="gallery">Gallery</h1>
+<head>
+    <style>
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+        }
+
+        div.scroll-container {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        }
+
+
+        .scroll-container:before,
+        .scroll-container:after {
+        position: absolute;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        content: "";
+        z-index: 2;
+        }
+
+        .scroll-container:hover .scroll {
+        animation-play-state: paused;
+        }
+
+        .scroll-container .scroll {
+            display: inline-block;
+            left: 0;
+            animation: 28s slide infinite linear;
+        }
+
+        div.scroll-container img {
+        max-height: 50vh;
+        width: auto;
+        max-width: 800px;
+        margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scroll-container">
+        <div class="scroll">
+        <img src="/images/originalQuality/spacerace-image1.jpg">
+        <img src="/images/originalQuality/spacerace-image4.png">
+        <img src="/images/originalQuality/spacerace-image2.jpg">
+        <img src="/images/originalQuality/spacerace-image3.jpg">        
+        <img src="/images/originalQuality/spacerace-image5.png">
+        <img src="/images/originalQuality/spacerace-image6.jpg">
+        </div>
+        <div class="scroll">
+            <img src="/images/originalQuality/spacerace-image1.jpg">
+            <img src="/images/originalQuality/spacerace-image4.png">
+            <img src="/images/originalQuality/spacerace-image2.jpg">
+            <img src="/images/originalQuality/spacerace-image3.jpg">        
+            <img src="/images/originalQuality/spacerace-image5.png">
+            <img src="/images/originalQuality/spacerace-image6.jpg">
+            </div>
+    </div> 
+
+   
+</body>
 
 </content>
 <p>

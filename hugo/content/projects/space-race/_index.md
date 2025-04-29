@@ -44,4 +44,6 @@ Throughout the programme, experienced members mentored the students, ensuring hi
 
 # Gallery
 
+{{< gallery >}}
+
 
