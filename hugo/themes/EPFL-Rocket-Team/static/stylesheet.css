@@ -1488,7 +1488,7 @@ h6 span{
   opacity: 0;
 }
 
-@media (hover: none) {
+@media (hover: none), (max-width: 768px) {
   .opacity-0 {
     opacity: 1 !important; /* Override the opacity-0 class on smaller screens */
   }
