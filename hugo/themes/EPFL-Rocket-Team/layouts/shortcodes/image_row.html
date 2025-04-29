@@ -1,3 +1,28 @@
-<div class="image-row" x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false" style="display: flex; align-items: center; padding: 5px 0; {{ with .Get "margin" }}margin: {{ . }};{{ end }}">
+<div
+  class="image-row"
+  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
+  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
+  style="display: flex; align-items: center; padding: 5px 0; {{ with .Get "margin" }}margin: {{ . }};{{ end }}"
+>
   {{ .Inner }}
 </div>
+
+<style>
+@media (hover: hover) {
+  .image-row:hover .image_in_row img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px), (hover: none) {
+  .image-row .image_in_row img {
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+.image-row .image_in_row img {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+</style>
