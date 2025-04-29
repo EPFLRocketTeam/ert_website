@@ -44,7 +44,7 @@
   <meta itemprop="description" content="our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn Designing and manufacturing a supersonic bi-liquid rocket for international competitions">
   <meta itemprop="datePublished" content="2025-03-13T19:36:46+01:00">
   <meta itemprop="dateModified" content="2025-03-13T19:36:46+01:00">
-  <meta itemprop="wordCount" content="384">
+  <meta itemprop="wordCount" content="385">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -59,7 +59,8 @@
 
   
 <link rel="stylesheet" href="/fonts.css">
-<link rel="stylesheet" href="/stylesheet.css">
+<link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/stylesheet.css"></noscript>
 <style>
   * {
     box-sizing: border-box;
@@ -83,7 +84,6 @@
   h1 {
     font-family: 'Aspekta';
     font-size: 64px;
-    font-weight: 400;
     pointer-events: none;
   }
 
@@ -256,6 +256,9 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   
+  <script defer src="https://tracking.epfl-rocket-team.ch/script.js" data-website-id="0a937710-4539-4a20-8b1c-0a711f3a0e52"></script>
+
+  
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -283,7 +286,7 @@
   
       <header style="position: relative; width: 100%; height: 100vh; overflow: hidden;" class="header">
 	
-	<video autoplay muted loop preload="none">
+	<video autoplay muted loop playsinline preload="none">
 		<source src="/images/uploads/2024_trailer_ert.mp4" type="video/mp4">
   </video>
 	
@@ -383,7 +386,7 @@
 			<li><a class="desktop-menu-item" href="/fr/">🇫🇷</a></li>
 			
 			
-			<li><button id="menuButton" style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="toggleMenu()">☰</button></li>
+			<li><button id="menuButton" style="font-size: 40px;" class="menu-icon" onclick="toggleMenu()">☰</button></li>
 		</ul>
 
 	<div class="mobile-menu-items">
@@ -432,9 +435,9 @@
         <div style="display: inline-block; text-align: left;">
           
           <hr style="display: block; width: 100%; border: 1px solid white; margin: 0;">
-          <div style="height: 2.6vw"></div>
+          <div style="height: 4px"></div>
           
-          <h1 style="line-height: 40px; font-family: 'Aspekta-500'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0;">
+          <h1 style="line-height: 8vw; font-family: 'Aspekta-600'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0;">
             EPFL ROCKET TEAM
           </h1>
         </div>
@@ -537,13 +540,7 @@ function hideMenu() {
           color: white;
         }
 
-        .our-project-list > div:hover h1 {
-          color: #da291c;
-        }
-
-        .our-project-list > div:hover p {
-          color: #da291c;
-        }
+         
 
         @media (max-width: 744px) {
             #our-projects {
@@ -576,25 +573,25 @@ function hideMenu() {
         <h2 class="zero-margin">The EPFL Rocket Team is currently engaged in four different projects</h2>
         <div id="our-projects">
             <div class="our-project-list">
-                <div class="zero-margin" id="op-firehorn" onmouseover="setProjectImage('/images/originalQuality/op_firehorn.png'); highlightProject(1)" class="highlighted-project">
+                <div class="zero-margin" id="op-firehorn" onmouseover="setProjectImage('/images/op_firehorn.webp'); highlightProject(1)" class="highlighted-project">
                     <h1 class="zero-margin">Firehorn</h1>
                     <p class="zero-margin">Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
                 </div>
-                <div id="op-spacerace" onmouseover="setProjectImage('/images/originalQuality/op_spacerace.png'); highlightProject(2)">
+                <div id="op-spacerace" onmouseover="setProjectImage('/images/op_spacerace.webp'); highlightProject(2)">
                     <h1 class="zero-margin">Space Race</h1>
                     <p class="zero-margin">Training students in aerospace technologies</p>
                 </div>
-                <div id="op-icarus" onmouseover="setProjectImage('/images/originalQuality/op_icarus.png'); highlightProject(3)">
+                <div id="op-icarus" onmouseover="setProjectImage('/images/op_icarus.webp'); highlightProject(3)">
                     <h1 class="zero-margin">Icarus</h1>
                     <p class="zero-margin">Developing efficient GNC algorithms and crafting Space-X style re-landing systems</p>
                 </div>
-                <div id="op-hyperion" onmouseover="setProjectImage('/images/originalQuality/op_hyperion.png'); highlightProject(4)">
+                <div id="op-hyperion" onmouseover="setProjectImage('/images/op_hyperion.webp'); highlightProject(4)">
                     <h1 class="zero-margin">Hyperion</h1>
                     <p class="zero-margin">Developing cutting-edge fully in-house bi-liquid propellant engines</p>
                 </div>
             </div>
             <div class="our-project-images">
-                <img loading="lazy" src="/images/originalQuality/op_firehorn.png" id="project-image">
+                <img loading="lazy" src="/images/op_firehorn.webp" id="project-image">
             </div>
         </div>
         <button type="button" onclick="location.href='/projects/'" class="button-right right-align gray-button">discover all our projects</button>
@@ -620,17 +617,17 @@ function hideMenu() {
 </body>
 
 <body>
-   <div class="main" style="padding: 30px; width: 100%">
+   <div class="main" style="padding: 0 30px; width: 100%">
     <div class="page">our mission</div>
     <div class="parent-mission zero-margin">
         <div class="mission1 zero-margin">
             <h4 class="zero-margin">Engaging students in space technology projects, in collaboration with academia and industry partners</h4>
         </div>
-        <div class="mission2 zero-margin"><img loading="lazy" src="/images/originalQuality/BuildingParts1.jpeg"></div>
-        <div class="mission3 zero-margin"><img loading="lazy" src="/images/originalQuality/RocketLaunch1.jpeg"></div>
-        <div class="mission4 zero-margin"><img loading="lazy" src="/images/originalQuality/RocketBuilding2.jpeg"></div>
-        <div class="mission5 zero-margin"><img loading="lazy" src="/images/originalQuality/RocketBuilding3.jpeg"></div>
-        <div class="mission6 zero-margin"><img loading="lazy" src="/images/originalQuality/RocketBuilding1.jpeg"></div>
+        <div class="mission2 zero-margin"><img loading="lazy" src="/images/BuildingParts1.webp"></div>
+        <div class="mission3 zero-margin"><img loading="lazy" src="/images/RocketLaunch1.webp"></div>
+        <div class="mission4 zero-margin"><img loading="lazy" src="/images/RocketBuilding2.webp"></div>
+        <div class="mission5 zero-margin"><img loading="lazy" src="/images/RocketBuilding3.webp"></div>
+        <div class="mission6 zero-margin"><img loading="lazy" src="/images/RocketBuilding1.webp"></div>
         <div class="mission7 zero-margin">
             <button type="button" onclick="location.href='/about/board/'" class="button-right">Read our story and discover the team </button>
         </div>
@@ -642,10 +639,8 @@ function hideMenu() {
 <div class="main"> 
 <div class="page" style="padding: 30px;">our past and future competition projects</div>
 
-<div style="width: auto; margin: 30px;">
+<div style="width: calc(100% - 60px); margin: 30px;">
 <svg
-   width="auto"
-   height="auto"
    viewBox="0 0 1461 812"
    fill="none"
    version="1.1"
@@ -1145,166 +1140,357 @@ function hideMenu() {
 </div>
 
 
-<body>
     <div class="main zero-margin" style="padding: 30px; width: 100%">
         <div class="page">the epfl rocket team in numbers</div>
-        <div class="numbers-box" style="width: auto; right: 0">
-            <div class="numbers-line numbers-students">
-                <img loading="lazy" src="/images/originalQuality/NumbersStudents1.png" style="height: 100px; width: 180px; object-fit: cover; " id="ns1">
-
-                <img loading="lazy" src="/images/originalQuality/NumbersStudents2.jpg" height="100"  id="ns2">
-
-                <div class="numbers-crop"  id="ns3">
-                    <img loading="lazy" src="/images/originalQuality/NumbersStudents3.jpg" width="409.6" height="273.12" style="width: 298px; object-fit: cover; object-position: 0% 70%; bottom: 120px;">
-                </div>
-
-                <div class="numbers-crop"  id="ns4">
-                    <img loading="lazy" src="/images/originalQuality/NumbersStudents4.jpg" width="409.6" height="273.12" style="width: 237px; object-fit: cover; object-position: 60% 0%; bottom: 80px;">
-                </div>
-
-                <img loading="lazy" src="/images/originalQuality/NumbersStudents5.jpg" style="height: 100px; width: 141px; object-fit: cover; " id="ns5">
-
-                <img loading="lazy" src="/images/originalQuality/NumbersStudents6.jpg" style="height: 100px; width: 166px; object-fit: cover; " id="ns6">
-
-                <div class="numbers" id="numstudents">
-                    <h3 class="zero-margin">200+</h3>
-                    <p class="zero-margin" style=" position: relative; top: 80px; left: 5px;">Students</p>
-                </div>
-                
-            </div>
-            <div class="numbers-line numbers-launches">
-                <div class="numbers-crop"  id="nl1">
-                    <img loading="lazy" src="/images/originalQuality/NumbersLaunches1.png" height="300" width="815" style="width: 277px; object-fit: cover; object-position: 16% 0%;">
-                </div>
-                <div class="numbers-crop"  id="nl2">
-                    <img loading="lazy" src="/images/originalQuality/NumbersLaunches2.jpg" height="180" width="489" style="width: 255px; object-fit: cover; object-position: 50% 100%; bottom: 70px;">
-                </div>
-
-                <div class="numbers-crop"  id="nl3">
-                    <img loading="lazy" src="/images/originalQuality/NumbersLaunches3.jpg" style="width: 186px; height: auto; object-fit: cover; bottom: 168px;">
-                </div>
-
-                <div class="numbers-crop"  id="nl4">
-                    <img loading="lazy" src="/images/originalQuality/NumbersLaunches4.jpg" style="width: 186px; height: auto; object-fit: cover; bottom: 90px;">
-                </div>
-
-                <div class="numbers-crop"  id="nl5">
-                    <img loading="lazy" src="/images/originalQuality/NumbersLaunches5.jpg" style="width: 303px; height: auto; object-fit: cover; bottom: 70px;">
-                </div>
-
-                <div class="numbers" id="numlaunches">
-                    <h3 class="zero-margin">50+</h3>
-                    <p class="zero-margin" style="position: relative; top: 80px; left: 5px;">Launches</p>
-                </div>
-            </div>
-            <div class="numbers-line numbers-projects">
-                <div class="numbers-crop"  id="np1">
-                    <img loading="lazy" src="/images/originalQuality/NumbersProjects1.jpg" height="290.4" width="387.2" style="width: 376px; object-fit: cover; bottom: 95px;">
-                </div>
-
-                <div class="numbers-crop"  id="np2">
-                    <img loading="lazy" src="/images/originalQuality/NumbersProjects2.jpg"  style="width: 143px; height:100px; object-fit: cover; object-position: 0% 0%;">
-                </div>
-
-                <div class="numbers-crop"  id="np3">
-                    <img loading="lazy" src="/images/originalQuality/NumbersProjects3.jpg" height="" width="" style="width: 187px; height:100px; object-fit: cover;">
-                </div>
-
-                <div class="numbers-crop"  id="np4">
-                    <img loading="lazy" src="/images/originalQuality/NumbersProjects4.jpg" height="" width="" style="width: 244px; object-fit: cover; bottom:35px;">
-                </div>
-
-                <div class="numbers-crop"  id="np5">
-                    <img loading="lazy" src="/images/originalQuality/NumbersProjects5.jpg" height="270" width="360" style="width: 277px; object-fit: cover; object-position: 0% 0%; bottom:140px;">
-                </div>
-                
-                
-
-                <div class="numbers" id="numprojects">
-                    <h3 class="zero-margin">15</h3>
-                    <p class="zero-margin" style="position: relative; top: 80px; left: 5px;">Projects</p>
-                </div>
-            </div>
-            <div class="numbers-line numbers-awards">
-                <div class="numbers-crop"  id="na1">
-                    <img loading="lazy" src="/images/originalQuality/NumbersAwards1.png" height="" width="" style="height: 100px; object-fit: cover;">
-                </div>
-
-                <div class="numbers-crop"  id="na2">
-                    <img loading="lazy" src="/images/originalQuality/NumbersAwards2.jpg" height="" width="" style="width: 143px; height:100px; object-fit: cover; top: 0px;">
-                </div>
-
-                <div class="numbers-crop"  id="na3">
-                    <img loading="lazy" src="/images/originalQuality/NumbersAwards3.jpg" height="97.50" width="150" style="width: 153px; height: 100px; object-fit: cover;">
-                </div>
-
-                <div class="numbers-crop"  id="na4">
-                    <img loading="lazy" src="/images/originalQuality/NumbersAwards4.jpg" height="" width="" style="width: 126px; height:100px; object-fit: cover; bottom: 0px;">
-                </div>
-
-                <div class="numbers-crop"  id="na5">
-                    <img loading="lazy" src="/images/originalQuality/NumbersAwards5.jpg" height="161" width="241" style="width: 209px;  object-fit: cover; bottom: 25px;">
-                </div>
-
-                <div class="numbers-crop"  id="na6">
-                    <img loading="lazy" src="/images/originalQuality/NumbersAwards6.png" height="110" width="254.1" style="width: 246px; object-fit: cover; bottom: 3px;">
-                </div>
-
-                <div class="numbers-crop"  id="na7">
-                    <img loading="lazy" src="/images/originalQuality/NumbersAwards7.jpg" height="" width="" style="width: 236px; object-fit: cover; bottom: 0px;">
-                </div>
-
-                <div class="numbers" id="numawards">
-                    <h3 class="zero-margin">7</h3>
-                    <p class="zero-margin" style="position: relative; top: 80px; left: 5px;">Awards in competition</p>
-                </div>
-            </div>
-
-            <div class="numbers-line numbers-research">
-                <div class="numbers-crop"  id="nr1">
-                    <img loading="lazy" src="/images/originalQuality/NumbersResearch1.jpg" height="180" width="250" style="width: 236px; object-fit: cover; bottom: 40px;">
-                </div>
-
-                <div class="numbers-crop"  id="nr2">
-                    <img loading="lazy" src="/images/originalQuality/NumbersResearch2.jpg" height="" width="" style="width: 236px; height:100px; object-fit: cover; top: 0px;">
-                </div>
-
-                <div class="numbers-crop"  id="nr3">
-                    <img loading="lazy" src="/images/originalQuality/NumbersResearch3.jpg" style="width: 230px; height: 100px; object-fit: cover;">
-                </div>
-
-                <div class="numbers-crop"  id="nr4">
-                    <img loading="lazy" src="/images/originalQuality/NumbersResearch4.jpg" height="" width="" style="width: 128px; height:100px; object-fit: cover; object-position: 0% 80%;">
-                </div>
-
-                <div class="numbers-crop"  id="nr5">
-                    <img loading="lazy" src="/images/originalQuality/NumbersResearch5.jpg" style="width: 171px;  object-fit: cover; bottom: 15px;">
-                </div>
-
-                <div class="numbers-crop"  id="nr6">
-                    <img loading="lazy" src="/images/originalQuality/NumbersResearch6.png" style="width: 75px; height:100px; object-fit: cover;">
-                </div>
-                
-                <div class="numbers-crop"  id="nr7"><img loading="lazy" src="/images/originalQuality/NumbersResearch7.jpg" height="" width="" style="width: 108px; object-fit: cover;">
-                </div>
-
-                <div class="numbers">
-                    <h3 class="zero-margin">4</h3>
-                    <p class="zero-margin" style="position: relative; top: 80px; left: 5px;">Research papers</p>
-                </div>
-            </div>
-        </div>
+        
          
     </div>
-</body>
 
-    <div class="main zero-margin" style="padding: 30px; width: 100%;">
+
+<div style="
+  height: 1px;
+  background-color: #aaa;
+margin: 0 30px;
+  ">
+</div>
+
+<div
+  class="image-row"
+  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
+  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
+  style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
+  x-cloak
+>
+  
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersStudents1.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersStudents2.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersStudents3.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersStudents4.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersStudents5.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <h3 class="zero-margin number-row-target">200&#43;</h3>
+  <p style="margin: auto 8px 0 0">Students</p>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersStudents6.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+
+</div>
+
+<style>
+@media (hover: hover) {
+  .image-row:hover .image_in_row img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px), (hover: none) {
+  .image-row .image_in_row img {
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+.image-row .image_in_row img {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+</style>
+
+
+<div style="
+  height: 1px;
+  background-color: #aaa;
+margin: 0 30px;
+  ">
+</div>
+
+<div
+  class="image-row"
+  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
+  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
+  style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
+  x-cloak
+>
+  
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersLaunches1.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersLaunches2.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersLaunches3.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersLaunches4.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <h3 class="zero-margin number-row-target">50&#43;</h3>
+  <p style="margin: auto 8px 0 0">Launches</p>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersLaunches5.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+
+</div>
+
+<style>
+@media (hover: hover) {
+  .image-row:hover .image_in_row img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px), (hover: none) {
+  .image-row .image_in_row img {
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+.image-row .image_in_row img {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+</style>
+
+
+<div style="
+  height: 1px;
+  background-color: #aaa;
+margin: 0 30px;
+  ">
+</div>
+
+<div
+  class="image-row"
+  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
+  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
+  style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
+  x-cloak
+>
+  
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersProjects1.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersProjects2.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <h3 class="zero-margin number-row-target">15</h3>
+  <p style="margin: auto 8px 0 0">Projects</p>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersProjects3.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersProjects4.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersProjects5.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersProjects6.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+
+</div>
+
+<style>
+@media (hover: hover) {
+  .image-row:hover .image_in_row img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px), (hover: none) {
+  .image-row .image_in_row img {
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+.image-row .image_in_row img {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+</style>
+
+
+<div style="
+  height: 1px;
+  background-color: #aaa;
+margin: 0 30px;
+  ">
+</div>
+
+<div
+  class="image-row"
+  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
+  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
+  style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
+  x-cloak
+>
+  
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersAwards1.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <h3 class="zero-margin number-row-target">7</h3>
+  <p style="margin: auto 8px 0 0">Awards in competition</p>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersAwards2.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersAwards3.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersAwards4.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersAwards5.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersAwards6.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+
+</div>
+
+<style>
+@media (hover: hover) {
+  .image-row:hover .image_in_row img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px), (hover: none) {
+  .image-row .image_in_row img {
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+.image-row .image_in_row img {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+</style>
+
+
+<div style="
+  height: 1px;
+  background-color: #aaa;
+margin: 0 30px;
+  ">
+</div>
+
+<div
+  class="image-row"
+  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
+  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
+  style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
+  x-cloak
+>
+  
+  <h3 class="zero-margin number-row-target">4</h3>
+  <p style="margin: auto 8px 0 0">Research papers</p>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersResearch1.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersResearch2.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersResearch3.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersResearch4.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersResearch5.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersResearch6.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+  <div class="image-container">
+    <img loading="lazy" src="/images/NumbersResearch7.webp" alt="Image" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  </div>
+
+
+</div>
+
+<style>
+@media (hover: hover) {
+  .image-row:hover .image_in_row img {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px), (hover: none) {
+  .image-row .image_in_row img {
+    opacity: 1 !important;
+    transition: none !important;
+  }
+}
+
+.image-row .image_in_row img {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+</style>
+
+
+<div style="
+  height: 1px;
+  background-color: #aaa;
+margin: 0 30px;
+  ">
+</div>
+
+    <div class="main zero-margin" style="padding: 30px 30px 0 30px; width: 100%;">
             <div class="parent zero-margin" style="padding: 0; width: 100%;">
-                <div class="div1"><img loading="lazy" src="/images/originalQuality/RocketTeam1.jpeg"></div>
-                <div class="div2"><img loading="lazy" src="/images/originalQuality/S9FlightAward.jpeg"></div>
-                <div class="div3"><img loading="lazy" src="/images/originalQuality/RocketLaunch2.jpeg"></div>
-                <div class="div4"><img loading="lazy" src="/images/originalQuality/RocketBuilding4.jpeg"></div>
-                <div class="div5"><img loading="lazy" src="/images/originalQuality/RocketLaunch3.jpeg"></div>
+                <div class="div1"><img loading="lazy" src="/images/RocketTeam1.webp"></div>
+                <div class="div2"><img loading="lazy" src="/images/S9FlightAward.webp"></div>
+                <div class="div3"><img loading="lazy" src="/images/RocketLaunch2.webp"></div>
+                <div class="div4"><img loading="lazy" src="/images/RocketBuilding4.webp"></div>
+                <div class="div5"><img loading="lazy" src="/images/RocketLaunch3.webp"></div>
                 <div class="div6" style="position: relative; top: 20px;">
                     <div style="text-align: right;"><h2 style="font-size: 30px;">Want to be part of the adventure?</h2></div>
                     <button type="button" onclick="location.href='/join-us/'" class="button-right right-align">learn more and join us </button>
@@ -1390,25 +1576,24 @@ function hideMenu() {
   }
       </style>
 </head>
-<body>
-  <div class="main" style="padding: 30px;">
-    <div class="page zero-margin">sponsors</div>
-    <h1 class="zero-margin">They believe in us</h1>
-    <button type="button" onclick="location.href='/sponsors/'" class="button-right right-align">discover all our sponsors </button>
-    <div class="container zero-margin">
-      <div class="column"><img loading="lazy" src="/images/originalQuality/EPFL.png"></div>
-      <div class="column"><img loading="lazy" src="/images/originalQuality/apco.png"></div>
-      <div class="column"><img loading="lazy" src="/images/originalQuality/KISTLER.png"></div>
-      <div class="column"><img loading="lazy" src="/images/originalQuality/3DprecisionSA.png"></div>
-      <div class="column"><img loading="lazy" src="/images/originalQuality/maxon.png"></div>
-      <div class="column"><img loading="lazy" src="/images/originalQuality/CFturbo.png"></div>
-      <div class="column"><img loading="lazy" src="/images/originalQuality/cadfem.png"></div>
-      <div class="column"><img loading="lazy" src="/images/originalQuality/HeliAlps.png"></div>
-    </div>
-    <h2>Become our sponsor and support us!</h2>
-    <button type="button" onclick="location.href='/sponsors/'" class="button-right">learn more and become a sponsor </button>
+
+<div class="main" style="padding: 30px;">
+  <div class="page zero-margin">sponsors</div>
+  <h1 class="zero-margin">They believe in us</h1>
+  <button type="button" onclick="location.href='/sponsors/'" class="button-right right-align">discover all our sponsors </button>
+  <div class="container zero-margin">
+    <div class="column"><img loading="lazy" src="/images/EPFL.webp"></div>
+    <div class="column"><img loading="lazy" src="/images/apco.webp"></div>
+    <div class="column"><img loading="lazy" src="/images/KISTLER.webp"></div>
+    <div class="column"><img loading="lazy" src="/images/3DprecisionSA.webp"></div>
+    <div class="column"><img loading="lazy" src="/images/maxon.webp"></div>
+    <div class="column"><img loading="lazy" src="/images/CFturbo.webp"></div>
+    <div class="column"><img loading="lazy" src="/images/cadfem.webp"></div>
+    <div class="column"><img loading="lazy" src="/images/HeliAlps.webp"></div>
   </div>
-</body>
+  <h2>Become our sponsor and support us!</h2>
+  <button type="button" onclick="location.href='/sponsors/'" class="button-right">learn more and become a sponsor </button>
+</div>
 
 <style>
     .prev, .next {
@@ -1462,6 +1647,11 @@ function hideMenu() {
     }
 </style>
 
+<div class="main" style="padding: 0 30px;">
+  <div class="page zero-margin">testimonials</div>
+</div>
+
+
 <div class="swiper">
   
   <div class="swiper-wrapper">
@@ -1476,7 +1666,7 @@ technically and organisationally. A practical project like this one is a
 perfect companion to a mostly theoretical study like the one at EPFL.”
         </div>
         <div class="testimonial-bio">
-          <img loading="lazy" src="/images/originalQuality/TheophileBalestrini.png">
+          <img loading="lazy" src="/images/TheophileBalestrini.webp">
           <div class="testimonial-bio-text">
             <h1 style="margin: 0;">Theophile Balestrini</h1>
             <p style="margin: 0;">System Engineer</p>
@@ -1490,7 +1680,7 @@ perfect companion to a mostly theoretical study like the one at EPFL.”
           “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
         </div>
         <div class="testimonial-bio">
-          <img loading="lazy" src="/images/originalQuality/RocketLaunch3.jpeg">
+          <img loading="lazy" src="/images/RocketLaunch3.webp">
           <div class="testimonial-bio-text">
             <h1 style="margin: 0;">John Doe</h1>
             <p style="margin: 0;">Team Member</p>
@@ -1504,7 +1694,7 @@ perfect companion to a mostly theoretical study like the one at EPFL.”
           “Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.”
         </div>
         <div class="testimonial-bio">
-          <img loading="lazy" src="/images/originalQuality/RocketBuilding3.jpeg">
+          <img loading="lazy" src="/images/RocketBuilding3.webp">
           <div class="testimonial-bio-text">
             <h1 style="margin: 0;">Name Surname</h1>
             <p style="margin: 0;">Team Member</p>
@@ -1553,7 +1743,7 @@ perfect companion to a mostly theoretical study like the one at EPFL.”
 	     <input type="text" id="fname" name="fname" placeholder="YOUR EMAIL" 
   style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;">
        <div style="align-content: center; height: 48px; padding-left: 8px;">
-        <button type="button" onclick="location.href='/'" class="button-right"></button>
+        <button type="button" onclick="location.href='/'" class="button-right" aria-label="subscribe to newsletter"></button>
        </div>
 </div>
     </div>

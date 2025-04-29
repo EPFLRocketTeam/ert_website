@@ -65,13 +65,13 @@ h4 {
   background-color: #1e1e1e;
   padding: 10px;
   border-radius: 10px;
-border: none;
+  border: none;
   cursor: pointer;
 }
 
 .button-right::after,
 .button-left::after {
-  font-size: 1.6vw;
+  font-size: 18px;
   font-weight: 200;
   vertical-align: baseline;
 }
@@ -87,7 +87,9 @@ border: none;
 .button-right:hover,
 .button-left:hover {
   cursor: pointer;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  background-color: #333333;
+  transition: 200ms;
 }
 
 .right-align {
@@ -433,7 +435,7 @@ textarea {
   width: 105vw;
   height: 130vh;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   gap: 15px;
 }
 
@@ -1024,7 +1026,7 @@ h6 span{
   .div6 {
     grid-row-start: 8;
     grid-column-start: 1;
-    grid-row-end: 9;
+    grid-row-end: 10;
     grid-column-end: 7;
   }
 
@@ -1045,7 +1047,7 @@ h6 span{
   .mission1 {
     grid-row-start: 1;
     grid-column-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 5;
     grid-column-end: 7;
   }
 
@@ -1082,10 +1084,10 @@ h6 span{
   }
 
   .mission7 {
-    grid-row-start: 6;
+    grid-row-start: 5;
     grid-column-start: 1;
     grid-row-end: 7;
-    grid-column-end: 6;
+    grid-column-end: 7;
   }
 
   #numstudents{
@@ -1409,4 +1411,93 @@ h6 span{
   }
 }
 
+.image-row {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
 
+.image-row:last-child {
+  border-bottom: none;
+}
+
+.image-container {
+  flex-shrink: 0;
+  margin: 1px 10px 0 0;
+  height: 100px;
+}
+
+.image-container img {
+  display: inline-block;
+  height: 100px;
+  width: auto;
+}
+
+.row-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin-right: 20px;
+  flex-shrink: 0;
+  width: auto; /* Adjust if needed */
+  text-align: left; /* Adjust if needed */
+}
+
+.text-container {
+  flex-grow: 1;
+  font-size: 0.9em;
+  color: #555;
+  margin-left: 20px; /* Adjust as needed */
+}
+
+/* Mobile adjustments (review and adapt as needed) */
+@media (max-width: 768px) {
+  .image-row {
+    flex-direction: row; /* Or column, depending on desired mobile layout */
+    align-items: flex-start;
+    overflow-x: auto; /* Keep horizontal scroll for images */
+    white-space: nowrap; /* Keep images in a row */
+  }
+
+  .image-container {
+    margin-right: 5px;
+  }
+
+  .image-container img {
+    height: 100px;
+  }
+
+  .text-container {
+    font-size: 1em;
+    margin-left: 10px;
+  }
+
+  .row-number {
+    font-size: 1.5em;
+    margin-right: 10px;
+  }
+}
+
+
+
+
+.opacity-0 {
+  opacity: 0;
+}
+
+@media (hover: none), (max-width: 768px) {
+  .opacity-0 {
+    opacity: 1 !important; /* Override the opacity-0 class on smaller screens */
+  }
+}
+
+.transition-opacity {
+  transition-property: opacity;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}

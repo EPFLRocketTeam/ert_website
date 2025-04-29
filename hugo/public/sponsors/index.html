@@ -56,7 +56,8 @@
 
   
 <link rel="stylesheet" href="/fonts.css">
-<link rel="stylesheet" href="/stylesheet.css">
+<link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/stylesheet.css"></noscript>
 <style>
   * {
     box-sizing: border-box;
@@ -80,7 +81,6 @@
   h1 {
     font-family: 'Aspekta';
     font-size: 64px;
-    font-weight: 400;
     pointer-events: none;
   }
 
@@ -253,6 +253,9 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   
+  <script defer src="https://tracking.epfl-rocket-team.ch/script.js" data-website-id="0a937710-4539-4a20-8b1c-0a711f3a0e52"></script>
+
+  
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -380,7 +383,7 @@
 			<li><a class="desktop-menu-item" href="/fr/sponsors/">🇫🇷</a></li>
 			
 			
-			<li><button id="menuButton" style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="toggleMenu()">☰</button></li>
+			<li><button id="menuButton" style="font-size: 40px;" class="menu-icon" onclick="toggleMenu()">☰</button></li>
 		</ul>
 
 	<div class="mobile-menu-items">
@@ -432,9 +435,9 @@
         <div style="display: inline-block; text-align: left;">
           
           <hr style="display: block; width: 100%; border: 1px solid white; margin: 0;">
-          <div style="height: 2.6vw"></div>
+          <div style="height: 4px"></div>
           
-          <h1 style="line-height: 40px; font-family: 'Aspekta-500'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0;">
+          <h1 style="line-height: 8vw; font-family: 'Aspekta-600'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0;">
             OUR SPONSORS
           </h1>
         </div>
@@ -541,6 +544,7 @@ function hideMenu() {
     max-width: 400px;
      
     text-align: center;
+    padding: 5px;
   }
 
   .prestige-sponsor img {
@@ -553,9 +557,9 @@ function hideMenu() {
 <div class="prestige-box">
   <span class="prestige-label">PRESTIGE</span>
   <div class="prestige-sponsors">
-    <div class="prestige-sponsor"><img src="/images/originalQuality/EPFL.png" alt="EPFL"></div>
-    <div class="prestige-sponsor"><img src="/images/originalQuality/apco.png" alt="Apco Technologies"></div>
-    <div class="prestige-sponsor"><img src="/images/originalQuality/Constellium.png" alt="Constellium"></div>
+    <a class="prestige-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.epfl.ch/"><img src="/images/originalQuality/EPFL.png" alt="EPFL"></a>
+    <a class="prestige-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.apco-technologies.eu/"><img src="/images/originalQuality/apco.png" alt="Apco Technologies"></a>
+    <a class="prestige-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.constellium.com/"><img src="/images/originalQuality/Constellium.png" alt="Constellium"></a>
   </div>
 </div>
 
@@ -607,6 +611,7 @@ function hideMenu() {
     max-width: 400px;
      
     text-align: center;
+    padding: 5px;
   }
 
   .gold-sponsor img {
@@ -620,11 +625,11 @@ function hideMenu() {
 <div class="gold-box">
     <span class="gold-label">GOLD</span>
     <div class="gold-sponsors">
-        <div class="gold-sponsor"><img src="/images/originalQuality/Swagelok.png" alt="Swagelok"></div>
-        <div class="gold-sponsor"><img src="/images/originalQuality/3DprecisionSA.png" alt="3D Precision SA"></div>
-        <div class="gold-sponsor"><img src="/images/originalQuality/KISTLER.png" alt="Kistler"></div>
-        <div class="gold-sponsor"><img src="/images/originalQuality/maxon.png" alt="Maxon"></div>
-        <div class="gold-sponsor"><img src="/images/originalQuality/SchoellerBleckmann.png" alt="Schoeller Bleckmann"></div>
+        <a class="gold-sponsor" target="_blank" rel="noopener noreferrer" href="https://arbor.swagelok.com/en"><img src="/images/originalQuality/Swagelok.png" alt="Swagelok"></a>
+        <a class="gold-sponsor" target="_blank" rel="noopener noreferrer" href="https://3dprecision.ch/"><img src="/images/originalQuality/3DprecisionSA.png" alt="3D Precision SA"></a>
+        <a class="gold-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.kistler.com/en/"><img src="/images/originalQuality/KISTLER.png" alt="Kistler"></a>
+        <a class="gold-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.maxongroup.ch/maxon/view/content/index"><img src="/images/originalQuality/maxon.png" alt="Maxon"></a>
+        <a class="gold-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.sbo.at/"><img src="/images/originalQuality/SchoellerBleckmann.png" alt="Schoeller Bleckmann"></a>
       </div>
 </div>
 
@@ -676,6 +681,7 @@ function hideMenu() {
         max-width: 400px;
          
         text-align: center;
+        padding: 5px;
     }
 
     .silver-sponsor img {
@@ -688,11 +694,11 @@ function hideMenu() {
 <div class="silver-box">
     <span class="silver-label">SILVER</span>
     <div class="silver-sponsors">
-        <div class="silver-sponsor"><img src="/images/originalQuality/Alpian.png" alt="Alpian"></div>
-        <div class="silver-sponsor"><img src="/images/originalQuality/Oppermann.png" alt="Opermann"></div>
-        <div class="silver-sponsor"><img src="/images/originalQuality/CFturbo.png" alt="CFturbo"></div>
-        <div class="silver-sponsor"><img src="/images/originalQuality/CADFEM.jpg" alt="CADFEM"></div>
-        <div class="silver-sponsor"><img src="/images/originalQuality/HeliAlps.png" alt="Heli Alps"></div>
+        <a class="silver-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.alpian.com/fr/"><img src="/images/originalQuality/Alpian.png" alt="Alpian"></a>
+        <a class="silver-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.oprg.ch/fr/"><img src="/images/originalQuality/Oppermann.png" alt="Opermann"></a>
+        <a class="silver-sponsor" target="_blank" rel="noopener noreferrer" href="https://cfturbo.com/"><img src="/images/originalQuality/CFturbo.png" alt="CFturbo"></a>
+        <a class="silver-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.cadfem.net/ch/fr/home.html"><img src="/images/originalQuality/CADFEM.jpg" alt="CADFEM"></a>
+        <a class="silver-sponsor" target="_blank" rel="noopener noreferrer" href="https://helialps.ch/"><img src="/images/originalQuality/HeliAlps.png" alt="Heli Alps"></a>
       </div>
 </div>
 
@@ -744,6 +750,7 @@ function hideMenu() {
         max-width: 400px;
          
         text-align: center;
+        padding: 5px;
     }
 
     .bronze-sponsor img {
@@ -757,23 +764,23 @@ function hideMenu() {
 <div class="bronze-box">
     <span class="bronze-label">BRONZE</span>
     <div class="bronze-sponsors">
-        <div class="bronze-sponsor"><img src="/images/originalQuality/ABPRO.png" alt="ABPRO"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/SwayTronic.png" alt="Sway Tronic"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/norelem.png" alt="norelem"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/FocusWater.webp" alt="Focus Water"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/makita.png" alt="Makita"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/MeiliTechnology.png" alt="Meili Meili Technology"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/ChezMario.png" alt="Chez Mario"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/SolidWorks.jpg" alt="Solid Works"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/StudioValour.jpg" alt="Studio Valour"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/Distrelec.png" alt="Distrelec"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/Avco.png" alt="Avco"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/ABBoxSA.png" alt="AB Box SA"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/K.Schmied-AG.jpg" alt="K. Schmied AG"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/kulite.png" alt="Kulite"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/aliena.png" alt="Aliena"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/Chubb-sicli.png" alt="Chubb Sicli"></div>
-        <div class="bronze-sponsor"><img src="/images/originalQuality/Festo.png" alt="Festo"></div>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.abipro.ch/"><img src="/images/originalQuality/ABPRO.png" alt="ABPRO"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.swaytronic.ch/"><img src="/images/originalQuality/SwayTronic.png" alt="Sway Tronic"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.norelem.ch/"><img src="/images/originalQuality/norelem.png" alt="norelem"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://focuswater.ch/fr/"><img src="/images/originalQuality/FocusWater.webp" alt="Focus Water"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.makita.ch/"><img src="/images/originalQuality/makita.png" alt="Makita"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://meili-technology.com/"><img src="/images/originalQuality/MeiliTechnology.png" alt="Meili Meili Technology"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.chezmario.ch/"><img src="/images/originalQuality/ChezMario.png" alt="Chez Mario"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.solidworks.com/"><img src="/images/originalQuality/SolidWorks.jpg" alt="Solid Works"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.valour-studio.com/"><img src="/images/originalQuality/StudioValour.jpg" alt="Studio Valour"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.distrelec.ch/fr/"><img src="/images/originalQuality/Distrelec.png" alt="Distrelec"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://avcovalve.com/avcovalve/"><img src="/images/originalQuality/Avco.png" alt="Avco"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.abbox.ch/"><img src="/images/originalQuality/ABBoxSA.png" alt="AB Box SA"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.kschmied.ch/"><img src="/images/originalQuality/K.Schmied-AG.jpg" alt="K. Schmied AG"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://kulite.com/"><img src="/images/originalQuality/kulite.png" alt="Kulite"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.aliena.sg/"><img src="/images/originalQuality/aliena.png" alt="Aliena"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://chubbfs.com/ch-fr"><img src="/images/originalQuality/Chubb-sicli.png" alt="Chubb Sicli"></a>
+        <a class="bronze-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.festo.com/ch/fr/"><img src="/images/originalQuality/Festo.png" alt="Festo"></a>
       </div>
 </div>
 
@@ -825,6 +832,7 @@ function hideMenu() {
         max-width: 400px;
          
         text-align: center;
+        padding: 5px;
     }
 
     .support-sponsor img {
@@ -838,17 +846,18 @@ function hideMenu() {
 <div class="support-box">
     <span class="support-label">SUPPORT</span>
     <div class="support-sponsors">
-        <div class="support-sponsor"><img src="/images/originalQuality/TheCountdownCompany.png" alt="The Countdown Company"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/LoterieRomande.png" alt="Loterie Romande"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/InArTiS.png" alt="InArTiS Fondation"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/EPFLscitas.jpg" alt="EPFL Scitas"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/eSpace.png" alt="eSpace"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/GCM-SA.jpg" alt="GCM SA"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/ChiWi.png" alt="ChiWi Stiftung"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/Skill.png" alt="Student Kreativity & Innovation Laboratory"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/LPAC.jpg" alt="Laboratory for Processing of Advanced Composites"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/SectionDePhysique.jpg" alt="EPFL Section de Physique"></div>
-        <div class="support-sponsor"><img src="/images/originalQuality/Empa.jpg" alt="Materials Science and Technology"></div>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://thecountdowncompany.ch/"><img src="/images/originalQuality/TheCountdownCompany.png" alt="The Countdown Company"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.loro.ch/fr"><img src="/images/originalQuality/LoterieRomande.png" alt="Loterie Romande"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://inartis.ch/"><img src="/images/originalQuality/InArTiS.png" alt="InArTiS Fondation"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.epfl.ch/research/facilities/scitas/"><img src="/images/originalQuality/EPFLscitas.jpg" alt="EPFL Scitas"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://espace.epfl.ch/"><img src="/images/originalQuality/eSpace.png" alt="eSpace"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://space-innovation.ch/"><img src="/images/originalQuality/SpaceInnovation.png" alt="eSpace"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.gcm.ch/fr"><img src="/images/originalQuality/GCM-SA.jpg" alt="GCM SA"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://chiwi.ch/"><img src="/images/originalQuality/ChiWi.png" alt="ChiWi Stiftung"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.epfl.ch/labs/skil/"><img src="/images/originalQuality/Skill.png" alt="Student Kreativity & Innovation Laboratory"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.epfl.ch/labs/lpac/"><img src="/images/originalQuality/LPAC.jpg" alt="Laboratory for Processing of Advanced Composites"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.epfl.ch/schools/sb/sph/"><img src="/images/originalQuality/SectionDePhysique.jpg" alt="EPFL Section de Physique"></a>
+        <a class="support-sponsor" target="_blank" rel="noopener noreferrer" href="https://www.empa.ch/web/empa/advanced-materials-and-surfaces"><img src="/images/originalQuality/Empa.jpg" alt="Materials Science and Technology"></a>
       </div>
 </div>
 
@@ -890,7 +899,7 @@ function hideMenu() {
 	     <input type="text" id="fname" name="fname" placeholder="YOUR EMAIL" 
   style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;">
        <div style="align-content: center; height: 48px; padding-left: 8px;">
-        <button type="button" onclick="location.href='/'" class="button-right"></button>
+        <button type="button" onclick="location.href='/'" class="button-right" aria-label="subscribe to newsletter"></button>
        </div>
 </div>
     </div>

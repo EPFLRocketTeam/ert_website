@@ -36,7 +36,11 @@ highlights:
 {{< highlights >}}
 
 # About
-As a follow-up to Project IO, Space Race is ERT's educational project to form those who want to go deeper in rocketry: it consists of an annual friendly competition within ERT, where the aim is to have teams of students new to the world of aerospace design, build and launch their own home-made rockets: In teams of 8, participants must build from scratch a L1 rocket which can carry a Cansat as payload and release it at apogee. Basic rocketry skills are introduced in workshops throughout the first semester. The teams are supervised by the more experienced members of the association to ensure a good knowledge transfer and a link with the other projects.
+As a follow-up to Project IO, Space Race is ERT's educational project to form those who want to go deeper in rocketry:
+
+The 2024-25 edition of the Space Race programme marked an exciting chapter in aerospace innovation within the ERT community. This year, 80 members participated, divided into ten teams. The challenge centered around building a Level 1 rocket compliant with Tripoli Amateur Launchers Association standards. Teams also had the option to deploy a CanSat at the apogee, while some chose to launch and safely recover a raw egg. The edition showcased a diverse range of designs and strategies.
+
+Throughout the programme, experienced members mentored the students, ensuring high standards in design and engineering and fostering valuable knowledge transfer to the next generation of aerospace innovators.
 
 # Gallery
 

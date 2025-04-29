@@ -78,7 +78,8 @@
 
   
 <link rel="stylesheet" href="/fonts.css">
-<link rel="stylesheet" href="/stylesheet.css">
+<link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="/stylesheet.css"></noscript>
 <style>
   * {
     box-sizing: border-box;
@@ -102,7 +103,6 @@
   h1 {
     font-family: 'Aspekta';
     font-size: 64px;
-    font-weight: 400;
     pointer-events: none;
   }
 
@@ -275,6 +275,9 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   
+  <script defer src="https://tracking.epfl-rocket-team.ch/script.js" data-website-id="0a937710-4539-4a20-8b1c-0a711f3a0e52"></script>
+
+  
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -302,7 +305,7 @@
   
       <header style="position: relative; width: 100%; height: 100vh; overflow: hidden;" class="header">
 	
-	<video autoplay muted loop preload="none">
+	<video autoplay muted loop playsinline preload="none">
 		<source src="/images/uploads/2024_trailer_ert.mp4" type="video/mp4">
   </video>
 	
@@ -402,7 +405,7 @@
 			<li><a class="desktop-menu-item" href="/fr/posts/test/">🇫🇷</a></li>
 			
 			
-			<li><button id="menuButton" style="font-size: 40px; transform: translate(0,-6px);" class="menu-icon" onclick="toggleMenu()">☰</button></li>
+			<li><button id="menuButton" style="font-size: 40px;" class="menu-icon" onclick="toggleMenu()">☰</button></li>
 		</ul>
 
 	<div class="mobile-menu-items">
@@ -457,9 +460,9 @@
         <div style="display: inline-block; text-align: left;">
           
           <hr style="display: block; width: 100%; border: 1px solid white; margin: 0;">
-          <div style="height: 2.6vw"></div>
+          <div style="height: 4px"></div>
           
-          <h1 style="line-height: 40px; font-family: 'Aspekta-500'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0;">
+          <h1 style="line-height: 8vw; font-family: 'Aspekta-600'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0;">
             EPFL ROCKET TEAM
           </h1>
         </div>
@@ -550,7 +553,7 @@ function hideMenu() {
 	     <input type="text" id="fname" name="fname" placeholder="YOUR EMAIL" 
   style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;">
        <div style="align-content: center; height: 48px; padding-left: 8px;">
-        <button type="button" onclick="location.href='/'" class="button-right"></button>
+        <button type="button" onclick="location.href='/'" class="button-right" aria-label="subscribe to newsletter"></button>
        </div>
 </div>
     </div>
