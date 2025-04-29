@@ -1480,3 +1480,24 @@ h6 span{
     margin-right: 10px;
   }
 }
+
+
+
+
+.opacity-0 {
+  opacity: 0;
+}
+
+@media (hover: none) {
+  .opacity-0 {
+    opacity: 1 !important; /* Override the opacity-0 class on smaller screens */
+  }
+}
+
+.transition-opacity {
+  transition-property: opacity;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
