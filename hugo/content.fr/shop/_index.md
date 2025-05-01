@@ -10,4 +10,4 @@ layout: single
 
 Hi world, this is the shop page.
 
-{{< test-stripe >}}
+{{< shop >}}

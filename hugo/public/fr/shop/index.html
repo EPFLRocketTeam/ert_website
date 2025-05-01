@@ -21,7 +21,8 @@
   <meta property="og:url" content="http://localhost:1313/fr/shop/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Boutique">
-  <meta property="og:description" content="Hi world, this is the shop page.">
+  <meta property="og:description" content="Hi world, this is the shop page.
+ERT Hoodie 45.- CHF">
   <meta property="og:locale" content="fr">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/share.webp">
@@ -33,15 +34,17 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
   <meta name="twitter:title" content="Boutique">
-  <meta name="twitter:description" content="Hi world, this is the shop page.">
+  <meta name="twitter:description" content="Hi world, this is the shop page.
+ERT Hoodie 45.- CHF">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="Boutique">
-  <meta itemprop="description" content="Hi world, this is the shop page.">
-  <meta itemprop="wordCount" content="7">
+  <meta itemprop="description" content="Hi world, this is the shop page.
+ERT Hoodie 45.- CHF">
+  <meta itemprop="wordCount" content="11">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -58,6 +61,8 @@
 <link rel="stylesheet" href="/fonts.css">
 <link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/stylesheet.css"></noscript>
+<link rel="preload" href="./page.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="./page.css"></noscript>
 <style>
   * {
     box-sizing: border-box;
@@ -81,9 +86,7 @@
   h1 {
     font-family: 'Aspekta';
     font-size: 64px;
-    pointer-events: none;
   }
-
   p {
     font-size: 24px;
     max-width: 80ch;
@@ -411,7 +414,7 @@
           <hr style="display: block; width: 100%; border: 1px solid white; margin: 0;">
           <div style="height: 4px"></div>
           
-          <h1 style="line-height: 8vw; font-family: 'Aspekta-600'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0;">
+          <h1 style="line-height: 8vw; font-family: 'Aspekta-600'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0; pointer-events: none;">
             BOUTIQUE
           </h1>
         </div>
@@ -462,15 +465,14 @@ function hideMenu() {
 
 <content>
   <p>Hi world, this is the shop page.</p>
-<script async
-  src="https://js.stripe.com/v3/buy-button.js">
-</script>
+<body style="padding-top: 30px;">
+  <div class="card-shop">
+    <img src="/images/originalQuality/shop-image1.jpg">
+    <h1>ERT Hoodie</h1>
+    <p class="price">45.- CHF</p>
+  </div> 
 
-<stripe-buy-button
-  buy-button-id="buy_btn_1QXzp2HYe69JtepGuGxNxlyp"
-  publishable-key="pk_test_51QXzhLHYe69JtepG0wgrjlkjG5E4xJUmnvi7OdHxALJSfqvEvxl4XnYIWnAe2YUHyBtM7OIMwsudJy399mMz8iCL0040hlR6Id"
->
-</stripe-buy-button>
+</body>
 
 
 </content>

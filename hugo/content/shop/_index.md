@@ -7,7 +7,6 @@ menu: "main"
 weight: 8
 layout: single
 ---
+Here is our current merch collection:
 
-Hi world, this is the shop page.
-
-{{< test-stripe >}}
+{{< shop >}}

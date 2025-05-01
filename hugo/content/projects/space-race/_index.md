@@ -14,7 +14,7 @@ specs:
   - key: "Year"
     value: "2025/2026"
   - key: "Goal"
-    value: "Building a L1 rocket from scratch"
+    value: "Building a L1 rocket"
   - key: "Team members"
     value: "10 teams of 8 students"
 highlights:

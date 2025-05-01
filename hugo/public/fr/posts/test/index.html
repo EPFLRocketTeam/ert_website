@@ -80,6 +80,8 @@
 <link rel="stylesheet" href="/fonts.css">
 <link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="/stylesheet.css"></noscript>
+<link rel="preload" href="./page.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="./page.css"></noscript>
 <style>
   * {
     box-sizing: border-box;
@@ -103,9 +105,7 @@
   h1 {
     font-family: 'Aspekta';
     font-size: 64px;
-    pointer-events: none;
   }
-
   p {
     font-size: 24px;
     max-width: 80ch;
@@ -436,7 +436,7 @@
           <hr style="display: block; width: 100%; border: 1px solid white; margin: 0;">
           <div style="height: 4px"></div>
           
-          <h1 style="line-height: 8vw; font-family: 'Aspekta-600'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0;">
+          <h1 style="line-height: 8vw; font-family: 'Aspekta-600'; display: inline-block; font-size: 8vw; letter-spacing: -1%; margin: 0; pointer-events: none;">
             EPFL ROCKET TEAM
           </h1>
         </div>
