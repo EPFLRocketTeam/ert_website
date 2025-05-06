@@ -6,6 +6,7 @@ header_background: "/images/originalQuality/Shop.jpeg"
 menu: "main"
 weight: 8
 layout: single
+padding: 30px
 ---
 Here is our current merch collection:
 

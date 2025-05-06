@@ -25,6 +25,13 @@ h4 {
 :root {
   --swiper-theme-color: #DA291C;
 }
+.swiper-slide {
+  height: auto !important;
+}
+.swiper-slide-active {
+  height: auto !important;
+  align-content: center;
+}
 .swiper-pagination-bullet-active {
   background: #DA291C !important;
 }
