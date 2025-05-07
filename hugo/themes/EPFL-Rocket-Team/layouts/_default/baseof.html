@@ -60,6 +60,43 @@
   />
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="/swiper-initialisation.js"></script>
+
+  <script> /* hovering over the div of each project displays their respective image */
+    const numToProject = {
+      1: "op-firehorn",
+      2: "op-spacerace",
+      3: "op-icarus",
+      4: "op-hyperion"
+    }
+    function setProjectImage(filename) {
+      document.getElementById("project-image").src = filename;
+    }
+    function highlightProject(projNum) {
+      Object.values(numToProject).forEach(proj => {
+        document.getElementById(proj).classList.remove("highlighted-project");
+      })
+      document.getElementById(numToProject[projNum]).classList.add("highlighted-project");
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      highlightProject(1);
+    })
+  </script>
+  <script type="application/ecmascript">
+  <![CDATA[
+      document.addEventListener("DOMContentLoaded", function() {
+          var groups = document.querySelectorAll('g');
+          groups.forEach(function(group) {
+              group.setAttribute('opacity', '0.4'); // Default opacity
+              group.addEventListener('mouseenter', function() {
+                  group.setAttribute('opacity', '1');
+              });
+              group.addEventListener('mouseleave', function() {
+                  group.setAttribute('opacity', '0.4');
+              });
+          });
+      });
+  ]]>
+  </script>
 </head>
 
 <body style="padding: 0">

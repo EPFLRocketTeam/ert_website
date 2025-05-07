@@ -26,21 +26,3 @@
     </div>
     <button type="button" onclick="location.href='/projects/'" class="button-right right-align gray-button">discover all our projects</button>
 </div>
-<script> /* hovering over the div of each project displays their respective image */
-  const numToProject = {
-    1: "op-firehorn",
-    2: "op-spacerace",
-    3: "op-icarus",
-    4: "op-hyperion"
-  }
-  function setProjectImage(filename) {
-    document.getElementById("project-image").src = filename;
-  }
-  function highlightProject(projNum) {
-    Object.values(numToProject).forEach(proj => {
-      document.getElementById(proj).classList.remove("highlighted-project");
-    })
-    document.getElementById(numToProject[projNum]).classList.add("highlighted-project");
-  }
-  highlightProject(1)
-</script>
