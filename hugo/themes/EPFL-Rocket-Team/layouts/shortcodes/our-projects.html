@@ -1,136 +1,46 @@
-<head>
-    <style>
-        h1 {
-            margin-bottom: 0;
-        }
-        
-        #our-projects {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: stretch;
-            width: 100%;
-            padding: 30px 0 30px 0;
-        }
-        
-        .our-project-images {
-            flex: 70%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 15px 0 15px 0;
-        }
-        
-        .our-project-images img {
-            margin: 5px;
-            height: 400px;
-            max-width: 80%;
-            display: block;
-            object-fit: contain;
-        }
-        
-        .our-project-list {
-            flex: 30%;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, auto);
-            gap: 5px;
-            max-width: 60ch;
-            cursor: default;
-            min-width: 0;
-            color: #808080;
-        }
-
-        .our-project-list > div {
-            min-width: 0;
-        }
-
-        .highlighted-project > h1 {
-          color: white;
-        }
-
-        .highlighted-project > p {
-          color: white;
-        }
-
-        /*.our-project-list > div:hover h1 {
-          color: #da291c;
-        }
-
-        .our-project-list > div:hover p {
-          color: #da291c;
-        }*/
-
-        @media (max-width: 744px) {
-            #our-projects {
-                flex-direction: column-reverse;
-            }
-            
-            .our-project-list {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 2fr 2fr;
-            }
-
-            .our-project-images img {
-                height: 180px;
-            }
-
-            .our-project-list h1 {
-              font-size: 24px;
-            }
-
-            .our-project-list p {
-              font-size: 12px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <div class="main" style="padding: 30px; margin: 0; overflow: hidden;">
-        <div class="page">our projects</div>
-        <h2 class="zero-margin">The EPFL Rocket Team is currently engaged in four different projects</h2>
-        <div id="our-projects">
-            <div class="our-project-list">
-                <div class="zero-margin" id="op-firehorn" onmouseover="setProjectImage('/images/op_firehorn.webp'); highlightProject(1)" class="highlighted-project">
-                    <h1 class="zero-margin">Firehorn</h1>
-                    <p class="zero-margin">Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
-                </div>
-                <div id="op-spacerace" onmouseover="setProjectImage('/images/op_spacerace.webp'); highlightProject(2)">
-                    <h1 class="zero-margin">Space Race</h1>
-                    <p class="zero-margin">Training students in aerospace technologies</p>
-                </div>
-                <div id="op-icarus" onmouseover="setProjectImage('/images/op_icarus.webp'); highlightProject(3)">
-                    <h1 class="zero-margin">Icarus</h1>
-                    <p class="zero-margin">Developing efficient GNC algorithms and crafting Space-X style re-landing systems</p>
-                </div>
-                <div id="op-hyperion" onmouseover="setProjectImage('/images/op_hyperion.webp'); highlightProject(4)">
-                    <h1 class="zero-margin">Hyperion</h1>
-                    <p class="zero-margin">Developing cutting-edge fully in-house bi-liquid propellant engines</p>
-                </div>
+<div class="main" style="padding: 30px; margin: 0; overflow: hidden;">
+    <div class="page">our projects</div>
+    <h2 class="zero-margin">The EPFL Rocket Team is currently engaged in four different projects</h2>
+    <div id="our-projects">
+        <div class="our-project-list">
+            <div class="zero-margin" id="op-firehorn" onmouseover="setProjectImage('/images/op_firehorn.webp'); highlightProject(1)" class="highlighted-project">
+                <h1 class="zero-margin">Firehorn</h1>
+                <p class="zero-margin">Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
             </div>
-            <div class="our-project-images">
-                <img loading="lazy" src="/images/op_firehorn.webp" id="project-image">
+            <div id="op-spacerace" onmouseover="setProjectImage('/images/op_spacerace.webp'); highlightProject(2)">
+                <h1 class="zero-margin">Space Race</h1>
+                <p class="zero-margin">Training students in aerospace technologies</p>
+            </div>
+            <div id="op-icarus" onmouseover="setProjectImage('/images/op_icarus.webp'); highlightProject(3)">
+                <h1 class="zero-margin">Icarus</h1>
+                <p class="zero-margin">Developing efficient GNC algorithms and crafting Space-X style re-landing systems</p>
+            </div>
+            <div id="op-hyperion" onmouseover="setProjectImage('/images/op_hyperion.webp'); highlightProject(4)">
+                <h1 class="zero-margin">Hyperion</h1>
+                <p class="zero-margin">Developing cutting-edge fully in-house bi-liquid propellant engines</p>
             </div>
         </div>
-        <button type="button" onclick="location.href='/projects/'" class="button-right right-align gray-button">discover all our projects</button>
+        <div class="our-project-images">
+            <img loading="lazy" src="/images/op_firehorn.webp" id="project-image">
+        </div>
     </div>
-    <script> /* hovering over the div of each project displays their respective image */
-      const numToProject = {
-        1: "op-firehorn",
-        2: "op-spacerace",
-        3: "op-icarus",
-        4: "op-hyperion"
-      }
-      function setProjectImage(filename) {
-        document.getElementById("project-image").src = filename;
-      }
-      function highlightProject(projNum) {
-        Object.values(numToProject).forEach(proj => {
-          document.getElementById(proj).classList.remove("highlighted-project");
-        })
-        document.getElementById(numToProject[projNum]).classList.add("highlighted-project");
-      }
-      highlightProject(1)
-    </script>
-</body>
+    <button type="button" onclick="location.href='/projects/'" class="button-right right-align gray-button">discover all our projects</button>
+</div>
+<script> /* hovering over the div of each project displays their respective image */
+  const numToProject = {
+    1: "op-firehorn",
+    2: "op-spacerace",
+    3: "op-icarus",
+    4: "op-hyperion"
+  }
+  function setProjectImage(filename) {
+    document.getElementById("project-image").src = filename;
+  }
+  function highlightProject(projNum) {
+    Object.values(numToProject).forEach(proj => {
+      document.getElementById(proj).classList.remove("highlighted-project");
+    })
+    document.getElementById(numToProject[projNum]).classList.add("highlighted-project");
+  }
+  highlightProject(1)
+</script>

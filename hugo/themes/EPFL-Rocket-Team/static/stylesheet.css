@@ -1,3 +1,88 @@
+h1 {
+    margin-bottom: 0;
+}
+
+#our-projects {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+
+.our-project-images {
+    flex: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+
+.our-project-images img {
+    margin: 5px;
+    height: 400px;
+    max-width: 80%;
+    display: block;
+    object-fit: contain;
+}
+
+.our-project-list {
+    flex: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 5px;
+    max-width: 60ch;
+    cursor: default;
+    min-width: 0;
+    color: #808080;
+}
+
+.our-project-list > div {
+    min-width: 0;
+}
+
+.highlighted-project > h1 {
+  color: white;
+}
+
+.highlighted-project > p {
+  color: white;
+}
+
+/*.our-project-list > div:hover h1 {
+  color: #da291c;
+}
+
+.our-project-list > div:hover p {
+  color: #da291c;
+}*/
+
+@media (max-width: 744px) {
+    #our-projects {
+        flex-direction: column-reverse;
+    }
+    
+    .our-project-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+    }
+
+    .our-project-images img {
+        height: 180px;
+    }
+
+    .our-project-list h1 {
+      font-size: 24px;
+    }
+
+    .our-project-list p {
+      font-size: 12px;
+    }
+}
+
 h2 {
   font-family: 'Aspekta';
   font-size: 36px;
