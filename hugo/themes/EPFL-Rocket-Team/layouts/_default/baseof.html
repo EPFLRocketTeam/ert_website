@@ -62,6 +62,7 @@
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="/swiper-initialisation.js"></script>
 
+  {{ if .IsHome }}
   <script> /* hovering over the div of each project displays their respective image */
     const numToProject = {
       1: "op-firehorn",
@@ -83,7 +84,6 @@
     })
   </script>
   <script type="application/ecmascript">
-  <![CDATA[
       document.addEventListener("DOMContentLoaded", function() {
           var groups = document.querySelectorAll('g');
           groups.forEach(function(group) {
@@ -96,8 +96,8 @@
               });
           });
       });
-  ]]>
   </script>
+  {{ end }}
 </head>
 
 <body style="padding: 0">
