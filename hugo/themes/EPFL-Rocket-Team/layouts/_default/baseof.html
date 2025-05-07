@@ -36,6 +36,8 @@
   your local /layouts/partials-directory -->
   {{- partial "custom_head.html" . -}}
 
+  <script defer src="./page.js"></script>
+
   <!-- Anime.js -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <!-- Alpine Plugins -->
@@ -55,20 +57,7 @@
     onload="this.media='all'"
   />
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer>
-    document.addEventListener("DOMContentLoaded", function () {
-      const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
-        loop: true,
-        pagination: { el: ".swiper-pagination" },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        scrollbar: { el: ".swiper-scrollbar" },
-      });
-    });
-  </script>
+  <script defer src="/swiper-initialisation.js"></script>
 </head>
 
 <body style="padding: 0">
