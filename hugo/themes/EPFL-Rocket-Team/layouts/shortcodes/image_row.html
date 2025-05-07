@@ -7,23 +7,3 @@
 >
   {{ .Inner }}
 </div>
-
-<style>
-@media (hover: hover) {
-  .image-row:hover .image_in_row img {
-    opacity: 1;
-  }
-}
-
-@media (max-width: 768px), (hover: none) {
-  .image-row .image_in_row img {
-    opacity: 1 !important;
-    transition: none !important;
-  }
-}
-
-.image-row .image_in_row img {
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
-}
-</style>
