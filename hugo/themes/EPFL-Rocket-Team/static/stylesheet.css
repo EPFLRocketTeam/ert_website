@@ -113,6 +113,15 @@ h4 {
 .swiper-slide {
   height: auto !important;
 }
+
+.swiper-slide img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
 .swiper-slide-active {
   height: auto !important;
   align-content: center;

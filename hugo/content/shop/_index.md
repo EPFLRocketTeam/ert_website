@@ -11,3 +11,5 @@ padding: 30px
 Here is our current merch collection:
 
 {{< shop >}}
+
+

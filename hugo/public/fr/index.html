@@ -68,194 +68,19 @@ Vamos mudar isso, um site de cada vez! Bear Cub é um tema Hugo baseado no Hugo 
 
   
 <link rel="stylesheet" href="/fonts.css">
-<link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="/stylesheet.css"></noscript>
-<link rel="preload" href="./page.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="./page.css"></noscript>
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  .zero-margin {
-    margin: 0;
-  }
-  h1, h2, h3, h4, h5, h6 {
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-  }
-  body {
-    position: relative;
-    font-family: 'Aspekta';
-    padding: 20px;
-    background-color: black;
-    vertical-align: bottom;
-    color: white;
-    overflow-x: hidden;
-  }
-  h1 {
-    font-family: 'Aspekta';
-    font-size: 64px;
-  }
-  p {
-    font-size: 24px;
-    max-width: 80ch;
-    text-align: justify;
-    font-family: 'Aspekta-200';
-  }
-  @media (max-width: 1280px) {
-    h1 {
-      font-size: 50px;
-      margin-left: 0;
-    }
-    p {
-      font-size: 18px;
-    }
-  }
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 32px;
-      margin-left: 0;
-    }
-    p {
-      font-size: 14px;
-    }
-    --swiper-navigation-size: 15px;
- }
-  }
-  .navbar {z-index: 1}
-  .navbar ul, .mobile-menu ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
-    margin: 0;
-    padding: 10px;
-    background: transparent;
-  }
-  .navbar li {margin: 0 15px}
-  .navbar a {
-    text-decoration: none;
-    color: #f6f6f6;
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Aspekta, sans-serif;
-    color: #f6f6f6;
-  }
-  .header {
-    position: relative;
-    width: 100vh;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .header video,
-  .header .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom center;
-    z-index: -2;
-  }
-  .header .background-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-  }
-  .desktop-menu-item {
-    position: relative;
-    padding: 10px;
-  }
-  .desktop-menu-item:hover {background: white;}
-  .desktop-menu-item:hover a {color: black;}
-  .desktop-menu-item .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: white;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .desktop-menu-item:hover .submenu {display: block;}
-  .desktop-menu-item:has(> a:hover) {background: #ff4a3d;}
-  .desktop-menu-item-without-subitems:hover {background: #ff4a3d;}
-  .submenu li {
-    padding: 10px;
-    margin: 0px;
-  }
-  .submenu li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    font-size: 0.7rem;
-  }
-  .submenu li a:hover {background: none;}
-  .submenu-item:hover {background: #ff4a3d;}
-  .mobile-menu-items {
-    display: none;
-    position: relative;
-    margin-bottom: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    color: white;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
-    font-family: 'Aspekta';
-  }
-  .mobile-menu-items a {
-    font-family: 'Aspekta';
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #f6f6f6;
-    text-decoration: none;
-  }
-  a {text-decoration: none;}
-  a::after {text-decoration: none;}
-  .menu-icon {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 56px;
-    cursor: pointer;
-  }
-  .call-to-action {display: flex;}
-  .footer-right a {color: white;}
-  .footer-right a:hover {text-decoration: underline;}
-  @media (max-width: 940px) {
-    .desktop-menu-item {
-      display: none;
-    }
-    .call-to-action {
-      display: none;
-    }
-  }
-  @media (min-width: 940px) {
-    .menu-icon {
-      display: none;
-    }
-  }
-  button {font-family: 'Aspekta-600';}
-  </style>
+
+<link rel="stylesheet" href="/header.css">
+
+
+<link rel="stylesheet" href="/stylesheet.css">
+
+
+<link rel="stylesheet" href="./page.css">
+<script defer src="/header-menu.js"></script>
+
+  <script defer src="./page.js"></script>
+  <link rel="stylesheet" href="./page.css">
+
   
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   
@@ -275,20 +100,44 @@ Vamos mudar isso, um site de cada vez! Bear Cub é um tema Hugo baseado no Hugo 
     onload="this.media='all'"
   />
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer>
+  <script defer src="/swiper-initialisation.js"></script>
+
+  
+  <script>  
+    const numToProject = {
+      1: "op-firehorn",
+      2: "op-spacerace",
+      3: "op-icarus",
+      4: "op-hyperion"
+    }
+    function setProjectImage(filename) {
+      document.getElementById("project-image").src = filename;
+    }
+    function highlightProject(projNum) {
+      Object.values(numToProject).forEach(proj => {
+        document.getElementById(proj).classList.remove("highlighted-project");
+      })
+      document.getElementById(numToProject[projNum]).classList.add("highlighted-project");
+    }
     document.addEventListener("DOMContentLoaded", function () {
-      const swiper = new Swiper(".swiper", {
-        direction: "horizontal",
-        loop: true,
-        pagination: { el: ".swiper-pagination" },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        scrollbar: { el: ".swiper-scrollbar" },
-      });
-    });
+      highlightProject(1);
+    })
   </script>
+  <script type="application/ecmascript">
+      document.addEventListener("DOMContentLoaded", function() {
+          var groups = document.querySelectorAll('g');
+          groups.forEach(function(group) {
+              group.setAttribute('opacity', '0.4'); 
+              group.addEventListener('mouseenter', function() {
+                  group.setAttribute('opacity', '1');
+              });
+              group.addEventListener('mouseleave', function() {
+                  group.setAttribute('opacity', '0.4');
+              });
+          });
+      });
+  </script>
+  
 </head>
 
 <body style="padding: 0">
@@ -435,34 +284,6 @@ Vamos mudar isso, um site de cada vez! Bear Cub é um tema Hugo baseado no Hugo 
   </div>
 </header>
 
-<script>
-function toggleMenu() {
-    let button = document.getElementById("menuButton");
-    if (button.innerHTML === "☰") {
-        button.innerHTML = "✖"; 
-        button.style.color = "red"; 
-        showMenu(); 
-    } else {
-        button.innerHTML = "☰"; 
-        button.style.color = ""; 
-        hideMenu(); 
-    }
-}
-
-function showMenu() {
-    console.log("Menu shown");
-    
-    document.querySelector('.mobile-menu-items').style.display = 'flex';
-    document.querySelector("nav").style.height = "100%";
-}
-
-function hideMenu() {
-    console.log("Menu hidden");
-    
-    document.querySelector('.mobile-menu-items').style.display = 'none';
-    document.querySelector("nav").style.height = "max-content";
-}
-</script>
 
       
   <main id="main-content" 
