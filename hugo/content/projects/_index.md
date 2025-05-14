@@ -22,7 +22,7 @@ children:
     url: "/projects/space-race/"
 ---
 
-# Competition projects
+# 2024-2025
 
 {{< grid >}}
 {{< card 
@@ -31,62 +31,30 @@ children:
     description="Firehorn is the EPFL Rocket Team’s inaugural cryogenic bi-liquid rocket, operating on an innovative architecture." 
     link="/projects/firehorn/"
 >}}
-{{< card 
-    title="Nordend" 
-    image="" 
-    description="Description here...." 
-    link="/projects/firehorn/"
->}}
-{{< card 
-    title="Bella Lui" 
-    image="" 
-    description="Description here...." 
-    link="/projects/firehorn/"
->}}
-{{< card 
-    title="Eiger" 
-    image="" 
-    description="Description here...." 
-    link="/projects/firehorn/"
->}}
-{{< /grid >}}
 
-# Rocket engine development
-
-{{< grid max="450px" >}}
 {{< card 
     title="Hyperion" 
     image="/images/originalQuality/Hyperion-Background.jpg" 
     description="Founded in 2021, Hyperion has the goal to develop bi-liquid rocket engines, meaning using two liquids propellants, that will propel the future rockets of the association." 
     link="/projects/hyperion/"
 >}}
-{{< /grid >}}
 
-# Attitude control technologies
-
-{{< grid max="450px" >}}
 {{< card 
     title="Icarus" 
     image="/images/originalQuality/Icarus-Background.jpg" 
     description="Founded in 2020, Icarus is a research and development project on active attitude control technologies for future rocket teams." 
     link="/projects/icarus/"
 >}}
-{{< /grid >}}
 
-# Educational projects
-
-{{< grid max="450px" >}}
 {{< card 
     title="Space Race" 
     image="/images/originalQuality/SpaceRace-Background.jpg" 
     description="As a follow-up to Project IO, the Space Race programme was created to strengthen the educational side of the association." 
     link="/projects/space-race/"
 >}}
-{{< card 
-    title="Io" 
-    image="" 
-    description="Description here" 
-    link="/projects/space-race/"
->}}
+
 {{< /grid >}}
+
+
+
 
