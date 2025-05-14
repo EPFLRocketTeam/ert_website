@@ -29,13 +29,6 @@ enableRobotsTXT = true
     contentDir = "content"
     [languages.en.params]
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
-  [languages.fr]
-    title = "EPFL Rocket Team"
-    languageName = "🇫🇷"
-    LanguageCode = "fr"
-    contentDir = "content.fr"
-    [languages.fr.params]
-      madeWith = "Fait avec [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 [params]
   # The description of your website
