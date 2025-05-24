@@ -52,6 +52,9 @@
   <!-- Tracking with umami -->
   <script defer src="https://tracking.epfl-rocket-team.ch/script.js" data-website-id="0a937710-4539-4a20-8b1c-0a711f3a0e52"></script>
 
+  <!-- Cloudfare Turnstile anti-spam for forms -->
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" defer></script>
+
   <!-- Swiper.js -->
   <link
     rel="stylesheet"
@@ -82,6 +85,14 @@
     document.addEventListener("DOMContentLoaded", function () {
       highlightProject(1);
     })
+    window.onloadTurnstileCallback = function () {
+      turnstile.render("#example-container", {
+        sitekey: "0x4AAAAAABedzJUW2HmA7zsO",
+        callback: function (token) {
+          console.log(`Challenge Success ${token}`);
+        },
+      });
+    };
   </script>
   <script type="application/ecmascript">
       document.addEventListener("DOMContentLoaded", function() {
