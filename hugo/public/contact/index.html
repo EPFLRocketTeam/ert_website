@@ -21,28 +21,28 @@
   <meta property="og:url" content="http://localhost:1313/contact/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Contact">
-  <meta property="og:description" content="Name Email Message SEND">
+  <meta property="og:description" content="Name Email Message SEND Or send us an email at these addresses below: General inquiries Presidency">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="http://localhost:1313/images/share.webp">
+    <meta property="og:image" content="http://localhost:1313/images/ShareCardERT.webp">
         <meta property="fb:admins" content="0000000000">
 
 
   
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
+  <meta name="twitter:image" content="http://localhost:1313/images/ShareCardERT.webp">
   <meta name="twitter:title" content="Contact">
-  <meta name="twitter:description" content="Name Email Message SEND">
+  <meta name="twitter:description" content="Name Email Message SEND Or send us an email at these addresses below: General inquiries Presidency">
       <meta name="twitter:site" content="@example">
 
 
   
   
   <meta itemprop="name" content="Contact">
-  <meta itemprop="description" content="Name Email Message SEND">
-  <meta itemprop="wordCount" content="4">
-  <meta itemprop="image" content="http://localhost:1313/images/share.webp">
+  <meta itemprop="description" content="Name Email Message SEND Or send us an email at these addresses below: General inquiries Presidency">
+  <meta itemprop="wordCount" content="16">
+  <meta itemprop="image" content="http://localhost:1313/images/ShareCardERT.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -79,6 +79,9 @@
 
   
   <script defer src="https://tracking.epfl-rocket-team.ch/script.js" data-website-id="0a937710-4539-4a20-8b1c-0a711f3a0e52"></script>
+
+  
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
 
   
   <link
@@ -261,7 +264,8 @@
                padding: 0px;">
 
 <content>
-  <form action="/submit" method="POST" style="max-width: 1000px; margin: 0 auto; background: none; color: #ffffff; padding: 30px; border-radius: 10px;">
+  <body>
+<form action="/submit" method="POST" style="max-width: 1000px; margin: 0 auto; background: none; color: #ffffff; padding: 30px; border-radius: 10px;">
     <div style="margin-bottom: 15px;">
       <label for="name" style="font-size: 32px; display: block; margin-bottom: 5px;">Name</label>
       <input type="text" id="name" name="name" placeholder="Name" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
@@ -276,11 +280,31 @@
       <label for="message" style="font-size: 32px; display: block; margin-bottom: 5px;">Message</label>
       <textarea id="message" name="message" placeholder="Message" rows="4" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required></textarea>
     </div>
+
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAABedzJUW2HmA7zsO"></div>
     
     <button type="submit" style="width: 100%; padding: 15px; font-size: 1rem; font-weight: bold; border: none; border-radius: 10px; background: red; color: #ffffff; cursor: pointer;">
       SEND
     </button>
   </form>
+
+  <div style="font-size: 20px; text-align: center;">Or send us an email at these addresses below:
+    
+    <h5>
+      General inquiries
+      <a href="mailto:info@epflrocketteam.ch">
+          <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="Mail icon"></img>
+      </a>
+    </h5>
+    <h5>
+      Presidency
+      <a href="mailto:presidency@epflrocketteam.ch">
+          <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="Mail icon"></img>
+      </a>
+    </h5>
+  </div>
+
+</body>
   
 
 
