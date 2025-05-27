@@ -5,8 +5,13 @@
 
 <link rel="stylesheet" href="/header.css">
 
-<!--link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'"-->
-<link rel="stylesheet" href="/stylesheet.css">
+<!-- Deferred load for /stylesheet.css -->
+<link rel="stylesheet" href="/stylesheet.css" media="print" onload="this.onload=null;this.media='all'">
 
-<!--link rel="preload" href="./page.css" as="style" onload="this.onload=null;this.rel='stylesheet'"-->
-<link rel="stylesheet" href="./page.css">
+<!-- Deferred load for ./page.css -->
+<link rel="stylesheet" href="./page.css" media="print" onload="this.onload=null;this.media='all'">
+
+<noscript>
+  <link rel="stylesheet" href="/stylesheet.css">
+  <link rel="stylesheet" href="./page.css">
+</noscript>
