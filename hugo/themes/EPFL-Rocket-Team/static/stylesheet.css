@@ -899,13 +899,46 @@ h6 span{
   content: "− "; /* Unicode character for "minus" sign (-) */
 }
 
+.shop-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Add some space between the cards */
+  padding: 10px; /* Add some padding to the container */
+}
+
 .card-shop {
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  object-fit: contain;
-  display: inline-block;
-  margin: 0 20px;
+  flex: 0 0 auto; /* Don't grow, don't shrink, base size determined by content */
+  width: 320px; /* Or a max-width, adjust based on your design */
+  max-width: 100%; /* Ensure it doesn't exceed its parent's width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-bottom: 20px; /* Add some space below each card when they wrap */
+  /* Add other styling for your card, e.g., border, shadow, background */
+  border: 2px solid #222222;
+  border-radius: 16px;
+  padding: 8px;
+  background-color: #111111;
+  overflow: hidden; /* Crucial for images within the card that might be too wide */
+}
+
+.card-shop img {
+  max-width: 100%; /* Ensure images don't overflow their parent */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below images */
+}
+
+/* For the swiper elements specifically */
+.swiper {
+  width: 100%; /* Make the swiper take the full width of its parent (.card-shop) */
+  max-width: 300px; /* Keep your original max-width if desired, but ensure it's not overflowing */
+  box-sizing: border-box;
+}
+
+/* Ensure swiper-slide images don't overflow */
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .card-shop h1{
@@ -916,7 +949,8 @@ h6 span{
 .price {
   color: grey;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
+  margin: 5px 0;
 }
 
 .card-shop button {
