@@ -2,14 +2,14 @@
 
 <div x-data="{name: '{{ .Get "component" }}'}">
   <div
+    style="min-height: 1.5rem; font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center; cursor: pointer;"
     @click="openTab = (openTab === name ? '' : name)"
-    style="font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center; cursor: pointer;"
   >
     <div>{{ .Get "component" }}</div>
     <div style="margin-left: auto;">
       <button
-        x-text="openTab == name ? '−' : '+'"
         style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;"
+        x-text="openTab == name ? '−' : '+'"
       ></button>
     </div>
   </div>
