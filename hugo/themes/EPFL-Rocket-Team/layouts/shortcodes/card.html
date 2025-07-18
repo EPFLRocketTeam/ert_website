@@ -1,4 +1,4 @@
-<a href="{{ .Get "link" | safeURL }}" class="card" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+<a href="{{ .Get "link" | safeURL }}" class="card" x-data="{ open: false }" x-on:mouseenter="open = true" x-on:mouseleave="open = false">
   <!-- Background image -->
   <div class="card-bg" style="background-image: url('{{ .Get "image" }}');" x-bind:style="{ transform: open ? 'scale(1.1)' : 'scale(1)' }"></div>
 
