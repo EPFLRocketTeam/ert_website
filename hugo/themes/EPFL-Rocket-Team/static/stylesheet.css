@@ -1236,9 +1236,6 @@ h6 span{
 }
 
 .join-card-box { display: grid; }
-@media (min-width: 1280px) {
-  .join-card-box { display: none; }
-}
 
 @media (max-width: 1280px) {
   .min-1280 { display: none; }
