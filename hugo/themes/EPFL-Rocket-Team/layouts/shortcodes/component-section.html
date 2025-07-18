@@ -2,7 +2,7 @@
 
 <div x-data="{name: '{{ .Get "component" }}'}">
   <div
-      @click="openTab = (openTab === name ? '' : name)"
+      x-on:click="openTab = (openTab === name ? '' : name)"
       >
       <div style="min-height: 1.5rem; font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center; cursor: pointer;">
         <div>{{ .Get "component" }}</div>
