@@ -943,13 +943,12 @@ h6 span{
 /* For the swiper elements specifically */
 .swiper {
   width: 100%; /* Make the swiper take the full width of its parent (.card-shop) */
-  max-width: 300px; /* Keep your original max-width if desired, but ensure it's not overflowing */
+  max-width: 900px; /* Keep your original max-width if desired, but ensure it's not overflowing */
   box-sizing: border-box;
 }
 
 /* Ensure swiper-slide images don't overflow */
 .swiper-slide img {
-  max-width: 100%;
   height: auto;
   display: block;
 }
