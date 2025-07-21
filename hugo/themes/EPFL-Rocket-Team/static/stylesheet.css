@@ -544,7 +544,6 @@ textarea {
 }
 
 .parent {
-  margin-left: 20px;
   display: grid;
   width: 105vw;
   height: 130vh;
@@ -1083,7 +1082,7 @@ h6 span{
 
 
   .mission7 {
-    grid-row-start: 6;
+    grid-row-start: 4;
     grid-column-end: 7;
   }
 
@@ -1254,9 +1253,9 @@ h6 span{
   }
 
   .parent {
-    height: 100vh;
+    height: 90vh;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
   }
 
   .div1 {
