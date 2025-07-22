@@ -3,6 +3,13 @@ function onSubmitForm(token) {
     console.log('Turnstile token:', token); // For debugging
     document.getElementById('contactForm').dataset.turnstileToken = token;
     // The token is now stored; the form can be submitted when ready
+
+    const submitButton = document.getElementById('submitButton');
+    if (submitButton) {
+        submitButton.disabled = false; // Enable the button
+    } else {
+        console.error("Submit button with ID 'submitButton' not found!");
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
