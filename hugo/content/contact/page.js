@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Send the data to your Go backend
         try {
-            const response = await fetch('https://contact-form-api.epfl-rocket-team.ch/verify-turnstile', {
+            const response = await fetch('https://turnstile.epfl-rocket-team.ch/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
