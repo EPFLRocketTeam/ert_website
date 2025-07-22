@@ -38,19 +38,33 @@
 
   <div class="Frame117"
     style="left: 50%; transform: translateX(-50%); top: 24px; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 124px; display: inline-flex; max-width: 100%; padding: 0 30px 0 30px;">
-    <form id="newsletterForm" style="width: 100%;">
-      <div class="Input"
-        style="width: 100%; padding-bottom: 8px; border-bottom: 1px #F6F6F6 solid; justify-content: space-between; align-items: flex-start; display: inline-flex">
-        <input type="email" id="newsletterEmail" name="email" placeholder="YOUR EMAIL"
-          style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;"
-          required>
-        <div style="align-content: center; height: 48px; padding-left: 8px;">
-          <button id="newsletterSubmitButton" type="submit" disabled class="button-right submit-button-disabled"
-            style="background: #bb5851; color: #bcbcbc; cursor: default;" aria-label="subscribe to newsletter"></button>
-        </div>
+    <div class="Frame116"
+      style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex; margin: 0">
+      <div class="Frame115"
+        style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: flex">
+        <div class="SubscribeToOurNewsletter"
+          style="color: #F6F6F6; font-size: 35px; font-family: Aspekta; font-weight: 400; line-height: 50px; word-wrap: break-word">
+          Subscribe to our newsletter</div>
+        <div class="StayInTouchAndGetUpdatesOnWhatWeDo"
+          style="color: #F6F6F6; font-size: 16px; font-family: Aspekta; font-weight: 400; line-height: 20px; word-wrap: break-word">
+          Stay in touch and get updates on what we do</div>
       </div>
-      <div class="cf-turnstile" data-sitekey="0x4AAAAAABedzJUW2HmA7zsO" data-callback="onNewsletterTurnstileReady"></div>
-    </form>
+      <form id="newsletterForm" style="width: 100%;">
+        <div class="Input"
+          style="width: 100%; padding-bottom: 8px; border-bottom: 1px #F6F6F6 solid; justify-content: space-between; align-items: flex-start; display: inline-flex">
+          <input type="email" id="newsletterEmail" name="email" placeholder="YOUR EMAIL"
+            style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;"
+            required>
+          <div style="align-content: center; height: 48px; padding-left: 8px;">
+            <button id="newsletterSubmitButton" type="submit" disabled class="button-right submit-button-disabled"
+              style="background: #bb5851; color: #bcbcbc; cursor: default;"
+              aria-label="subscribe to newsletter"></button>
+          </div>
+        </div>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAABedzJUW2HmA7zsO" data-callback="onNewsletterTurnstileReady">
+        </div>
+      </form>
+    </div>
     <div class="Frame114"
       style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
       <div class="FollowUsOnSocialMedia"
