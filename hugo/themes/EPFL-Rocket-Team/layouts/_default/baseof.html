@@ -35,37 +35,6 @@
         Simply place a custom_head.html into
         your local /layouts/partials-directory -->
         {{- partial "custom_head.html" . -}}
-
-        <script defer src="/header-menu.js"></script>
-
-        <!-- Anime.js -->
-        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-        <!-- Alpine Plugins -->
-        <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
-
-        <!-- Alpine Core -->
-        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-        <!-- Tracking with umami -->
-        <script defer src="https://tracking.epfl-rocket-team.ch/script.js" data-website-id="0a937710-4539-4a20-8b1c-0a711f3a0e52"></script>
-
-        <!-- Cloudfare Turnstile anti-spam for forms -->
-        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
-
-        <!-- Swiper.js -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-            media="print" 
-            onload="this.media='all'"
-            />
-        <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script defer src="/swiper-initialisation.js"></script>
-        
-        <!-- page.js --> 
-        <script defer src="./page.js"></script>
-
-
   </head>
 
   <body style="padding: 0">
@@ -88,66 +57,6 @@
       Simply place a custom_body.html into
       your local /layouts/partials-directory -->
       {{- partial "custom_body.html" . -}}
-      <script>
-        // Your setProjectImage function
-        function setProjectImage(imagePath) {
-          document.getElementById("project-image").src = imagePath;
-        }
-
-        // Your highlightProject function
-        function highlightProject(projectNumber) {
-          const projectElements = document.querySelectorAll(
-            "#our-projects > .our-project-list > div"
-          );
-          projectElements.forEach((element, index) => {
-            if (index + 1 === projectNumber) {
-              element.classList.add("highlighted-project");
-            } else {
-              element.classList.remove("highlighted-project");
-            }
-          });
-        }
-        document.addEventListener("DOMContentLoaded", function () {
-          // Prefetching functions and variable declarations
-          function prefetchImages(imageUrls) {
-            imageUrls.forEach((url) => {
-              const img = new Image();
-              img.src = url;
-            });
-          }
-
-          const imageUrlsToPrefetch = [];
-          const projectElements = document.querySelectorAll(
-            "#our-projects > .our-project-list > div"
-          );
-
-          projectElements.forEach((element) => {
-            const imageUrl = element.dataset.projectImage;
-            if (imageUrl) {
-              imageUrlsToPrefetch.push(imageUrl);
-            }
-          });
-
-          // Execute prefetching directly within DOMContentLoaded
-          prefetchImages(imageUrlsToPrefetch);
-
-
-          // Initial highlight (now part of the same DOMContentLoaded)
-          highlightProject(1);
-
-          // SVG opacity logic (also part of the same DOMContentLoaded)
-          var groups = document.querySelectorAll('g');
-          groups.forEach(function(group) {
-            group.setAttribute('opacity', '0.4');
-            group.addEventListener('mouseenter', function() {
-              group.setAttribute('opacity', '1');
-            });
-            group.addEventListener('mouseleave', function() {
-              group.setAttribute('opacity', '0.4');
-            });
-          });
-        });
-      </script>
   </body>
 
 </html>
