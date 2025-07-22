@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Send the data to your Go backend's subscribe endpoint
             try {
-                const response = await fetch('https://contact-form-api.epfl-rocket-team.ch/subscribe', {
+                const response = await fetch('https://turnstile.epfl-rocket-team.ch/subscribe', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
