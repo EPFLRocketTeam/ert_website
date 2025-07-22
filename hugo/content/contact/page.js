@@ -7,6 +7,10 @@ function onSubmitForm(token) {
     const submitButton = document.getElementById('submitButton');
     if (submitButton) {
         submitButton.disabled = false; // Enable the button
+        submitButton.style.opacity = '1';
+        submitButton.style.cursor = 'pointer'; 
+        submitButton.style.color = '#ffffff'; // Change text color to white
+        submitButton.style.backgroundColor = '#da291c'; // Change background color to match
     } else {
         console.error("Submit button with ID 'submitButton' not found!");
     }
