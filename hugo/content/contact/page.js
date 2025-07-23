@@ -19,7 +19,11 @@ function onSubmitForm(token) {
 document.addEventListener('DOMContentLoaded', function () {
     if (typeof turnstile !== 'undefined' && turnstile.reset) {
         console.log("Turnstile API found on DOMContentLoaded. Attempting reset.");
-        turnstile.reset(); // This resets all widgets on the page
+        try {
+            turnstile.reset(); // This resets all widgets on the page
+        } catch (error) {
+            console.error("Error resetting Turnstile:", error);
+        };
     } else {
         console.log("Turnstile API not yet available on DOMContentLoaded. Will not reset at this stage.");
     }
