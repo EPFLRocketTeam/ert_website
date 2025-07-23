@@ -8,7 +8,7 @@ function onSubmitForm(token) {
     if (submitButton) {
         submitButton.disabled = false; // Enable the button
         submitButton.style.opacity = '1';
-        submitButton.style.cursor = 'pointer'; 
+        submitButton.style.cursor = 'pointer';
         submitButton.style.color = '#ffffff'; // Change text color to white
         submitButton.style.backgroundColor = '#da291c'; // Change background color to match
     } else {
@@ -17,6 +17,12 @@ function onSubmitForm(token) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    if (typeof turnstile !== 'undefined' && turnstile.reset) {
+        console.log("Turnstile API found on DOMContentLoaded. Attempting reset.");
+        turnstile.reset(); // This resets all widgets on the page
+    } else {
+        console.log("Turnstile API not yet available on DOMContentLoaded. Will not reset at this stage.");
+    }
     // Get a reference to your form
     const contactForm = document.getElementById('contactForm');
 

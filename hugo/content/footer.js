@@ -48,8 +48,13 @@ function resetNewsletterTurnstileAndButton() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
+    if (typeof turnstile !== 'undefined' && turnstile.reset) {
+        console.log("Turnstile API found on DOMContentLoaded. Attempting reset.");
+        turnstile.reset(); // This resets all widgets on the page
+    } else {
+        console.log("Turnstile API not yet available on DOMContentLoaded. Will not reset at this stage.");
+    }
     // Get a reference to your newsletter form
-
     const newsletterForm = document.getElementById('newsletterForm');
     // Add an event listener for newsletter form submission
     if (newsletterForm) {
