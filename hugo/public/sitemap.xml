@@ -2,48 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://rocketteam.epfl.ch/</loc>
     <lastmod>2025-03-13T19:36:46+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/</loc>
     <lastmod>2024-11-18T20:38:42+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/join-us/</loc>
+    <loc>https://rocketteam.epfl.ch/join-us/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://rocketteam.epfl.ch/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/board/</loc>
+    <loc>https://rocketteam.epfl.ch/about/board/</loc>
   </url><url>
-    <loc>http://localhost:1313/join-us/open-positions/</loc>
+    <loc>https://rocketteam.epfl.ch/join-us/open-positions/</loc>
   </url><url>
-    <loc>http://localhost:1313/join-us/semester-projects/</loc>
+    <loc>https://rocketteam.epfl.ch/join-us/semester-projects/</loc>
   </url><url>
-    <loc>http://localhost:1313/sponsors/</loc>
+    <loc>https://rocketteam.epfl.ch/sponsors/</loc>
   </url><url>
-    <loc>http://localhost:1313/contact/</loc>
+    <loc>https://rocketteam.epfl.ch/contact/</loc>
   </url><url>
-    <loc>http://localhost:1313/shop/</loc>
+    <loc>https://rocketteam.epfl.ch/shop/</loc>
   </url><url>
-    <loc>http://localhost:1313/projects/space-race/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/space-race/</loc>
     <lastmod>2025-03-13T19:36:46+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/icarus/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/icarus/</loc>
     <lastmod>2025-03-13T19:36:30+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/hyperion/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/hyperion/</loc>
     <lastmod>2025-03-13T19:36:20+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/firehorn/</loc>
+    <loc>https://rocketteam.epfl.ch/projects/firehorn/</loc>
     <lastmod>2025-03-12T20:54:33+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://rocketteam.epfl.ch/posts/</loc>
     <lastmod>2024-09-22T08:55:02+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/test/</loc>
+    <loc>https://rocketteam.epfl.ch/posts/test/</loc>
     <lastmod>2024-09-22T08:55:02+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://rocketteam.epfl.ch/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://rocketteam.epfl.ch/tags/</loc>
   </url>
 </urlset>
