@@ -1,0 +1,281 @@
+.prestige-box {
+  margin: 30px;
+  width: auto;
+  height: auto;
+  border: 2px solid #9063CD;
+  position: relative;
+  background-color: black;
+  color: #9063CD;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px;
+  border-radius: 24px;
+}
+
+.prestige-label {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background-color: black;
+  padding: 0 5px;
+  font-size: 24px;
+}
+
+.prestige-img {
+  max-height: 100px;
+}
+
+.prestige-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* Center logos vertically */
+  /* Center-align logos */
+  gap: 10px;
+  padding: 20px;
+  /* Space between logos */
+  border-radius: 6px;
+  background: linear-gradient(to right, #B28BFF, #9063CD);
+}
+
+.prestige-sponsor {
+  flex: 1 1 200px;
+  /* Adjusts size dynamically, min 200px */
+  max-width: 400px;
+  /* Prevents oversized logos */
+  text-align: center;
+  padding: 10px;
+}
+
+.prestige-sponsor img {
+  max-width: 100%;
+  /* Ensures logos are responsive */
+  height: auto;
+}
+
+.gold-box {
+  margin: 30px;
+  width: auto;
+  height: auto;
+  border: 2px solid #CBA135;
+  position: relative;
+  background-color: black;
+  color: #CBA135;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px;
+  border-radius: 24px;
+}
+
+.gold-label {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background-color: black;
+  padding: 0 5px;
+  font-size: 24px;
+}
+
+.gold-img {
+  max-height: 100px;
+}
+
+.gold-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* Center logos vertically */
+  /* Center-align logos */
+  gap: 10px;
+  padding: 20px;
+  /* Space between logos */
+  border-radius: 6px;
+  background: linear-gradient(to right, #E0B35B, #CBA135);
+}
+
+.gold-sponsor {
+  flex: 1 1 200px;
+  /* Adjusts size dynamically, min 200px */
+  max-width: 400px;
+  /* Prevents oversized logos */
+  text-align: center;
+  padding: 10px;
+}
+
+.gold-sponsor img {
+  max-width: 100%;
+  /* Ensures logos are responsive */
+  height: auto;
+}
+
+.silver-box {
+  margin: 30px;
+  width: auto;
+  height: auto;
+  border: 2px solid #A8A9AD;
+  position: relative;
+  background-color: black;
+  color: #A8A9AD;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px;
+  border-radius: 24px;
+}
+
+.silver-label {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background-color: black;
+  padding: 0 5px;
+  font-size: 24px;
+}
+
+.silver-img {
+  max-height: 100px;
+}
+
+.silver-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* Center logos vertically */
+  /* Center-align logos */
+  gap: 10px;
+  padding: 20px;
+  /* Space between logos */
+  border-radius: 6px;
+  background: linear-gradient(to right, #D1D3D4, #A8A9AD);
+}
+
+.silver-sponsor {
+  flex: 1 1 200px;
+  /* Adjusts size dynamically, min 200px */
+  max-width: 400px;
+  /* Prevents oversized logos */
+  text-align: center;
+  padding: 10px;
+}
+
+.silver-sponsor img {
+  max-width: 100%;
+  /* Ensures logos are responsive */
+  height: auto;
+}
+
+.bronze-box {
+  margin: 30px;
+  width: auto;
+  height: auto;
+  border: 2px solid #8C6239;
+  position: relative;
+  background-color: black;
+  color: #8C6239;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px;
+  border-radius: 24px;
+}
+
+.bronze-label {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background-color: black;
+  padding: 0 5px;
+  font-size: 24px;
+}
+
+.bronze-img {
+  max-height: 100px;
+}
+
+.bronze-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* Center logos vertically */
+  /* Center-align logos */
+  gap: 10px;
+  padding: 20px;
+  /* Space between logos */
+  border-radius: 6px;
+  background: linear-gradient(to right, #A77F57, #8C6239);
+}
+
+.bronze-sponsor {
+  flex: 1 1 200px;
+  /* Adjusts size dynamically, min 200px */
+  max-width: 400px;
+  /* Prevents oversized logos */
+  text-align: center;
+  padding: 10px;
+}
+
+.bronze-sponsor img {
+  max-width: 100%;
+  /* Ensures logos are responsive */
+  height: auto;
+  max-height: 100px;
+}
+
+.support-box {
+  margin: 30px;
+  width: auto;
+  height: auto;
+  border: 2px solid #008080;
+  position: relative;
+  background-color: black;
+  color: #008080;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 18px;
+  border-radius: 24px;
+}
+
+.support-label {
+  position: absolute;
+  top: -12px;
+  left: 24px;
+  background-color: black;
+  padding: 0 5px;
+  font-size: 24px;
+}
+
+.support-img {
+  max-height: 100px;
+}
+
+.support-sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  /* Center logos vertically */
+  /* Center-align logos */
+  gap: 10px;
+  padding: 20px;
+  /* Space between logos */
+  border-radius: 6px;
+  background: linear-gradient(to right, #66B2B2, #008080);
+}
+
+.support-sponsor {
+  flex: 1 1 200px;
+  /* Adjusts size dynamically, min 200px */
+  max-width: 400px;
+  /* Prevents oversized logos */
+  text-align: center;
+  padding: 10px;
+}
+
+.support-sponsor img {
+  max-width: 100%;
+  /* Ensures logos are responsive */
+  height: auto;
+  max-height: 100px;
+}
