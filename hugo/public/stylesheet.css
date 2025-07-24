@@ -193,6 +193,19 @@ h4 {
   transition: 200ms;
 }
 
+.btn {
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #333333;
+}
+
 .right-align {
   float: right;
   /*right: 30px;*/
@@ -531,7 +544,6 @@ textarea {
 }
 
 .parent {
-  margin-left: 20px;
   display: grid;
   width: 105vw;
   height: 130vh;
@@ -723,7 +735,7 @@ textarea {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.collapsible:hover {
   color: #DA291C;
 }
 
@@ -899,13 +911,45 @@ h6 span{
   content: "− "; /* Unicode character for "minus" sign (-) */
 }
 
+.shop-container {
+  display: flex; /* Use flexbox for horizontal alignment */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Add some space between the cards */
+  padding: 10px; /* Add some padding to the container */
+}
+
 .card-shop {
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  object-fit: contain;
-  display: inline-block;
-  margin: 0 20px;
+  flex: 0 0 auto; /* Don't grow, don't shrink, base size determined by content */
+  width: 320px; /* Or a max-width, adjust based on your design */
+  max-width: 100%; /* Ensure it doesn't exceed its parent's width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-bottom: 20px; /* Add some space below each card when they wrap */
+  /* Add other styling for your card, e.g., border, shadow, background */
+  border: 2px solid #222222;
+  border-radius: 16px;
+  padding: 8px;
+  background-color: #111111;
+  overflow: hidden; /* Crucial for images within the card that might be too wide */
+}
+
+.card-shop img {
+  max-width: 100%; /* Ensure images don't overflow their parent */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below images */
+}
+
+/* For the swiper elements specifically */
+.swiper {
+  width: 100%; /* Make the swiper take the full width of its parent (.card-shop) */
+  max-width: 900px; /* Keep your original max-width if desired, but ensure it's not overflowing */
+  box-sizing: border-box;
+}
+
+/* Ensure swiper-slide images don't overflow */
+.swiper-slide img {
+  height: auto;
+  display: block;
 }
 
 .card-shop h1{
@@ -916,7 +960,8 @@ h6 span{
 .price {
   color: grey;
   font-size: 22px;
-  text-align: center;
+  text-align: left;
+  margin: 5px 0;
 }
 
 .card-shop button {
@@ -1003,7 +1048,7 @@ h6 span{
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot:hover {
   background-color: #717171;
 }
 
@@ -1037,7 +1082,7 @@ h6 span{
 
 
   .mission7 {
-    grid-row-start: 6;
+    grid-row-start: 4;
     grid-column-end: 7;
   }
 
@@ -1189,9 +1234,6 @@ h6 span{
 }
 
 .join-card-box { display: grid; }
-@media (min-width: 1280px) {
-  .join-card-box { display: none; }
-}
 
 @media (max-width: 1280px) {
   .min-1280 { display: none; }
@@ -1211,9 +1253,9 @@ h6 span{
   }
 
   .parent {
-    height: 100vh;
+    height: 90vh;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: repeat(10, 1fr);
   }
 
   .div1 {
