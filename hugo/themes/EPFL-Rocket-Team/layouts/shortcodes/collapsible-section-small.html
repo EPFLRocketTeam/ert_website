@@ -1,0 +1,22 @@
+{{/* Shortcode: component-section.html */}}
+
+<div x-data="{name: '{{ .Get "name" }}'}">
+  <div
+      x-on:click="openTab = (openTab === name ? '' : name)"
+      >
+      <div style="min-height: 1.5rem; font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center; cursor: pointer;">
+        <div>{{ .Get "name" }}</div>
+        <div style="margin-left: auto;">
+          <button
+              style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;"
+              x-text="openTab == name ? '−' : '+'"
+              >+</button>
+        </div>
+      </div>
+  </div>
+  <hr style="margin: 2px 0 2px 0" />
+
+  <div style="min-height: 20px" x-show="openTab === name" x-collapse>
+    {{ .Inner }}
+  </div>
+</div>
