@@ -1,38 +1,38 @@
 <form id="contactForm" action="/submit" method="POST" style="max-width: 1000px; margin: 0 auto; background: none; color: #ffffff; padding: 0px; border-radius: 10px;">
-    <div style="margin-bottom: 15px;">
-      <label for="name" style="font-size: 32px; display: block; margin-bottom: 5px;">Name</label>
-      <input type="text" id="name" name="name" placeholder="Name" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
-    </div>
-    
-    <div style="margin-bottom: 15px;">
-      <label for="email" style="font-size: 32px; display: block; margin-bottom: 5px;">Email</label>
-      <input type="email" id="email" name="email" placeholder="Email" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
-    </div>
-    
-    <div style="margin-bottom: 15px;">
-      <label for="message" style="font-size: 32px; display: block; margin-bottom: 5px;">Message</label>
-      <textarea id="message" name="message" placeholder="Message" rows="4" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required></textarea>
-    </div>
+  <div style="margin-bottom: 15px;">
+    <label for="name" style="font-size: 32px; display: block; margin-bottom: 5px;">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
+  </div>
 
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAABedzJUW2HmA7zsO" data-callback="onSubmitForm"></div>
-    
-    <button id="submitButton" type="submit" disabled style="width: 100%; padding: 15px; font-size: 1rem; font-weight: bold; border: none; border-radius: 10px; background: #bb5851; color: #bcbcbc; cursor: default;">
-      SEND
-    </button>
-  </form>
+  <div style="margin-bottom: 15px;">
+    <label for="email" style="font-size: 32px; display: block; margin-bottom: 5px;">Email</label>
+    <input type="email" id="email" name="email" placeholder="Email" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
+  </div>
 
-  <div style="font-size: 20px; text-align: center;">Or send us an email at these addresses below:
-    
+  <div style="margin-bottom: 15px;">
+    <label for="message" style="font-size: 32px; display: block; margin-bottom: 5px;">Message</label>
+    <textarea id="message" name="message" placeholder="Message" rows="4" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required></textarea>
+  </div>
+
+  <div class="cf-turnstile" data-sitekey="0x4AAAAAABedzJUW2HmA7zsO" data-callback="onSubmitForm"></div>
+
+  <button id="submitButton" type="submit" disabled style="width: 100%; padding: 15px; font-size: 1rem; font-weight: bold; border: none; border-radius: 10px; background: #bb5851; color: #bcbcbc; cursor: default;">
+    SEND
+  </button>
+</form>
+
+<div style="font-size: 20px; text-align: center;">Or send us an email at these addresses below:
+
+  <a href="mailto:info@epflrocketteam.ch">
     <h5>
       General inquiries
-      <a href="mailto:info@epflrocketteam.ch">
-          <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="Mail icon"></img>
-      </a>
+      <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="Mail icon"></img>
     </h5>
+  </a>
+  <a href="mailto:presidency@epflrocketteam.ch">
     <h5>
       Presidency
-      <a href="mailto:presidency@epflrocketteam.ch">
-          <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="Mail icon"></img>
-      </a>
+      <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="Mail icon"></img>
     </h5>
-  </div>
+  </a>
+</div>
