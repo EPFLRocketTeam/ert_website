@@ -1,22 +1,84 @@
-{{/* Shortcode: component-section.html */}}
+<details
+    style="
+           background: #292929;
+           border-radius: 16px;
+           overflow: hidden;
+           margin-bottom: 8px;
+           transition: all 0.3s ease-in-out; /* Smooth transition for background etc if added */
+           "
+    >
+    <summary
+        style="
+               padding: 8px;
+               display: flex;
+               align-items: center;
+               cursor: pointer;
+               font-family: 'Aspekta-600';
+               font-size: 1.5rem; /* Adjusted font size */
+               min-height: 1.5rem; /* Adjusted min height */
+               list-style: none;
+               -webkit-tap-highlight-color: transparent;
+               position: relative; /* For symbol positioning */
+               "
+        >
+        <style>
+/* --- START CSS FOR SYMBOL ANIMATION AND HIDING DEFAULT MARKER --- */
+/* These need to be in a <style> tag, not truly inline per element */
+details summary::-webkit-details-marker {
+  display: none;
+}
+      details > summary::marker {
+        display: none;
+      }
 
-<div x-data="{name: '{{ .Get "name" }}'}">
-  <div
-      x-on:click="openTab = (openTab === name ? '' : name)"
-      >
-      <div style="min-height: 1.5rem; font-family: 'Aspekta-600'; font-size: 1.5rem; display: flex; align-items: center; cursor: pointer;">
-        <div>{{ .Get "name" }}</div>
-        <div style="margin-left: auto;">
-          <button
-              style="background: #222222; aspect-ratio: 1/1; height: 2.25rem; border-radius: 1.125em; color: white; border: none; font-size: 1.5rem; cursor: pointer;"
-              x-text="openTab == name ? '−' : '+'"
-              >+</button>
-        </div>
+      /* Custom symbol for summary */
+      details > summary::after {
+        content: '+'; /* Default symbol */
+        margin-left: auto;
+        background: #444444; /* Adjusted background color */
+        aspect-ratio: 1/1;
+        height: 2.25rem; /* Adjusted height */
+        border-radius: 1.125em;
+        color: white;
+        border: none;
+        font-size: 1.5rem; /* Adjusted font size */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+        margin-left: 10px; /* Space between text and symbol */
+      }
+
+      /* Rotate symbol when details is open */
+      details[open] > summary::after {
+        content: '−'; /* Change symbol when open */
+        transform: rotate(0deg); /* No rotation for dash, or rotate for cross */
+      }
+
+      /* --- CONTENT ANIMATION (Max-height trick) --- */
+      details > .component-content-wrapper {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out; /* Only max-height, original had no padding animation */
+        padding: 0 8px; /* Initial zero padding */
+      }
+
+      details[open] > .component-content-wrapper {
+        max-height: 500px; /* A sufficiently large value */
+        padding: 8px;
+      }
+      /* --- END CSS --- */
+</style>
+
+      <div style="flex-grow: 1;">{{ .Get "name" }}</div>
+      <!-- The symbol is handled by the ::after pseudo-element of summary -->
+    </summary>
+
+    <hr style="margin: 2px 0; background: currentColor; color: #da291c; height: 2px; border: none;" />
+
+    <div class="component-content-wrapper">
+      <div style="min-height: 20px;">
+        {{ .Inner }}
       </div>
-  </div>
-  <hr style="margin: 2px 0 2px 0" />
-
-  <div style="min-height: 20px" x-show="openTab === name" x-collapse>
-    {{ .Inner }}
-  </div>
-</div>
+    </div>
+</details>
