@@ -1,81 +1,3 @@
-<style>
-  body { background: black; }
-  .board-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-
-  .board-item {
-    flex: 1 1 calc(25% - 20px);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 3 /4;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  img {
-    object-fit: cover;
-  }
-
-  .linkedin-icon {
-    height: 15px;
-    width: 15px;
-    margin-left: 5px;
-    margin-bottom: -2.5px;
-  }
-
-  .mail-icon {
-    height: 20px;
-    width: 20px;
-    margin-left: 5px;
-    margin-bottom: -5px;
-  }
-
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    width: 100%;
-  }
-
-  .info-title {
-    color: #DA291C;
-    font-size: 36px;
-    font-family: Aspekta;
-    font-weight: 400;
-    line-height: 50px;
-    word-wrap: break-word;
-  }
-
-  .info-divider {
-    height: 0;
-    border: 1px solid #DA291C;
-  }
-
-  .info-subtitle {
-    color: #F6F6F6;
-    font-size: 16px;
-    font-family: Aspekta;
-    font-weight: 400;
-    line-height: 20px;
-    word-wrap: break-word;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-</style>
-
 <div class="board-container">
   {{ range .Site.Data.board_members }}
   <div class="board-item">
@@ -88,6 +10,8 @@
       <div class="info-divider"></div>
       <div class="info-subtitle">
         {{ .position }}
+      </div>
+      <div style="display: flex">
         <a href="{{ .linkedin }}">
           <img class="linkedin-icon" loading="lazy" src="/icons/LinkedIn.svg" alt="LinkedIn icon"></img>
         </a>
