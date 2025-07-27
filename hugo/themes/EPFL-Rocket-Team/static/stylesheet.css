@@ -977,6 +977,66 @@ h6 span{
   opacity: 0.7;
 }
 
+.boxed-collapsible {
+  background-color: #000; /* Black background for the box */
+  color: #fff; /* White text for titles */
+  border: 1px solid #333; /* Darker border between items */
+  margin-bottom: -1px; /* To make borders visually collapse */
+}
+
+.boxed-collapsible details {
+  margin: 0;
+  padding: 0;
+}
+
+.boxed-collapsible summary {
+  padding: 15px 20px; /* Adjust padding as needed */
+  cursor: pointer;
+  outline: none; /* Remove default focus outline */
+  display: flex;
+  align-items: center;
+  font-size: 1.1em; /* Adjust font size */
+  font-weight: normal; /* Adjust font weight */
+  user-select: none; /* Prevent text selection on click */
+}
+
+/* Style for the indicator (+/-) */
+.boxed-collapsible .indicator {
+  display: inline-block;
+  width: 1em; /* Adjust width of indicator space */
+  text-align: center;
+  margin-right: 10px; /* Space between indicator and text */
+}
+
+.boxed-collapsible .indicator::before {
+  content: "+"; /* Plus sign when closed */
+}
+
+.boxed-collapsible details[open] .indicator::before {
+  content: "-"; /* Minus sign when open */
+}
+
+/* Style for the expanded content */
+.boxed-collapsible details > div {
+  padding: 15px 20px; /* Adjust padding for the content area */
+  padding-top: 0; /* No top padding for content, as summary has it */
+  color: #aaa; /* Lighter color for content text */
+}
+
+/* Style for the active/initially open summary (e.g., "Software Engineer") */
+.boxed-collapsible summary.active {
+  color: #ff0000; /* Red color for active title */
+}
+
+/* Basic Lorem ipsum content styling for demonstration */
+.boxed-collapsible p {
+  margin: 0 0 1em 0;
+}
+
+.boxed-collapsible p:last-child {
+  margin-bottom: 0;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

@@ -10,12 +10,11 @@ math: true
 ---
 <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
-{{< semester-projects >}}
+{{< max-width max="1000px" >}}
 
 If you can’t find your dream project down here, but have an idea or would like to suggest your own project to do with us, we are open to suggestions! Feel free to contact us and we can talk about it.
 
 {{< separator-with-text text="AUTUMN 2025" >}}
-
 
 {{< collapsible-section-big name="COMPETITION PROJECT" >}}
 
@@ -80,3 +79,4 @@ Description of management project 3
 {{< /collapsible-section-small >}}
 
 {{< /collapsible-section-big >}}
+{{< /max-width >}}
