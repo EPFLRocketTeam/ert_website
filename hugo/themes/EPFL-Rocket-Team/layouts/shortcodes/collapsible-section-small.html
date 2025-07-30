@@ -1,4 +1,5 @@
 <details
+    class="details-small"
     style="
            background: #292929;
            border-radius: 16px;
@@ -8,6 +9,7 @@
            "
     >
     <summary
+        class="summary-small"
         style="
                padding: 8px;
                display: flex;
@@ -24,15 +26,15 @@
         <style>
 /* --- START CSS FOR SYMBOL ANIMATION AND HIDING DEFAULT MARKER --- */
 /* These need to be in a <style> tag, not truly inline per element */
-details summary::-webkit-details-marker {
+.details-small summary::-webkit-details-marker {
   display: none;
 }
-      details > summary::marker {
+      .details-small > summary::marker {
         display: none;
       }
 
       /* Custom symbol for summary */
-      details > summary::after {
+      .details-small > summary::after {
         content: '+'; /* Default symbol */
         margin-left: auto;
         background: #444444; /* Adjusted background color */
@@ -50,31 +52,22 @@ details summary::-webkit-details-marker {
       }
 
       /* Rotate symbol when details is open */
-      details[open] > summary::after {
+      .details-small[open] > summary::after {
         content: '−'; /* Change symbol when open */
         transform: rotate(0deg); /* No rotation for dash, or rotate for cross */
       }
 
-      /* --- CONTENT ANIMATION (Max-height trick) --- */
-      details > .component-content-wrapper {
-        max-height: 0;
+      .details-small > .component-content-wrapper {
         overflow: hidden;
-        transition: max-height 0.4s ease-in-out; /* Only max-height, original had no padding animation */
-        padding: 0 8px; /* Initial zero padding */
+        padding: 0 8px 8px; /* Initial zero padding */
       }
-
-      details[open] > .component-content-wrapper {
-        max-height: 500px; /* A sufficiently large value */
-        padding: 8px;
-      }
-      /* --- END CSS --- */
 </style>
 
       <div style="flex-grow: 1;">{{ .Get "name" }}</div>
       <!-- The symbol is handled by the ::after pseudo-element of summary -->
     </summary>
 
-    <hr style="margin: 2px 0; background: currentColor; color: #da291c; height: 2px; border: none;" />
+    <!--hr style="margin: 2px 0; background: currentColor; color: #da291c; height: 2px; border: none;" /-->
 
     <div class="component-content-wrapper">
       <div style="min-height: 20px;">

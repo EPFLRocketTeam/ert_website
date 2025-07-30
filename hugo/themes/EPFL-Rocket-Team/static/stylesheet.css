@@ -222,6 +222,7 @@ color: #da291c;
     flex: 1;
     flex-wrap: wrap;
     min-width: 250px;
+    color: white;
   }
 
   .card {
@@ -681,7 +682,6 @@ color: #da291c;
   display:block; 
   width:100%; 
   border-bottom:5px solid #DA291C; 
-  margin-top:25px; 
   text-align:center;
   margin-bottom: 40px; 
 }
@@ -837,7 +837,6 @@ color: #da291c;
 }
 
 .openpos{
-  width: 70vw;
   margin-bottom: 20px;
 }
 
@@ -849,7 +848,6 @@ color: #da291c;
 
 .oppos-flex{
   display: flex;
-  width: 70vw;
   justify-content: space-between;
 }
 

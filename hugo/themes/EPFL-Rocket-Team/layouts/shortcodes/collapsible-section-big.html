@@ -1,22 +1,24 @@
 <details
+    class="details-big"
     style="
            background: #171717;
-           border-radius: 16px;
+           border-radius: 12px;
            overflow: hidden;
            margin-bottom: 8px;
            transition: all 0.3s ease-in-out; /* Smooth transition for background etc if added */
            "
     >
     <summary
+        class="summary-big"
         style="
                background: #171717;
-               padding: 8px;
+               padding: 12px;
                display: flex;
                align-items: center;
                cursor: pointer;
                font-family: 'Aspekta-600';
-               font-size: 2rem;
-               min-height: 2rem;
+               font-size: 1.8rem;
+               min-height: 1.8rem;
                list-style: none; /* Remove default marker */
                -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
                position: relative; /* Needed for symbol positioning */
@@ -25,15 +27,15 @@
         <style>
 /* --- START CSS FOR SYMBOL ANIMATION AND HIDING DEFAULT MARKER --- */
 /* These cannot be truly inline per element, they need to be in a <style> tag */
-details summary::-webkit-details-marker {
+.details-big summary::-webkit-details-marker {
   display: none;
 }
-      details > summary::marker {
+      .details-big > summary::marker {
         display: none;
       }
 
       /* Custom symbol for summary */
-      details > summary::after {
+      .details-big > summary::after {
         content: '+'; /* Default symbol */
         margin-left: auto;
         background: #333333;
@@ -47,35 +49,26 @@ details summary::-webkit-details-marker {
         justify-content: center;
         align-items: center;
         transition: transform 0.3s ease-in-out; /* Animation for the symbol */
-        margin-left: 16px; /* Space between text and symbol */
+        margin-left: 12px; /* Space between text and symbol */
       }
 
-      /* Rotate symbol when details is open */
-      details[open] > summary::after {
+      .details-big[open] > summary::after {
         content: '−'; /* Change symbol when open */
         transform: rotate(0deg); /* No rotation for a dash, or rotate for a cross */
       }
 
-      /* --- CONTENT ANIMATION (Max-height trick) --- */
-      details > .content-wrapper {
-        max-height: 0;
+      .details-big > .content-wrapper {
         overflow: hidden;
-        transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out; /* Animate max-height and padding */
-        padding: 0 8px; /* Initial zero padding */
-      }
-
-      details[open] > .content-wrapper {
         max-height: 500px; /* A sufficiently large value to accommodate content */
-        padding: 8px; /* Apply padding when open */
+        padding: 0 12px 6px; /* Apply padding when open */
       }
-      /* --- END CSS --- */
 </style>
 
       <div style="flex-grow: 1;">{{ .Get "name" }}</div>
       <!-- The symbol is now handled by the ::after pseudo-element of summary -->
     </summary>
 
-    <hr
+    <!--hr
         style="
                margin: 0;
                background: #da291c;
@@ -83,7 +76,7 @@ details summary::-webkit-details-marker {
                height: 2px;
                border: none;
                "
-        />
+        /-->
 
     <div class="content-wrapper">
       <div style="min-height: 20px;">
