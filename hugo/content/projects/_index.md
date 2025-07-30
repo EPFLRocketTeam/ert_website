@@ -18,6 +18,8 @@ children:
     url: "/projects/hyperion/"
   - name: "Icarus"
     url: "/projects/icarus/"
+  - name: "Solaris"
+    url: "/projects/solaris/"
   - name: "Space Race"
     url: "/projects/space-race/"
 ---
