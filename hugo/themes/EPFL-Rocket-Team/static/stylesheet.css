@@ -930,7 +930,6 @@ color: #da291c;
 
 .oppos-flex div{
   flex: 50%;
-  max-width: 50%;
   margin: 10px;
   font-family: 'Aspekta-300';
   font-size: 18px;
@@ -1585,7 +1584,7 @@ h6 span{
 
   .oppos-flex{
     display: flex;
-    width: 100vw;
+    max-width: 100%;
     flex-direction: column;
     align-items: center;
   }
@@ -1674,13 +1673,13 @@ h6 span{
 
   .oppos-flex{
     display: flex;
-    width: 100vw;
+    max-width: 100%;
     flex-direction: column;
     align-items: center;
   }
 
   .oppos-flex div{
-    width: 100%;
+    max-width: 100%;
   }
 
   .oppos-flex img{
