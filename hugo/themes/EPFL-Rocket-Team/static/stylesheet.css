@@ -736,6 +736,31 @@ color: #da291c;
   color: #DA291C;
 }
 
+/* Hide the default disclosure triangle on summary for a cleaner look */
+.component-summary::-webkit-details-marker,
+.component-summary::marker {
+  display: none;
+  content: "";
+}
+
+/* Initial state: plus icon visible, minus icon hidden */
+.component-details .component-toggle-button .plus-icon {
+  opacity: 1;
+}
+
+.component-details .component-toggle-button .minus-icon {
+  opacity: 0;
+}
+
+/* When the details is open: minus icon visible, plus icon hidden */
+.component-details[open] .component-toggle-button .plus-icon {
+  opacity: 0;
+}
+
+.component-details[open] .component-toggle-button .minus-icon {
+  opacity: 1;
+}
+
 /* Style the collapsible content. Note: hidden by default */
 .content {
   display: none;
