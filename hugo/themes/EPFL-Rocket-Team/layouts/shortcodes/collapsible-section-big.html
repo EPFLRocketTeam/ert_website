@@ -24,45 +24,6 @@
                position: relative; /* Needed for symbol positioning */
                "
         >
-        <style>
-/* --- START CSS FOR SYMBOL ANIMATION AND HIDING DEFAULT MARKER --- */
-/* These cannot be truly inline per element, they need to be in a <style> tag */
-.details-big summary::-webkit-details-marker {
-  display: none;
-}
-      .details-big > summary::marker {
-        display: none;
-      }
-
-      /* Custom symbol for summary */
-      .details-big > summary::after {
-        content: '+'; /* Default symbol */
-        margin-left: auto;
-        background: #333333;
-        aspect-ratio: 1/1;
-        height: 3rem;
-        border-radius: 1.125em;
-        color: white;
-        border: none;
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: transform 0.3s ease-in-out; /* Animation for the symbol */
-        margin-left: 12px; /* Space between text and symbol */
-      }
-
-      .details-big[open] > summary::after {
-        content: '−'; /* Change symbol when open */
-        transform: rotate(0deg); /* No rotation for a dash, or rotate for a cross */
-      }
-
-      .details-big > .content-wrapper {
-        overflow: hidden;
-        max-height: 500px; /* A sufficiently large value to accommodate content */
-        padding: 0 12px 6px; /* Apply padding when open */
-      }
-</style>
 
       <div style="flex-grow: 1;">{{ .Get "name" }}</div>
       <!-- The symbol is now handled by the ::after pseudo-element of summary -->
