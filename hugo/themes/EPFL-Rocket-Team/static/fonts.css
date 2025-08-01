@@ -1,7 +1,8 @@
 /*fonts*/
+/*
 @font-face {
     font-family: 'Aspekta-50';
-    src: url('/fonts/Aspekta-50.ttf')  format('truetype'), /* Safari, Android, iOS */
+    src: url('/fonts/Aspekta-50.ttf')  format('truetype'),
     url('/fonts/Aspekta-50.woff2')  format('woff');
     font-weight: 50;
     font-style: normal;
@@ -28,6 +29,7 @@
     font-display: swap;
     
 }
+*/
 
 @font-face{
     font-family: 'Aspekta-200';
@@ -39,6 +41,7 @@
     
 }
 
+/*
 @font-face{
     font-family: 'Aspekta-250';
     src: url('/fonts/Aspekta-250.ttf')  format('truetype'), 
@@ -49,6 +52,7 @@
     
 }
 
+*/
 @font-face{
     font-family: 'Aspekta-300';
     src: url('/fonts/Aspekta-300.ttf')  format('truetype'), 
@@ -59,6 +63,7 @@
     
 }
 
+/*
 @font-face{
     font-family: 'Aspekta-350';
     src: url('/fonts/Aspekta-350.ttf')  format('truetype'), 
@@ -68,6 +73,7 @@
     font-display: swap;
     
 }
+*/
 
 @font-face{
     font-family: 'Aspekta';
@@ -79,6 +85,7 @@
     
 }
 
+/*
 @font-face{
     font-family: 'Aspekta-450';
     src: url('/fonts/Aspekta-450.ttf')  format('truetype'), 
@@ -108,6 +115,7 @@
     font-display: swap;
     
 }
+*/
 
 @font-face{
     font-family: 'Aspekta-600';
@@ -118,6 +126,7 @@
     font-display: swap;
     
 }
+/*
 
 @font-face{
     font-family: 'Aspekta-650';
@@ -198,3 +207,4 @@
     font-display: swap;
     
 }
+*/
