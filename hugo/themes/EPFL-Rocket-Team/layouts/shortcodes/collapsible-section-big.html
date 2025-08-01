@@ -1,47 +1,55 @@
-<details
-    class="details-big"
+<div
+  x-data="{ isOpen: false }"
+  class="details-big-wrapper"
+  style="
+    background: #171717;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  "
+>
+  <div
+    x-on:click="isOpen = !isOpen"
+    class="summary-big"
     style="
-           background: #171717;
-           border-radius: 12px;
-           overflow: hidden;
-           margin-bottom: 8px;
-           transition: all 0.3s ease-in-out; /* Smooth transition for background etc if added */
-           "
-    >
-    <summary
-        class="summary-big"
+      background: #171717;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-family: 'Aspekta-600';
+      font-size: 1.8rem;
+      min-height: 1.8rem;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    "
+  >
+    <div style="flex-grow: 1;">{{ .Get "name" }}</div>
+    <div style="margin-left: auto;">
+      <button
         style="
-               background: #171717;
-               padding: 12px;
-               display: flex;
-               align-items: center;
-               cursor: pointer;
-               font-family: 'Aspekta-600';
-               font-size: 1.8rem;
-               min-height: 1.8rem;
-               list-style: none; /* Remove default marker */
-               -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
-               position: relative; /* Needed for symbol positioning */
-               "
-        >
-
-      <div style="flex-grow: 1;">{{ .Get "name" }}</div>
-      <!-- The symbol is now handled by the ::after pseudo-element of summary -->
-    </summary>
-
-    <!--hr
-        style="
-               margin: 0;
-               background: #da291c;
-               color: #da291c;
-               height: 2px;
-               border: none;
-               "
-        /-->
-
-    <div class="content-wrapper">
-      <div style="min-height: 20px;">
-        {{ .Inner }}
-      </div>
+          background: #222222;
+          aspect-ratio: 1/1;
+          height: 2.25rem;
+          border-radius: 1.125em;
+          color: white;
+          border: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+        x-text="isOpen ? '−' : '+'"
+      >
+        +
+      </button>
     </div>
-</details>
+  </div>
+
+  <div class="content-wrapper" x-show="isOpen" x-collapse>
+    <div style="min-height: 20px; padding: 12px; padding-top: 0;">
+      {{ .Inner }}
+    </div>
+  </div>
+</div>

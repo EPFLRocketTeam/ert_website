@@ -1,38 +1,54 @@
-<details
-    class="details-small"
+<div
+  x-data="{ isOpen: false }"
+  class="details-small-wrapper"
+  style="
+    background: #292929;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  "
+>
+  <div
+    x-on:click="isOpen = !isOpen"
+    class="summary-small"
     style="
-           background: #292929;
-           border-radius: 16px;
-           overflow: hidden;
-           margin-bottom: 8px;
-           transition: all 0.3s ease-in-out; /* Smooth transition for background etc if added */
-           "
-    >
-    <summary
-        class="summary-small"
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      font-family: 'Aspekta-600';
+      font-size: 1.5rem;
+      min-height: 1.5rem;
+      -webkit-tap-highlight-color: transparent;
+      position: relative;
+    "
+  >
+    <div style="flex-grow: 1;">{{ .Get "name" }}</div>
+    <div style="margin-left: auto;">
+      <button
         style="
-               padding: 8px;
-               display: flex;
-               align-items: center;
-               cursor: pointer;
-               font-family: 'Aspekta-600';
-               font-size: 1.5rem; /* Adjusted font size */
-               min-height: 1.5rem; /* Adjusted min height */
-               list-style: none;
-               -webkit-tap-highlight-color: transparent;
-               position: relative; /* For symbol positioning */
-               "
-        >
-
-      <div style="flex-grow: 1;">{{ .Get "name" }}</div>
-      <!-- The symbol is handled by the ::after pseudo-element of summary -->
-    </summary>
-
-    <!--hr style="margin: 2px 0; background: currentColor; color: #da291c; height: 2px; border: none;" /-->
-
-    <div class="component-content-wrapper">
-      <div style="min-height: 20px;">
-        {{ .Inner }}
-      </div>
+          background: #222222;
+          aspect-ratio: 1/1;
+          height: 2rem; /* Slightly smaller button for smaller details */
+          border-radius: 1em; /* Adjusted border-radius for new height */
+          color: white;
+          border: none;
+          font-size: 1.2rem; /* Adjusted font size for smaller button */
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+        x-text="isOpen ? '−' : '+'"
+      >
+        +
+      </button>
     </div>
-</details>
+  </div>
+
+  <div class="component-content-wrapper" x-show="isOpen" x-collapse>
+    <div style="min-height: 20px; padding: 8px; padding-top: 0;">
+      {{ .Inner }}
+    </div>
+  </div>
+</div>
