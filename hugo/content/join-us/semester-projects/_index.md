@@ -12,7 +12,9 @@ math: true
 
 {{< max-width max="1000px" >}}
 
+<p>
 If you can’t find your dream project down here, but have an idea or would like to suggest your own project to do with us, we are open to suggestions! Feel free to contact us and we can talk about it.
+</p>
 
 {{< separator-with-text text="AUTUMN 2025" >}}
 

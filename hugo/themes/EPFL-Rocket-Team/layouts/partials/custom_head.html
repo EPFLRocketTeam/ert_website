@@ -5,15 +5,14 @@
 
 <link rel="stylesheet" href="/header.css">
 
-<!-- Deferred load for /stylesheet.css -->
-<link rel="stylesheet" href="/stylesheet.css" media="print" onload="this.onload=null;this.media='all'">
+<link rel="stylesheet" href="./page.css">
 
-<!-- Deferred load for ./page.css -->
-<link rel="stylesheet" href="./page.css" media="print" onload="this.onload=null;this.media='all'">
+<!-- Deferred load for /stylesheet.css -->
+<link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
 
 <noscript>
   <link rel="stylesheet" href="/stylesheet.css">
-  <link rel="stylesheet" href="./page.css">
 </noscript>
 
 <script defer src="/header-menu.js"></script>
