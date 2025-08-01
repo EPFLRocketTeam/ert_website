@@ -933,7 +933,7 @@ color: #da291c;
 .oppos-flex div{
   flex: 50%;
   margin: 10px;
-  font-family: 'Aspekta-300';
+  font-family: 'Aspekta';
   font-size: 18px;
   line-height: 180%;
 }
@@ -955,7 +955,7 @@ color: #da291c;
 h5 {
   font-size:35px;  
   color: #DA291C;
-  font-family: 'Aspekta-500';
+  font-family: 'Aspekta';
 }
 
 .openpos h6{
