@@ -101,7 +101,7 @@ color: #da291c;
   }
 
   h4 {
-    font-family: 'Aspekta-300';
+    font-family: 'Aspekta-200';
     font-size: 60px;
     color: #f6f6f6;
     font-weight: 400;
@@ -111,12 +111,13 @@ color: #da291c;
     --swiper-theme-color: #DA291C;
   }
   .swiper-slide {
+    padding: 40px;
     height: auto !important;
   }
 
   .swiper-slide img{
-    height: 300px;
-    width: 300px;
+    max-height: 300px;
+    max-width: 300px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -485,7 +486,7 @@ color: #da291c;
   }
 
   .testimonial-text {
-    font-family: 'Aspekta-350';
+    font-family: 'Aspekta';
     font-size: 36px;
     font-weight: 400;
     text-indent: 20px;
@@ -887,11 +888,11 @@ color: #da291c;
 .projectdetails p{
   font-size: 17px;
   line-height: 200%;
-  font-family: 'Aspekta-350';
+  font-family: 'Aspekta';
 }
 
 .projectdetails b{
-  font-family: 'Aspekta-450';
+  font-family: 'Aspekta';
 }
 
 .projectdetails h1{
