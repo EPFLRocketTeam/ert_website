@@ -55,7 +55,6 @@ Due to the complexity of the task and the number of parameters taken into accoun
 
 # Hopper
 
-{{< tabs-state initial-tab="OVERVIEW" >}}
 
 {{< component-section component="OVERVIEW" image="/images/originalQuality/icarus-image2.png" >}}
 The Hopper, a pioneering vehicle showing off the ERT versatility, is a new vehicle with custom control systems and homemade structure, GNC algorithms and electronics. Capable of propulsive landing, it is propelled by our bi-liquid DEMO A3 engine. 
@@ -86,7 +85,6 @@ Designed to land the Hopper and absorb the shock, the legs of the Hopper are com
 Made from functionally efficient, innovative bi-material 3D-printed (PETG + TPU). The 3-pylon, 3 legs design is lighter, more flexible and allows better disassembly.
 {{< /component-section >}} -->
 
-{{< /tabs-state >}}
 
 # Drones
 

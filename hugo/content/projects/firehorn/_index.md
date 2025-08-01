@@ -39,7 +39,6 @@ highlights:
 
 # Rocket components
 
-{{< tabs-state initial-tab="NOSECONE" >}}
 
 {{< component-section component="NOSECONE" image="/images/originalQuality/firehorn-image1.png" >}}
 Made from CFRP (Carbon Fiber Reinforced Polymer), the nosecone houses the payload and supports the Acoustic Levitation Scientific Experiment. CFRP provides high strength and low weight.
@@ -69,7 +68,6 @@ The internal structure includes CFRP rods, anti-buckling rings, and 3D-printed i
 Home to the 7.5kN Ethanol-Liquid Oxygen engine, this bay features cryogenic-rated plumbing, valves, and CFRP fins. It interfaces with the ground segment for launch operations.
 {{< /component-section >}}
 
-{{< /tabs-state >}}
 
 # Animation
 

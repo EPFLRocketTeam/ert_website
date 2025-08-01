@@ -56,7 +56,6 @@ In parallel to the bi-liquid propellant engine, our students are also developing
 
 # Project components
 
-{{< tabs-state initial-tab="Class-A engines" >}}
 
 {{< component-section component="Class-A engines" image="/board/ERT.png" object-fit="scale-down" >}}
 A description of class-A engines.
@@ -74,7 +73,6 @@ A description of the testing facility.
 A description of class-P engines.
 {{< /component-section >}}
 
-{{< /tabs-state >}}
 
 # Images
 
