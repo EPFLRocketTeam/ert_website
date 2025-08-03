@@ -51,6 +51,25 @@ h1 {
   color: white;
 }
 
+.red-button {
+  background-color: da291c;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.red-button:hover {
+  background-color: #a82016;
+}
+.red-color {
+  color: #da291c;
+}
+
 /*.our-project-list > div:hover h1 {
 color: #da291c;
 }
@@ -964,6 +983,7 @@ h5 {
 }
 
 h6 span{
+  font-size: 26px;
   color: #DA291C;
 }
 
