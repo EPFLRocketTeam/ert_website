@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         try {
             turnstile.reset(); // This resets all widgets on the page
         } catch (error) {
-            console.error("Error resetting Turnstile:", error);
+            //console.error("Error resetting Turnstile:", error);
         };
     } else {
         console.log("Turnstile API not yet available on DOMContentLoaded. Will not reset at this stage.");
