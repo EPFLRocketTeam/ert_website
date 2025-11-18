@@ -14,32 +14,30 @@ callToAction:
 children:
   - name: "Competition"
     url: "/projects/firehorn/"
-  - name: "Hyperion"
-    url: "/projects/hyperion/"
+  - name: "Plasma"
+    url: "/projects/plasma/"
   - name: "Icarus"
     url: "/projects/icarus/"
-  - name: "Solaris"
-    url: "/projects/solaris/"
   - name: "Space Race"
     url: "/projects/space-race/"
 ---
 
-# 2024-2025
+# 2025-2026
 
 {{< grid >}}
 {{< card 
-    title="Firehorn" 
+    title="Firehorn II" 
     image="/images/originalQuality/Firehorn-Background.jpg" 
-    description="Firehorn is the EPFL Rocket Team’s inaugural cryogenic bi-liquid rocket, operating on an innovative architecture." 
+    description="Firehorn is the EPFL Rocket Team’s cryogenic bi-liquid rocket, operating on an innovative architecture." 
     link="/projects/firehorn/"
 >}}
 
-{{< card 
-    title="Hyperion" 
-    image="/images/originalQuality/Hyperion-Background.jpg" 
-    description="Founded in 2021, Hyperion has the goal to develop bi-liquid rocket engines, meaning using two liquids propellants, that will propel the future rockets of the association." 
-    link="/projects/hyperion/"
->}}
+{{< card
+title="Plasma"
+image="/images/originalQuality/Plasma-Background.jpg"
+description="Short public description of Plasma..."
+link="/projects/plasma/" >}}
+
 
 {{< card 
     title="Icarus" 
@@ -56,7 +54,6 @@ children:
 >}}
 
 {{< /grid >}}
-
 
 
 

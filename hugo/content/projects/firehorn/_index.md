@@ -2,21 +2,21 @@
 title: "Firehorn II"
 subtitle: "COMPETITION PROJECT"
 header_title: "FIREHORN II"
-header_text: "Firehorn is the EPFL Rocket Team’s inaugural cryogenic bi-liquid rocket, operating on an innovative architecture. Anticipated to embark on its maiden 9km flight in late 2025 as part of the European Rocket Championship Competition, it is designed from the ground up with the constraints of a 30km flight, which should occur during 2026."
-header_background: "/images/originalQuality/Firehorn-Background.jpg"
+header_text: "Firehorn 2 is the EPFL Rocket Team's second cryogenic bi-liquid rocket, building on its predecessor Firehorn 1's architecture. This project aims to launch in the Liquid 3km category of the 2026 edition of the European Rocketry Challenge (EuRoC), followed by a 9km launch in 2027. The architecture has been designed for a 30km flight, which will be the culminating point of the Firehorn architecture."
+header_background: "/images/originalQuality/Firehorn2-Background.png"
 date: 2025-03-12T20:54:33+01:00
 layout: single
 padding: 30px
 callToAction:
-    text: "Want to participate in the next competition?"
-    action: "JOIN THE ERT"
+  text: "Want to participate in the next competition?"
+  action: "JOIN THE ERT"
 specs:
   - key: "Year"
     value: "2025/26"
   - key: "City/Country"
     value: "Portugal"
   - key: "Goal"
-    value: "9 & 30 km"
+    value: "3 & 9 km"
   - key: "Team members"
     value: "an integer"
 highlights:
@@ -29,8 +29,8 @@ highlights:
 # Specifications
 
 {{< flexbox >}}
-    {{< specs >}}
-    {{< logotype logo="/icons/firehorn.png" >}}
+{{< specs >}}
+{{< logotype logo="/icons/firehorn2.png" >}}
 {{< /flexbox >}}
 
 # Highlights
@@ -39,9 +39,8 @@ highlights:
 
 # Rocket components
 
-
 {{< component-section component="NOSECONE" image="/images/originalQuality/firehorn-image1.png" >}}
-Made from CFRP (Carbon Fiber Reinforced Polymer), the nosecone houses the payload and supports the Acoustic Levitation Scientific Experiment. CFRP provides high strength and low weight.
+Made from CFRP (Carbon Fiber Reinforced Polymer), the nosecone houses the "Payload Guide," featuring an extensive suite of sensors for dynamic characterization. CFRP provides high strength and low weight.
 {{< /component-section >}}
 
 {{< component-section component="RECOVERY BAY" image="/images/originalQuality/firehorn-image1.png" >}}
@@ -68,11 +67,10 @@ The internal structure includes CFRP rods, anti-buckling rings, and 3D-printed i
 Home to the 7.5kN Ethanol-Liquid Oxygen engine, this bay features cryogenic-rated plumbing, valves, and CFRP fins. It interfaces with the ground segment for launch operations.
 {{< /component-section >}}
 
-
 # Animation
 
 {{< video autoplay="true" loop="true" muted="true" src="/images/originalQuality/firehorn_integration.mp4" >}}
 
 # Milestones
 
-One of the significant milestones to our journey was the project’s PDR (Preliminary Design Review) held in March, where stakeholders were presented with the initial vehicle design. A comprehensive PDR documentation, covering the technical design and project management details since September, totaling 267 pages, has been sent to stakeholders. In parallel, work on assembling a preliminary CAD model of the Firehorn rocket is underway, providing a tangible visualization of previously abstract technical requirements.
+This project started with the Firehorn architecture's maiden flight at EuRoC 2025. Now, we are looking forward to a Critical Design Review (CDR) in late December, which will be followed by an intense period of testing and qualification in the second semester, highlighted by motor ignitions, destructive structural testing, and recovery drop tests. We aim for Vertical Static Fire Tests (VSFTs) in late July.

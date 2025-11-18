@@ -1,22 +1,23 @@
 ---
-title: "Hyperion"
-subtitle: "RESEARCH PROJECT"
-header_title: "HYPERION"
-header_text: "Founded in 2021, Hyperion has the goal to develop bi-liquid rocket engines, meaning using two liquids propellants, that will propel the future rockets of the association."
-header_background: "/images/originalQuality/Hyperion-Background.jpg"
+title: "Plasma"
+subtitle: "R&D PROJECT"             # or whatever
+header_title: "PLASMA"
+header_text: "Short description of Plasma..."
+header_background: "/images/originalQuality/Plasma-Background.jpg"
 date: 2025-03-13T19:36:20+01:00
 layout: single
 padding: 30px
 callToAction:
-    text: "Want to participate in this project?"
-    action: "JOIN THE ERT"
+  text: "Want to participate in the next R&D project?"
+  action: "JOIN THE ERT"
 specs:
   - key: "Year"
     value: "2025/26"
-  - key: "Goal"
-    value: "bi-liquid propellant engine"
-  - key: "Team members"
-    value: "an integer"
+  - key: "Type"
+    value: "R&D"
+highlights:
+  - key: "Some key metric:"
+    value: "XYZ"
 ---
 
 # Specifications
