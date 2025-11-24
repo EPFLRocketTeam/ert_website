@@ -65,7 +65,7 @@ weight: 1
 
 {{< image_row margin="0 30px" >}}
   {{< number_in_row value="4" unit="Research papers">}}
-  {{< image_in_row src="/images/NumbersResearch1.webp" >}}
+  
   {{< image_in_row src="/images/NumbersResearch2.webp" >}}
   {{< image_in_row src="/images/NumbersResearch3.webp" >}}
   {{< image_in_row src="/images/NumbersResearch4.webp" >}}
