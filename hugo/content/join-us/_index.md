@@ -7,8 +7,6 @@ menu: "main"
 weight: 3
 layout: single
 children:
-  - name: "Semester projects"
-    url: "/join-us/semester-projects/"
   - name: "Open positions"
     url: "/join-us/open-positions/"
 ---

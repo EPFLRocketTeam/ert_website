@@ -3,7 +3,8 @@ title: "Semester Projects"
 header_title: "SEMESTER PROJECTS"
 header_text: "Are you an EPFL student and looking for a semester credited, Bachelors or Masters Project ? Look no further! We have something for you!"
 header_background: ""
-weight: 5
+menu: "main"
+weight: 4
 layout: single
 padding: 30px
 math: true
