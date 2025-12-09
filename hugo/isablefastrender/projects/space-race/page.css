@@ -1,0 +1,42 @@
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+div.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+
+.scroll-container:before,
+.scroll-container:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.scroll-container:hover .scroll {
+  animation-play-state: paused;
+}
+
+.scroll-container .scroll {
+  display: inline-block;
+  left: 0;
+  animation: 28s slide infinite linear;
+}
+
+div.scroll-container img {
+  max-height: 50vh;
+  width: auto;
+  max-width: 800px;
+  margin: 0 10px;
+}

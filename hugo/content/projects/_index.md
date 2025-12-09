@@ -27,15 +27,15 @@ children:
 {{< grid >}}
 {{< card 
     title="Firehorn II" 
-    image="/images/originalQuality/Firehorn-Background.jpg" 
+    image="/images/originalQuality/Firehorn2-Background.png" 
     description="Firehorn is the EPFL Rocket Team’s cryogenic bi-liquid rocket, operating on an innovative architecture." 
     link="/projects/firehorn/"
 >}}
 
 {{< card
 title="Plasma"
-image="/images/originalQuality/Plasma-Background.jpg"
-description="Short public description of Plasma..."
+image="/images/originalQuality/plasma-Background.png"
+description="Develops and tests student-built plasma propulsion systems."
 link="/projects/plasma/" >}}
 
 

@@ -51,8 +51,8 @@ Description of Icarus project 3
 
 {{< /collapsible-section-big >}}
 
-{{< collapsible-section-big name="HYPERION PROJECT" >}}
-
+{{< collapsible-section-big name="PLASMA PROJECT" >}}
+contact ......
 {{< collapsible-section-small name="HYP1" >}}
 Description of Hyperion project 1
 {{< /collapsible-section-small >}}
@@ -67,7 +67,7 @@ Description of Hyperion project 3
 
 {{< /collapsible-section-big >}}
 
-{{< collapsible-section-big name="MANAGEMENT" >}}
+<!-- {{< collapsible-section-big name="MANAGEMENT" >}}
 
 {{< collapsible-section-small name="MAN1" >}}
 Description of management project 1
@@ -81,5 +81,5 @@ Description of management project 2
 Description of management project 3
 {{< /collapsible-section-small >}}
 
-{{< /collapsible-section-big >}}
+{{< /collapsible-section-big >}} -->
 {{< /max-width >}}

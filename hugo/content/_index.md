@@ -16,7 +16,7 @@ weight: 1
 
 {{< separator margin="0 30px">}}
 
-{{< image_row margin="0 30px" >}}
+{{< image_row margin="0 20px" >}}
   {{< image_in_row src="/images/NumbersStudents1.webp" >}}
   {{< image_in_row src="/images/NumbersStudents2.webp" >}}
   {{< image_in_row src="/images/NumbersStudents3.webp" >}}
@@ -58,7 +58,6 @@ weight: 1
   {{< image_in_row src="/images/NumbersAwards3.webp" >}}
   {{< image_in_row src="/images/NumbersAwards4.webp" >}}
   {{< image_in_row src="/images/NumbersAwards5.webp" >}}
-  {{< image_in_row src="/images/NumbersAwards6.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}

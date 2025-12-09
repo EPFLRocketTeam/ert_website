@@ -1,7 +1,7 @@
 ---
 title: "Open Positions"
 header_title: "OPEN POSITIONS"
-header_text: ""
+header_text: "‎ "
 header_background: ""
 weight: 5
 layout: single
@@ -43,13 +43,13 @@ Our communication team is responsible for promoting the association on our socia
 
 <p><b>Skills required:</b> French and English, German a real plus. All sections of EPFL, HEC or HEIG-VD welcome.</p>
 {{< /collapsible-section-big >}}
-<h5 style="color: #da291c">Vice-Presidency</h5>
-{{< collapsible-section-big name="Communication Vice-President" >}}
+<h5 style="color: #da291c">Heads</h5>
+{{< collapsible-section-big name="Heads Communication" >}}
 <p style="margin-top: 0">The role of the Communication Vice-President is to lead the communication team, it comes with responsabilities as well as a seat in the committee. It requires a good organization, being able to delegate work and work as a team. You should also be comfortable with social medias.</p>
 
 <p><b>Skills required:</b> Flawless French, good knowledge of English, and good interpersonal skills. Good extension skills. All sections of EPFL, UNIL and SAWI welcome.</p>
 {{< /collapsible-section-big >}}
-{{< collapsible-section-big name="Logistics Vice-President" >}}
+{{< collapsible-section-big name="Heads Logistics" >}}
 <p style="margin-top: 0">The role of the Logistics Vice-President is to lead the logistics team, it comes with responsabilities as well as a seat in the committee. It requires a overall view of the association and events taking place, being able to delegate work, being organized and work as a team.</p>
 
 <p><b>Skills required:</b> French and English, German a real plus. All sections of EPFL, HEC or HEIG-VD welcome.</p>
@@ -68,25 +68,25 @@ The Avionics is also in charge of triggering recovery events to release the para
 And finally, according to the engine used, it can also act as intermediary between propulsion systems and some of the ground segment systems.
 </p>
 <h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
-{{< component-section component="Hardware Electrical Engineer" >}}
+<!-- {{< component-section component="Hardware Electrical Engineer" >}}
 Lorem ipsum...
-{{< /component-section >}}
+{{< /component-section >}} -->
 
-{{< component-section component="RF Engineer" >}}
+<!-- {{< component-section component="RF Engineer" >}}
 Lorem ipsum...
-{{< /component-section >}}
+{{< /component-section >}} -->
 
-{{< component-section component="Software Engineer" >}}
+<!-- {{< component-section component="Software Engineer" >}}
 Lorem ipsum...
-{{< /component-section >}}
+{{< /component-section >}} -->
 
-{{< component-section component="Avionics Structure Design Engineer" >}}
+<!-- {{< component-section component="Avionics Structure Design Engineer" >}}
 Lorem ipsum...
-{{< /component-section >}}
+{{< /component-section >}} -->
 
-{{< component-section component="Cable Harness Engineer" >}}
+<!-- {{< component-section component="Cable Harness Engineer" >}}
 Lorem ipsum...
-{{< /component-section >}}
+{{< /component-section >}} -->
 
 <h5 style="color: #da291c">Recovery</h5>
 <p>
@@ -129,23 +129,23 @@ Simulations performed are, amongst others, predictions for the rockets trajector
 
 <h5 style="color: #da291c">Avionics</h5>
 <h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
-<h5 style="color: #da291c">Avionics</h5>
+<h5 style="color: #da291c">GNC</h5>
 <h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
-<h5 style="color: #da291c">Avionics</h5>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
-<h5 style="color: #da291c">Avionics</h5>
+<h5 style="color: #da291c">Structures</h5>
 <h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
 
-{{< separator-with-text text="Hyperion Project" >}}
+{{< separator-with-text text="Plasma Project" >}}
 
-<h5 style="color: #da291c">Avionics</h5>
+<h5 style="color: #da291c">HET</h5>
 <h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
-<h5 style="color: #da291c">Avionics</h5>
+<h5 style="color: #da291c">SI</h5>
+<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h5 style="color: #da291c">HC</h5>
 <h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
 
 {{< separator-with-text text="Space Race" >}}
 
-<p>This project involves building a relatively simple rocket in teams of 5-7 students. This project allows to learn the basics of rocketry while learning to work in a team. It is mostly aimed to the first and possibly second year students of EPFL. </p>
+<p>This project involves building a relatively simple rocket in teams of 8 students. This project allows to learn the basics of rocketry while learning to work in a team. It is mostly aimed to the first and possibly second year students of EPFL.Recruitment takes place every year during September and October. </p>
 
 <p>All sections are welcome.</p>
 
