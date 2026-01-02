@@ -44,13 +44,13 @@ highlights:
 # Project components
 
 
-{{< component-section component="Electron gun" image="/images/originalQuality/plasma-gun.png" 
-image2="/images/originalQuality/plasma_gun-2.png" object-fit="scale-down" >}}
+{{< component-section component="Electron gun" 
+image="/images/originalQuality/plasma_gun-2.png" object-fit="scale-down" >}}
 A hollow cathode is the electron source of a Hall effect thruster. Inside a heated tube, a small gas flow is ionised and emits a dense stream of electrons into the discharge channel. These electrons neutralise the ion beam and sustain the plasma inside the thruster. It is one of the most delicate components and requires precise thermal control and material selection.
 {{< /component-section >}}
 
 {{< component-section component="Hall effect thruster" image="/images/originalQuality/plasma-het.png" 
-image2="/images/originalQuality/plasma-het-2.png" object-fit="scale-down" >}}
+ object-fit="scale-down" >}}
 A Hall effect thruster accelerates ions using a radial magnetic field and an axial electric field. Electrons are trapped in a circular motion, ionise the propellant and create a stable plasma region. The ions are then accelerated outwards at very high speed to generate thrust. This technology is widely used for satellites due to its high efficiency and long lifetime.
 {{< /component-section >}}
 
