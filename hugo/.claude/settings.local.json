@@ -15,7 +15,11 @@
       "Bash(while read:*)",
       "Bash(do grep:*)",
       "Bash(echo $img)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(mv \"JaneStreet.png\" \"originalQuality/JaneStreet.png\")",
+      "Bash(mv \"SwissAeropole.jpg\" \"originalQuality/SwissAeropole.jpg\")",
+      "Bash(mv \"BallonsChateauDOex.svg\" \"originalQuality/BallonsChateauDOex.svg\")",
+      "Bash(mv \"FondationNovandi.jpg\" \"originalQuality/FondationNovandi.jpg\")"
     ]
   }
 }
