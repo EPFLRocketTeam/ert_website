@@ -108,12 +108,11 @@ Designed to land the Hopper and absorb a 10g vertical deceleration equivalent to
 
 {{< /component-section >}}
 
-<!-- {{< component-section component="DRONE" image="/images/originalQuality/icarus-image1.png" >}}
-Made from functionally efficient, innovative bi-material 3D-printed (PETG + TPU). The 3-pylon, 3 legs design is lighter, more flexible and allows better disassembly.
-{{< /component-section >}} -->
+
 
 # Propulsion
-A3?
+
+The DEMO A3 is a bi-liquid engine running on Ethanol and Nitrous Oxide, fully designed and built in-house by the Icarus propulsion team. More details will be added as the project progresses.
 # Drone
 
 The drone serves as a test platform for the development and validation of control algorithms, avionics, and embedded systems before their integration on the hopper. Designed to replicate the hopper’s dynamics, it incorporates the hopper’s gimbal concept, making its control deliberately unstable and demanding. This configuration allows efficient testing of GNC algorithms, onboard electronics, and sensor behavior under realistic conditions while minimizing the costs and risks associated with rocket engine powered flight.

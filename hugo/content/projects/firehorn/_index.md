@@ -18,7 +18,7 @@ specs:
   - key: "Goal"
     value: "3 & 9 km"
   - key: "Team members"
-    value: "an integer"
+    value: "78"
 highlights:
   - key: "Max reachable speed (Mach 1.5+):"
     value: "1,850+ km/h"

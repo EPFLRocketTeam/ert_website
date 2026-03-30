@@ -1,5 +1,5 @@
 <div
-  x-data="{ isOpen: false }"
+  x-data="{ isOpen: {{ if .Get `open` }}true{{ else }}false{{ end }} }"
   class="details-big-wrapper"
   style="
     background: #171717;

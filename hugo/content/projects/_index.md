@@ -41,7 +41,7 @@ link="/projects/plasma/" >}}
 
 {{< card 
     title="Icarus" 
-    image="/images/originalQuality/Icarus-Background.jpg" 
+    image="/images/originalQuality/Icarus-Background.png" 
     description="Founded in 2020, Icarus is a research and development project on active attitude control technologies for future rocket teams." 
     link="/projects/icarus/"
 >}}
