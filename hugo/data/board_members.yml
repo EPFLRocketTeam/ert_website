@@ -1,126 +1,118 @@
-- name: Jérémie Huser
+# Board Members
+# Board Members
+- name: Maximilian Bonvin
   position: President
-  image: "/board/JeremieHuser.jpg"
-  email: jeremie.huser@epfl.ch
-  linkedin: https://linkedin.com/in/j%C3%A9r%C3%A9mie-huser-2a752031b/
+  image: "/board/MaximilianBonvin.png"
+  email: maximilian.bonvin@epfl.ch
+  linkedin: https://linkedin.com/in/maximilian-bonvin/
 
-- name: Rayane Maalouf
+- name: Mia Nasr
   position: Vice President
-  image: "/board/RayaneMaalouf.jpg"
-  email: rayane.maalouf@epfl.ch
-  linkedin: https://linkedin.com/in/rayane-maalouf-a4405b225/
+  image: "/board/MiaNasr.jpg"
+  email: mia.nasr@epfl.ch
+  linkedin: https://linkedin.com/in/mia-nasr-930364271/
 
-- name: Grégoire Delplace
+- name: Zakaria Benbouhenni
   position: Chief Financial Officer
-  image: "/board/GregoireDelplace.jpg"
-  email: cfo@epflrocketteam.ch
-  linkedin: https://www.linkedin.com/in/gregoire-delplace-508486296/
+  image: "/board/ZakariaBenbouhenni.png"
+  email: zakaria.benbouhenni@epfl.ch
+  linkedin: https://linkedin.com/in/zakaria-benbouhenni-220386395/
 
-- name: Antoine Marchand Truchot
+- name: Axel Juaneda
   position: Chief Technical Officer
-  image: "/board/AntoineMarchandTruchot.jpg"
-  email: antoine.marchand@epfl.ch
-  linkedin: https://www.linkedin.com/in/antoine-marchand-truchot-31a74a27b/
+  image: "/board/ERT.png"
+  object_fit: "scale-down"
+  email: axel.juaneda@epfl.ch
+  linkedin: https://linkedin.com/in/axel-juaneda-6593142b1/
 
 - name: Jeremy Jariod
   position: Chief Safety Officer
   image: "/board/JeremyJariod.jpg"
   email: jeremy.jariod@epfl.ch
-  linkedin: http://www.linkedin.com/in/jeremy-jariod/
+  linkedin: https://linkedin.com/in/jeremy-jariod/
 
-- name: Juliette Zoghbi
+- name: Chloé Klose
   position: Head of Communication
-  image: "/board/JulietteZoghbi.jpg"
-  email: juliette.zoghbi@epfl.ch
-  linkedin: https://www.linkedin.com/in/juliette-zoghbi-97b656328/
+  image: "/board/ERT.png"
+  object_fit: "scale-down"
+  email: chloe.klose@epfl.ch
+  linkedin: https://linkedin.com/in/chloé-klose-118047354/
 
-- name: Fanny Mathieu
+- name: Rayan Zeineddine
   position: Head of Sponsoring
-  image: "/board/FannyMathieu.jpg"
-  email: fanny.mathieu@epflrocketteam.ch
-  linkedin: https://www.linkedin.com/in/fanny-mathieu-8467b72a0/
+  image: "/board/RayanZeineddine.png"
+  email: rayan.zeineddine@epfl.ch
+  linkedin: https://linkedin.com/in/rayan-zeineddine/
 
-- name: Uku Haukanõmm
+- name: Makki Rayan Mayoraz
   position: Head of Logistics
-  image: "/board/UkuHaukanomm.jpg"
-  email: uku.haukanomm@epfl.ch
+  image: "/board/MakkiRayanMayoraz.png"
+  email: makki.mayoraz@epfl.ch
   linkedin: https://www.linkedin.com/company/epfl-rocket-team/
 
+- name: Rami Aschkar
+  position: Head of IT
+  image: "/board/RamiAschkar.png"
+  email: rami.aschkar@epfl.ch
+  linkedin: https://linkedin.com/in/rami-aschkar-84257323a/
+
+# Project and Team Leaders
 - name: Pedro Soares
-  position: Head of Strategy
+  position: Systems Engineer, Competition
   image: "/board/PedroSoares.jpg"
   email: pedro.oliveiradebritorodriguessoares@epfl.ch
   linkedin: https://www.linkedin.com/company/epfl-rocket-team/
 
-- name: Gehna Yadav
-  position: Head of IT
-  image: "/board/GehnaYadav.jpg"
-  email: gehna.yadav@epfl.ch
-  linkedin: https://www.linkedin.com/in/gehna-yadav-502779214/
+- name: Pedro Sanchez-Moreno Royer
+  position: Project Manager, Competition
+  image: "/board/PedroSanchezMorenoRoyer.png"
+  email: pedro.sanchezmorenorover@epfl.ch
+  linkedin: https://linkedin.com/in/pedro-sanchez-moreno-royer-82b236256/
 
-- name: Victor Rytwinski
-  position: SpaceRace
-  image: "/board/VictorRytwinski.jpg"
-  email: victor.rytwinski@epfl.ch
-  linkedin: https://www.linkedin.com/company/epfl-rocket-team/
+- name: Rafaël Boisel
+  position: Systems Engineer, Competition
+  image: "/board/RafaelBoisel.png"
+  email: rafael.boisel@epfl.ch
+  linkedin: https://linkedin.com/in/rafaël-boisel/
 
-- name: Damien Delespaul
-  position: Systems Engineer Hyperion
-  image: "/board/DamienDelespaul.jpg"
-  email: damien.delespaul@epfl.ch
-  linkedin: https://www.linkedin.com/in/damien-delespaul-1aa781200/
+- name: Rayane Maalouf
+  position: Systems Engineer, Competition
+  image: "/board/RayaneMaalouf.jpg"
+  email: rayane.maalouf@epfl.ch
+  linkedin: https://linkedin.com/in/rayane-maalouf/
 
-- name: Léonard Bongiovanni
-  position: Systems Engineer Hyperion
-  image: "/board/LeonardBongiovanni.jpg"
-  email: leonard.bongiovanni@epfl.ch
-  linkedin: https://www.linkedin.com/in/l%C3%A9onard-bongiovanni/
+- name: Jules Léon Lamaison
+  position: Team Leader, Competition
+  image: "/board/JulesLeonLamaison.png"
+  email: jules.lamaison@epfl.ch
+  linkedin: https://linkedin.com/in/jules-lamaison-6043b52b4/
 
-- name: Samuel Wahba
-  position: Systems Engineer Competition
-  image: "/board/SamuelWahba.jpg"
-  email: samuel.wahba@epfl.ch
-  linkedin: https://www.linkedin.com/in/samuel-wahba-02182a151/
+- name: Celestin Balas
+  position: SpaceRace Lead
+  image: "/board/CelestinBalas.png"
+  email: celestin.balas@epfl.ch
+  linkedin: https://linkedin.com/in/célestin-siméon-martin-balas-962583369/
 
-- name: Guillaume Hueber
-  position: Systems Engineer Icarus
-  image: "/board/GuillaumeHueber.jpg"
-  email: guillaume.hueber@epfl.ch
-  linkedin: https://www.linkedin.com/in/guillaume-hueber-856701323/
+- name: Joseph Spender
+  position: Project Manager, Plasma
+  image: "/board/JosephSpender.png"
+  email: joseph.spender@epfl.ch
+  linkedin: https://linkedin.com/in/joseph-spender-686813270/
 
-- name: Matthieu Tonneau
-  position: Systems Engineer Hyperion
-  image: "/board/MatthieuTonneau.jpg"
-  email: matthieu.tonneau@epflrocketteam.ch
-  linkedin: http://linkedin.com/in/matthieu-tonneau-8b1b56244/
+- name: Briyan Sivakumar
+  position: Systems Engineer, Plasma
+  image: "/board/BriyanSivakumar.png"
+  email: briyan.sivakumar@epfl.ch
+  linkedin: https://linkedin.com/in/briyan-sivakumar-497218345/
 
-- name: Valentino Lekimpe
-  position: Systems Engineer SpaceRace
-  image: "/board/VelentinoLekimpe.jpg"
-  email: valentino.lekimpe@epfl.ch
-  linkedin: https://www.linkedin.com/company/epfl-rocket-team/
-
-- name: Zina Randriamanantena
-  position: Team Leader Competition
-  image: "/board/ZinaRandriamanantena.jpg"
-  email: zina.randriamanantena@epfl.ch
-  linkedin: https://www.linkedin.com/in/zina-randriamanantena-804678252/
-
-- name: Aubin Mercier
-  position: Hyperion Representant
-  image: "/board/AubinMercier.jpg"
-  email: aubin.mercier@epfl.ch
-  linkedin: https://www.linkedin.com/in/aubin-mercier-2036a326b/
-
-- name: Joachim Despature
-  position: Advisor
-  image: "/board/ERT.png"
-  object_fit: "scale-down"
-  email: joachim.despature@epfl.ch
-  linkedin: https://www.linkedin.com/in/joachim-despature-26a5b31a7/-804678252/
+- name: Gabriel Garbé
+  position: Systems Engineer, Icarus
+  image: "/board/GabrielGarbe.png"
+  email: gabriel.garbe@epfl.ch
+  linkedin: https://linkedin.com/in/gabriel-garbé-18a0a6279/
 
 - name: Emmanuelle David
-  position: eSpace President
+  position: Executive Director of eSpace
   image: "/board/ERT.png"
   object_fit: "scale-down"
   email: emmanuelle.david@epfl.ch

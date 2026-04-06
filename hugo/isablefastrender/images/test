@@ -1,0 +1,3 @@
+convert ./BuildingParts1.jpeg -resize 128x -quality 80 ./BuildingParts1.webp
+convert ./RocketBuilding2.jpeg -resize 128x -quality 80 ./RocketBuilding2.webp
+convert ./TheophileBalestrini.png -resize 128x -quality 80 ./TheophileBalestrini.webp
