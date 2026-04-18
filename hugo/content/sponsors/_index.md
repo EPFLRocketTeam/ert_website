@@ -9,6 +9,7 @@ layout: single
 callToAction:
     text: "Want to support our ambitious projects?"
     action: "BECOME A SPONSOR"
+    link: "mailto:presidency@epflrocketteam.ch,sponsoring@epflrocketteam.ch"
 ---
 
 {{< prestige-sponsors >}}

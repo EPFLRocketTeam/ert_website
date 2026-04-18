@@ -73,4 +73,4 @@ Home to the 7.5kN Ethanol-Liquid Oxygen engine, this bay features cryogenic-rate
 
 # Milestones
 
-This project started with the Firehorn architecture's maiden flight at EuRoC 2025. Now, we are looking forward to a Critical Design Review (CDR) in late December, which will be followed by an intense period of testing and qualification in the second semester, highlighted by motor ignitions, destructive structural testing, and recovery drop tests. We aim for Vertical Static Fire Tests (VSFTs) in late July.
+This project started with the Firehorn architecture's maiden flight at EuRoC 2025. Early February saw a design review, from which we have entered an intense period of testing and qualification, highlighted by motor ignitions, destructive structural testing, and recovery drop tests. We aim for Vertical Static Fire Tests (VSFTs) in August.

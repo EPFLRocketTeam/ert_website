@@ -28,13 +28,10 @@
 .prestige-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  /* Center logos vertically */
-  /* Center-align logos */
   gap: 10px;
   padding: 20px;
-  /* Space between logos */
   border-radius: 6px;
   background: linear-gradient(to right, #B28BFF, #9063CD);
 }
@@ -84,13 +81,10 @@
 .gold-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  /* Center logos vertically */
-  /* Center-align logos */
   gap: 10px;
   padding: 20px;
-  /* Space between logos */
   border-radius: 6px;
   background: linear-gradient(to right, #E0B35B, #CBA135);
 }
@@ -140,13 +134,10 @@
 .silver-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  /* Center logos vertically */
-  /* Center-align logos */
   gap: 10px;
   padding: 20px;
-  /* Space between logos */
   border-radius: 6px;
   background: linear-gradient(to right, #D1D3D4, #A8A9AD);
 }
@@ -196,13 +187,10 @@
 .bronze-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  /* Center logos vertically */
-  /* Center-align logos */
   gap: 10px;
   padding: 20px;
-  /* Space between logos */
   border-radius: 6px;
   background: linear-gradient(to right, #A77F57, #8C6239);
 }
@@ -253,13 +241,10 @@
 .support-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  /* Center logos vertically */
-  /* Center-align logos */
   gap: 10px;
   padding: 20px;
-  /* Space between logos */
   border-radius: 6px;
   background: linear-gradient(to right, #66B2B2, #008080);
 }

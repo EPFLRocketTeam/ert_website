@@ -84,59 +84,77 @@ And finally, according to the engine used, it can also act as intermediary betwe
 The purpose of the Recovery subsystem is to slow down the rocket’s fall to ensure a safe landing after its ascent.<br>
 This is usually done with parachutes, but experimentation is always welcome!
 </p>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 <h5 style="color: #da291c">Structures</h5>
 <p>
 The Structure Subsystem is in charge of designing and producing the rocket’s fuselage, as well as ensuring that it is capable of surviving mechanical and thermal stresses before, during, and after the flight.
 </p>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 <h5 style="color: #da291c">Propulsion</h5>
 <p>
 The Propulsion subsystem is where the magic happens. Fire comes out on one end, pushing the rocket towards its objective.<br>
 This year, the team is aiming to fly its very first Liquid engine with Ethanol as fuel and Nitrous Oxide as the oxidizer.
 </p>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 <h5 style="color: #da291c">Payload</h5>
 <p>
 The Payload is the sub-system in charge of imagining, developing and integrating the scientific experiment powered by the rocket.<br>
 This years experiment is not yet chosen, give us your ideas!
 </p>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 <h5 style="color: #da291c">Ground Segment</h5>
 <p>
 The Ground Segment subsystem is in charge of all ground operations before, during and after the launch.<br>
 This includes, among others, the management of a Ground Station equipped with radios and antennas, as well as a 9m tall Launch Rail.
 </p>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 <h5 style="color: #da291c">Flight Dynamics</h5>
 <p>
 The Flight Dynamics subsystem is in charge of all simulations related to the rocket in general.
 It is in particular flight simulations with commercial tools as well as with home-made simulators, and fluidic studies on the aerodynamics of the rocket.<br>
 Simulations performed are, amongst others, predictions for the rockets trajectory, statistical drop-zones for nominal and off-nominal trajectories, aerodynamics/thermal/fluid analysis on the airflow around the rocket at various velocities.
 </p>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 
 {{< separator-with-text text="Icarus Project" >}}
 
 <h5 style="color: #da291c">Avionics</h5>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 <h5 style="color: #da291c">GNC</h5>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
+<h5 style="color: #da291c">Ground Segment</h5>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+{{< collapsible-section-big name="Mechanical, Electrical and Software Development for Radio Communications" >}}
+<p style="margin-top: 0">As a member of the team, you will be involved in the manufacturing, testing, and iteration of the design.</p>
+<p><b>Skills required:</b> All sections welcome.</p>
+{{< /collapsible-section-big >}}
 <h5 style="color: #da291c">Structures</h5>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 
 {{< separator-with-text text="Plasma Project" >}}
 
 <h5 style="color: #da291c">HET</h5>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 <h5 style="color: #da291c">SI</h5>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 <h5 style="color: #da291c">HC</h5>
-<h6 style="font-size: 26px">Available <span style="colour: #da291c">Roles</span>:</h6>
+<h6 style="font-size: 26px">Available <span style="color: #da291c">Roles</span>:</h6>
+<p>No roles for this semester!</p>
 
 {{< separator-with-text text="Space Race" >}}
 
-<p>This project involves building a relatively simple rocket in teams of 8 students. This project allows to learn the basics of rocketry while learning to work in a team. It is mostly aimed to the first and possibly second year students of EPFL.Recruitment takes place every year during September and October. </p>
+<p>This project involves building a relatively simple rocket in teams of 5–7 students. This project allows to learn the basics of rocketry while learning to work in a team. It is mostly aimed to the first and possibly second year students of EPFL. Recruitment takes place every year during September and October.</p>
 
 <p>All sections are welcome.</p>
 
