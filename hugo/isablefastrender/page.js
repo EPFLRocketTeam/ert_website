@@ -1,49 +1,32 @@
-function setProjectImage(imagePath) {
-  document.getElementById("project-image").src = imagePath;
-}
-
-// Your highlightProject function
-function highlightProject(projectNumber) {
-  const projectElements = document.querySelectorAll(
+document.addEventListener("DOMContentLoaded", function () {
+  const projectImage = document.getElementById("project-image");
+  const projectItems = document.querySelectorAll(
     "#our-projects > .our-project-list > div"
   );
-  projectElements.forEach((element, index) => {
-    if (index + 1 === projectNumber) {
-      element.classList.add("highlighted-project");
-    } else {
-      element.classList.remove("highlighted-project");
-    }
-  });
-}
-document.addEventListener("DOMContentLoaded", function () {
-  // Prefetching functions and variable declarations
-  function prefetchImages(imageUrls) {
-    imageUrls.forEach((url) => {
-      const img = new Image();
-      img.src = url;
+
+  function highlightProject(index) {
+    projectItems.forEach(function (el, i) {
+      el.classList.toggle("highlighted-project", i === index);
     });
   }
 
-  const imageUrlsToPrefetch = [];
-  const projectElements = document.querySelectorAll(
-    "#our-projects > .our-project-list > div"
-  );
+  projectItems.forEach(function (el, i) {
+    el.addEventListener("mouseenter", function () {
+      if (projectImage && el.dataset.projectImage) {
+        projectImage.src = el.dataset.projectImage;
+      }
+      highlightProject(i);
+    });
 
-  projectElements.forEach((element) => {
-    const imageUrl = element.dataset.projectImage;
+    const imageUrl = el.dataset.projectImage;
     if (imageUrl) {
-      imageUrlsToPrefetch.push(imageUrl);
+      const img = new Image();
+      img.src = imageUrl;
     }
   });
 
-  // Execute prefetching directly within DOMContentLoaded
-  prefetchImages(imageUrlsToPrefetch);
+  highlightProject(0);
 
-
-  // Initial highlight (now part of the same DOMContentLoaded)
-  highlightProject(1);
-
-  // SVG opacity logic (also part of the same DOMContentLoaded)
   var groups = document.querySelectorAll('g');
   groups.forEach(function (group) {
     group.setAttribute('opacity', '0.4');
