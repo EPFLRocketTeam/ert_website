@@ -17,44 +17,44 @@ weight: 1
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 20px" >}}
-  {{< image_in_row src="/images/ert_photo_07.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_08.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_09.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_10.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_11.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_07.webp" >}}
+  {{< image_in_row src="/images/ert_photo_08.webp" >}}
+  {{< image_in_row src="/images/ert_photo_09.webp" >}}
+  {{< image_in_row src="/images/ert_photo_10.webp" >}}
+  {{< image_in_row src="/images/ert_photo_11.webp" >}}
   {{< number_in_row value="200+" unit="Students" >}}
-  {{< image_in_row src="/images/ert_photo_12.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_12.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< image_in_row src="/images/ert_photo_15.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_19.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_20.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_21.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_15.webp" >}}
+  {{< image_in_row src="/images/ert_photo_19.webp" >}}
+  {{< image_in_row src="/images/ert_photo_20.webp" >}}
+  {{< image_in_row src="/images/ert_photo_21.webp" >}}
   {{< number_in_row value="50+" unit="Launches" >}}
-  {{< image_in_row src="/images/ert_photo_22.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_22.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< image_in_row src="/images/ert_photo_23.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_25.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_23.webp" >}}
+  {{< image_in_row src="/images/ert_photo_25.webp" >}}
   {{< number_in_row value="15" unit="Projects" >}}
-  {{< image_in_row src="/images/ert_photo_26.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_27.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_28.jpg" >}}
-  {{< image_in_row src="/images/ert_photo_29.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_26.webp" >}}
+  {{< image_in_row src="/images/ert_photo_27.webp" >}}
+  {{< image_in_row src="/images/ert_photo_28.webp" >}}
+  {{< image_in_row src="/images/ert_photo_29.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< image_in_row src="/images/ert_photo_30.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_30.webp" >}}
   {{< number_in_row value="7" unit="Awards in competition">}}
-  {{< image_in_row src="/images/ert_photo_31.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_31.webp" >}}
   {{< image_in_row src="/images/RocketLaunch3.webp" >}}
   {{< image_in_row src="/images/S9FlightAward.webp" >}}
   {{< image_in_row src="/images/RocketBuilding2.webp" >}}
