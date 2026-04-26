@@ -317,6 +317,34 @@ discover all our projectsour mission Engaging students in space technology proj
     </div>
     <a href="/projects/" class="button-right right-align gray-button" style="display:inline-block;">discover all our projects</a>
 </div>
+<script>
+(function () {
+  function initProjectHover() {
+    var projectImage = document.getElementById("project-image");
+    var items = document.querySelectorAll("#our-projects > .our-project-list > div");
+    if (!projectImage || !items.length) return;
+
+    function highlight(index) {
+      items.forEach(function (el, i) {
+        el.classList.toggle("highlighted-project", i === index);
+      });
+    }
+
+    items.forEach(function (el, i) {
+      el.addEventListener("mouseenter", function () {
+        if (el.dataset.projectImage) projectImage.src = el.dataset.projectImage;
+        highlight(i);
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initProjectHover);
+  } else {
+    initProjectHover();
+  }
+})();
+</script>
 
 <body>
    <div class="main" style="padding: 0 30px; width: 100%">
@@ -415,30 +443,27 @@ margin: 0 30px;
 
 <div
   class="image-row"
-  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
-  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
   style="display: flex; align-items: center; padding: 5px 0; margin: 0 20px;"
-  x-cloak
 >
   
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_07.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_07.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_08.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_08.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_09.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_09.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_10.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_10.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_11.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_11.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
   <div style="flex: 0 0 auto; padding: 0 12px; display: flex; flex-direction: column; justify-content: center; white-space: nowrap; align-self: stretch;">
@@ -446,8 +471,8 @@ margin: 0 30px;
     <p style="margin: 0">Students</p>
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_12.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_12.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
 
@@ -463,26 +488,23 @@ margin: 0 30px;
 
 <div
   class="image-row"
-  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
-  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
   style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
-  x-cloak
 >
   
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_15.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_15.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_19.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_19.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_20.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_20.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_21.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_21.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
   <div style="flex: 0 0 auto; padding: 0 12px; display: flex; flex-direction: column; justify-content: center; white-space: nowrap; align-self: stretch;">
@@ -490,8 +512,8 @@ margin: 0 30px;
     <p style="margin: 0">Launches</p>
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_22.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_22.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
 
@@ -507,18 +529,15 @@ margin: 0 30px;
 
 <div
   class="image-row"
-  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
-  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
   style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
-  x-cloak
 >
   
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_23.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_23.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_25.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_25.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
   <div style="flex: 0 0 auto; padding: 0 12px; display: flex; flex-direction: column; justify-content: center; white-space: nowrap; align-self: stretch;">
@@ -526,20 +545,20 @@ margin: 0 30px;
     <p style="margin: 0">Projects</p>
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_26.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_26.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_27.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_27.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_28.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_28.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_29.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_29.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
 
@@ -555,14 +574,11 @@ margin: 0 30px;
 
 <div
   class="image-row"
-  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
-  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
   style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
-  x-cloak
 >
   
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_30.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_30.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
   <div style="flex: 0 0 auto; padding: 0 12px; display: flex; flex-direction: column; justify-content: center; white-space: nowrap; align-self: stretch;">
@@ -570,20 +586,20 @@ margin: 0 30px;
     <p style="margin: 0">Awards in competition</p>
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/ert_photo_31.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/ert_photo_31.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/RocketLaunch3.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/RocketLaunch3.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/S9FlightAward.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/S9FlightAward.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/RocketBuilding2.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/RocketBuilding2.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
 
@@ -599,10 +615,7 @@ margin: 0 30px;
 
 <div
   class="image-row"
-  x-data="{ showImages: false }" @mouseover="showImages = true" @mouseleave="showImages = false"
-  @load.window="if (window.innerWidth <= 768 || !('ontouchstart' in window || navigator.maxTouchPoints > 0 || navigator.msMaxTouchPoints > 0)) { $nextTick(() => document.getElementById('number-row-target')?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })) }"
   style="display: flex; align-items: center; padding: 5px 0; margin: 0 30px;"
-  x-cloak
 >
   
   <div style="flex: 0 0 auto; padding: 0 12px; display: flex; flex-direction: column; justify-content: center; white-space: nowrap; align-self: stretch;">
@@ -611,28 +624,28 @@ margin: 0 30px;
   </div>
 
   
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/RocketBuilding1.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/RocketBuilding1.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/RocketBuilding3.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/RocketBuilding3.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/RocketLaunch1.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/RocketLaunch1.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/RocketLaunch2.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/RocketLaunch2.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/RocketTeam1.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/RocketTeam1.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
-  <div style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
-    <img loading="lazy" src="/images/BuildingParts1.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;" :class="{ 'opacity-0': !showImages, 'transition-opacity duration-300': true }">
+  <div class="image_in_row" style="flex: 1; min-width: 0; overflow: hidden; aspect-ratio: 4/3;">
+    <img loading="lazy" src="/images/BuildingParts1.webp" alt="Image" style="width: 100%; height: 100%; object-fit: cover; display: block;">
   </div>
 
 
