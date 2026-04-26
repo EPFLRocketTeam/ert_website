@@ -2,36 +2,27 @@
   Simply place a custom_head.html into
   your local /layouts/partials-directory -->
 <link rel="stylesheet" href="/fonts.css">
-
 <link rel="stylesheet" href="/header.css">
-
-<!-- Deferred load for /stylesheet.css -->
-<link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<link rel="preload" href="./page.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<noscript>
-  <link rel="stylesheet" href="/stylesheet.css">
-  <link rel="stylesheet" href="./page.css">
-</noscript>
+<link rel="stylesheet" href="/stylesheet.css">
+<link rel="stylesheet" href="./page.css">
 
 <script defer src="/header-menu.js"></script>
 
 <!-- Anime.js -->
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
 <!-- Alpine Plugins -->
-<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.9/dist/cdn.min.js"></script>
 
 <!-- Alpine Core -->
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 <!-- Tracking with umami -->
 <script defer src="https://tracking.epfl-rocket-team.ch/script.js"
   data-website-id="0a937710-4539-4a20-8b1c-0a711f3a0e52"></script>
 
 <!-- Swiper.js -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print"
-  onload="this.media='all'" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script defer src="/swiper-initialisation.js"></script>
 
@@ -41,21 +32,9 @@
 <!-- footer.js -->
 <script defer src="/footer.js"></script>
 
-<!-- Cloudfare Turnstile anti-spam for forms -->
+<!-- Cloudflare Turnstile anti-spam for forms -->
 <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
 
 <!-- OpenPanel analytics -->
-<script>
-  window.op=window.op||function(){var n=[];return new Proxy(function(){arguments.length&&n.push([].slice.call(arguments))},{get:function(t,r){return"q"===r?n:function(){n.push([r].concat([].slice.call(arguments)))}} ,has:function(t,r){return"q"===r}}) }();
-  window.op('init', {
-	apiUrl: 'http://opapi-gri1p0mc5rc9nmm107glgkf4.5.182.204.130.sslip.io',
-    clientId: '3f8408d6-6c06-498a-ab5e-3086b9de8667',
-    trackScreenViews: true,
-    trackOutgoingLinks: true,
-    trackAttributes: true,
-    // sessionReplay: {
-    //   enabled: true,
-    // },
-  });
-</script>
-<script src="https://openpanel.dev/op1.js" defer async></script>
+<script defer src="/openpanel-init.js"></script>
+<script defer src="https://openpanel.dev/op1.js"></script>

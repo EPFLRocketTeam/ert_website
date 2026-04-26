@@ -11,14 +11,5 @@
     <copyright>EPFL Rocket Team</copyright>
     <lastBuildDate>Sat, 26 Jul 2025 22:15:47 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Test</title>
-      <link>http://localhost:1313/posts/test/</link>
-      <pubDate>Sun, 22 Sep 2024 08:55:02 +0200</pubDate><author>info@epflrocketteam.ch (EPFL Rocket Team)</author>
-      <guid>http://localhost:1313/posts/test/</guid>
-      <description>&lt;p&gt;Hello world!&lt;/p&gt;</description>
-      <content:encoded><![CDATA[<p>Hello world!</p>
-]]></content:encoded>
-    </item>
   </channel>
 </rss>

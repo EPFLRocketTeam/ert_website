@@ -1,0 +1,22 @@
+[build]
+  publish = "public"
+  command = "hugo"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prevent the site from being embedded in iframes on other domains (clickjacking)
+    X-Frame-Options = "SAMEORIGIN"
+
+    # Prevent browsers from MIME-sniffing content types (drive-by download attacks)
+    X-Content-Type-Options = "nosniff"
+
+    # Only send the origin (no path/query) in the Referer header to external sites
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Disable browser features the site never uses
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=(), bluetooth=()"
+
+    # Restrict where forms can submit and block plugins (Flash etc.)
+    # 'unsafe-inline' is required because of the inline OpenPanel init script
+    Content-Security-Policy = "default-src 'self'; script-src 'self' cdnjs.cloudflare.com cdn.jsdelivr.net challenges.cloudflare.com tracking.epfl-rocket-team.ch openpanel.dev; style-src 'self' cdn.jsdelivr.net; img-src 'self' data: https:; font-src 'self'; frame-src challenges.cloudflare.com; connect-src 'self' https://turnstile.epfl-rocket-team.ch https://opapi-gri1p0mc5rc9nmm107glgkf4.5.182.204.130.sslip.io https://openpanel.dev; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' https://turnstile.epfl-rocket-team.ch;"

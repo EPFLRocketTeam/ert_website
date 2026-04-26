@@ -17,47 +17,47 @@ weight: 1
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 20px" >}}
-  {{< image_in_row src="/images/NumbersStudents1.webp" >}}
-  {{< image_in_row src="/images/NumbersStudents2.webp" >}}
-  {{< image_in_row src="/images/NumbersStudents3.webp" >}}
-  {{< image_in_row src="/images/NumbersStudents4.webp" >}}
-  {{< image_in_row src="/images/NumbersStudents5.webp" >}}
+  {{< image_in_row src="/images/ert_photo_07.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_08.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_09.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_10.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_11.jpg" >}}
   {{< number_in_row value="200+" unit="Students" >}}
-  {{< image_in_row src="/images/NumbersStudents6.webp" >}}
+  {{< image_in_row src="/images/ert_photo_12.jpg" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< image_in_row src="/images/NumbersLaunches1.webp" >}}
-  {{< image_in_row src="/images/NumbersLaunches2.webp" >}}
-  {{< image_in_row src="/images/NumbersLaunches3.webp" >}}
-  {{< image_in_row src="/images/NumbersLaunches4.webp" >}}
+  {{< image_in_row src="/images/ert_photo_15.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_19.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_20.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_21.jpg" >}}
   {{< number_in_row value="50+" unit="Launches" >}}
-  {{< image_in_row src="/images/NumbersLaunches5.webp" >}}
+  {{< image_in_row src="/images/ert_photo_22.jpg" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< image_in_row src="/images/NumbersProjects1.webp" >}}
-  {{< image_in_row src="/images/NumbersProjects2.webp" >}}
+  {{< image_in_row src="/images/ert_photo_23.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_25.jpg" >}}
   {{< number_in_row value="15" unit="Projects" >}}
-  {{< image_in_row src="/images/NumbersProjects3.webp" >}}
-  {{< image_in_row src="/images/NumbersProjects4.webp" >}}
-  {{< image_in_row src="/images/NumbersProjects5.webp" >}}
-  {{< image_in_row src="/images/NumbersProjects6.webp" >}}
+  {{< image_in_row src="/images/ert_photo_26.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_27.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_28.jpg" >}}
+  {{< image_in_row src="/images/ert_photo_29.jpg" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
 
 {{< image_row margin="0 30px" >}}
-  {{< image_in_row src="/images/NumbersAwards1.webp" >}}
+  {{< image_in_row src="/images/ert_photo_30.jpg" >}}
   {{< number_in_row value="7" unit="Awards in competition">}}
-  {{< image_in_row src="/images/NumbersAwards2.webp" >}}
-  {{< image_in_row src="/images/NumbersAwards3.webp" >}}
-  {{< image_in_row src="/images/NumbersAwards4.webp" >}}
-  {{< image_in_row src="/images/NumbersAwards5.webp" >}}
+  {{< image_in_row src="/images/ert_photo_31.jpg" >}}
+  {{< image_in_row src="/images/RocketLaunch3.webp" >}}
+  {{< image_in_row src="/images/S9FlightAward.webp" >}}
+  {{< image_in_row src="/images/RocketBuilding2.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}
@@ -65,12 +65,12 @@ weight: 1
 {{< image_row margin="0 30px" >}}
   {{< number_in_row value="4" unit="Research papers">}}
   
-  {{< image_in_row src="/images/NumbersResearch2.webp" >}}
-  {{< image_in_row src="/images/NumbersResearch3.webp" >}}
-  {{< image_in_row src="/images/NumbersResearch4.webp" >}}
-  {{< image_in_row src="/images/NumbersResearch5.webp" >}}
-  {{< image_in_row src="/images/NumbersResearch6.webp" >}}
-  {{< image_in_row src="/images/NumbersResearch7.webp" >}}
+  {{< image_in_row src="/images/RocketBuilding1.webp" >}}
+  {{< image_in_row src="/images/RocketBuilding3.webp" >}}
+  {{< image_in_row src="/images/RocketLaunch1.webp" >}}
+  {{< image_in_row src="/images/RocketLaunch2.webp" >}}
+  {{< image_in_row src="/images/RocketTeam1.webp" >}}
+  {{< image_in_row src="/images/BuildingParts1.webp" >}}
 {{< /image_row >}}
 
 {{< separator margin="0 30px">}}

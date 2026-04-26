@@ -21,7 +21,8 @@
   <meta property="og:url" content="http://localhost:1313/contact/">
   <meta property="og:site_name" content="EPFL Rocket Team">
   <meta property="og:title" content="Contact">
-  <meta property="og:description" content="NameEmailMessageSENDOr send us an email at these addresses below:General inquiriesPresidency">
+  <meta property="og:description" content="Name Email Message SEND Or reach us directly:
+General inquiries Presidency">
   <meta property="og:locale" content="en_UK">
   <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/ShareCardERT.webp">
@@ -32,14 +33,16 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/ShareCardERT.webp">
   <meta name="twitter:title" content="Contact">
-  <meta name="twitter:description" content="NameEmailMessageSENDOr send us an email at these addresses below:General inquiriesPresidency">
+  <meta name="twitter:description" content="Name Email Message SEND Or reach us directly:
+General inquiries Presidency">
 
 
   
   
   <meta itemprop="name" content="Contact">
-  <meta itemprop="description" content="NameEmailMessageSENDOr send us an email at these addresses below:General inquiriesPresidency">
-  <meta itemprop="wordCount" content="16">
+  <meta itemprop="description" content="Name Email Message SEND Or reach us directly:
+General inquiries Presidency">
+  <meta itemprop="wordCount" content="11">
   <meta itemprop="image" content="http://localhost:1313/images/ShareCardERT.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -54,36 +57,27 @@
 
       
 <link rel="stylesheet" href="/fonts.css">
-
 <link rel="stylesheet" href="/header.css">
-
-
-<link rel="preload" href="/stylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<link rel="preload" href="./page.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<noscript>
-  <link rel="stylesheet" href="/stylesheet.css">
-  <link rel="stylesheet" href="./page.css">
-</noscript>
+<link rel="stylesheet" href="/stylesheet.css">
+<link rel="stylesheet" href="./page.css">
 
 <script defer src="/header-menu.js"></script>
 
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 
-<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.9/dist/cdn.min.js"></script>
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 
 
 <script defer src="https://tracking.epfl-rocket-team.ch/script.js"
   data-website-id="0a937710-4539-4a20-8b1c-0a711f3a0e52"></script>
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print"
-  onload="this.media='all'" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script defer src="/swiper-initialisation.js"></script>
 
@@ -95,6 +89,10 @@
 
 
 <script defer src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+
+
+<script defer src="/openpanel-init.js"></script>
+<script defer src="https://openpanel.dev/op1.js"></script>
 </head>
 
   <body style="padding: 0">
@@ -289,43 +287,42 @@
                  padding: 30px;">
 
 <content>
-  <form id="contactForm" action="/submit" method="POST" style="max-width: 1000px; margin: 0 auto; background: none; color: #ffffff; padding: 0px; border-radius: 10px;">
-  <div style="margin-bottom: 15px;">
-    <label for="name" style="font-size: 32px; display: block; margin-bottom: 5px;">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
+  <div class="contact-wrapper">
+  <form id="contactForm" novalidate>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Tell us what's on your mind..." rows="5" required></textarea>
+    </div>
+
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAABedzJUW2HmA7zsO" data-callback="onSubmitForm"></div>
+
+    <button id="submitButton" type="submit" disabled>
+      <span class="btn-text">SEND</span>
+      <span class="btn-spinner" aria-hidden="true"></span>
+    </button>
+
+    <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
+  </form>
+
+  <div class="contact-email-links">
+    <p>Or reach us directly:</p>
+    <a href="mailto:info@epflrocketteam.ch" class="email-link">
+      <img src="/icons/mail.svg" alt="" class="mail-icon"> General inquiries
+    </a>
+    <a href="mailto:presidency@epflrocketteam.ch" class="email-link">
+      <img src="/icons/mail.svg" alt="" class="mail-icon"> Presidency
+    </a>
   </div>
-
-  <div style="margin-bottom: 15px;">
-    <label for="email" style="font-size: 32px; display: block; margin-bottom: 5px;">Email</label>
-    <input type="email" id="email" name="email" placeholder="Email" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required>
-  </div>
-
-  <div style="margin-bottom: 15px;">
-    <label for="message" style="font-size: 32px; display: block; margin-bottom: 5px;">Message</label>
-    <textarea id="message" name="message" placeholder="Message" rows="4" style="width: 100%; padding: 10px; font-size: 18px; border-radius: 5px; border: 1px solid #444; background: #1e1e1e; color: #ffffff;" required></textarea>
-  </div>
-
-  <div class="cf-turnstile" data-sitekey="0x4AAAAAABedzJUW2HmA7zsO" data-callback="onSubmitForm"></div>
-
-  <button id="submitButton" type="submit" disabled style="width: 100%; padding: 15px; font-size: 1rem; font-weight: bold; border: none; border-radius: 10px; background: #bb5851; color: #bcbcbc; cursor: default;">
-    SEND
-  </button>
-</form>
-
-<div style="font-size: 20px; text-align: center;">Or send us an email at these addresses below:
-
-  <a href="mailto:info@epflrocketteam.ch">
-    <h5>
-      General inquiries
-      <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="Mail icon"></img>
-    </h5>
-  </a>
-  <a href="mailto:presidency@epflrocketteam.ch">
-    <h5>
-      Presidency
-      <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="Mail icon"></img>
-    </h5>
-  </a>
 </div>
 
 
