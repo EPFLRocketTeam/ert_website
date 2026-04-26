@@ -26,3 +26,31 @@
     </div>
     <a href="/projects/" class="button-right right-align gray-button" style="display:inline-block;">discover all our projects</a>
 </div>
+<script>
+(function () {
+  function initProjectHover() {
+    var projectImage = document.getElementById("project-image");
+    var items = document.querySelectorAll("#our-projects > .our-project-list > div");
+    if (!projectImage || !items.length) return;
+
+    function highlight(index) {
+      items.forEach(function (el, i) {
+        el.classList.toggle("highlighted-project", i === index);
+      });
+    }
+
+    items.forEach(function (el, i) {
+      el.addEventListener("mouseenter", function () {
+        if (el.dataset.projectImage) projectImage.src = el.dataset.projectImage;
+        highlight(i);
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initProjectHover);
+  } else {
+    initProjectHover();
+  }
+})();
+</script>
