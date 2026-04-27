@@ -320,11 +320,12 @@ Check out all our roles here:Join us2025-26The boardThe board is composed of
                  background: 
                  linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%), 
                  linear-gradient(203deg, rgba(0, 0, 0, 0.3) 43%, rgba(0, 0, 0, 0.5) 68%), 
-                 url('/board/TheBoard.jpeg');
+                 url('/board/ERT.png');
                  background-blend-mode: multiply, multiply, normal;
                  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
                  background-size: cover;
                  background-position: center;
+                 transform: scaleX(-1);
                  ">
       </div>
       <div
@@ -359,7 +360,7 @@ Check out all our roles here:Join us2025-26The boardThe board is composed of
   <div style="display: flex">
     <a href="/about/board/" class="card" x-data="{ open: false }" x-on:mouseenter="open = true" x-on:mouseleave="open = false">
 
-      <div class="card-bg" style="background-image: url('/board/TheBoard.jpeg'); transform: scale(1);" x-bind:style="{ transform: open ? 'scale(1.1)' : 'scale(1)' }"></div>
+      <div class="card-bg" style="background-image: url('/board/ERT.png'); transform: scale(1);" x-bind:style="{ transform: open ? 'scale(1.1)' : 'scale(1)' }"></div>
 
 
       <div class="card-overlay"></div>
