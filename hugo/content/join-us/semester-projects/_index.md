@@ -9,8 +9,6 @@ layout: single
 padding: 30px
 math: true
 ---
-<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-
 {{< max-width max="1000px" >}}
 
 <p>
