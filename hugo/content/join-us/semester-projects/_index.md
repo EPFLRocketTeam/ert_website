@@ -7,10 +7,7 @@ menu: "main"
 weight: 4
 layout: single
 padding: 30px
-math: true
 ---
-<link rel="stylesheet" href="/stylesheet.css" media="screen">
-
 {{< max-width max="1000px" >}}
 
 <p>
