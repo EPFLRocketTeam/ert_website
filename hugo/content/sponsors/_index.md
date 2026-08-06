@@ -21,3 +21,16 @@ callToAction:
 {{< bronze-sponsors >}}
 
 {{< support-sponsors >}}
+
+{{< rawhtml >}}
+<div style="margin: 15px">
+  <div id="rnw-solution-embed-gbffh" style="width: 100%; margin: 0 auto; max-width: calc(100% - 30px); overflow: hidden; border-radius: 1.5rem; margins: 20px"></div>
+</div>
+<script type="module">
+  import {SolutionEmbed} from "https://cdn.jsdelivr.net/npm/@raisenow/solution-embed@1/dist/index.js"
+  SolutionEmbed.render("#rnw-solution-embed-gbffh", {
+    "url": "https://donate.raisenow.io/gbffh?lng=fr",
+    "info": true,
+  })
+</script>
+{{< /rawhtml >}}
