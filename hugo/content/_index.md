@@ -82,7 +82,9 @@ weight: 1
 {{<testimonials>}}
 
 {{< rawhtml >}}
-<div id="rnw-solution-embed-gbffh" style="width: 100%; margin: 0 auto; max-width: 100rem; overflow: hidden; border-radius: 1.5rem;"></div>
+<div style="margin: 15px">
+  <div id="rnw-solution-embed-gbffh" style="width: 100%; margin: 0 auto; max-width: 100rem; overflow: hidden; border-radius: 1.5rem;"></div>
+</div>
 <script type="module">
   import {SolutionEmbed} from "https://cdn.jsdelivr.net/npm/@raisenow/solution-embed@1/dist/index.js"
   SolutionEmbed.render("#rnw-solution-embed-gbffh", {
