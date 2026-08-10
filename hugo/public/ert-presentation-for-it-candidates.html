@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EPFL Rocket Team — IT</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/theme/black.css"
+  >
+
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --panel: #12161b;
+      --panel-2: #181d23;
+      --text: #f2f4f7;
+      --muted: #9aa4af;
+      --accent: #ff5a36;
+      --line: #303842;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+    }
+
+    .reveal {
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .reveal .slides section {
+      text-align: left;
+      height: 100%;
+      box-sizing: border-box;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3 {
+      color: var(--text);
+      text-transform: none;
+      letter-spacing: -0.035em;
+    }
+
+    .reveal h1 {
+      font-size: 2.05em;
+      line-height: 1.02;
+      margin-bottom: 0.25em;
+    }
+
+    .reveal h3 {
+      margin-top: 0;
+    }
+
+    .slide {
+      position: relative;
+      overflow: hidden;
+      padding: 7vh 7vw;
+    }
+
+    /*
+     * Small footer on every slide
+     */
+    .slide::after {
+      content: "EPFL ROCKET TEAM  /  IT";
+
+      position: absolute;
+      right: 3vw;
+      bottom: 2.5vh;
+
+      color: #59616b;
+
+      font-size: 0.22em;
+      letter-spacing: 0.14em;
+    }
+
+    .eyebrow {
+      margin-bottom: 0.9em;
+
+      color: var(--accent);
+
+      font-size: 0.38em;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .subtitle {
+      max-width: 850px;
+
+      color: var(--muted);
+
+      font-size: 0.55em;
+      line-height: 1.4;
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+
+    /* =========================================================
+       SLIDE 1 — ERT IN NUMBERS
+       ========================================================= */
+
+    .numbers {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 1.1rem;
+
+      margin-top: 2.1rem;
+    }
+
+    .number {
+      min-height: 125px;
+
+      padding: 1.25rem 1.1rem;
+
+      background: var(--panel);
+
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .number .value {
+      font-size: 1.55em;
+      font-weight: 850;
+
+      line-height: 1;
+
+      letter-spacing: -0.05em;
+    }
+
+    .number .label {
+      margin-top: 0.55rem;
+
+      color: var(--muted);
+
+      font-size: 0.43em;
+      line-height: 1.25;
+    }
+
+    .rocket-strip {
+      display: flex;
+
+      gap: 0.65rem;
+
+      align-items: center;
+
+      margin-top: 1.15rem;
+
+      color: var(--muted);
+
+      font-size: 0.38em;
+    }
+
+    .dot {
+      display: inline-block;
+
+      width: 7px;
+      height: 7px;
+
+      background: var(--accent);
+
+      border-radius: 50%;
+    }
+
+
+    /* =========================================================
+       SLIDE 2 — ORGANISATION
+       ========================================================= */
+
+    .org {
+      display: flex;
+
+      flex-direction: column;
+
+      align-items: center;
+
+      gap: 0.8rem;
+
+      margin-top: 1.3rem;
+    }
+
+    .org-root {
+      padding: 0.65rem 1.5rem;
+
+      background: var(--accent);
+
+      color: #111;
+
+      border-radius: 12px;
+
+      font-size: 0.48em;
+      font-weight: 850;
+    }
+
+    .org-row {
+      display: grid;
+
+      width: 100%;
+
+      grid-template-columns:
+        1fr
+        1.5fr
+        1fr;
+
+      gap: 0.9rem;
+    }
+
+    .org-box {
+      min-height: 120px;
+
+      padding: 0.85rem 1rem;
+
+      background: var(--panel);
+
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .org-box h3 {
+      margin: 0 0 0.35em;
+
+      font-size: 0.52em;
+    }
+
+    .org-box p,
+    .org-box li {
+      color: var(--muted);
+
+      font-size: 0.33em;
+      line-height: 1.3;
+    }
+
+    .org-box ul {
+      margin: 0;
+
+      padding-left: 1.15em;
+    }
+
+    .it-box {
+      border-color: var(--accent);
+
+      box-shadow:
+        0 0 0 1px
+        rgba(255, 90, 54, 0.08);
+    }
+
+    .it-label {
+      margin-bottom: 0.45em;
+
+      color: var(--accent);
+
+      font-size: 0.3em;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .support-line {
+      display: flex;
+
+      align-items: center;
+
+      gap: 0.65rem;
+
+      color: var(--muted);
+
+      font-size: 0.34em;
+    }
+
+    .arrow {
+      color: var(--accent);
+
+      font-size: 1.5em;
+    }
+
+
+    /* =========================================================
+       SLIDE 3 — IT TWO POLES
+       ========================================================= */
+
+    .poles {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        0.12fr
+        1fr;
+
+      gap: 1.2rem;
+
+      align-items: stretch;
+
+      margin-top: 1.35rem;
+    }
+
+    .pole {
+      padding: 1.15rem 1.25rem;
+
+      background: var(--panel);
+
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    .pole h3 {
+      margin: 0 0 0.2em;
+
+      font-size: 0.68em;
+    }
+
+    .pole .tag {
+      margin-bottom: 0.9em;
+
+      color: var(--muted);
+
+      font-size: 0.32em;
+    }
+
+    .pole ul {
+      margin: 0;
+
+      padding-left: 1.15em;
+    }
+
+    .pole li {
+      margin: 0.25em 0;
+
+      font-size: 0.38em;
+      line-height: 1.45;
+    }
+
+    .divider {
+      width: 2px;
+
+      margin: 10% auto;
+
+      background: var(--line);
+
+      border-radius: 2px;
+    }
+
+    .principle {
+      margin-top: 1rem;
+
+      padding: 0.75rem 1rem;
+
+      background: rgba(255, 90, 54, 0.055);
+
+      border-left: 3px solid var(--accent);
+
+      color: var(--muted);
+
+      font-size: 0.39em;
+      line-height: 1.35;
+    }
+
+    .principle strong {
+      color: var(--text);
+    }
+
+
+    /* =========================================================
+       SLIDE 4 — PROBLEMS / OPPORTUNITIES
+       ========================================================= */
+
+    .problems {
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 0.75rem;
+
+      margin-top: 1.1rem;
+    }
+
+    .problem {
+      min-height: 100px;
+
+      padding: 0.8rem 0.85rem;
+
+      background: var(--panel);
+
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+
+    .problem .title {
+      margin-bottom: 0.28em;
+
+      font-size: 0.42em;
+      font-weight: 800;
+    }
+
+    .problem .body {
+      color: var(--muted);
+
+      font-size: 0.29em;
+      line-height: 1.35;
+    }
+
+    .opportunity {
+      margin-top: 0.95rem;
+
+      padding: 0.85rem 1rem;
+
+      background: var(--panel-2);
+
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .opportunity-title {
+      margin-bottom: 0.5em;
+
+      color: var(--accent);
+
+      font-size: 0.34em;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+    }
+
+    .pipeline {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      align-items: center;
+      justify-content: center;
+
+      gap: 0.45rem;
+
+      font-size: 0.31em;
+    }
+
+    .node {
+      padding: 0.55rem 0.7rem;
+
+      background: var(--panel);
+
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .arrow2 {
+      color: var(--accent);
+
+      font-size: 1.35em;
+    }
+
+    .llm {
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        0.18fr
+        1.3fr;
+
+      gap: 0.5rem;
+
+      align-items: center;
+
+      margin-top: 0.7rem;
+    }
+
+    .knowledge {
+      padding: 0.65rem;
+
+      color: var(--muted);
+
+      border: 1px dashed var(--line);
+      border-radius: 10px;
+
+      font-size: 0.29em;
+
+      text-align: center;
+    }
+
+    .llm-core {
+      padding: 0.7rem 0.45rem;
+
+      background: var(--accent);
+
+      color: #111;
+
+      border-radius: 10px;
+
+      font-size: 0.3em;
+      font-weight: 850;
+
+      text-align: center;
+    }
+
+    .outputs {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 0.45rem;
+
+      margin-top: 0.45rem;
+    }
+
+    .output {
+      padding: 0.55rem;
+
+      background: var(--panel);
+
+      border-radius: 8px;
+
+      font-size: 0.28em;
+
+      text-align: center;
+    }
+
+    .closing {
+      margin-top: 0.7rem;
+
+      color: var(--muted);
+
+      font-size: 0.35em;
+
+      text-align: center;
+    }
+
+    .closing strong {
+      color: var(--text);
+    }
+
+
+    /* =========================================================
+       MOBILE / SMALL WINDOWS
+       ========================================================= */
+
+    @media (max-width: 900px) {
+
+      .numbers {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .org-row {
+        grid-template-columns: 1fr;
+      }
+
+      .poles {
+        grid-template-columns: 1fr;
+      }
+
+      .divider {
+        display: none;
+      }
+
+      .problems {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+<div class="reveal">
+
+  <div class="slides">
+
+
+    <!-- =======================================================
+         SLIDE 1
+         ======================================================= -->
+
+    <section class="slide">
+
+      <div class="eyebrow">
+        EPFL ROCKET TEAM · IT CANDIDATES
+      </div>
+
+      <h1>
+        Small team.<br>
+        <span class="accent">Big engineering.</span>
+      </h1>
+
+      <p class="subtitle">
+        The EPFL Rocket Team brings together students from across
+        disciplines to design, build, test and fly experimental rockets.
+      </p>
+
+
+      <div class="numbers">
+
+        <div class="number">
+          <div class="value">~250</div>
+
+          <div class="label">
+            members across the team
+          </div>
+        </div>
+
+
+        <div class="number">
+          <div class="value">10+</div>
+
+          <div class="label">
+            technical & operational areas
+          </div>
+        </div>
+
+
+        <div class="number">
+          <div class="value">1</div>
+
+          <div class="label">
+            organisation sharing one mission:
+            fly rockets
+          </div>
+        </div>
+
+
+        <div class="number">
+          <div class="value">2026</div>
+
+          <div class="label">
+            Firehorn 2 · EuRoC season
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="rocket-strip">
+
+        <span class="dot"></span>
+
+        <span>Propulsion</span>
+        <span>·</span>
+
+        <span>Avionics</span>
+        <span>·</span>
+
+        <span>Structures</span>
+        <span>·</span>
+
+        <span>Recovery</span>
+        <span>·</span>
+
+        <span>GNC</span>
+        <span>·</span>
+
+        <span>Management</span>
+        <span>·</span>
+
+        <span>Operations</span>
+        <span>·</span>
+
+        <span>IT</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SLIDE 2
+         ======================================================= -->
+
+    <section class="slide">
+
+      <div class="eyebrow">
+        02 · THE ORGANISATION
+      </div>
+
+      <h1>
+        How does <span class="accent">ERT</span>
+        fit together?
+      </h1>
+
+      <p class="subtitle">
+        Different teams own different parts of the rocket —
+        but they depend on one another constantly.
+      </p>
+
+
+      <div class="org">
+
+        <div class="org-root">
+          EPFL ROCKET TEAM
+        </div>
+
+
+        <div class="org-row">
+
+
+          <div class="org-box">
+
+            <h3>
+              Management & Coordination
+            </h3>
+
+            <ul>
+              <li>Strategy & planning</li>
+              <li>People & finance</li>
+              <li>External relations</li>
+              <li>Project coordination</li>
+            </ul>
+
+          </div>
+
+
+          <div class="org-box">
+
+            <h3>
+              Engineering
+            </h3>
+
+            <ul>
+              <li>Propulsion</li>
+              <li>Structures & aerodynamics</li>
+              <li>Avionics</li>
+              <li>GNC / software</li>
+              <li>Recovery & other systems</li>
+            </ul>
+
+          </div>
+
+
+          <div class="org-box">
+
+            <h3>
+              Operations
+            </h3>
+
+            <ul>
+              <li>Logistics</li>
+              <li>Procurement</li>
+              <li>Events & launches</li>
+              <li>Administrative support</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <div class="support-line">
+
+          <span class="arrow">↓</span>
+
+          <span>
+            All of them rely on shared digital infrastructure,
+            information and automation.
+          </span>
+
+        </div>
+
+
+        <div
+          class="org-box it-box"
+          style="width: 68%;"
+        >
+
+          <div class="it-label">
+            Horizontal function: IT
+          </div>
+
+          <p>
+            Infrastructure · identity & access · services ·
+            documentation · automation · integrations ·
+            internal tools · support
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SLIDE 3
+         ======================================================= -->
+
+    <section class="slide">
+
+      <div class="eyebrow">
+        03 · THE IT TEAM
+      </div>
+
+      <h1>
+        Two poles.
+        <span class="accent">One IT team.</span>
+      </h1>
+
+      <p class="subtitle">
+        We want both a reliable foundation and the freedom
+        to build what comes next.
+      </p>
+
+
+      <div class="poles">
+
+
+        <!-- OPERATIONS -->
+
+        <div class="pole">
+
+          <h3>
+            Operations
+          </h3>
+
+          <div class="tag">
+            Keep today's systems reliable.
+          </div>
+
+          <ul>
+            <li>Infrastructure & servers</li>
+            <li>Accounts, access & permissions</li>
+            <li>Wiki & core services</li>
+            <li>Security, backups & reliability</li>
+            <li>IT support</li>
+            <li>Keeping the organisation running</li>
+          </ul>
+
+        </div>
+
+
+        <div class="divider"></div>
+
+
+        <!-- R&D -->
+
+        <div class="pole">
+
+          <h3>
+            Research & Development
+          </h3>
+
+          <div class="tag">
+            Build systems that make ERT better.
+          </div>
+
+          <ul>
+            <li>Automation & workflows</li>
+            <li>n8n & service integrations</li>
+            <li>Internal tools & data systems</li>
+            <li>AI / LLM / knowledge systems</li>
+            <li>Experimentation with new technology</li>
+            <li>Turn recurring problems into systems</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+      <div class="principle">
+
+        <strong>
+          Operations gives R&D a stable platform.
+        </strong>
+
+        R&D reduces the amount of repetitive work
+        Operations has to do.
+
+        The two poles should continuously make each
+        other better.
+
+      </div>
+
+    </section>
+
+
+    <!-- =======================================================
+         SLIDE 4
+         ======================================================= -->
+
+    <section class="slide">
+
+      <div class="eyebrow">
+        04 · WHY IT MATTERS
+      </div>
+
+      <h1>
+        A lot of
+        <span class="accent">low-hanging fruit.</span>
+      </h1>
+
+      <p class="subtitle">
+        Many opportunities where a motivated
+        IT team can make a visible difference.
+      </p>
+
+
+      <div class="problems">
+
+
+        <div class="problem">
+
+          <div class="title">
+            📚 Documentation
+          </div>
+
+          <div class="body">
+            Important knowledge isn't always documented
+            consistently, making handovers and onboarding harder.
+          </div>
+
+        </div>
+
+
+        <div class="problem">
+
+          <div class="title">
+            👥 Capacity
+          </div>
+
+          <div class="body">
+            IT was understaffed in previous years,
+            so technical debt accumulated.
+          </div>
+
+        </div>
+
+
+        <div class="problem">
+
+          <div class="title">
+            🧩 Complexity
+          </div>
+
+          <div class="body">
+            Non-IT members shouldn't need to understand
+            our entire infrastructure to get things done.
+          </div>
+
+        </div>
+
+
+        <div class="problem">
+
+          <div class="title">
+            🗂️ Scattered information
+          </div>
+
+          <div class="body">
+            Wiki, Drive, Slack, Git repositories,
+            spreadsheets and individual knowledge all coexist.
+          </div>
+
+        </div>
+
+
+        <div class="problem">
+
+          <div class="title">
+            🤖 Manual repetition
+          </div>
+
+          <div class="body">
+            The same data and administrative steps are often
+            repeated by hand instead of being automated.
+          </div>
+
+        </div>
+
+
+        <div class="problem">
+
+          <div class="title">
+            🧠 Hard-to-use knowledge
+          </div>
+
+          <div class="body">
+            ERT has accumulated valuable technical knowledge
+            that is difficult for new members to discover.
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- AUTOMATION -->
+
+      <div class="opportunity">
+
+        <div class="opportunity-title">
+          Example · automation
+        </div>
+
+
+        <div class="pipeline">
+
+          <div class="node">
+            Google Sheets
+          </div>
+
+          <div class="arrow2">→</div>
+
+          <div class="node">
+            n8n
+          </div>
+
+          <div class="arrow2">→</div>
+
+          <div class="node">
+            Database
+          </div>
+
+          <div class="arrow2">→</div>
+
+          <div class="node">
+            Wiki.js / services
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRIVATE LLM -->
+
+      <div class="opportunity">
+
+        <div class="opportunity-title">
+          Longer-term · private team knowledge assistant
+        </div>
+
+
+        <div class="llm">
+
+
+          <div class="knowledge">
+
+            Wiki · docs · engineering knowledge · procedures
+
+          </div>
+
+
+          <div class="arrow2">
+            →
+          </div>
+
+
+          <div>
+
+            <div class="llm-core">
+              PRIVATE LLM / RAG
+            </div>
+
+
+            <div class="outputs">
+
+              <div class="output">
+                Learn faster
+              </div>
+
+              <div class="output">
+                Support decisions
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="closing">
+
+        <strong>
+          The goal isn't to add more technology.
+        </strong>
+
+        It's to remove friction from building rockets.
+
+      </div>
+
+    </section>
+
+
+  </div>
+</div>
+
+
+<!-- Reveal.js -->
+
+<script
+  src="https://cdn.jsdelivr.net/npm/reveal.js@5.2.1/dist/reveal.js">
+</script>
+
+
+<script>
+
+  Reveal.initialize({
+
+    hash: true,
+
+    slideNumber: true,
+
+    transition: "slide",
+
+    backgroundTransition: "fade",
+
+    controls: true,
+
+    progress: true,
+
+    center: false,
+
+    width: 1280,
+
+    height: 720,
+
+    margin: 0.04,
+
+    display: "block"
+
+  });
+
+</script>
+
+</body>
+</html>
