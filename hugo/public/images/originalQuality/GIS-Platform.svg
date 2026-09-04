@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467 280" role="img" aria-labelledby="title">
+  <title id="title">GIS Platform</title>
+  <rect width="467" height="280" fill="#fff"/>
+  <g fill="#000" font-family="Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="31" y="158" font-size="160" font-style="italic" letter-spacing="-16">GIS</text>
+    <text x="33" y="241" font-size="83" letter-spacing="4">PLATFORM</text>
+  </g>
+  <rect x="212" y="38" width="38" height="20" fill="#d00d19"/>
+</svg>
