@@ -27,7 +27,7 @@ Please contact the system engineer for the relevant subsystem if you are interes
 
 <h5>Friction Stir Welding for 6xxx Aluminium (X)</h5>
 <p>Develop and integrate a friction stir welding solution for 6xxx aluminium. The work covers mechanical design and CAD, electronics and sensor integration, embedded software and control systems, and welding-material behaviour.</p>
-<p><b>Professor:</b> Mortensen<br><b>Skills:</b> mechanical design, CAD, electronics, sensors, embedded software, control systems and welding fundamentals<br><b>Credits:</b> 10</p>
+<b>Skills:</b> mechanical design, CAD, electronics, sensors, embedded software, control systems and welding fundamentals<br><b>Credits:</b> 10</p>
 {{< /collapsible-section-small >}}
 
 {{< collapsible-section-small name="Flight Dynamics" >}}
