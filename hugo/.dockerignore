@@ -16,4 +16,3 @@ node_modules/
 # Never send local secrets into the image build context
 .env
 .env.*
-!.env.example
