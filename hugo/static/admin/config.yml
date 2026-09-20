@@ -12,6 +12,7 @@ collections:
   - name: "home" # Used in routes, e.g., /admin/collections/blog
     label: "Homepage" # Used in the UI
     folder: "hugo/content/" # The path to the folder where the documents are stored
+    index_file: true # Include Hugo's root _index.md file
     create: false # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -20,6 +21,9 @@ collections:
   - name: "projects" # Used in routes, e.g., /admin/collections/blog
     label: "Projects" # Used in the UI
     folder: "hugo/content/projects" # The path to the folder where the documents are stored
+    index_file: true # Include Hugo's collection _index.md file
+    nested:
+      subfolders: false # Existing project pages use nested _index.md files
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -31,6 +35,9 @@ collections:
   - name: "join-us" # Used in routes, e.g., /admin/collections/blog
     label: "Join Us" # Used in the UI
     folder: "hugo/content/join-us" # The path to the folder where the documents are stored
+    index_file: true # Include Hugo's collection _index.md file
+    nested:
+      subfolders: false # Existing pages use nested _index.md files
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -42,6 +49,7 @@ collections:
   - name: "sponsors" # Used in routes, e.g., /admin/collections/blog
     label: "Sponsors" # Used in the UI
     folder: "hugo/content/sponsors" # The path to the folder where the documents are stored
+    index_file: true # Include Hugo's collection _index.md file
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -53,6 +61,9 @@ collections:
   - name: "about" # Used in routes, e.g., /admin/collections/blog
     label: "About" # Used in the UI
     folder: "hugo/content/about" # The path to the folder where the documents are stored
+    index_file: true # Include Hugo's collection _index.md file
+    nested:
+      subfolders: false # Existing pages use nested _index.md files
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -64,6 +75,7 @@ collections:
   - name: "contact" # Used in routes, e.g., /admin/collections/blog
     label: "Contact" # Used in the UI
     folder: "hugo/content/contact" # The path to the folder where the documents are stored
+    index_file: true # Include Hugo's collection _index.md file
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -86,6 +98,7 @@ collections:
   - name: "shop" # Used in routes, e.g., /admin/collections/blog
     label: "Shop" # Used in the UI
     folder: "hugo/content/shop" # The path to the folder where the documents are stored
+    index_file: true # Include Hugo's collection _index.md file
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
