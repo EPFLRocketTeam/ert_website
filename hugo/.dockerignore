@@ -1,0 +1,18 @@
+# Generated Hugo output
+public/
+resources/
+isablefastrender/
+
+# Node/TinaCMS artifacts are not needed for a Hugo production build
+node_modules/
+.tina/
+
+# Version control and editor metadata
+.git/
+.gitignore
+.vscode/
+*.log
+
+# Never send local secrets into the image build context
+.env
+.env.*
