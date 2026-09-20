@@ -1,0 +1,70 @@
+/* Sveltia preview only: mirrors the live site's dark visual foundation. */
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text, #f6f6f6);
+  font-family: var(--font-family-base, "Aspekta", sans-serif);
+  background: var(--color-canvas, #000);
+}
+
+body {
+  padding: 1.875rem;
+}
+
+body > * {
+  max-width: 80ch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text, #f6f6f6);
+  font-family: var(--font-family-base, "Aspekta", sans-serif);
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+p,
+li {
+  color: var(--color-text, #f6f6f6);
+  font-family: var(--font-family-light, "Aspekta-200", sans-serif);
+  font-size: 1.125rem;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--color-accent, #da291c);
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+pre,
+code {
+  color: var(--color-text, #f6f6f6);
+  background: var(--color-surface, #1e1e1e);
+}
