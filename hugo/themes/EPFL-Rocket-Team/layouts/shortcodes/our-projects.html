@@ -41,7 +41,13 @@
 
     items.forEach(function (el, i) {
       el.addEventListener("mouseenter", function () {
-        if (el.dataset.projectImage) projectImage.src = el.dataset.projectImage;
+        if (el.dataset.projectImage && !projectImage.src.endsWith(el.dataset.projectImage)) {
+          projectImage.style.opacity = 0;
+          window.setTimeout(function () {
+            projectImage.src = el.dataset.projectImage;
+            projectImage.style.opacity = 1;
+          }, 180);
+        }
         highlight(i);
       });
     });

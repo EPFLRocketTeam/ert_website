@@ -1,54 +1,50 @@
 <div class="main">
   <div class="page" style="padding: 30px;">our past and future competition projects</div>
 
-  <div style="margin: 0 30px 10px; background: #0d0d0d; border-radius: 20px; padding: 50px 50px 45px; position: relative; overflow: hidden;">
+  <div class="timeline-box">
 
     <!-- subtle red glow top-right -->
-    <div style="position: absolute; top: -80px; right: -80px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(218,41,28,0.12) 0%, transparent 70%); pointer-events: none;"></div>
-
-    <!-- Altitude labels row -->
-    <div style="display: flex; justify-content: space-between; margin-bottom: 6px; padding: 0 calc(50% / 3) 0 0;">
-    </div>
+    <div class="timeline-glow"></div>
 
     <!-- Timeline nodes -->
-    <div style="position: relative; display: flex; justify-content: space-between; align-items: flex-start;">
+    <div class="timeline-row">
 
       <!-- Connecting line (grey base) -->
-      <div style="position: absolute; top: 31px; left: calc(100% / 6); right: calc(100% / 6); height: 2px; background: #2a2a2a; z-index: 0;"></div>
+      <div class="timeline-line"></div>
       <!-- Connecting line (red: node1 → node2) -->
-      <div style="position: absolute; top: 31px; left: calc(100% / 6); width: calc(100% / 3); height: 2px; background: #da291c; z-index: 1;"></div>
+      <div class="timeline-line-progress"></div>
 
       <!-- FIREHORN -->
-      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2;">
-        <div style="background: #da291c22; color: #da291c; font-family: Aspekta; font-size: 22px; font-weight: 700; padding: 2px 14px; border-radius: 20px; margin-bottom: 10px; border: 1px solid #da291c55;">3 km</div>
-        <div style="width: 62px; height: 62px; background: #da291c; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(218,41,28,0.5);">
-          <span style="color: white; font-family: Aspekta; font-size: 13px; font-weight: 700;">2025</span>
+      <div class="timeline-node">
+        <div class="timeline-badge timeline-badge--completed">3 km</div>
+        <div class="timeline-circle timeline-circle--completed">
+          <span>2025</span>
         </div>
-        <div style="color: white; font-family: Aspekta; font-size: 19px; font-weight: 600; margin-top: 16px; text-align: center;">Firehorn</div>
-        <div style="color: #777; font-family: Aspekta; font-size: 12px; text-align: center; margin-top: 5px; max-width: 130px; line-height: 1.6;">Bi-Liquid rocket built by students</div>
-        <div style="margin-top: 10px; background: #da291c22; color: #da291c; font-family: Aspekta; font-size: 10px; padding: 3px 10px; border-radius: 10px; font-weight: 700; letter-spacing: 1px;">COMPLETED</div>
+        <div class="timeline-title">Firehorn</div>
+        <div class="timeline-desc">Bi-Liquid rocket built by students</div>
+        <div class="timeline-status timeline-status--completed">COMPLETED</div>
       </div>
 
       <!-- FIREHORN II -->
-      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2;">
-        <div style="color: #da291c; font-family: Aspekta; font-size: 22px; font-weight: 700; padding: 2px 14px; border-radius: 20px; margin-bottom: 10px; border: 1px solid #da291c;">3 km</div>
-        <div style="width: 62px; height: 62px; background: #0d0d0d; border: 2px solid #da291c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-          <span style="color: white; font-family: Aspekta; font-size: 13px; font-weight: 700;">2026</span>
+      <div class="timeline-node">
+        <div class="timeline-badge timeline-badge--upcoming">3 km</div>
+        <div class="timeline-circle timeline-circle--upcoming">
+          <span>2026</span>
         </div>
-        <div style="color: white; font-family: Aspekta; font-size: 19px; font-weight: 600; margin-top: 16px; text-align: center;">Firehorn II</div>
-        <div style="color: #777; font-family: Aspekta; font-size: 12px; text-align: center; margin-top: 5px; max-width: 130px; line-height: 1.6;">Third Generation Bi-Liquid rocket</div>
-        <div style="margin-top: 10px; background: #ffffff0d; color: #999; font-family: Aspekta; font-size: 10px; padding: 3px 10px; border-radius: 10px; font-weight: 700; letter-spacing: 1px;">UPCOMING</div>
+        <div class="timeline-title">Firehorn II</div>
+        <div class="timeline-desc">Third Generation Bi-Liquid rocket</div>
+        <div class="timeline-status timeline-status--upcoming">UPCOMING</div>
       </div>
 
       <!-- OUR GOAL -->
-      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2;">
-        <div style="color: #555; font-family: Aspekta; font-size: 22px; font-weight: 700; padding: 2px 14px; border-radius: 20px; margin-bottom: 10px; border: 1px solid #333;">100 km</div>
-        <div style="width: 62px; height: 62px; background: #0d0d0d; border: 2px dashed #444; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-          <span style="color: #666; font-family: Aspekta; font-size: 13px; font-weight: 700;">2030</span>
+      <div class="timeline-node">
+        <div class="timeline-badge">100 km</div>
+        <div class="timeline-circle timeline-circle--future">
+          <span>2030</span>
         </div>
-        <div style="color: #888; font-family: Aspekta; font-size: 19px; font-weight: 600; margin-top: 16px; text-align: center;">Our goal</div>
-        <div style="color: #555; font-family: Aspekta; font-size: 12px; text-align: center; margin-top: 5px; max-width: 150px; line-height: 1.6;">First European team to reach space</div>
-        <div style="margin-top: 10px; background: #ffffff06; color: #555; font-family: Aspekta; font-size: 10px; padding: 3px 10px; border-radius: 10px; font-weight: 700; letter-spacing: 1px;">FUTURE</div>
+        <div class="timeline-title timeline-title--muted">Our goal</div>
+        <div class="timeline-desc timeline-desc--muted">First European team to reach space</div>
+        <div class="timeline-status timeline-status--future">FUTURE</div>
       </div>
 
     </div>

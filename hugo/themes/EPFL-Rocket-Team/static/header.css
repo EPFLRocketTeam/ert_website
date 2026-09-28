@@ -122,17 +122,32 @@ body, html {
 .desktop-menu-item:hover {background: white;}
 .desktop-menu-item:hover a {color: black;}
 .desktop-menu-item .submenu {
-  display: none;
+  display: block;
   position: absolute;
   top: 100%;
   left: 0;
-  right: 0;
+  min-width: 100%;
+  width: max-content;
+  max-width: 280px;
   background: white;
   list-style: none;
   padding: 0;
   margin: 0;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+  pointer-events: none;
 }
-.desktop-menu-item:hover .submenu {display: block;}
+.desktop-menu-item:hover .submenu,
+.desktop-menu-item:focus-within .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
 .desktop-menu-item:has(> a:hover) {background: #ff4a3d;}
 .desktop-menu-item-without-subitems:hover {background: #ff4a3d;}
 .submenu li {
@@ -143,9 +158,11 @@ body, html {
   text-decoration: none;
   color: black;
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
 }
 .submenu li a:hover {background: none;}
+.submenu-item {transition: background 0.18s ease;}
 .submenu-item:hover {background: #ff4a3d;}
 .mobile-menu-items {
   display: none;

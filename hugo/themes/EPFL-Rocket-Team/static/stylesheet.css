@@ -2101,3 +2101,208 @@ img {
   }
 }
 
+
+
+/* ============================================================
+   Animations added 28 Sep 2026 (Nikita's list)
+   ============================================================ */
+
+/* --- Sponsors: hover micro-interaction (grid tiles) --- */
+.column {
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+.column:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.28);
+}
+
+/* --- Sponsors: hover micro-interaction (prestige logos) --- */
+.prestige-sponsor img {
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+.prestige-sponsor:hover img {
+  transform: scale(1.07);
+}
+
+/* --- Our projects: smooth crossfade on hover image swap --- */
+.our-project-images img {
+  transition: opacity 0.2s ease;
+}
+
+/* --- Timeline ("our past and future competition projects") --- */
+.timeline-box {
+  margin: 0 30px 10px;
+  background: #0d0d0d;
+  border-radius: 20px;
+  padding: 50px 50px 45px;
+  position: relative;
+  overflow: hidden;
+}
+.timeline-glow {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(218, 41, 28, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.timeline-row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* Line is centered vertically on the circles: badge height (32px) + gap (10px) + circle radius (31px) */
+.timeline-line {
+  position: absolute;
+  top: 73px;
+  left: calc(100% / 6);
+  right: calc(100% / 6);
+  height: 2px;
+  background: #2a2a2a;
+  z-index: 0;
+}
+.timeline-line-progress {
+  position: absolute;
+  top: 73px;
+  left: calc(100% / 6);
+  width: calc(100% / 3);
+  height: 2px;
+  background: #da291c;
+  z-index: 1;
+}
+.timeline-node {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.timeline-badge {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  color: #555;
+  font-family: Aspekta;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+.timeline-badge--completed {
+  background: #da291c22;
+  color: #da291c;
+  border: 1px solid #da291c55;
+}
+.timeline-badge--upcoming {
+  color: #da291c;
+  border: 1px solid #da291c;
+}
+.timeline-circle {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Only box-shadow animates below (never transform/scale) -- scaling this
+     flex container made the year text jitter by ~1px from sub-pixel
+     rounding, so the "breathing" is glow-only now. */
+}
+.timeline-circle span {
+  color: white;
+  font-family: Aspekta;
+  font-size: 13px;
+  font-weight: 700;
+}
+.timeline-circle--completed {
+  background: #da291c;
+  box-shadow: 0 0 24px rgba(218, 41, 28, 0.5);
+  animation: timeline-glow-pulse-completed 3s ease-in-out infinite;
+}
+.timeline-circle--upcoming {
+  background: #0d0d0d;
+  border: 2px solid #da291c;
+  animation: timeline-glow-pulse-upcoming 3s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+.timeline-circle--future {
+  background: #0d0d0d;
+  border: 2px dashed #444;
+  animation: timeline-glow-pulse-future 3s ease-in-out infinite;
+  animation-delay: 0.8s;
+}
+.timeline-circle--future span {
+  color: #666;
+}
+.timeline-title {
+  color: white;
+  font-family: Aspekta;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 16px;
+  text-align: center;
+}
+.timeline-title--muted {
+  color: #888;
+}
+.timeline-desc {
+  color: #777;
+  font-family: Aspekta;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  max-width: 130px;
+  line-height: 1.6;
+}
+.timeline-desc--muted {
+  color: #555;
+  max-width: 150px;
+}
+.timeline-status {
+  margin-top: 10px;
+  font-family: Aspekta;
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.timeline-status--completed {
+  background: #da291c22;
+  color: #da291c;
+}
+.timeline-status--upcoming {
+  background: #ffffff0d;
+  color: #999;
+}
+.timeline-status--future {
+  background: #ffffff06;
+  color: #555;
+}
+@keyframes timeline-glow-pulse-completed {
+  0%, 100% { box-shadow: 0 0 24px rgba(218, 41, 28, 0.5); }
+  50% { box-shadow: 0 0 40px rgba(218, 41, 28, 0.9); }
+}
+@keyframes timeline-glow-pulse-upcoming {
+  0%, 100% { box-shadow: 0 0 0 rgba(218, 41, 28, 0); }
+  50% { box-shadow: 0 0 22px rgba(218, 41, 28, 0.55); }
+}
+@keyframes timeline-glow-pulse-future {
+  0%, 100% { box-shadow: 0 0 0 rgba(150, 150, 150, 0); }
+  50% { box-shadow: 0 0 14px rgba(150, 150, 150, 0.35); }
+}
+
+/* --- Respect reduced-motion preference for all animations above --- */
+@media (prefers-reduced-motion: reduce) {
+  .timeline-circle--completed,
+  .timeline-circle--upcoming,
+  .timeline-circle--future {
+    animation: none;
+  }
+}
