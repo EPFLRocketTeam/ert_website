@@ -3,7 +3,7 @@ title: "Plasma"
 subtitle: "R&D PROJECT"             # or whatever
 header_title: "PLASMA"
 header_text: "Electric propulsion is becoming the backbone of modern space mobility, and the Plasma Group of the EPFL Rocket Team is bringing this technology to the student world. Our team designs, builds and tests several classes of plasma engines such as pulsed plasma thrusters, arcjets and Hall effect thrusters, along with the power electronics and ground facilities needed to run them. This project blends research level engineering with hands on prototyping, giving students the chance to explore real spacecraft propulsion systems and contribute to the next generation of space technology."
-header_background: "/images/originalQuality/Plasma-Background.png"
+header_background: "/images/originalQuality/plasma-Background.png"
 date: 2025-03-13T19:36:20+01:00
 layout: single
 padding: 30px
