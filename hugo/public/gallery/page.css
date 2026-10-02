@@ -17,6 +17,7 @@
   overflow: hidden;
   background: #181818;
   border: 0;
+  border-radius: 0.75rem;
   cursor: pointer;
 }
 
