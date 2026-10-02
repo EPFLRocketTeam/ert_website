@@ -2,7 +2,7 @@
 <html lang="en-UK">
 
   <head>
-	<meta name="generator" content="Hugo 0.164.0">
+	<meta name="generator" content="Hugo 0.123.7">
     <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,43 +19,22 @@
 
 
   
-  <meta property="og:url" content="https://rocketteam.epfl.ch/">
-	<meta property="og:site_name" content="EPFL Rocket Team">
-	<meta property="og:title" content="Home">
-	<meta property="og:description" content="our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn II Designing and manufacturing a supersonic bi-liquid rocket for international competitions
-Space Race Training students in aerospace technologies
-Icarus Developing efficient GNC algorithms for a re-landing systems
-Plasma Develops and tests student-built plasma propulsion systems
-discover all our projects our mission Engaging students in space technology projects, in collaboration with academia and industry partners Read our story and discover the team our past and future competition projects 3 km 2025 Firehorn Bi-Liquid rocket built by students COMPLETED 3 km 2026 Firehorn II Third Generation Bi-Liquid rocket UPCOMING 100 km 2030 Our goal First European team to reach space FUTURE Participate in the competition with us the epfl rocket team in numbers 200&#43; Students">
-	<meta property="og:locale" content="en_UK">
-	<meta property="og:type" content="website">
-		<meta property="og:image" content="https://rocketteam.epfl.ch/images/ShareCardERT.webp">
+  <meta property="og:title" content="Home" />
+<meta property="og:description" content="We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry’s leaders." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://rocketteam.epfl.ch/" /><meta property="og:image" content="https://rocketteam.epfl.ch/images/ShareCardERT.webp" /><meta property="og:site_name" content="EPFL Rocket Team" />
+
 
 
   
-  
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:image" content="https://rocketteam.epfl.ch/images/ShareCardERT.webp">
-	<meta name="twitter:title" content="Home">
-	<meta name="twitter:description" content="our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn II Designing and manufacturing a supersonic bi-liquid rocket for international competitions
-Space Race Training students in aerospace technologies
-Icarus Developing efficient GNC algorithms for a re-landing systems
-Plasma Develops and tests student-built plasma propulsion systems
-discover all our projects our mission Engaging students in space technology projects, in collaboration with academia and industry partners Read our story and discover the team our past and future competition projects 3 km 2025 Firehorn Bi-Liquid rocket built by students COMPLETED 3 km 2026 Firehorn II Third Generation Bi-Liquid rocket UPCOMING 100 km 2030 Our goal First European team to reach space FUTURE Participate in the competition with us the epfl rocket team in numbers 200&#43; Students">
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://rocketteam.epfl.ch/images/ShareCardERT.webp" /><meta name="twitter:title" content="Home"/>
+<meta name="twitter:description" content="We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry’s leaders."/>
 
 
   
-  
-	<meta itemprop="name" content="Home">
-	<meta itemprop="description" content="our projects The EPFL Rocket Team is currently engaged in four different projects Firehorn II Designing and manufacturing a supersonic bi-liquid rocket for international competitions
-Space Race Training students in aerospace technologies
-Icarus Developing efficient GNC algorithms for a re-landing systems
-Plasma Develops and tests student-built plasma propulsion systems
-discover all our projects our mission Engaging students in space technology projects, in collaboration with academia and industry partners Read our story and discover the team our past and future competition projects 3 km 2025 Firehorn Bi-Liquid rocket built by students COMPLETED 3 km 2026 Firehorn II Third Generation Bi-Liquid rocket UPCOMING 100 km 2030 Our goal First European team to reach space FUTURE Participate in the competition with us the epfl rocket team in numbers 200&#43; Students">
-	<meta itemprop="datePublished" content="2025-07-26T22:15:47+02:00">
-	<meta itemprop="dateModified" content="2025-07-26T22:15:47+02:00">
-	<meta itemprop="wordCount" content="341">
-	<meta itemprop="image" content="https://rocketteam.epfl.ch/images/ShareCardERT.webp">
+  <meta itemprop="name" content="Home">
+<meta itemprop="description" content="We are a dynamic association of 200 students from prestigious Swiss universities, dedicated to designing and manufacturing rockets, through which we immerse students in space technologies and provide them hands-on training and field-related expertise, thus shaping the next generation of space industry’s leaders.">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -69,14 +48,17 @@ discover all our projects our mission Engaging students in space technology proj
 
       
 <link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/tokens.css">
 <link rel="stylesheet" href="/header.css">
 <link rel="stylesheet" href="/stylesheet.css">
+<link rel="stylesheet" href="/content-components.css">
 <link rel="stylesheet" href="./page.css">
 
 <script defer src="/header-menu.js"></script>
 
 
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script defer src="/count-up.js"></script>
 
 
 <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.9/dist/cdn.min.js"></script>
@@ -196,6 +178,13 @@ discover all our projects our mission Engaging students in space technology proj
       
       
       <li class="desktop-menu-item">
+        <a href="/gallery/">Gallery</a
+        >
+        
+      </li>
+      
+      
+      <li class="desktop-menu-item">
         <a href="/join-us/semester-projects/">Semester Projects</a
         >
         
@@ -239,6 +228,8 @@ discover all our projects our mission Engaging students in space technology proj
       <a href="/join-us/">Join Us</a>
       
       <a href="/about/">About</a>
+      
+      <a href="/gallery/">Gallery</a>
       
       <a href="/join-us/semester-projects/">Semester Projects</a>
       
@@ -333,7 +324,13 @@ discover all our projects our mission Engaging students in space technology proj
 
     items.forEach(function (el, i) {
       el.addEventListener("mouseenter", function () {
-        if (el.dataset.projectImage) projectImage.src = el.dataset.projectImage;
+        if (el.dataset.projectImage && !projectImage.src.endsWith(el.dataset.projectImage)) {
+          projectImage.style.opacity = 0;
+          window.setTimeout(function () {
+            projectImage.src = el.dataset.projectImage;
+            projectImage.style.opacity = 1;
+          }, 180);
+        }
         highlight(i);
       });
     });
@@ -370,54 +367,50 @@ discover all our projects our mission Engaging students in space technology proj
 <div class="main">
   <div class="page" style="padding: 30px;">our past and future competition projects</div>
 
-  <div style="margin: 0 30px 10px; background: #0d0d0d; border-radius: 20px; padding: 50px 50px 45px; position: relative; overflow: hidden;">
+  <div class="timeline-box">
 
     
-    <div style="position: absolute; top: -80px; right: -80px; width: 320px; height: 320px; background: radial-gradient(circle, rgba(218,41,28,0.12) 0%, transparent 70%); pointer-events: none;"></div>
+    <div class="timeline-glow"></div>
 
     
-    <div style="display: flex; justify-content: space-between; margin-bottom: 6px; padding: 0 calc(50% / 3) 0 0;">
-    </div>
-
-    
-    <div style="position: relative; display: flex; justify-content: space-between; align-items: flex-start;">
+    <div class="timeline-row">
 
       
-      <div style="position: absolute; top: 31px; left: calc(100% / 6); right: calc(100% / 6); height: 2px; background: #2a2a2a; z-index: 0;"></div>
+      <div class="timeline-line"></div>
       
-      <div style="position: absolute; top: 31px; left: calc(100% / 6); width: calc(100% / 3); height: 2px; background: #da291c; z-index: 1;"></div>
+      <div class="timeline-line-progress"></div>
 
       
-      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2;">
-        <div style="background: #da291c22; color: #da291c; font-family: Aspekta; font-size: 22px; font-weight: 700; padding: 2px 14px; border-radius: 20px; margin-bottom: 10px; border: 1px solid #da291c55;">3 km</div>
-        <div style="width: 62px; height: 62px; background: #da291c; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 24px rgba(218,41,28,0.5);">
-          <span style="color: white; font-family: Aspekta; font-size: 13px; font-weight: 700;">2025</span>
+      <div class="timeline-node">
+        <div class="timeline-badge timeline-badge--completed">3 km</div>
+        <div class="timeline-circle timeline-circle--completed">
+          <span>2025</span>
         </div>
-        <div style="color: white; font-family: Aspekta; font-size: 19px; font-weight: 600; margin-top: 16px; text-align: center;">Firehorn</div>
-        <div style="color: #777; font-family: Aspekta; font-size: 12px; text-align: center; margin-top: 5px; max-width: 130px; line-height: 1.6;">Bi-Liquid rocket built by students</div>
-        <div style="margin-top: 10px; background: #da291c22; color: #da291c; font-family: Aspekta; font-size: 10px; padding: 3px 10px; border-radius: 10px; font-weight: 700; letter-spacing: 1px;">COMPLETED</div>
+        <div class="timeline-title">Firehorn</div>
+        <div class="timeline-desc">Bi-Liquid rocket built by students</div>
+        <div class="timeline-status timeline-status--completed">COMPLETED</div>
       </div>
 
       
-      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2;">
-        <div style="color: #da291c; font-family: Aspekta; font-size: 22px; font-weight: 700; padding: 2px 14px; border-radius: 20px; margin-bottom: 10px; border: 1px solid #da291c;">3 km</div>
-        <div style="width: 62px; height: 62px; background: #0d0d0d; border: 2px solid #da291c; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-          <span style="color: white; font-family: Aspekta; font-size: 13px; font-weight: 700;">2026</span>
+      <div class="timeline-node">
+        <div class="timeline-badge timeline-badge--upcoming">3 km</div>
+        <div class="timeline-circle timeline-circle--upcoming">
+          <span>2026</span>
         </div>
-        <div style="color: white; font-family: Aspekta; font-size: 19px; font-weight: 600; margin-top: 16px; text-align: center;">Firehorn II</div>
-        <div style="color: #777; font-family: Aspekta; font-size: 12px; text-align: center; margin-top: 5px; max-width: 130px; line-height: 1.6;">Third Generation Bi-Liquid rocket</div>
-        <div style="margin-top: 10px; background: #ffffff0d; color: #999; font-family: Aspekta; font-size: 10px; padding: 3px 10px; border-radius: 10px; font-weight: 700; letter-spacing: 1px;">UPCOMING</div>
+        <div class="timeline-title">Firehorn II</div>
+        <div class="timeline-desc">Third Generation Bi-Liquid rocket</div>
+        <div class="timeline-status timeline-status--upcoming">UPCOMING</div>
       </div>
 
       
-      <div style="flex: 1; display: flex; flex-direction: column; align-items: center; position: relative; z-index: 2;">
-        <div style="color: #555; font-family: Aspekta; font-size: 22px; font-weight: 700; padding: 2px 14px; border-radius: 20px; margin-bottom: 10px; border: 1px solid #333;">100 km</div>
-        <div style="width: 62px; height: 62px; background: #0d0d0d; border: 2px dashed #444; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-          <span style="color: #666; font-family: Aspekta; font-size: 13px; font-weight: 700;">2030</span>
+      <div class="timeline-node">
+        <div class="timeline-badge">100 km</div>
+        <div class="timeline-circle timeline-circle--future">
+          <span>2030</span>
         </div>
-        <div style="color: #888; font-family: Aspekta; font-size: 19px; font-weight: 600; margin-top: 16px; text-align: center;">Our goal</div>
-        <div style="color: #555; font-family: Aspekta; font-size: 12px; text-align: center; margin-top: 5px; max-width: 150px; line-height: 1.6;">First European team to reach space</div>
-        <div style="margin-top: 10px; background: #ffffff06; color: #555; font-family: Aspekta; font-size: 10px; padding: 3px 10px; border-radius: 10px; font-weight: 700; letter-spacing: 1px;">FUTURE</div>
+        <div class="timeline-title timeline-title--muted">Our goal</div>
+        <div class="timeline-desc timeline-desc--muted">First European team to reach space</div>
+        <div class="timeline-status timeline-status--future">FUTURE</div>
       </div>
 
     </div>
@@ -686,9 +679,9 @@ margin: 0 30px;
   <div class="container zero-margin">
     <div class="column"><img loading="lazy" src="/images/EPFL.webp"></div>
     <div class="column"><img loading="lazy" src="/images/apco.webp"></div>
-    <div class="column"><img loading="lazy" src="/images/constellium.webp"></div>
+    <div class="column"><img loading="lazy" src="/images/Constellium.webp"></div>
     <div class="column"><img loading="lazy" src="/images/KISTLER.webp"></div>
-    <div class="column"><img loading="lazy" src="/images/originalQuality/Linde.jpg"></div>
+    <div class="column"><img loading="lazy" src="/images/originalQuality/linde.jpg"></div>
     <div class="column"><img loading="lazy" src="/images/maxon.webp"></div>
     <div class="column"><img loading="lazy" src="/images/swagelok_test.webp"></div>
     <div class="column"><img loading="lazy" src="/images/originalQuality/CADFEM.jpg"></div>

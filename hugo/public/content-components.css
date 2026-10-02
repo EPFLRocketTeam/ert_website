@@ -1,0 +1,100 @@
+/*
+ * Stable, semantic building blocks for authored HTML.
+ * Existing page and shortcode styles remain unchanged; new content can opt in to
+ * these classes instead of relying on page-specific selectors or inline styles.
+ */
+
+.cms-section {
+  margin-block: var(--space-9);
+}
+
+.cms-section > :first-child {
+  margin-top: 0;
+}
+
+.cms-section > :last-child {
+  margin-bottom: 0;
+}
+
+.cms-grid {
+  display: grid;
+  gap: var(--space-6);
+}
+
+.cms-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.cms-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cms-card {
+  padding: var(--space-7);
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 0.0625rem solid var(--color-surface-raised);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-card);
+}
+
+.cms-card__title {
+  margin-top: 0;
+  font-family: var(--font-family-semibold);
+}
+
+.cms-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: 2.75rem;
+  padding: var(--space-3) var(--space-6);
+  color: var(--color-white);
+  font-family: var(--font-family-semibold);
+  font-size: 1rem;
+  line-height: 1.25;
+  text-decoration: none;
+  background: var(--color-accent);
+  border: 0;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.cms-button:hover {
+  color: var(--color-white);
+  background: var(--color-accent-hover);
+}
+
+.cms-button:active {
+  transform: translateY(0.0625rem);
+}
+
+.cms-callout {
+  padding: var(--space-6);
+  color: var(--color-text);
+  background: #29110f;
+  background: color-mix(in srgb, var(--color-accent) 12%, var(--color-canvas));
+  border-inline-start: 0.25rem solid var(--color-accent);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.cms-prose {
+  max-width: 80ch;
+}
+
+.cms-prose > :first-child {
+  margin-top: 0;
+}
+
+.cms-prose > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 48rem) {
+  .cms-grid--two,
+  .cms-grid--three {
+    grid-template-columns: 1fr;
+  }
+}
