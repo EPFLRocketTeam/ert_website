@@ -1,5 +1,5 @@
 # Basic config
-baseURL = "https://rocketteam.epfl.ch"
+baseURL = "https://epflrocketteam.ch"
 theme = "EPFL-Rocket-Team"
 copyright = "EPFL Rocket Team"
 defaultContentLanguage = "en"
