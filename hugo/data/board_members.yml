@@ -1,119 +1,91 @@
 # Board Members
-# Board Members
-- name: Maximilian Bonvin
-  position: President
-  image: "/board/MaximilianBonvin.png"
-  email: maximilian.bonvin@epfl.ch
-  linkedin: https://linkedin.com/in/maximilian-bonvin/
-
-- name: Mia Nasr
-  position: Vice President
-  image: "/board/MiaNasr.jpg"
-  email: mia.nasr@epfl.ch
-  linkedin: https://linkedin.com/in/mia-nasr-930364271/
-
-- name: Zakaria Benbouhenni
-  position: Chief Financial Officer
-  image: "/board/ZakariaBenbouhenni.png"
-  email: zakaria.benbouhenni@epfl.ch
-  linkedin: https://linkedin.com/in/zakaria-benbouhenni-220386395/
-
-- name: Axel Juaneda
-  position: Chief Technical Officer
-  image: "/board/ERT.png"
-  object_fit: "scale-down"
-  email: axel.juaneda@epfl.ch
-  linkedin: https://linkedin.com/in/axel-juaneda-6593142b1/
-
 - name: Jeremy Jariod
-  position: Chief Safety Officer
+  position: President
   image: "/board/JeremyJariod.jpg"
   email: jeremy.jariod@epfl.ch
   linkedin: https://linkedin.com/in/jeremy-jariod/
 
-- name: Chloé Klose
-  position: Head of Communication
-  image: "/board/ERT.png"
-  object_fit: "scale-down"
-  email: chloe.klose@epfl.ch
-  linkedin: https://linkedin.com/in/chloé-klose-118047354/
+- name: Dominic Thomson
+  position: Vice President
+  image: "/board/DominicThomson.jpg"
+  email: dominic.thomson@epfl.ch
+  linkedin: https://linkedin.com/in/dominic-thomson/
 
-- name: Rayan Zeineddine
-  position: Head of Sponsoring
-  image: "/board/RayanZeineddine.png"
-  email: rayan.zeineddine@epfl.ch
-  linkedin: https://linkedin.com/in/rayan-zeineddine/
-
-- name: Makki Rayan Mayoraz
-  position: Head of Logistics
-  image: "/board/MakkiRayanMayoraz.png"
-  email: makki.mayoraz@epfl.ch
-  linkedin: https://www.linkedin.com/company/epfl-rocket-team/
-
-- name: Rami Aschkar
-  position: Head of IT
-  image: "/board/RamiAschkar.png"
-  email: rami.aschkar@epfl.ch
-  linkedin: https://linkedin.com/in/rami-aschkar-84257323a/
-
-# Project and Team Leaders
-- name: Pedro Soares
-  position: Team Leader, Competition
-  image: "/board/PedroSoares.jpg"
-  email: pedro.oliveiradebritorodriguessoares@epfl.ch
-  linkedin: https://www.linkedin.com/company/epfl-rocket-team/
+- name: Maxime Wilhelm
+  position: Chief Finance Officer
+  image: "/board/MaximeWilhelm.jpg"
+  email: cfo@epflrocketteam.ch
+  linkedin: https://linkedin.com/in/maxime-wilhelm-56b926356/
 
 - name: Pedro Sanchez-Moreno Royer
-  position: Project Manager, Competition
-  image: "/board/PedroSanchezMorenoRoyer.png"
-  email: pedro.sanchezmorenorover@epfl.ch
+  position: Chief Technical Officer
+  image: "/board/PedroSanchezMorenoRoyer.jpg"
+  email: pedro.sanchez-morenoroyer@epfl.ch
   linkedin: https://linkedin.com/in/pedro-sanchez-moreno-royer-82b236256/
 
-- name: Rafaël Boisel
-  position: Systems Engineer, Competition
-  image: "/board/RafaelBoisel.png"
-  email: rafael.boisel@epfl.ch
-  linkedin: https://linkedin.com/in/rafaël-boisel/
+- name: Jonas Vauthey
+  position: Chief Safety Officer
+  image: "/board/JonasVauthey.jpg"
+  email: jonas.vauthey@epfl.ch
+  linkedin: https://linkedin.com/in/jonas-vauthey-338634359/
 
-- name: Rayane Maalouf
-  position: Systems Engineer, Competition
-  image: "/board/RayaneMaalouf.jpg"
-  email: rayane.maalouf@epfl.ch
-  linkedin: https://linkedin.com/in/rayane-maalouf/
+- name: Rengin Guney
+  position: Head of Legal
+  image: "/board/ReginGuney.jpg"
+  email: legal@epflrocketteam.ch
 
-- name: Jules Léon Lamaison
-  position: Team Leader, Competition
-  image: "/board/JulesLeonLamaison.png"
-  email: jules.lamaison@epfl.ch
-  linkedin: https://linkedin.com/in/jules-lamaison-6043b52b4/
+- name: Jerry Zeng
+  position: Head of Communication
+  image: "/board/DefaultProfile.png"
+  object_fit: "scale-down"
+  email: jerry.zeng@epfl.ch
+  linkedin: https://linkedin.com/in/jerry-zeng-epfl/
+
+- name: Gabriel Poncet
+  position: Head of Sponsoring
+  image: "/board/GabrielPoncet.jpg"
+  email: gabriel.poncet@epfl.ch
+  linkedin: https://linkedin.com/in/gabriel-poncet-1b9a54391/
+
+- name: Téa Cherbuliez
+  position: Head of Logistics
+  image: "/board/TeaCherbuliez.jpg"
+  email: tea.cherbuliez@epfl.ch
+  linkedin: https://linkedin.com/in/téa-cherbuliez-945588370/
+
+- name: Hugo Jorand
+  position: System Engineer, Space Shot
+  image: "/board/DefaultProfile.png"
+  object_fit: "scale-down"
+  email: hugo.jorand@epfl.ch
+  linkedin: https://linkedin.com/in/hugo-jorand-002498342/
+
+- name: Tom Jorand
+  position: System Engineer, Mechanical Ground Segment & Test
+  image: "/board/TomJorand.jpg"
+  email: tom.jorand@epfl.ch
+  linkedin: https://linkedin.com/in/tomjorand/
+
+- name: Pedro Soares
+  position: System Engineer, Propulsion
+  image: "/board/DefaultProfile.png"
+  object_fit: "scale-down"
+  email: pedro.oliveiradebritorodriguessoares@epfl.ch
 
 - name: Celestin Balas
-  position: SpaceRace Lead
-  image: "/board/CelestinBalas.png"
+  position: System Engineer, Recovery & Flight Dynamics
+  image: "/board/CelestinBalas.jpg"
   email: celestin.balas@epfl.ch
-  linkedin: https://linkedin.com/in/célestin-siméon-martin-balas-962583369/
+  linkedin: https://www.linkedin.com/in/célestin-siméon-martin-balas-962583369/
 
-- name: Joseph Spender
-  position: Project Manager, Plasma
-  image: "/board/JosephSpender.png"
-  email: joseph.spender@epfl.ch
-  linkedin: https://linkedin.com/in/joseph-spender-686813270/
-
-- name: Briyan Sivakumar
-  position: Team Leader, Plasma
-  image: "/board/BriyanSivakumar.png"
-  email: briyan.sivakumar@epfl.ch
-  linkedin: https://linkedin.com/in/briyan-sivakumar-497218345/
-
-- name: Gabriel Garbé
-  position: Systems Engineer, Icarus
-  image: "/board/GabrielGarbe.png"
-  email: gabriel.garbe@epfl.ch
-  linkedin: https://linkedin.com/in/gabriel-garbé-18a0a6279/
+- name: Yannick Hansen
+  position: Team Leader, Structure
+  image: "/board/YannickHansen.jpg"
+  email: yannick.hansen@epfl.ch
+  linkedin: https://linkedin.com/in/yannick-hansen-4941a5348/
 
 - name: Emmanuelle David
-  position: Executive Director of eSpace
-  image: "/board/ERT.png"
-  object_fit: "scale-down"
+  position: Coordinator
+  image: "/board/EmmanuelleDavid.jpg"
   email: emmanuelle.david@epfl.ch
   linkedin: https://www.linkedin.com/in/emmanuelledavid/

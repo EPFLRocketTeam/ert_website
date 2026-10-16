@@ -12,9 +12,11 @@
         {{ .position }}
       </div>
       <div style="display: flex">
+        {{ if .linkedin }}
         <a href="{{ .linkedin }}">
           <img class="linkedin-icon" loading="lazy" src="/icons/LinkedIn.svg" alt="LinkedIn icon"></img>
         </a>
+        {{ end }}
         <a href="mailto:{{ .email }}">
           <img class="mail-icon" loading="lazy" src="/icons/mail.svg" alt="LinkedIn icon"></img>
         </a>
