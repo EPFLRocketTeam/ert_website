@@ -2,36 +2,42 @@
 - name: Jeremy Jariod
   position: President
   image: "/board/JeremyJariod.jpg"
+  object_position: "58%"
   email: jeremy.jariod@epfl.ch
   linkedin: https://linkedin.com/in/jeremy-jariod/
 
 - name: Dominic Thomson
   position: Vice President
   image: "/board/DominicThomson.jpg"
+  object_position: "53%"
   email: dominic.thomson@epfl.ch
   linkedin: https://linkedin.com/in/dominic-thomson/
 
 - name: Maxime Wilhelm
   position: Chief Finance Officer
   image: "/board/MaximeWilhelm.jpg"
+  object_position: "54%"
   email: cfo@epflrocketteam.ch
   linkedin: https://linkedin.com/in/maxime-wilhelm-56b926356/
 
 - name: Pedro Sanchez-Moreno Royer
   position: Chief Technical Officer
   image: "/board/PedroSanchezMorenoRoyer.jpg"
+  object_position: "45%"
   email: pedro.sanchez-morenoroyer@epfl.ch
   linkedin: https://linkedin.com/in/pedro-sanchez-moreno-royer-82b236256/
 
 - name: Jonas Vauthey
   position: Chief Safety Officer
   image: "/board/JonasVauthey.jpg"
+  object_position: "51%"
   email: jonas.vauthey@epfl.ch
   linkedin: https://linkedin.com/in/jonas-vauthey-338634359/
 
 - name: Rengin Guney
   position: Head of Legal
   image: "/board/ReginGuney.jpg"
+  object_position: "48%"
   email: legal@epflrocketteam.ch
 
 - name: Jerry Zeng
@@ -44,12 +50,14 @@
 - name: Gabriel Poncet
   position: Head of Sponsoring
   image: "/board/GabrielPoncet.jpg"
+  object_position: "51%"
   email: gabriel.poncet@epfl.ch
   linkedin: https://linkedin.com/in/gabriel-poncet-1b9a54391/
 
 - name: Téa Cherbuliez
   position: Head of Logistics
   image: "/board/TeaCherbuliez.jpg"
+  object_position: "58%"
   email: tea.cherbuliez@epfl.ch
   linkedin: https://linkedin.com/in/téa-cherbuliez-945588370/
 
@@ -63,6 +71,7 @@
 - name: Tom Jorand
   position: System Engineer, Mechanical Ground Segment & Test
   image: "/board/TomJorand.jpg"
+  object_position: "45%"
   email: tom.jorand@epfl.ch
   linkedin: https://linkedin.com/in/tomjorand/
 
@@ -75,12 +84,14 @@
 - name: Celestin Balas
   position: System Engineer, Recovery & Flight Dynamics
   image: "/board/CelestinBalas.jpg"
+  object_position: "47%"
   email: celestin.balas@epfl.ch
   linkedin: https://www.linkedin.com/in/célestin-siméon-martin-balas-962583369/
 
 - name: Yannick Hansen
   position: Team Leader, Structure
   image: "/board/YannickHansen.jpg"
+  object_position: "51%"
   email: yannick.hansen@epfl.ch
   linkedin: https://linkedin.com/in/yannick-hansen-4941a5348/
 
