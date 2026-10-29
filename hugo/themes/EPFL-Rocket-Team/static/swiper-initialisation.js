@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".swiper", {
+  const swiper = new Swiper(".swiper:not(.photo-lightbox__swiper)", {
     direction: "horizontal",
     loop: true,
     pagination: { el: ".swiper-pagination" },

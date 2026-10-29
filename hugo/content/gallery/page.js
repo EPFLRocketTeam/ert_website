@@ -10,18 +10,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var closeButton = lightbox.querySelector(".photo-lightbox__close");
   var previousButton = lightbox.querySelector(".photo-lightbox__navigation--previous");
   var nextButton = lightbox.querySelector(".photo-lightbox__navigation--next");
+  var swiperElement = lightbox.querySelector(".photo-lightbox__swiper");
   var activeIndex = 0;
+  var touchStart = null;
   var opener = null;
   var closeTimer = null;
   var lightboxIsOpen = false;
-  var swiper = new Swiper(lightbox.querySelector(".photo-lightbox__swiper"), {
-    loop: true,
-    speed: 380,
-    navigation: {
-      nextEl: nextButton,
-      prevEl: previousButton,
-    },
-  });
+  var swiper = null;
 
   function updateCounter(index) {
     activeIndex = (index + galleryItems.length) % galleryItems.length;
@@ -30,13 +25,64 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function showImage(index, speed) {
     var targetIndex = (index + galleryItems.length) % galleryItems.length;
-    swiper.slideToLoop(targetIndex, speed);
+    swiper.slideTo(targetIndex, speed);
     updateCounter(targetIndex);
   }
 
-  swiper.on("slideChange", function () {
-    updateCounter(swiper.realIndex);
-  });
+  function initializeSwiper() {
+    if (swiper) {
+      swiper.update();
+      return;
+    }
+
+    if (swiperElement.swiper) {
+      swiperElement.swiper.destroy(true, true);
+    }
+
+    swiper = new Swiper(swiperElement, {
+      loop: false,
+      rewind: true,
+      speed: 380,
+      allowTouchMove: false,
+      simulateTouch: false,
+      navigation: {
+        nextEl: nextButton,
+        prevEl: previousButton,
+      },
+      on: {
+        activeIndexChange: function (instance) {
+          updateCounter(instance.realIndex);
+        },
+        slideChange: function (instance) {
+          updateCounter(instance.realIndex);
+        },
+      },
+    });
+  }
+
+  swiperElement.addEventListener("touchstart", function (event) {
+    var touch = event.changedTouches[0];
+    touchStart = { x: touch.clientX, y: touch.clientY };
+  }, { passive: true });
+
+  document.addEventListener("touchend", function (event) {
+    if (!touchStart) {
+      return;
+    }
+
+    var touch = event.changedTouches[0];
+    var deltaX = touch.clientX - touchStart.x;
+    var deltaY = touch.clientY - touchStart.y;
+    touchStart = null;
+
+    if (lightboxIsOpen && Math.abs(deltaX) > 50 && Math.abs(deltaX) > Math.abs(deltaY)) {
+      showImage(swiper.activeIndex + (deltaX < 0 ? 1 : -1));
+    }
+  }, { passive: true });
+
+  document.addEventListener("touchcancel", function () {
+    touchStart = null;
+  }, { passive: true });
 
   function openLightbox(index) {
     window.clearTimeout(closeTimer);
@@ -45,10 +91,11 @@ document.addEventListener("DOMContentLoaded", function () {
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("photo-lightbox-open");
     lightboxIsOpen = true;
+    lightbox.classList.add("is-open");
+    updateCounter(index);
     window.requestAnimationFrame(function () {
-      swiper.update();
+      initializeSwiper();
       showImage(index, 0);
-      lightbox.classList.add("is-open");
     });
     closeButton.focus();
   }
@@ -93,9 +140,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (event.key === "Escape") {
       closeLightbox();
     } else if (event.key === "ArrowLeft") {
-      showImage(activeIndex - 1);
+      showImage(swiper.realIndex - 1);
     } else if (event.key === "ArrowRight") {
-      showImage(activeIndex + 1);
+      showImage(swiper.realIndex + 1);
     }
   });
 });
