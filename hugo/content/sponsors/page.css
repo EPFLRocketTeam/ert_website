@@ -8,7 +8,7 @@
   color: #9063CD;
   font-size: 16px;
   line-height: 24px;
-  padding: 18px;
+  padding: 10px;
   border-radius: 24px;
 }
 
@@ -31,9 +31,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 6px;
   border-radius: 6px;
-  background: linear-gradient(to right, #B28BFF, #9063CD);
+  background: transparent;
 }
 
 .prestige-sponsor {
@@ -61,7 +61,7 @@
   color: #CBA135;
   font-size: 16px;
   line-height: 24px;
-  padding: 18px;
+  padding: 10px;
   border-radius: 24px;
 }
 
@@ -84,9 +84,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 6px;
   border-radius: 6px;
-  background: linear-gradient(to right, #E0B35B, #CBA135);
+  background: transparent;
 }
 
 .gold-sponsor {
@@ -114,7 +114,7 @@
   color: #A8A9AD;
   font-size: 16px;
   line-height: 24px;
-  padding: 18px;
+  padding: 10px;
   border-radius: 24px;
 }
 
@@ -137,9 +137,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 6px;
   border-radius: 6px;
-  background: linear-gradient(to right, #D1D3D4, #A8A9AD);
+  background: transparent;
 }
 
 .silver-sponsor {
@@ -167,7 +167,7 @@
   color: #8C6239;
   font-size: 16px;
   line-height: 24px;
-  padding: 18px;
+  padding: 10px;
   border-radius: 24px;
 }
 
@@ -190,9 +190,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 6px;
   border-radius: 6px;
-  background: linear-gradient(to right, #A77F57, #8C6239);
+  background: transparent;
 }
 
 .bronze-sponsor {
@@ -221,7 +221,7 @@
   color: #008080;
   font-size: 16px;
   line-height: 24px;
-  padding: 18px;
+  padding: 10px;
   border-radius: 24px;
 }
 
@@ -244,9 +244,9 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding: 20px;
+  padding: 6px;
   border-radius: 6px;
-  background: linear-gradient(to right, #66B2B2, #008080);
+  background: transparent;
 }
 
 .support-sponsor {
@@ -263,4 +263,31 @@
   /* Ensures logos are responsive */
   height: auto;
   max-height: 100px;
+}
+
+.sponsor-logo-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(128, 128, 128, 0.35);
+  transition: flex-grow 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.sponsor-logo-card img {
+  max-width: 100%;
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.sponsor-logo-card:hover,
+.sponsor-logo-card:focus-visible {
+  flex-grow: 1.12;
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(128, 128, 128, 0.45);
+  z-index: 1;
 }
