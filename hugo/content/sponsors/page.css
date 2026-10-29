@@ -28,7 +28,7 @@
 .prestige-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   padding: 6px;
@@ -81,7 +81,7 @@
 .gold-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   padding: 6px;
@@ -134,7 +134,7 @@
 .silver-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   padding: 6px;
@@ -187,7 +187,7 @@
 .bronze-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   padding: 6px;
@@ -241,7 +241,7 @@
 .support-sponsors {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 10px;
   padding: 6px;
@@ -271,6 +271,7 @@
   justify-content: center;
   min-height: 140px;
   box-sizing: border-box;
+  overflow: hidden;
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(128, 128, 128, 0.35);
@@ -286,8 +287,8 @@
 
 .sponsor-logo-card:hover,
 .sponsor-logo-card:focus-visible {
-  flex-grow: 1.12;
-  transform: scale(1.02);
-  box-shadow: 0 8px 18px rgba(128, 128, 128, 0.45);
+  flex-grow: 1.3;
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 12px 24px rgba(128, 128, 128, 0.5);
   z-index: 1;
 }

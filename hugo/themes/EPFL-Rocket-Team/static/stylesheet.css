@@ -2129,7 +2129,7 @@ img {
 .silver-sponsor:hover img,
 .bronze-sponsor:hover img,
 .support-sponsor:hover img {
-  transform: scale(1.07);
+  transform: scale(1.03);
 }
 
 /* --- Our projects: smooth crossfade on hover image swap --- */
