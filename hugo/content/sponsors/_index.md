@@ -12,12 +12,12 @@ callToAction:
     link: "mailto:presidency@epflrocketteam.ch,sponsoring@epflrocketteam.ch"
 ---
 
-{{< prestige-sponsors >}}
+{{< sponsor-tier tier="prestige" >}}
 
-{{< gold-sponsors >}}
+{{< sponsor-tier tier="gold" >}}
 
-{{< silver-sponsors >}}
+{{< sponsor-tier tier="silver" >}}
 
-{{< bronze-sponsors >}}
+{{< sponsor-tier tier="bronze" >}}
 
-{{< support-sponsors >}}
+{{< sponsor-tier tier="support" >}}

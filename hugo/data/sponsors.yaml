@@ -1,0 +1,129 @@
+prestige:
+  label: MAIN
+  sponsors:
+    - link: https://www.epfl.ch/
+      image: /images/originalQuality/EPFL.png
+      alt: EPFL
+    - link: https://www.apco-technologies.eu/
+      image: /images/originalQuality/apco.png
+      alt: Apco Technologies
+    - link: https://www.constellium.com/
+      image: /images/originalQuality/Constellium.png
+      alt: Constellium
+    - link: https://www.linde.ch
+      image: /images/originalQuality/linde.jpg
+      alt: Linde
+    - link: https://www.kistler.com/en/
+      image: /images/originalQuality/KISTLER.png
+      alt: Kistler
+gold:
+  label: GOLD
+  sponsors:
+    - link: https://www.maxongroup.ch/maxon/view/content/index
+      image: /images/originalQuality/maxon.png
+      alt: maxon
+    - link: https://www.sbo.at/
+      image: /images/originalQuality/SBO-Logo-blue-korr.png
+      alt: Schoeller-Bleckmann Oilfield Technology (SBO)
+    - link: https://arbor.swagelok.com/en
+      image: /images/originalQuality/Swagelok.png
+      alt: Swagelok Switzerland
+silver:
+  label: SILVER
+  sponsors:
+    - link: https://www.cadfem.net/ch/fr/home.html
+      image: /images/originalQuality/CADFEM.jpg
+      alt: CADFEM
+    - link: https://www.latecoere.com/
+      image: /images/originalQuality/Latecoere.avif
+      alt: Latécoère Foundation
+bronze:
+  label: BRONZE
+  sponsors:
+    - link: https://www.janestreet.com/
+      image: /images/originalQuality/JaneStreet.png
+      alt: Jane Street
+    - link: https://www.swiss-aeropole.ch/
+      image: /images/originalQuality/SwissAeropole.jpg
+      alt: Swiss Aeropole
+    - link: https://www.norelem.ch/
+      image: /images/originalQuality/norelem.png
+      alt: norelem
+    - link: https://www.logitech.com/
+      image: /images/originalQuality/Logitech.png
+      alt: Logitech
+    - link: https://www.solidworks.com/
+      image: /images/originalQuality/SolidWorks.jpg
+      alt: SOLIDWORKS
+    - link: https://swiza.com/
+      image: /images/originalQuality/SWIZA.png
+      alt: SWIZA
+    - link: https://www.spacerockettechnology-shop.de/en/
+      image: /images/originalQuality/rocket_science.png
+      alt: Space Rocket Technology
+    - link: https://www.exellocation.ch/
+      image: /images/originalQuality/ExelLocation.png
+      alt: Exel Location
+    - link: https://www.abbox.ch/
+      image: /images/originalQuality/ABBoxSA.png
+      alt: AB Box SA
+    - link: https://www.swisscom.ch/
+      image: /images/originalQuality/Swisscom.png
+      alt: Swisscom
+    - link: https://www.cfturbo.com/
+      image: /images/originalQuality/CFturbo.png
+      alt: CFturbo
+support:
+  label: SUPPORT
+  sponsors:
+    - link: https://www.jaksa.si/
+      image: /images/originalQuality/Jaksa.png
+      alt: Jakša Solenoid Valves
+    - link: https://www.ballons-castellane.ch/
+      image: /images/originalQuality/BallonsChateauDOex.svg
+      alt: Ballons du Château-d'Oex
+    - link: https://www.gcm.ch/fr
+      image: /images/originalQuality/GCM-SA.jpg
+      alt: GCM SA
+    - link: https://chiwi.ch/
+      image: /images/originalQuality/ChiWi.png
+      alt: ChiWi Stiftung
+    - link: https://thecountdowncompany.ch/
+      image: /images/originalQuality/TheCountdownCompany.png
+      alt: The Countdown Company
+    - link: https://space.epfl.ch/
+      image: /images/originalQuality/EPFLSpaceCenter.png
+      alt: EPFL Space Center
+    - link: https://www.epfl.ch/research/facilities/scitas/
+      image: /images/originalQuality/EPFLscitas.jpg
+      alt: EPFL SCITAS
+    - link: https://www.epfl.ch/schools/enac/gis/
+      image: /images/originalQuality/GIS-Platform.svg
+      alt: GIS Platform
+    - link: https://kulite.com/
+      image: /images/originalQuality/kulite.png
+      alt: Kulite
+    - link: https://inartis.ch/
+      image: /images/originalQuality/InArTiS.png
+      alt: Inartis Foundation
+    - link: https://www.loro.ch/fr
+      image: /images/originalQuality/LoterieRomande.png
+      alt: Loterie Romande
+    - link: https://www.empa.ch/web/empa/advanced-materials-and-surfaces
+      image: /images/originalQuality/Empa.jpg
+      alt: Empa
+    - link: https://www.epfl.ch/labs/lpac/
+      image: /images/originalQuality/LPAC.jpg
+      alt: LPAC
+    - link: https://www.epfl.ch/labs/skil/
+      image: /images/originalQuality/Skill.png
+      alt: SKIL
+    - link: https://space-innovation.ch/
+      image: /images/originalQuality/SpaceInnovation.png
+      alt: Space Innovation
+    - link: https://www.fondation-novandi.ch/
+      image: /images/originalQuality/FondationNovandi.jpg
+      alt: Fondation Novandi
+    - link: https://www.reqview.com/
+      image: /images/originalQuality/ReqView.svg
+      alt: ReqView

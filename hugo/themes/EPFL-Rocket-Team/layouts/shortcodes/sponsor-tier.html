@@ -1,0 +1,10 @@
+{{ $tier := .Get "tier" }}
+{{ $sponsors := index site.Data.sponsors $tier }}
+<div class="{{ $tier }}-box">
+  <span class="{{ $tier }}-label">{{ $sponsors.label }}</span>
+  <div class="{{ $tier }}-sponsors">
+    {{ range $sponsors.sponsors }}
+    <a class="{{ $tier }}-sponsor sponsor-logo-card" target="_blank" rel="noopener noreferrer" href="{{ .link }}"><img src="{{ .image }}" alt="{{ .alt }}"></a>
+    {{ end }}
+  </div>
+</div>
