@@ -8,6 +8,11 @@
 <link rel="stylesheet" href="/content-components.css">
 <link rel="stylesheet" href="./page.css">
 
+{{ if .HasShortcode "pdf-report" }}
+<link rel="stylesheet" href="{{ "css/pdf-report.css" | relURL }}">
+<script type="module" src="{{ "js/pdf-report.js" | relURL }}"></script>
+{{ end }}
+
 <script defer src="/header-menu.js"></script>
 
 <!-- Anime.js -->

@@ -1,0 +1,240 @@
+.pdf-report {
+  margin: var(--space-7) auto var(--space-9);
+  max-width: 75rem;
+  overflow: hidden;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-raised);
+  border-top: 3px solid var(--color-accent);
+  border-radius: var(--radius-2xl);
+}
+
+.pdf-report [hidden] {
+  display: none !important;
+}
+
+.pdf-report:fullscreen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.pdf-report:fullscreen .pdf-report__header,
+.pdf-report:fullscreen .pdf-report__toolbar,
+.pdf-report:fullscreen .pdf-report__status {
+  flex-shrink: 0;
+}
+
+.pdf-report:fullscreen .pdf-report__header {
+  padding: var(--space-5) var(--space-6);
+}
+
+.pdf-report:fullscreen .pdf-report__viewport {
+  flex: 1;
+  min-height: 0;
+  height: auto;
+}
+
+.pdf-report__header,
+.pdf-report__toolbar,
+.pdf-report__links,
+.pdf-report__group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.pdf-report__header {
+  justify-content: space-between;
+  gap: var(--space-6);
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.pdf-report__eyebrow {
+  margin: 0 0 var(--space-3);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.pdf-report h2 {
+  margin: 0;
+  font-family: var(--font-family-semibold);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+}
+
+.pdf-report__meta {
+  margin: var(--space-3) 0 0;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.pdf-report__button,
+.pdf-report input,
+.pdf-report select {
+  box-sizing: border-box;
+  min-height: 2.75rem;
+  padding: var(--space-3) var(--space-5);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  background: var(--color-canvas);
+  border: 1px solid var(--color-surface-raised);
+  border-radius: var(--radius-md);
+}
+
+.pdf-report__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-4);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.pdf-report__button:hover:not(:disabled) {
+  color: var(--color-white);
+  border-color: var(--color-accent);
+  background: var(--color-surface-raised);
+}
+
+.pdf-report__button--primary {
+  color: var(--color-white);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.pdf-report__button--primary:hover:not(:disabled) {
+  background: var(--color-accent-hover);
+}
+
+.pdf-report :is(a, button, input, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 3px;
+}
+
+.pdf-report__button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.pdf-report__toolbar {
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  font-size: 0.875rem;
+  border-block: 1px solid var(--color-surface-raised);
+}
+
+.pdf-report__group {
+  margin: 0;
+}
+
+.pdf-report input {
+  width: 4.5rem;
+}
+
+.pdf-report__intro {
+  padding: clamp(2rem, 6vw, 5rem) var(--space-6);
+  text-align: center;
+  background: radial-gradient(ellipse at top, rgb(218 41 28 / 12%), transparent 70%), var(--color-canvas);
+}
+
+.pdf-report__intro > p:first-of-type {
+  font-size: 1.25rem;
+}
+
+.pdf-report__intro .pdf-report__button {
+  margin-top: var(--space-7);
+}
+
+.pdf-report__document {
+  display: inline-grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 4.5rem;
+  color: var(--color-text);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-md);
+}
+
+.pdf-report__viewport {
+  height: 75vh;
+  height: 75svh;
+  overflow: auto;
+  padding: 1rem;
+  background: #111;
+  overscroll-behavior: contain;
+}
+
+.pdf-report__pages {
+  position: relative;
+  display: grid;
+  gap: var(--space-6);
+  width: max-content;
+  min-width: 100%;
+}
+
+.pdf-report__page {
+  position: relative;
+  margin-inline: auto;
+  background: var(--color-white);
+  box-shadow: 0 0.5rem 2rem rgb(0 0 0 / 35%);
+}
+
+.pdf-report__page::before {
+  content: attr(data-label);
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: var(--space-6);
+  color: #555;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.pdf-report canvas {
+  position: relative;
+  display: block;
+  max-width: none;
+  background: var(--color-white);
+}
+
+.pdf-report__status {
+  margin: 0;
+  padding: var(--space-5) var(--space-6);
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.pdf-report__status[data-error] {
+  color: var(--color-white);
+  border-inline-start: 3px solid var(--color-accent);
+}
+
+@media (max-width: 36rem) {
+  .pdf-report__header,
+  .pdf-report__toolbar {
+    padding: var(--space-5);
+  }
+
+  .pdf-report__links {
+    width: 100%;
+  }
+
+  .pdf-report__links a {
+    flex: 1;
+  }
+}

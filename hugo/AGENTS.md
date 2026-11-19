@@ -112,6 +112,21 @@ The theme provides many shortcodes. See `themes/EPFL-Rocket-Team/layouts/shortco
 - `{{< card >}}` - Card component
 - `{{< accordion >}}` - Collapsible sections
 - `{{< grid >}}` - Grid layout
+- `{{< pdf-report src="/reports/report.pdf" title="Technical report" size="98 MB" >}}` - Scrollable PDF.js reader
+
+### PDF Reports
+
+Store reports in `static/reports/`. The `pdf-report` shortcode loads its styles and script only on pages that use it,
+and loads the document automatically. All pages are continuously scrollable, but only pages near the reader's
+viewport are rendered; offscreen canvases are released to limit memory use. Open/download links also work
+without JavaScript. The original PDF remains available for text selection and assistive document readers.
+Byte-range-capable hosting avoids fetching the entire PDF for a preview.
+The toolbar includes page navigation, zoom, and a fullscreen toggle where the browser supports the Fullscreen API.
+Visitors can leave fullscreen with the same button or Escape.
+
+PDF.js 5.4.394 is self-hosted in `static/vendor/pdfjs/` with its Apache-2.0 license. When updating it, replace
+`pdf.min.mjs` and `pdf.worker.min.mjs` together from the same `pdfjs-dist` release, along with `cmaps/`,
+`standard_fonts/`, `wasm/`, and their licenses. No Node build step or external CDN is needed for the reader.
 
 ### Multilingual Content
 

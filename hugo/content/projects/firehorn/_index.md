@@ -74,3 +74,9 @@ Home to the 7.5kN Ethanol-Liquid Oxygen engine, this bay features cryogenic-rate
 # Milestones
 
 This project started with the Firehorn architecture's maiden flight at EuRoC 2025. Early February saw a design review, from which we have entered an intense period of testing and qualification, highlighted by motor ignitions, destructive structural testing, and recovery drop tests. We aim for Vertical Static Fire Tests (VSFTs) in August.
+
+# Report
+
+Explore the engineering behind Firehorn in our technical report.
+
+{{< pdf-report src="/reports/Team09_TechnicalReport_v1.pdf" title="Firehorn technical report" size="98 MB" >}}

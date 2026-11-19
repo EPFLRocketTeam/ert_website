@@ -1,0 +1,54 @@
+{{- $src := .Get "src" | relURL -}}
+{{- $title := .Get "title" | default "Technical report" -}}
+{{- $id := printf "pdf-report-%d" .Ordinal -}}
+<section class="pdf-report" aria-labelledby="{{ $id }}-title"
+  data-pdf-report data-src="{{ $src }}" data-library-base="{{ "vendor/pdfjs/" | relURL }}">
+  <div class="pdf-report__header">
+    <div>
+      <p class="pdf-report__eyebrow">Engineering / Documentation</p>
+      <h2 id="{{ $id }}-title">{{ $title }}</h2>
+      <p class="pdf-report__meta">PDF{{ with .Get "size" }} <span aria-hidden="true">/</span> {{ . }}{{ end }}</p>
+    </div>
+    <div class="pdf-report__links">
+      <a class="pdf-report__button" href="{{ $src }}" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">&#8599;</span></a>
+      <a class="pdf-report__button pdf-report__button--primary" href="{{ $src }}" download>Download PDF <span aria-hidden="true">&#8595;</span></a>
+    </div>
+  </div>
+
+  <div class="pdf-report__toolbar" data-toolbar hidden>
+    <div class="pdf-report__group">
+      <button class="pdf-report__button" type="button" data-previous aria-label="Previous page">&#8592;</button>
+      <form class="pdf-report__group" data-page-form>
+        <label for="{{ $id }}-page">Page</label>
+        <input id="{{ $id }}-page" data-page type="number" min="1" value="1" required inputmode="numeric">
+        <span data-page-count></span>
+        <button class="pdf-report__button" type="submit">Go</button>
+      </form>
+      <button class="pdf-report__button" type="button" data-next aria-label="Next page">&#8594;</button>
+    </div>
+    <div class="pdf-report__group">
+      <label for="{{ $id }}-zoom">Zoom</label>
+      <select id="{{ $id }}-zoom" data-zoom>
+        <option value="fit">Fit width</option>
+        <option value="0.75">75%</option>
+        <option value="1">100%</option>
+        <option value="1.25">125%</option>
+        <option value="1.5">150%</option>
+        <option value="2">200%</option>
+      </select>
+      <button class="pdf-report__button" type="button" data-fullscreen aria-pressed="false" hidden>Fullscreen</button>
+    </div>
+  </div>
+
+  <div class="pdf-report__intro" data-intro>
+    <span class="pdf-report__document" aria-hidden="true">PDF</span>
+    <p>Firehorn, page by page.</p>
+    <p class="pdf-report__meta">The report loads automatically. Scroll inside the reader to explore.</p>
+    <button class="pdf-report__button pdf-report__button--primary" type="button" data-retry hidden>Try again</button>
+    <noscript><p>JavaScript is required for the interactive reader. Use the links above to open or download the report.</p></noscript>
+  </div>
+  <div class="pdf-report__viewport" data-viewport tabindex="0" role="region" aria-label="Technical report; scroll to read all pages" hidden>
+    <div class="pdf-report__pages" data-pages></div>
+  </div>
+  <p class="pdf-report__status" data-status role="status" aria-live="polite" aria-atomic="true">Read online or download a copy to explore the full report.</p>
+</section>
