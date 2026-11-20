@@ -1,0 +1,13 @@
+{
+  "name": "firehorn-viewer",
+  "private": true,
+  "description": "3D Firehorn II viewer for the 'Our projects' block (builds hugo/static/js/firehorn-viewer.min.js)",
+  "scripts": {
+    "build": "esbuild src/firehorn-viewer.js --bundle --minify --format=iife --target=es2019 --legal-comments=none --outfile=../../hugo/static/js/firehorn-viewer.min.js",
+    "draco": "node -e \"const fs=require('fs');const d='node_modules/three/examples/jsm/libs/draco/gltf/';fs.mkdirSync('../../hugo/static/vendor/draco',{recursive:true});for(const f of ['draco_decoder.wasm','draco_wasm_wrapper.js'])fs.copyFileSync(d+f,'../../hugo/static/vendor/draco/'+f)\""
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0",
+    "three": "0.170.0"
+  }
+}
