@@ -3,7 +3,7 @@
     <h2 class="zero-margin">The EPFL Rocket Team is currently engaged in four different projects</h2>
     <div id="our-projects">
         <div class="our-project-list">
-            <div class="zero-margin highlighted-project" id="op-firehorn" data-project-image="/images/op/op_firehorn.webp">
+            <div class="zero-margin highlighted-project" id="op-firehorn" data-project-image="/images/op/op_firehorn.webp" data-project-model>
                 <h1 class="zero-margin">Firehorn II</h1>
                 <p class="zero-margin">Designing and manufacturing a supersonic bi-liquid rocket for international competitions</p>
             </div>
@@ -21,42 +21,146 @@
             </div>
         </div>
         <div class="our-project-images">
-            <img loading="lazy" src="/images/op/op_firehorn.webp" id="project-image">
+            <img loading="lazy" src="/images/op/op_firehorn.webp" id="project-image" alt="">
+            <!-- Firehorn II 3D model (static/js/firehorn-viewer.min.js), loaded only when
+                 this block gets close to the screen. Until it is ready — or if WebGL is
+                 unavailable / the visitor saves data — the picture above stays. -->
+            <div id="project-model" class="op-model" role="img" aria-label="3D model of the Firehorn II rocket, drag to rotate"></div>
         </div>
     </div>
     <a href="/projects/" class="button-right right-align gray-button" style="display:inline-block;">discover all our projects</a>
 </div>
+<style>
+  .our-project-images { position: relative; }
+  .op-model {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 50%;
+    height: 400px;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s;
+  }
+  .op-model.is-visible { opacity: 1; visibility: visible; }
+  @media (max-width: 744px) {
+    .op-model { height: 180px; }
+  }
+</style>
 <script>
 (function () {
-  function initProjectHover() {
+  var MODEL = {
+    script: "/js/firehorn-viewer.min.js",
+    src: "/models/firehorn_ii.glb",
+    draco: "/vendor/draco/"
+  };
+
+  function init() {
     var projectImage = document.getElementById("project-image");
+    var modelBox = document.getElementById("project-model");
+    var section = document.getElementById("our-projects");
     var items = document.querySelectorAll("#our-projects > .our-project-list > div");
     if (!projectImage || !items.length) return;
 
-    function highlight(index) {
-      items.forEach(function (el, i) {
-        el.classList.toggle("highlighted-project", i === index);
-      });
+    var current = 0;
+    var viewer = null;
+    var modelReady = false;
+
+    function wantsModel(i) {
+      return modelReady && items[i].hasAttribute("data-project-model");
+    }
+
+    function show(i) {
+      var model = wantsModel(i);
+      if (modelBox) modelBox.classList.toggle("is-visible", model);
+      if (viewer) viewer.setActive(model);
+      if (model) {
+        projectImage.style.opacity = 0;
+        return;
+      }
+      var src = items[i].dataset.projectImage;
+      if (src && !projectImage.src.endsWith(src)) {
+        projectImage.style.opacity = 0;
+        window.setTimeout(function () {
+          if (current !== i) return;
+          projectImage.src = src;
+          projectImage.style.opacity = 1;
+        }, 180);
+      } else {
+        projectImage.style.opacity = 1;
+      }
     }
 
     items.forEach(function (el, i) {
       el.addEventListener("mouseenter", function () {
-        if (el.dataset.projectImage && !projectImage.src.endsWith(el.dataset.projectImage)) {
-          projectImage.style.opacity = 0;
-          window.setTimeout(function () {
-            projectImage.src = el.dataset.projectImage;
-            projectImage.style.opacity = 1;
-          }, 180);
-        }
-        highlight(i);
+        if (current === i) return;
+        current = i;
+        items.forEach(function (other, k) {
+          other.classList.toggle("highlighted-project", k === i);
+        });
+        show(i);
       });
     });
+
+    // --- 3D model: lazy, optional ---
+    if (!modelBox || !section || !("IntersectionObserver" in window)) return;
+    var conn = navigator.connection;
+    if (conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""))) return;
+
+    function dropModel() {
+      if (viewer) viewer.destroy();
+      viewer = null;
+      modelReady = false;
+      if (modelBox) modelBox.remove();
+      modelBox = null;
+      show(current);
+    }
+
+    function loadModel() {
+      var s = document.createElement("script");
+      s.src = MODEL.script;
+      s.async = true;
+      s.onload = function () {
+        if (!window.ERTFirehornViewer || !modelBox) return;
+        viewer = window.ERTFirehornViewer.mount(modelBox, {
+          src: MODEL.src,
+          dracoPath: MODEL.draco,
+          onReady: function () {
+            modelReady = true;
+            show(current);
+          },
+          onError: dropModel
+        });
+        if (viewer) viewer.setActive(false); // until the model is loaded
+      };
+      s.onerror = dropModel;
+      document.head.appendChild(s);
+    }
+
+    // start only once the page itself has finished loading, so the ~1 MB model
+    // never competes with the hero images
+    function whenIdle(fn) {
+      var go = function () {
+        if ("requestIdleCallback" in window) window.requestIdleCallback(fn, { timeout: 2000 });
+        else window.setTimeout(fn, 200);
+      };
+      if (document.readyState === "complete") go();
+      else window.addEventListener("load", go, { once: true });
+    }
+
+    var io = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      io.disconnect();
+      whenIdle(loadModel);
+    }, { rootMargin: "300px" });
+    io.observe(section);
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initProjectHover);
+    document.addEventListener("DOMContentLoaded", init);
   } else {
-    initProjectHover();
+    init();
   }
 })();
 </script>
