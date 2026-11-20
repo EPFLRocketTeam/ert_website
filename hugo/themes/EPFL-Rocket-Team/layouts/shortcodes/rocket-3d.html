@@ -1,0 +1,197 @@
+{{- /*
+  Interactive 3D model (orbit all around, zoom, pan, fullscreen).
+  Usage in content:  {{< rocket-3d >}}
+  Optional params:   src="/models/firehorn_ii.glb" poster="/images/op/op_firehorn.webp" title="Firehorn II"
+  Uses static/js/firehorn-viewer.min.js (source: tools/firehorn-viewer). The files are only
+  downloaded when the block gets near the screen; the poster stays if WebGL isn't available.
+*/ -}}
+{{- $src := .Get "src" | default "/models/firehorn_ii.glb" -}}
+{{- $poster := .Get "poster" | default "/images/op/op_firehorn.webp" -}}
+{{- $title := .Get "title" | default "Firehorn II" -}}
+<div class="rocket3d" data-src="{{ $src }}" data-draco="/vendor/draco/" data-script="/js/firehorn-viewer.min.js">
+  <div class="rocket3d__stage" role="img" aria-label="Interactive 3D model of {{ $title }}">
+    <img class="rocket3d__poster" src="{{ $poster }}" alt="{{ $title }}" loading="lazy">
+    <div class="rocket3d__loading" hidden>Loading 3D model…</div>
+    <div class="rocket3d__hint" aria-hidden="true">Hold Ctrl (⌘ on Mac) and scroll to zoom</div>
+  </div>
+  <div class="rocket3d__toolbar" hidden>
+    <button type="button" data-act="in" aria-label="Zoom in" title="Zoom in">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+    </button>
+    <button type="button" data-act="out" aria-label="Zoom out" title="Zoom out">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>
+    </button>
+    <button type="button" data-act="reset" aria-label="Reset view" title="Reset view">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.4-5.7M4 4v4h4"/></svg>
+    </button>
+    <button type="button" data-act="full" aria-label="Fullscreen" title="Fullscreen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+    </button>
+  </div>
+  <p class="rocket3d__help" hidden></p>
+</div>
+<style>
+  .rocket3d { position: relative; margin: 10px 0 30px; }
+  .rocket3d__stage {
+    position: relative;
+    height: min(70vh, 620px);
+    border-radius: 20px;
+    background: radial-gradient(ellipse at 50% 60%, #1a1a1a 0%, #0d0d0d 60%, #080808 100%);
+    overflow: hidden;
+  }
+  .rocket3d__stage canvas { position: absolute; inset: 0; }
+  .rocket3d__poster {
+    position: absolute; inset: 0; margin: auto;
+    max-width: 85%; max-height: 85%; object-fit: contain;
+    transition: opacity 0.4s ease;
+  }
+  .rocket3d.is-ready .rocket3d__poster { opacity: 0; pointer-events: none; }
+  .rocket3d__loading {
+    position: absolute; left: 0; right: 0; bottom: 18px; text-align: center;
+    color: #777; font-family: Aspekta, sans-serif; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .rocket3d__hint {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    padding: 10px 16px; border-radius: 999px; background: rgba(0, 0, 0, 0.75); color: #fff;
+    font-family: Aspekta, sans-serif; font-size: 14px; white-space: nowrap;
+    opacity: 0; transition: opacity 0.25s ease; pointer-events: none;
+  }
+  .rocket3d__hint.is-shown { opacity: 1; }
+  .rocket3d__toolbar {
+    position: absolute; top: 14px; right: 14px; display: flex; gap: 8px; z-index: 2;
+  }
+  .rocket3d__toolbar[hidden] { display: none; }
+  .rocket3d__toolbar button {
+    width: 42px; height: 42px; border-radius: 50%; border: 1px solid #333;
+    background: rgba(20, 20, 20, 0.85); color: #f6f6f6; cursor: pointer;
+    display: grid; place-items: center; transition: border-color 0.15s, background 0.15s;
+  }
+  .rocket3d__toolbar button:hover { border-color: #da291c; background: rgba(218, 41, 28, 0.15); }
+  .rocket3d__toolbar button:focus-visible { outline: 2px solid #da291c; outline-offset: 2px; }
+  .rocket3d__toolbar svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .rocket3d__help { margin: 10px 4px 0; color: #777; font-family: Aspekta, sans-serif; font-size: 13px; }
+  /* fallback "fullscreen" where the Fullscreen API isn't available (iPhone Safari) */
+  .rocket3d.is-maximized { position: fixed; inset: 0; z-index: 10000; margin: 0; background: #000; }
+  .rocket3d.is-maximized .rocket3d__stage,
+  .rocket3d:fullscreen .rocket3d__stage { height: 100%; border-radius: 0; }
+  .rocket3d:fullscreen { background: #000; }
+  .rocket3d.is-maximized .rocket3d__help,
+  .rocket3d:fullscreen .rocket3d__help { position: absolute; left: 16px; bottom: 12px; margin: 0; }
+  @media (max-width: 744px) {
+    .rocket3d__stage { height: 60vh; border-radius: 14px; }
+    .rocket3d__toolbar { top: 10px; right: 10px; gap: 6px; }
+    .rocket3d__toolbar button { width: 38px; height: 38px; }
+  }
+</style>
+<script>
+(function () {
+  var roots = document.querySelectorAll(".rocket3d:not([data-init])");
+  roots.forEach(function (root) {
+    root.setAttribute("data-init", "");
+    var stage = root.querySelector(".rocket3d__stage");
+    var toolbar = root.querySelector(".rocket3d__toolbar");
+    var help = root.querySelector(".rocket3d__help");
+    var loading = root.querySelector(".rocket3d__loading");
+    var hint = root.querySelector(".rocket3d__hint");
+    var viewer = null;
+    var coarse = window.matchMedia && window.matchMedia("(pointer: coarse)").matches;
+
+    if (!("IntersectionObserver" in window)) return;
+    var conn = navigator.connection;
+    if (conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""))) return;
+
+    function loadScript(src, cb, fail) {
+      if (window.ERTFirehornViewer) return cb();
+      var existing = document.querySelector('script[data-firehorn-viewer]');
+      if (existing) {
+        existing.addEventListener("load", cb);
+        existing.addEventListener("error", fail);
+        return;
+      }
+      var s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      s.setAttribute("data-firehorn-viewer", "");
+      s.onload = cb;
+      s.onerror = fail;
+      document.head.appendChild(s);
+    }
+
+    var hintTimer = 0;
+    function showHint() {
+      hint.classList.add("is-shown");
+      clearTimeout(hintTimer);
+      hintTimer = setTimeout(function () { hint.classList.remove("is-shown"); }, 1200);
+    }
+
+    function failed() {
+      loading.hidden = true;
+      if (viewer) viewer.destroy();
+      viewer = null;
+    }
+
+    function start() {
+      loading.hidden = false;
+      loadScript(root.dataset.script, function () {
+        if (!window.ERTFirehornViewer || !window.ERTFirehornViewer.mountExplorer) return failed();
+        viewer = window.ERTFirehornViewer.mountExplorer(stage, {
+          src: root.dataset.src,
+          dracoPath: root.dataset.draco,
+          onHint: showHint,
+          onReady: function () {
+            loading.hidden = true;
+            root.classList.add("is-ready");
+            toolbar.hidden = false;
+            help.textContent = coarse
+              ? "Drag to rotate · pinch to zoom · two fingers to move"
+              : "Drag to rotate · Ctrl (⌘) + scroll to zoom · right-drag to move";
+            help.hidden = false;
+          },
+          onError: failed
+        });
+      }, failed);
+    }
+
+    // fullscreen: the real API where it exists, a fixed overlay otherwise (iPhone)
+    function isFull() {
+      return document.fullscreenElement === root || root.classList.contains("is-maximized");
+    }
+    function toggleFull() {
+      if (isFull()) {
+        if (document.fullscreenElement) document.exitFullscreen();
+        root.classList.remove("is-maximized");
+        document.documentElement.style.overflow = "";
+      } else if (root.requestFullscreen) {
+        root.requestFullscreen().catch(function () {
+          root.classList.add("is-maximized");
+          document.documentElement.style.overflow = "hidden";
+        });
+      } else {
+        root.classList.add("is-maximized");
+        document.documentElement.style.overflow = "hidden";
+      }
+      setTimeout(function () { if (viewer) viewer.resize(); }, 60);
+    }
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && root.classList.contains("is-maximized")) toggleFull();
+    });
+
+    toolbar.addEventListener("click", function (e) {
+      var btn = e.target.closest("button[data-act]");
+      if (!btn || !viewer) return;
+      var act = btn.dataset.act;
+      if (act === "in") viewer.zoomIn();
+      else if (act === "out") viewer.zoomOut();
+      else if (act === "reset") viewer.reset();
+      else if (act === "full") toggleFull();
+    });
+
+    var io = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      io.disconnect();
+      start();
+    }, { rootMargin: "400px" });
+    io.observe(root);
+  });
+})();
+</script>

@@ -44,6 +44,8 @@
     transition: opacity 0.4s ease, visibility 0.4s;
   }
   .op-model.is-visible { opacity: 1; visibility: visible; }
+  .our-project-list > div { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .our-project-list > div:focus-visible { outline: 2px solid #da291c; outline-offset: 4px; border-radius: 6px; }
   @media (max-width: 744px) {
     .op-model { height: 180px; }
   }
@@ -92,14 +94,29 @@
       }
     }
 
+    function select(i) {
+      if (current === i) return;
+      current = i;
+      items.forEach(function (other, k) {
+        other.classList.toggle("highlighted-project", k === i);
+        other.setAttribute("aria-pressed", k === i ? "true" : "false");
+      });
+      show(i);
+    }
+
+    // Hover on desktop; tap on phones/tablets (no hover there); keyboard too.
     items.forEach(function (el, i) {
-      el.addEventListener("mouseenter", function () {
-        if (current === i) return;
-        current = i;
-        items.forEach(function (other, k) {
-          other.classList.toggle("highlighted-project", k === i);
-        });
-        show(i);
+      el.setAttribute("role", "button");
+      el.setAttribute("tabindex", "0");
+      el.setAttribute("aria-pressed", i === current ? "true" : "false");
+      el.addEventListener("mouseenter", function () { select(i); });
+      el.addEventListener("click", function () { select(i); });
+      el.addEventListener("focus", function () { select(i); });
+      el.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          select(i);
+        }
       });
     });
 

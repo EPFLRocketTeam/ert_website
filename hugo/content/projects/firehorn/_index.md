@@ -37,6 +37,10 @@ highlights:
 
 {{< highlights >}}
 
+# Explore Firehorn II in 3D
+
+{{< rocket-3d >}}
+
 # Rocket components
 
 {{< component-section component="NOSECONE" image="/images/originalQuality/firehorn-image1.png" >}}
