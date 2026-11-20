@@ -1,7 +1,16 @@
 # Firehorn II 3D viewer
 
-Small three.js viewer used by the "Our projects" block on the home page
-(`hugo/themes/EPFL-Rocket-Team/layouts/shortcodes/our-projects.html`).
+Small three.js viewer, used in two places:
+
+- **Home page, "Our projects" block** (`layouts/shortcodes/our-projects.html`):
+  `ERTFirehornViewer.mount()` — diagonal pose like the old picture, slow spin
+  around the long axis, drag to spin.
+- **Firehorn project page** (`{{< rocket-3d >}}`, `layouts/shortcodes/rocket-3d.html`):
+  `ERTFirehornViewer.mountExplorer()` — orbit all around, zoom (pinch,
+  Ctrl/Cmd + wheel, +/- buttons; a plain wheel keeps scrolling the page), pan
+  (right-drag / two fingers), reset, fullscreen (fixed overlay on iPhone, where
+  the Fullscreen API doesn't exist). Horizontal in wide boxes, vertical on phones.
+  Optional params: `src`, `poster`, `title`.
 
 What ends up on the site (all under `hugo/static/`, so Hugo copies them as-is):
 
