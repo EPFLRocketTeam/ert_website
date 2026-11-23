@@ -45,32 +45,6 @@ Our communication team is responsible for promoting the association on our socia
 
 <p><b>Skills required:</b> French and English, German a real plus. All sections of EPFL, HEC or HEIG-VD welcome.</p>
 {{< /collapsible-section-big >}}
-<h5 style="color: #da291c">Heads</h5>
-{{< collapsible-section-big name="Head of Communication" >}}
-<p style="margin-top: 0">The Head of Communication leads the communication team and holds a seat in the committee. The role requires good organization, the ability to delegate work, and comfort with social media and public-facing content. You will be responsible for the association's presence on social networks, on campus and in the press.</p>
-
-<p><b>Skills required:</b> Flawless French, good knowledge of English, and strong interpersonal skills. All sections of EPFL, UNIL and SAWI welcome.</p>
-{{< /collapsible-section-big >}}
-{{< collapsible-section-big name="Head of Sponsoring" >}}
-<p style="margin-top: 0">The Head of Sponsoring leads the sponsoring team and holds a seat in the committee. You will be responsible for seeking new sponsors and maintaining relationships with existing partners. The role requires sales and negotiation skills, creativity in making our sponsoring offer attractive, and a proactive mindset.</p>
-
-<p><b>Skills required:</b> French and English, German a real plus. All sections of EPFL, HEC or HEIG-VD welcome.</p>
-{{< /collapsible-section-big >}}
-{{< collapsible-section-big name="Head of Logistics " >}}
-<p style="margin-top: 0">The Head of Logistics leads the logistics team and holds a seat in the committee. The role requires an overall view of the association and its events, strong organizational skills and the ability to delegate. You will oversee event planning, travel coordination and the day-to-day operations of the association.</p>
-
-<p><b>Skills required:</b> French and English, German a real plus. Driving license required. All sections of EPFL, HEC or HEIG-VD welcome.</p>
-{{< /collapsible-section-big >}}
-{{< collapsible-section-big name="Head of IT" >}}
-<p style="margin-top: 0">The Head of IT leads the IT team and holds a seat in the committee. You will oversee the association's digital infrastructure including the website, internal tools and automation pipelines. The role requires technical leadership and the ability to coordinate a small team of developers.</p>
-
-<p><b>Skills required:</b> Experience in web development or software engineering. All sections of EPFL welcome.</p>
-{{< /collapsible-section-big >}}
-{{< collapsible-section-big name="Head of Sustainability" >}}
-<p style="margin-top: 0">The Head of Sustainability leads sustainability initiatives within the association and holds a seat in the committee. You will be responsible for identifying ways to reduce our environmental footprint across projects and operations, and for promoting a culture of sustainability within the team.</p>
-
-<p><b>Skills required:</b> Interest in sustainability and environmental topics. Strong initiative and communication skills. All sections of EPFL, UNIL and SAWI welcome.</p>
-{{< /collapsible-section-big >}}
 
 {{< separator-with-text text="Competition Project" >}}
 <h5 style="color: #da291c">Avionics</h5>
